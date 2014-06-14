@@ -11,6 +11,57 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "examples.tex",
+			"settings":
+			{
+				"buffer_size": 5970,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "algebra.tex",
+			"settings":
+			{
+				"buffer_size": 3337,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.tex",
+			"settings":
+			{
+				"buffer_size": 569,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "%!TEX root = main.tex\n\\section{Grundlegendes}\n    Zunächst wird ein Überblick über die nötigen Definitionen gegeben. Zuvor noch eine Beschränkung der Räume die in dieser Arbeit behandelt werden:\n\n\n    \\subsection{Die betrachteten Räume}\n        Im Folgenden sei $M$ eine kompakte, orientierbare, zusammenhängende $3$-dimensionale Mannigfaltigkeit. Falls diese einen Rand hat, ist er homöomorph zu einer disjunkten Vereinigung von Tori.\n\n\n    \\subsection{Alexander Invarianten}\n    	Ein Clou der folgenden Methoden ist es, die Struktur einer Überlagerung --- genauer gesagt ihre Decktransformationen --- auszunutzen, indem man den Gruppenring betrachtet. Der Gruppenring $R[G]$ ist algebraischer Herkunft und kann für allgemeine kommutative Ringe $R$ und Gruppen bzw. Monoide $G$ definiert werden, jedoch genügt es für diese Arbeit eine speziellere Definition heranzuziehen, für den Fall das $G=F$ eine endlich erzeugte freie abelsche Gruppe und $R=\\ZZ$ ist.\n    	\\begin{defn}[Gruppenring]\n    		Sei $F$ eine freie abelsche Gruppe. Dann ist der \\textit{Gruppenring} definiert als:\n    		\\[\n    			\\ZZ[F] = \\sum_{i \\in I} a_i f_i, a_i \\in \\ZZ, f_i \\in F, |I| < \\infty\n    		\\]\n    	\\end{defn}\n        \\label{wirkung:gruppenring}\n    	Falls also $F$ nun eine unendlich zyklische Gruppe mit Erzeuger $t$ ist, lässt sich der Gruppenring über $F$ als $\\ZZ[F] = \\ZZ[t^{\\pm 1}]$, also als Ring der formalen Laurentpolynome in der Variablen $t$ auffassen. \n    	Grundlage für die Definitionen der Alexander Invarianten ist die zur Abelianisierung der Fundamentalgruppe gehörende Überlagerung. Allgemeiner sei $M$ eine 3-Mannigfaltigkeit mit den obigen Beschränkungen und $\\phi: G=\\pi_1(M) \\to F$ ein Homomorphismus in eine freie abelsche Gruppe F. Aus der Überlagerungstheorie ist bekannt, dass nun eine zusammenhängende Mannigfaltigkeit $\\hat M_\\phi$ existiert, die $M$ überlagert und auf Level der Fundamentalgruppen $ker \\phi \\cong \\pi_1 (\\hat M_\\phi) \\stackrel{p_*}{\\hookrightarrow} \\pi_1(M)$ einbettet. Diese ist bis auf Homöomorphie eindeutig. Die Decktransformationsgruppe ist dann isomorph zum Quotienten $\\pi_1(M)/p_*\\pi_1(\\hat M_\\phi) \\cong F$. Dieser operiert dann auf $\\hat M_\\phi$ durch Homöomorphismen, induziert also auch eine Operation auf $\\pi_1(\\hat M_\\phi)$ und auf $H_1(\\hat M_\\phi)$. Da $\\ZZ$ auf jeder abelschen Gruppe wirkt, ist folgende Definition gerechtfertigt:\n    	\\begin{defn}[Alexander Modul]\n    		Der Alexander Modul ist definiert als\n    		\\[\n    			A_\\phi(M) = H_1(\\hat M_\\phi)\n    		\\]\n    		aufgefasst als $\\ZZ[F]$-Modul, mit der induzierten Wirkung der Decktransformationen.\n    	\\end{defn}\n    	Es wird sich bei weiterer Inspektion herausstellen, dass der Alexander Modul im Fall einer kompakten 3-Mannigfaltigkeit immer endlich erzeugt ist. \n    	Da es sich bei dem Gruppenring nicht um einen Hauptidealring handelt, ist es im Allgemeinen nicht möglich eine Zerlegung des Alexander Moduls in zyklische direkte Summanden zu finden. Als algebraische Invariante, wird dem Modul stattdessen hier ein Reihe von Idealen in dem Gruppenring zugewiesen --- die Elementarideale. Da der Alexander Modul endlich erzeugt über dem Gruppenring ist, existiert eine freie Auflösung, aus derer Präsentation für den Modul wir die Elementarideale gewinnen möchten. Betrachte die endliche Präsentation:\n    	\\[\n    		\\ZZ[F]^k \\stackrel{X}{\\to} \\ZZ[F]^n \\stackrel{\\alpha}{\\to} A_\\phi(M) \\to 0\n    	\\]\n    	wobei $X$ eine darstellende Matrix bezüglich der kanonischen Basen $e_1, \\cdots , e_k$ und $e'_1, \\cdots ,e'_n$ ist. Diese Präsentationsmatrix ist bis auf Vertauschen von Zeilen, Hinzufügen von Einheitsblöcken oder Nullspalten und Addieren eines Vielfachen einer Spalte oder Zeile auf eine jeweils andere eindeutig. Das liefert die nächste Definition\n    	\\begin{defn}\n    		Definiere das $i$-te Elementarideal von $M$ bezüglich $\\phi$ $E_i(A_\\phi(M)) \\subset \\ZZ [F]$ als das von den $(n-i-1)$-Minoren erzeugte Ideal.  \n    	\\end{defn}\n\n    	Natürlich lassen sich Elementarideale für alle endlich präsentierten Moduln über kommutativen Ringen analog definieren.\n\n    	Falls $\\phi$ die Abelianisierung ist, definiert diese Invariante des Alexander Moduls natürlich auch eine Invariante der Mannigfaltigkeit. Nun ist $\\ZZ[F]$ kein Hauptidealring, jedoch ist es durchaus interessant als weitere Invariante das kleinste Hauptideal zu betrachten das ein Elementarideal enthält.\n    	\\begin{defn}(Alexander Polynom)\n    		Definiere das Alexander Polynom $\\Delta_\\phi$ als einen größten gemeinsamen Teiler von $E_1(A_\\phi(M))$.\n    		%Ist das überhaupt definiert wenn phi nicht Abelianisierung?\n    	\\end{defn}\n    	\\begin{bem}\n    		In dem Gruppenring sind die Einheiten genau die Gruppenelemente. (im Allgemeinen nicht ganz). Das Alexander Polynom ist bis auf Multiplikation mit einer Einheit aus dem Gruppenring wohldefiniert.\n    	\\end{bem}\n\n    	Bleibt nur noch die Alexander Norm zu definieren, die eine Norm auf der ersten Kohomologie der 3-Mannigfaltigkeit beschreibt.\n    	\\begin{defn}\n    		Sei  $\\Delta \\in \\ZZ [F]$ das Alexander Polynom das zu der Abelianisierung der Fundamentalgruppe gehört. So ist $\\Delta$ von der Form:\n    		\\begin{align*}\n    		    			\\Delta = &\\sum_{k=1}^n a_k f_k& a_k \\neq 0, f_i = f_j \\Rightarrow i=j\n    		\\end{align*}\n    		Sei nun $\\phi \\in \\hom (F,\\ZZ) \\cong H^1 (M,\\ZZ)$, dann definieren wir die Alexander Norm von $\\phi$ als\n    		\\[\n    			||\\phi||_A = \\begin{cases}\n    				0 , &\\text{ wenn } \\Delta=0\\\\\n    				\\sup \\phi (f_i - f_j) &\n    			\\end{cases}\n    		\\]\n    		Wobei das Supremum über die Gruppenelemente $f_i$ genommen wird, die in $\\Delta$ auftauchen.\n\n    	\\end{defn}\n\n    \\subsection{Thurston Invariante}\n        Ziel ist es eine weitere Norm auf der ersten Kohomologie der kompakten 3-Mannigfaltigkeit zu definieren. Poincaré Dualität liefert in diesem Fall einen Isomorphismus $H^1(M;\\ZZ) \\to H_2(M;\\ZZ)$. Eine zu $\\phi \\in H^1(M,\\ZZ)$ duale Fläche wird später noch explizit beschrieben werden. Tatsächlich ist es sogar ein bedeutendes Zwischenresultat, das eine solche Fläche immer mit Eigenschaften gewählt werden kann die bestimmten Abschätzungen genügen. Auf der anderen Seite sollte so eine gewählte Fläche auch eine Minimalitätseigenschaft erfüllen und zwar bezüglich der folgenden Norm:\n        \\begin{defn}[Thurston Norm]\n        	Definiere die Thurston Norm für $\\phi \\in H^1(M,\\ZZ)$ als\n        	\\[\n        	        		||\\phi||_T = \\{\\min \\chi_-(S)| \\text{ S ist orientierbar eingebettete Fläche dual zu } \\phi \\},\n        	        	\\]        	\n        	wobei $\\chi_-(S)=\\sum \\max (-\\chi(S_i),0)$  und $S=\\sqcup S_i$ die Zusammenhangskomponenten von $S$ sind.\n        \\end{defn}\n\n\n        Als Abschluss dieses einführenden Kapitels, soll noch folgendes essentielles Lemma gezeigt werde:\n        \\begin{lem}\n        	Die Alexander Norm und die Thurston Norm definieren Halbnormen auf der ersten Kohomologie einer kompakten 3-Mannigfaltigkeit. \n        \\end{lem}\n        \\begin{proof}\n        	Falls nicht Widerspruch    \n        \\end{proof}",
+			"file": "basics.tex",
+			"file_size": 7162,
+			"file_write_time": 130469744443924291,
+			"settings":
+			{
+				"buffer_size": 7018,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "intro.tex",
+			"settings":
+			{
+				"buffer_size": 1529,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bachelor_thesis.sublime-project",
+			"settings":
+			{
+				"buffer_size": 240,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"command_palette":
@@ -18,6 +69,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"jump",
 				"BracketHighlighter: Jump to Left Bracket"
@@ -45,10 +100,6 @@
 			[
 				"Package Control: list",
 				"Package Control: List Packages"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"",
@@ -132,6 +183,9 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/main.bbl",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/main.log",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/examples.tex",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/BA_Titelseite.sty",
@@ -176,8 +230,7 @@
 		"/C/Users/Daniel/Dropbox/Documents/LaTeX/TopoZettel/topology.sty",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/README.md",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -196,6 +249,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"overline",
+			"bar",
 			"sqrel",
 			"align",
 			"\\[",
@@ -248,8 +303,470 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "examples.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5964,
+								5964
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "algebra.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3337,
+								3337
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 165.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "main.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "basics.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6998,
+								6998
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1431.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "intro.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "bachelor_thesis.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -304,8 +821,28 @@
 		"selected_items":
 		[
 			[
+				"ma",
+				"main.tex"
+			],
+			[
+				"i",
+				"intro.tex"
+			],
+			[
+				"m",
+				"main.tex"
+			],
+			[
+				"e",
+				"bachelorthesis\\examples.tex"
+			],
+			[
+				"alg",
+				"bachelorthesis\\algebra.tex"
+			],
+			[
 				"ex",
-				"Bachelorarbeit\\examples.tex"
+				"bachelorthesis\\examples.tex"
 			],
 			[
 				"to",
@@ -326,10 +863,6 @@
 			[
 				"bas",
 				"Bachelorarbeit\\basics.tex"
-			],
-			[
-				"ma",
-				"Bachelorarbeit\\main.tex"
 			],
 			[
 				"pro",
@@ -368,11 +901,11 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{

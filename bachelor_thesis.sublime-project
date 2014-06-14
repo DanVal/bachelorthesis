@@ -12,7 +12,8 @@
 				"*.toc",
 				"*.dvi",
 				"*.pdf",
-				"*.gz"
+				"*.gz",
+				"*.bbl"
 			],
 			"follow_symlinks": true,
 			"path": "."
