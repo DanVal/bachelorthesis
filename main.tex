@@ -1,0 +1,35 @@
+%!TEX root = main.tex
+\documentclass[11pt, a4paper, german]{scrartcl}
+
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage[arrow, matrix, curve]{xy}
+\usepackage{easy-todo}
+
+
+
+\usepackage{BA_Titelseite}
+\usepackage{topology}
+
+\input{titlepage.tex}
+
+\begin{document}
+
+\maketitle
+
+\include{intro}
+\include{basics}
+\include{chapter}
+\include{proofs}
+\include{examples}
+\include{notizen}
+%maybe Appendix: Algebraische Sichweise 
+\include{algebra}
+
+\bibliography{ref}
+\bibliographystyle{plain}
+
+\end{document}

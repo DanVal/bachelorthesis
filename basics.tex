@@ -1,0 +1,83 @@
+%!TEX root = main.tex
+\section{Grundlegendes}
+    Zunächst wird ein Überblick über die nötigen Definitionen gegeben. Zuvor noch eine Beschränkung der Räume die in dieser Arbeit behandelt werden:
+
+
+    \subsection{Die betrachteten Räume}
+        Im Folgenden sei $M$ eine kompakte, orientierbare, zusammenhängende $3$-dimensionale Mannigfaltigkeit. Falls diese einen Rand hat, ist er homöomorph zu einer disjunkten Vereinigung von Tori.
+
+
+    \subsection{Alexander Invarianten}
+    	Ein Clou der folgenden Methoden ist es, die Struktur einer Überlagerung --- genauer gesagt ihre Decktransformationen --- auszunutzen, indem man den Gruppenring betrachtet. Der Gruppenring $R[G]$ ist algebraischer Herkunft und kann für allgemeine kommutative Ringe $R$ und Gruppen bzw. Monoide $G$ definiert werden, jedoch genügt es für diese Arbeit eine speziellere Definition heranzuziehen, für den Fall das $G=F$ eine endlich erzeugte freie abelsche Gruppe und $R=\ZZ$ ist.
+    	\begin{defn}[Gruppenring]
+    		Sei $F$ eine freie abelsche Gruppe. Dann ist der \textit{Gruppenring} definiert als:
+    		\[
+    			\ZZ[F] = \sum_{i \in I} a_i f_i, a_i \in \ZZ, f_i \in F, |I| < \infty
+    		\]
+    	\end{defn}
+        \label{wirkung:gruppenring}
+    	Falls also $F$ nun eine unendlich zyklische Gruppe mit Erzeuger $t$ ist, lässt sich der Gruppenring über $F$ als $\ZZ[F] = \ZZ[t^{\pm 1}]$, also als Ring der formalen Laurentpolynome in der Variablen $t$ auffassen. 
+    	Grundlage für die Definitionen der Alexander Invarianten ist die zur Abelianisierung der Fundamentalgruppe gehörende Überlagerung. Allgemeiner sei $M$ eine 3-Mannigfaltigkeit mit den obigen Beschränkungen und $\phi: G=\pi_1(M) \to F$ ein Homomorphismus in eine freie abelsche Gruppe F. Aus der Überlagerungstheorie ist bekannt, dass nun eine zusammenhängende Mannigfaltigkeit $\hat M_\phi$ existiert, die $M$ überlagert und auf Level der Fundamentalgruppen $ker \phi \cong \pi_1 (\hat M_\phi) \stackrel{p_*}{\hookrightarrow} \pi_1(M)$ einbettet. Diese ist bis auf Homöomorphie eindeutig. Die Decktransformationsgruppe ist dann isomorph zum Quotienten $\pi_1(M)/p_*\pi_1(\hat M_\phi) \cong F$. Dieser operiert dann auf $\hat M_\phi$ durch Homöomorphismen, induziert also auch eine Operation auf $\pi_1(\hat M_\phi)$ und auf $H_1(\hat M_\phi)$. Da $\ZZ$ auf jeder abelschen Gruppe wirkt, ist folgende Definition gerechtfertigt:
+    	\begin{defn}[Alexander Modul]
+    		Der Alexander Modul ist definiert als
+    		\[
+    			A_\phi(M) = H_1(\hat M_\phi)
+    		\]
+    		aufgefasst als $\ZZ[F]$-Modul, mit der induzierten Wirkung der Decktransformationen.
+    	\end{defn}
+    	Es wird sich bei weiterer Inspektion herausstellen, dass der Alexander Modul im Fall einer kompakten 3-Mannigfaltigkeit immer endlich erzeugt ist. 
+    	Da es sich bei dem Gruppenring nicht um einen Hauptidealring handelt, ist es im Allgemeinen nicht möglich eine Zerlegung des Alexander Moduls in zyklische direkte Summanden zu finden. Als algebraische Invariante, wird dem Modul stattdessen hier ein Reihe von Idealen in dem Gruppenring zugewiesen --- die Elementarideale. Da der Alexander Modul endlich erzeugt über dem Gruppenring ist, existiert eine freie Auflösung, aus derer Präsentation für den Modul wir die Elementarideale gewinnen möchten. Betrachte die endliche Präsentation:
+    	\[
+    		\ZZ[F]^k \stackrel{X}{\to} \ZZ[F]^n \stackrel{\alpha}{\to} A_\phi(M) \to 0
+    	\]
+    	wobei $X$ eine darstellende Matrix bezüglich der kanonischen Basen $e_1, \cdots , e_k$ und $e'_1, \cdots ,e'_n$ ist. Diese Präsentationsmatrix ist bis auf Vertauschen von Zeilen, Hinzufügen von Einheitsblöcken oder Nullspalten und Addieren eines Vielfachen einer Spalte oder Zeile auf eine jeweils andere eindeutig. Das liefert die nächste Definition
+    	\begin{defn}
+    		Definiere das $i$-te Elementarideal von $M$ bezüglich $\phi$ $E_i(A_\phi(M)) \subset \ZZ [F]$ als das von den $(n-i-1)$-Minoren erzeugte Ideal.  
+    	\end{defn}
+
+    	Natürlich lassen sich Elementarideale für alle endlich präsentierten Moduln über kommutativen Ringen analog definieren.
+
+    	Falls $\phi$ die Abelianisierung ist, definiert diese Invariante des Alexander Moduls natürlich auch eine Invariante der Mannigfaltigkeit. Nun ist $\ZZ[F]$ kein Hauptidealring, jedoch ist es durchaus interessant als weitere Invariante das kleinste Hauptideal zu betrachten das ein Elementarideal enthält.
+    	\begin{defn}(Alexander Polynom)
+    		Definiere das Alexander Polynom $\Delta_\phi$ als einen größten gemeinsamen Teiler von $E_1(A_\phi(M))$.
+    		%Ist das überhaupt definiert wenn phi nicht Abelianisierung?
+    	\end{defn}
+    	\begin{bem}
+    		In dem Gruppenring sind die Einheiten genau die Gruppenelemente. (im Allgemeinen nicht ganz). Das Alexander Polynom ist bis auf Multiplikation mit einer Einheit aus dem Gruppenring wohldefiniert.
+    	\end{bem}
+
+    	Bleibt nur noch die Alexander Norm zu definieren, die eine Norm auf der ersten Kohomologie der 3-Mannigfaltigkeit beschreibt.
+    	\begin{defn}
+    		Sei  $\Delta \in \ZZ [F]$ das Alexander Polynom das zu der Abelianisierung der Fundamentalgruppe gehört. So ist $\Delta$ von der Form:
+    		\begin{align*}
+    		    			\Delta = &\sum_{k=1}^n a_k f_k& a_k \neq 0, f_i = f_j \Rightarrow i=j
+    		\end{align*}
+    		Sei nun $\phi \in \hom (F,\ZZ) \cong H^1 (M,\ZZ)$, dann definieren wir die Alexander Norm von $\phi$ als
+    		\[
+    			||\phi||_A = \begin{cases}
+    				0 , &\text{ wenn } \Delta=0\\
+    				\sup \phi (f_i - f_j) &
+    			\end{cases}
+    		\]
+    		Wobei das Supremum über die Gruppenelemente $f_i$ genommen wird, die in $\Delta$ auftauchen.
+
+    	\end{defn}
+
+    \subsection{Thurston Invariante}
+        Ziel ist es eine weitere Norm auf der ersten Kohomologie der kompakten 3-Mannigfaltigkeit zu definieren. Poincaré Dualität liefert in diesem Fall einen Isomorphismus $H^1(M;\ZZ) \to H_2(M;\ZZ)$. Eine zu $\phi \in H^1(M,\ZZ)$ duale Fläche wird später noch explizit beschrieben werden. Tatsächlich ist es sogar ein bedeutendes Zwischenresultat, das eine solche Fläche immer mit Eigenschaften gewählt werden kann die bestimmten Abschätzungen genügen. Auf der anderen Seite sollte so eine gewählte Fläche auch eine Minimalitätseigenschaft erfüllen und zwar bezüglich der folgenden Norm:
+        \begin{defn}[Thurston Norm]
+        	Definiere die Thurston Norm für $\phi \in H^1(M,\ZZ)$ als
+        	\[
+        	        		||\phi||_T = \{\min \chi_-(S)| \text{ S ist orientierbar eingebettete Fläche dual zu } \phi \},
+        	        	\]        	
+        	wobei $\chi_-(S)=\sum \max (-\chi(S_i),0)$  und $S=\sqcup S_i$ die Zusammenhangskomponenten von $S$ sind.
+        \end{defn}
+
+
+        Als Abschluss dieses einführenden Kapitels, soll noch folgendes essentielles Lemma gezeigt werde:
+        \begin{lem}
+        	Die Alexander Norm und die Thurston Norm definieren Halbnormen auf der ersten Kohomologie einer kompakten 3-Mannigfaltigkeit. 
+        \end{lem}
+        \begin{proof}
+        	Falls nicht Widerspruch
+        \end{proof}

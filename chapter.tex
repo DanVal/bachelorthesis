@@ -1,0 +1,55 @@
+%!TEX root = main.tex
+
+\section{Vorbereitungen}
+
+
+Wie sich im ersten Beweis herausstellen wird, ist der Gruppenring $\ZZ[F]$ für eine abelsche freie Gruppe $F$ noethersch, da allerdings als Grundring der Ring der ganzen Zahlen dient, existieren Ideale die keine Hauptideale sind. Die Theorie der endlich erzeugten Moduln über Hauptidealringen ist sehr ergiebig --- der Elementarteilersatz erlaubt die Zerlegung eines solchen Moduls in zyklische Moduln. Um Invarianten auf endlich erzeugten Moduln über noetherschen Ringen zu erhalten, lassen sich verschiedene Schritte im Beweis des Elementarteilersatzes bis zu einem bestimmten Grad nachahmen. Mit dieser Hintergrundgedanken ergeben sich die Elementarideale. 
+
+\subsection{Über endlich erzeugte Moduln eines noetherschen Rings}
+
+
+
+Um die Situation für spätere Berechnungen angenehmer zu gestalten, überzeugt man sich zunächst, dass der Alexander Modul tatsächlich endlich erzeugt über dem Gruppenring ist. Dieser Satz hätte ebenso gut an das Ende diesen Abschnittes gepasst, als Ergebnis/Nutzen, jedoch soll die Zielsetzung nicht vorenthalten werden: 
+%Hier oder vor Elementar: keine zykl. Zerlegung von Moduln da nicht HIR, 
+\begin{prop}
+		$A_\phi(M)$ ist ein endlich erzeugter $\ZZ[F]-Modul$.
+\end{prop}
+\begin{bem}\label{rem:AlexModulendlerz}
+	Eine algebraische Variante des Beweises befindet sich im Appendix. 
+\end{bem}
+
+\begin{proof}
+Da $M$ eine kompakte 3-Mannigfaltigkeit ist, existiert eine endliche CW Struktur. Da es für CW Komplexe gleichbedeutend ist die zelluläre Homologie zu berechnen, reicht es den zellulären Kettenkomplex zu einer endlichen CW Struktur betrachten. Da in diesem alle Kettengruppen endlich erzeugt sind, folgt dass in dem Kettenkomplex der Überlagerung alle Kettengruppen als Gruppenring-Moduln endlich erzeugt sind, denn die Decktransformationen identifizieren die Erzeuger der Kettengrupen die das gleiche Bild unter der Überlagerungsabbildung haben. Wenn jetzt nachgewiesen werden kann, dass die Quotientenbildung der Kettengruppen als Übergang zur Homologie verträglich ist mit der Quotientenbildung als Gruppenring Moduln, würde es genügen dass der Ring noethersch ist und der Alexander Modul wäre als Quotient endlich erzeugter Moduln über einem noetherschen Ring endlich erzeugt (siehe Lemma~\ref{lem:quotient}), genauso wie alle Homologiegruppen dann über dem Gruppenring endlich erzeugt wären.
+
+	Es bleibt also nur noch zu zeigen, dass es sich bei $\ZZ[F]$ um einen noetherschen Ring handelt. Da $F\cong \ZZ^n$, seien $f_1,\cdots,f_n$ Erzeuger von $F$. Nach dem Hilbertschen Basissatz ist der Polynomenring über $\ZZ$ in endlich vielen Variablen noethersch. Ebenso ist die Lokalisierung eines noetherschen Ringes noethersch, da jedes Ideal in der Lokalisierung Bild eines endlich erzeugten Ideals ist. Also genügt es eine Surjektion von einem solchen in den Gruppenring zu finden, denn ein surjektiver Ringhomomorhpismus, ordnet jedem Ideal im überlagerten Ring, ein Ideal im ursprünglichen Ring zu, welches endlich erzeugt ist. Aber ein solcher ist gegeben durch:
+	\begin{align*}
+			\ZZ[X_1^{\pm 1},\cdots,X_{n}^{\pm 1}] & \to  \ZZ[F]\\
+			X_i &\mapsto  f_i
+	\end{align*}
+\end{proof}
+
+
+Sei im Folgenden nun $M$ ein endlich erzeugter $R$-Modul wobei $R$ einen noetherschen Ring bezeichnet.
+\begin{lem}
+	$M$ ist über $R$ endlich präsentiert. Desweiteren kann die Präsentationsmatrix quadratisch gewählt werden....no
+\end{lem}
+\begin{proof}
+	$M$ ist endlich erzeugt über $R$ also existiert folgende exakte Sequenz:
+	\[
+		R^n \to M \to 0
+	\]
+	da $R^n$ aber noethersch ist und Kerne von Homomorphismen Untermoduln sind, kann die Sequenz auf der linken Seite folgendermaßen ergänzt werden:
+	\[
+		R^m \to R^n \to M \to 0
+	\]
+\end{proof}
+
+\begin{lem}
+	\label{lem:quotient}
+	Sei $N\subset M$ ein Untermodul von dem $R$-Modul $M$. Dann ist der Faktormodul $M/N$ endlich erzeugt über $R$.
+\end{lem}
+\begin{proof}
+	Sei $X \to Y$ ein surjektiver Homomorphismus von Moduln über einem noetherschen Ring. Dann folgt aus noetherschen Eigenschaft von $X$ auch die von $Y$, da Untermoduln von $Y$ von den Bildern der endlich vielen Erzeuger der zurückgezogenen Untermoduln erzeugt werden. \\
+	Zweifaches Anwenden dieses Argumentes liefert unmittelbar die Aussage mit surjektiven Homomorphismen $R^n \to M$ und $M \to M/N$
+\end{proof}
+

@@ -1,0 +1,54 @@
+%!TEX root = main.tex
+
+\section{Folgerungen, Bemerkungen und Beispiele}
+    
+    Wie bereits erwähnt, kann man in Bezug auf die Wahl einer Thurston-minimierenden Fläche fragen, inwieweit man eine Fläche wie in Lemma~\ref{lem:minS} auf allgemeineren 3-Mannigfaltigkeiten gewinnen kann. Schließlich scheint die Anforderung, dass $b_1(\ker\phi)$ als abelsche Gruppe endlich erzeugt sein soll, zu restriktiv zu sein. Intuitiv würde man einer unendlichen Überlagerung schnell die Fähigkeit absprechen, endlich erzeugte Homologiegruppen (über $\ZZ$) zu haben. Die gute Nachricht ist, dass obiger Beweis nahezu problemlos verwendet werden kann, wenn man nur die endliche Erzeugbarkeit von $\ker\phi$ als $\laurent \QQ t$-Modul fordert. Ob dies sinnvoll ist soll kurz diskutiert werden, anhand Überlegungen zu nicht endlich erzeugten $\ker\phi$.\\
+    Die folgende Proposition kann als Verallgemeinerung der Formel $b_1(\ker\phi)=\Grad\Delta\phi$ gesehen werden:
+    \begin{prop}
+    	Falls $H_1(M_\phi)$ endlich erzeugt über dem Gruppenring $\laurent \ZZ t$ ist, nicht aber als abelsche Gruppe, so verschwindet die Alexander Norm. Ist umgekehrt $\Delta_{\pi_1(M)}=0$, so folgt dass $b_1(\ker\phi)=\infty$ ist, für primitive $\phi\in H^1(M;\ZZ)$
+    \end{prop}
+    \begin{proof}
+    	Die einzige Möglichkeit, dass $H_1(M_\phi;\ZZ)$ über $\laurent \ZZ t$ im Unterschied zu $\ZZ$ endlich erzeugt ist, besteht darin, dass die Familie $\{t_*^kx,k\in\ZZ\}$ in $H_1(M_\phi)$ linear unabhänig über $\ZZ$ ist, wobei $t$ ein Erzeuger der Decktransformationen ist. Also ist $(x)\subset H_1(M_\phi)$ ein freier Anteil des $\laurent \ZZ t$-Moduls. Ohne Einschränkung sieht eine Präsentation von $H_1(M_\phi)$ über dem Gruppenring über $\ZZ$ folgendermaßen aus:
+    	\[
+    		\begin{xy}
+    			\xymatrix@L+3pt{\laurent \ZZ t ^n \ar[r]^{\bigl(\begin{smallmatrix}0&0\\0&X\end{smallmatrix}\bigr)} & \laurent \ZZ t ^n \ar[r] &H_1(M_\phi) \ar[r] &0}
+    		\end{xy}
+    	\]
+    	Somit berechnet sich das Elementarideal zu $E_0(M_\phi)=(\det 0\det X)=(0)$.\\ \todo{Konvention (zur Verallgemeinerung des Grades) ist $||\phi||_A=0 wenn \Delta_\phi=0$}.
+    	Andererseits bedeutet gegebenes verschwindendes Alexander Polynom $\Delta_{\pi_1(M)}=0$, dass das Alexander Ideal trivial ist. Das Alexander Ideal aber 
+    \end{proof}
+
+    
+    \begin{bsp}
+    	Sei $M$ eine Faserung $M\to S^1$ über dem Kreis ist, also es gibt einen Diffeomorphismus einer zusammenhängenden Fläche $\varphi: S \times 0 \to S\times 1$, so dass folgendes Diagramm kommutiert:
+    			\todo{f mittig}
+    	\[
+    		\begin{xy}
+    			\xymatrix{M \ar[r]^f \ar[d] &I/\partial I = S^1 \\
+    					S\times I /\varphi \ar[ru]_{p_2}}
+    		\end{xy}
+    	\]
+    	In diesem Fall definiert die Homotopieklasse der Faserung $M \to S^1$ eine eindeutige Kohomologieklasse $\phi\in H^1(M;\ZZ)$. Die Überlagerung $M_\phi$ kann wieder entweder als Rückziehung von $\RR \to S^1$ oder durch Aufschneiden an $S$ gewonnen werden --- in beiden Fällen ist leicht ersichtlich, dass $M_\phi \cong S \times \RR$ ist (für das Aufschneiden an $S$, benötigt man das $[S]=\phi$, dies gilt aber da jedes Urbild von einem Punkt unter $f$ diffeomorph zur Fläche ist, insbesondere die der regulären Werte, die nach Sard existieren). Also hat $M_\phi$ den Homotopietyp der Fläche, dementsprechend berechnen sich die Homotopieinvarianten von $M_\phi$. \todo{Erwähnen, dass ker(phi) immer den Kern als Abbildung auf der FG bedeutet} Insbesondere ergibt sich $b_1(\ker\phi) =b_1(M_\phi)= b_1(S)$, wodurch sich mit Lemma~\ref{lem:minS} ergibt (da $b_0(S)=1$), dass die duale Fläche mit Gleichheit der ersten Bettizahlen gewählt werden kann. Da dies die einzige Ungleichung ist, die in dem Theorem verwendet wird, folgt also schon Gleichheit der Normen $||\phi||_A = ||\phi||_T$. Aufgrund der exakten Sequenz:
+    	\[
+    		0 \to \ker\phi \to \pi_1(M) \to \ZZ \to 0
+    	\]
+    	folgt auch das die Fundamentalgruppe von $M$ im Falle einer Faserung endlich erzeugt ist. Falls $M$ nun zusätzlich noch ein Knotenkomplement eines Knotens $K$ ist, gilt $\ker\phi = [\pi_1(M),\pi_1(M)]$. Also beweisen diese Überlegungen, dass die Kommutatorunteruntergruppe einer Knotengruppe isomorph zu der Fundamentalgruppe einer Seifertfläche des Knotengeschlechts ist, siehe zum Beispiel Theorem 4.6 in~\cite{Burde2003}.\\
+    	Möchte man dennoch das Alexander Polynom $\Delta_f=\Delta_\phi$ einer Faserung berechnen, schließlich benutzt diese Invariante ja noch Informationen über die Deckgruppe, genügt es nach Lemma~\ref{lem:charPol}, die lineare Form von Vektorräumen $t_* \in \Aut(H_1(M_\phi;\QQ))$ zu berechnen. Aber da der Erzeuger $t$ der Decktransformationen folgendem kommutativen Diagramm genügen muss:
+    	\begin{eqnarray*}
+    		\begin{xy}
+    			\xymatrix{
+    				M_\phi \ar[rr]^t \ar[dr] && M_\phi \ar[dl]\\
+    				&M&}
+    		\end{xy} 
+    		&
+    		\text{gleichbedeutend:}
+    		&
+    		    	\begin{xy}
+    			\xymatrix{
+    				S \ar[d]^{\simeq} \ar[rr]_\cong && S \ar[d]^{\simeq} \\
+    				S \times \RR \ar[rr]^{\hat t}_\cong \ar[dr] && S\times \RR \ar[dl]\\
+    				&S\times I / \varphi&}
+    		\end{xy}
+    	\end{eqnarray*}
+    	muss in jedem Fall gelten: $t_* = \hat t_* = \varphi$ unter gegebenen Identifikationen mit $S$. Also berechnet sich das Alexander Polynom $\Delta_f$ zu dem charakteristischen Polynom der Abbildung $\varphi_*:H_1(S;\QQ)\to H_1(S;\QQ)$, wobei die Koeffizienten entsprechend in $\ZZ$ gewählt werden, so dass es größter gemeinsamer Teiler des entsprechend zurückgezogenen Ideals unter der Lokalisierung $\ZZ \to \ZZ^{-1}\ZZ=\QQ$ ist.
+    \end{bsp}
