@@ -12,3 +12,12 @@ Es lässt sich der Alexander Modul definieren als (entspricht strikt genommen ni
 		A_\phi(G)=m(G)
 	\]
 \end{defn}
+
+Dies mach alles interesanter denn es bedeutet dass für eine gegebene Fundamentalgruppe die Alexander Invarianten schon berechenbar sind (also eigentlich Invarianten der Fundamentalgruppe sind), jedoch lassen sich diese auch über Eigenschaften und Berechnungen von 3-Mft berechnen und so ohne Berechnung der Fundamentalgruppe möglich sind. 
+
+
+Herleitung der algebraischen Idee: nun stellt sich die Frage, ob die Alexander Invarianten durch die Struktur der Mannigfaltigkeit bestimmt sind, oder schon aus der Fundamentalgruppe berechenbar. Sei dazu $G$ die Fundamentalgruppe von $M$ und $F=ab(G)$ der maximale freie abelsche Quotient, dessen Rang durch $b_1(G)$ eindeutig bestimmt ist. Sei außerdem $\alpha:G\to F$ die Quotientenabbildung. Dann erhält man einen Gruppenisomorphismus $p'_*: H_1(\hat M) \to \ker\alpha/[\ker\alpha,\ker\alpha]$ der durch die Projektion der Überlagerung zu $\alpha$ induziert wird. Ziel wäre es zu zeigen, dass diese Abbildung auch einen Isomorphismus von $\ZZ[F]$ Moduln liefert. Daraus würden natürlich gleiche Präsentationen folgen, die zu gleichen Elementaridealen führen und so fort. Hierfür benötigt man jedoch überhaupt eine $\ZZ[F]$-Modul Struktur auf dem Quotienten $G'/G''$ für $G'=\ker\alpha, G''=[G',G']$. Diese soll zunächst definiert werden:\\
+Die Abbildung $G \to G/[G,G] \to F$ ist kanonisch. Also seien $g_1,\cdots,g_n,n=b_1(G)$ Elemente die auf eine Basis von $F$ abgebildet werden. Diese definieren dann innere Automorphismen von $G'/G''$ durch 
+\[
+	\hat t_i(x) = \bar{ g_i} \bar{ x}\overline{ g_i^{-1}} = \overline{{} g_i x g_i^{-1}}
+\]

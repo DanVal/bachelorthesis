@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  14 JUN 2014 13:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  14 JUN 2014 14:59
 entering extended mode
-**C:/Users/Daniel/Dropbox/Documents/Bachelorarbeit/main.tex
-(C:/Users/Daniel/Dropbox/Documents/Bachelorarbeit/main.tex
+**C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
+(C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -588,10 +588,10 @@ Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
 \cftbeforelodtitleskip=\skip88
 \cftafterlodtitleskip=\skip89
 )
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\BA_Titelseite.sty
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\BA_Titelseite.sty
 Package: BA_Titelseite 2010/04/25
 )
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\topology.sty
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\topology.sty
 \c@thm=\count116
 \c@defn=\count117
 \c@conj=\count118
@@ -600,15 +600,15 @@ Package: BA_Titelseite 2010/04/25
 )
 \c@case=\count121
 
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\titlepage.tex)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\main.aux
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\intro.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\basics.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\chapter.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\proofs.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\examples.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\notizen.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\algebra.aux))
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\titlepage.tex)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.aux
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\basics.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\proofs.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
@@ -651,11 +651,11 @@ Package xypdf Info: Line width: 0.43799pt on input line 19.
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\intro.tex) [1
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.tex) [1
 
 
 ]
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\basics.tex [2
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\basics.tex [2
 
 
 ]
@@ -678,7 +678,7 @@ Overfull \hbox (5.47958pt too wide) in paragraph at lines 67--68
 -gie der kom-pak-ten 3-Mannigfaltigkeit
  []
 
-[3]) [4] (C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\chapter.tex [5
+[3]) [4] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.tex [5
 
 
 ]
@@ -688,7 +688,7 @@ ist []uber $\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/it/10.95 end-lich pr[]asentiert.
 Des-wei-te-ren kann die Pr[]asentationsmatrix
  []
 
-) [6] (C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\proofs.tex <xymatrix
+) [6] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\proofs.tex <xymatrix
 2x2 116>
 Overfull \hbox (19.62076pt too wide) in paragraph at lines 14--16
 \OT1/cmr/m/n/10.95 Mannigfaltigkeit de-fi-niert und []uber Poin-care bzw. Lef-
@@ -718,7 +718,7 @@ Overfull \hbox (35.77455pt too wide) in paragraph at lines 133--134
 chen den Thur-ston Norm-minimierenden
  []
 
-) [12] (C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\examples.tex
+) [12] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.tex
 Overfull \hbox (42.7716pt too wide) in paragraph at lines 5--7
 \OT1/cmr/m/n/10.95 Fl[]ache fra-gen, in-wie-weit man ei-ne Fl[]ache wie in Lem-
 ma 4.1[] auf all-ge-mei-ne-ren 3-Mannigfaltigkeiten
@@ -728,7 +728,7 @@ ma 4.1[] auf all-ge-mei-ne-ren 3-Mannigfaltigkeiten
 
 
 ] <xymatrix 3x2 135> <xymatrix 3x3
-277>) [14] (C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\notizen.tex
+277>) [14] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -740,51 +740,51 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 
 ]
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\algebra.tex) [16
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.tex) [16
 
 
 ]
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\main.bbl) [17
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl) [17
 
 ]
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\main.aux
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\intro.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\basics.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\chapter.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\proofs.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\examples.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\notizen.aux)
-(C:\Users\Daniel\Dropbox\Documents\Bachelorarbeit\algebra.aux)) ) 
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.aux
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\basics.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\proofs.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux)) ) 
 Here is how much of TeX's memory you used:
  6501 strings out of 493921
- 87265 string characters out of 3147279
+ 87208 string characters out of 3147279
  232425 words of memory out of 3000000
  9644 multiletter control sequences out of 15000+200000
  13447 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 40i,18n,51p,1776b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on main.pdf (19 pages, 310047 bytes).
+ 40i,18n,51p,1775b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/xypic/xybtip10.pfb>
+Output written on main.pdf (19 pages, 312308 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
