@@ -79,5 +79,13 @@
         	Die Alexander Norm und die Thurston Norm definieren Halbnormen auf der ersten Kohomologie einer kompakten 3-Mannigfaltigkeit. 
         \end{lem}
         \begin{proof}
-        	Falls nicht Widerspruch
+            Bei der Alexander Norm ist nichts zu zeigen, die Halbnormeigenschaften ergeben sich unmittelbar aus der Definition.\\
+            Im Falle der Thurston Norm, ist das Lemma Gegenstand der ersten zwei Kapitel aus \cite{Thurston1986}, dessen Beweis mit leichten Anpassungen im Folgenden kurz skizziert werden soll.
+            Es muss die Linearität und die Subadditivität gezeigt werden also:
+            \begin{align}
+                ||\lambda\phi||_T & = \lambda ||\phi||_T ,&\lambda \in\ZZ \\
+                ||\phi + \psi||_T &\leq ||\phi||_T + ||\psi||_T ,& \phi,\psi \in H^1(M)
+            \end{align}
         \end{proof}
+
+        Aus dem Beweis geht hervor, dass die Thurston Norm eine tatsächliche Norm auf dem Vektorraum $H^1(M;\QQ)$ darstellt, falls die zweite (relative) Homologie, keine Klassen mit Sphären als Repräsentanten besitzt. Nun stehen die Definitionen der Invarianten bereit, die auf den folgenden Seiten untersucht werden sollen.

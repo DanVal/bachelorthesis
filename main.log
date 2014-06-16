@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  14 JUN 2014 16:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  15 JUN 2014 17:10
 entering extended mode
 **C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
 (C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
@@ -728,7 +728,7 @@ ma 4.1[] auf all-ge-mei-ne-ren 3-Mannigfaltigkeiten
 
 
 ] <xymatrix 3x2 135> <xymatrix 3x3
-277>) [14] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.tex
+277>) [14] [15] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -736,15 +736,15 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
-) [15
+) [16
 
 
 ]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.tex) [16
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.tex) [17
 
 
-] [17]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl) [18
+] [18]
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl) [19
 
 ]
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.aux
@@ -756,10 +756,10 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux)) ) 
 Here is how much of TeX's memory you used:
- 6504 strings out of 493921
- 87244 string characters out of 3147279
- 232430 words of memory out of 3000000
- 9647 multiletter control sequences out of 15000+200000
+ 6505 strings out of 493921
+ 87258 string characters out of 3147279
+ 232434 words of memory out of 3000000
+ 9648 multiletter control sequences out of 15000+200000
  13447 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  40i,18n,51p,1775b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -784,9 +784,9 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on main.pdf (20 pages, 314357 bytes).
+Output written on main.pdf (21 pages, 318885 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
+ 158 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
