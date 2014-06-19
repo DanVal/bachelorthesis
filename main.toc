@@ -1,0 +1,12 @@
+\select@language {german}
+\contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{2}
+\contentsline {section}{\numberline {2}Grundlegendes}{3}
+\contentsline {subsection}{\numberline {2.1}Die betrachteten R\IeC {\"a}ume}{3}
+\contentsline {subsection}{\numberline {2.2}Alexander Invarianten}{3}
+\contentsline {subsection}{\numberline {2.3}Thurston Invariante}{5}
+\contentsline {section}{\numberline {3}Vorbereitungen}{9}
+\contentsline {subsection}{\numberline {3.1}\IeC {\"U}ber endlich erzeugte Moduln eines noetherschen Rings}{9}
+\contentsline {section}{\numberline {4}Beweis des Theorems}{11}
+\contentsline {section}{\numberline {5}Folgerungen, Bemerkungen und Beispiele}{17}
+\contentsline {section}{\numberline {6}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{20}
+\contentsline {section}{\numberline {A}Algebra}{21}

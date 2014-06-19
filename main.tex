@@ -9,6 +9,12 @@
 \usepackage[arrow, matrix, curve]{xy}
 \usepackage{easy-todo}
 
+\usepackage{picinpar}
+\usepackage{cutwin}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\graphicspath{ {Images/} {../Images/}}
+\usepackage{epstopdf}
 
 
 \usepackage{BA_Titelseite}
@@ -19,7 +25,7 @@
 \begin{document}
 
 \maketitle
-
+\tableofcontents
 \include{intro}
 \include{basics}
 \include{chapter}
@@ -27,6 +33,7 @@
 \include{examples}
 \include{notizen}
 %maybe Appendix: Algebraische Sichweise 
+\appendix
 \include{algebra}
 
 \bibliography{ref}

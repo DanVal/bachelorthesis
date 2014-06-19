@@ -26,6 +26,11 @@ Bevor die Wahl einer dualen Fläche spezifiziert wird, sodass die zu zeigende Ab
 	Andererseits ist dies auch ein Pullback Diagramm, da aber der Pullback einer Überlagerung bezüglich $[f]$ bis auf Homöomorphie eindeutig ist, folgt dass die unendlich zyklische Überlagerung durch Aufschneiden und Verkleben zu $\ker(f_*:\pi_1(M)\to\pi_1(S^1)) = ker\phi$ ist.
 \end{bem}
 
+\begin{bem}[Fläche als Urbild eines regulären Wertes]
+	\label{constr:presurf}
+	Sei $S$ ein beliebiger zu $\phi \in H^1(M,\ZZ)$ eingebetteter, orientierbarer Repräsentant. Dann existiert eine Abbildung $M \to S^1$, die einen Erzeuger auf $\phi$ zurückzieht, und ein regulärer Wert $p \in S^1$, so dass $S=f^{-1}(p)$. 
+\end{bem}
+
 Nun wollen wir uns eine besondere Art von Flächen anschauen, nämlich die Repräsentanten der zu $\phi$ dualen Klasse, bei denen $\chi_-$ minimal ist. Das immer ein Repräsentat existiert, der gewissen Eigenschaften genügt, sichert der folgende Satz:
 
 \begin{lem}
@@ -69,7 +74,7 @@ Nun wollen wir uns eine besondere Art von Flächen anschauen, nämlich die Repr�
 	 \] 
 	 und der daraus folgenden Abschätzung
 	 \[
-	 	b_1(\partial N) = dim(im \delta) + dim(im i_*) \leq  2b_1(N)
+	 	b_1(\partial N) = \dim(\im \delta) + \dim(\im i_*) \leq  2b_1(N)
 	 \]
 	 erhält man für jede kompakte zusammenhängende Untermannigfaltigkeit der Form
 	 \[
@@ -134,11 +139,12 @@ Dieses Ergebnis liefert nun einen Zusammenhang zwischen den Thurston Norm-minimi
 \begin{cor}
 	Sei $\phi \in H^1(M;\ZZ)$ eine primitive Klasse. Dann gilt:
 	\[
-		\dim(\ker\phi) = \Grad(\Delta_\phi) 
+		\dim(\ker\phi \tensor \QQ) = \Grad(\Delta_\phi) 
 	\]
 \end{cor}
 \begin{proof}
-	Nach dem vorherigen Lemma gilt $H_1(\ker \phi;\QQ) \cong \laurent QQ t$ \todo{es muss zyklisch sein. Kleinsten invarianten Raum finden}
+	Nach dem vorherigen Lemma gilt $\dim \Delta_\phi = n+1$ und somit %$H_1(\ker \phi;\QQ) \cong \QQ^n \cong \laurent \QQ t / (\Delta_\phi) \cong \laurent \ZZ t /(\Delta_\phi) \tensor \QQ$ \todo{es muss zyklisch sein. Kleinsten invarianten Raum finden}
+	eigentlich schon sowieso schon alles 
 \end{proof}
 
 

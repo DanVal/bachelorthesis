@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  15 JUN 2014 17:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  19 JUN 2014 22:20
 entering extended mode
 **C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
 (C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
@@ -588,17 +588,145 @@ Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
 \cftbeforelodtitleskip=\skip88
 \cftafterlodtitleskip=\skip89
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\picinpar\picinpar.sty"
+Pictures in Paragraphs. Version 1.2a, July 13, 1993
+\br=\count116
+\bl=\count117
+\na=\count118
+\nb=\count119
+\tcdsav=\count120
+\tcl=\count121
+\tcd=\count122
+\tcn=\count123
+\cumtcl=\count124
+\cumpartcl=\count125
+\lftside=\dimen146
+\rtside=\dimen147
+\hpic=\dimen148
+\vpic=\dimen149
+\strutilg=\dimen150
+\picwd=\dimen151
+\topheight=\dimen152
+\ilg=\dimen153
+\lpic=\dimen154
+\lwindowsep=\dimen155
+\rwindowsep=\dimen156
+\cumpar=\dimen157
+\twa=\toks35
+\la=\toks36
+\ra=\toks37
+\ha=\toks38
+\pictoc=\toks39
+\rawtext=\box33
+\holder=\box34
+\windowbox=\box35
+\wartext=\box36
+\finaltext=\box37
+\aslice=\box38
+\bslice=\box39
+\wbox=\box40
+\wstrutbox=\box41
+\picbox=\box42
+\waslice=\box43
+\wbslice=\box44
+\fslice=\box45
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\cutwin\cutwin.sty"
+Package: cutwin 2010/09/29 v0.1 cutout windows
+\c@twwinlines=\count126
+\c@twtoplines=\count127
+\c@twcnt=\count128
+\c@twlftside=\dimen158
+\c@twrtside=\dimen159
+\c@twtopht=\dimen160
+\c@twvsilg=\dimen161
+\c@twtoka=\toks40
+\c@twtokb=\toks41
+\c@twrawtext=\box46
+\c@twholdwin=\box47
+\c@twwindow=\box48
+\c@twfinaltext=\box49
+\c@twslicea=\box50
+\c@twsliceb=\box51
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen164
+\WF@size=\dimen165
+\c@WF@wrappedlines=\count129
+\WF@box=\box52
+\WF@everypar=\toks42
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\BA_Titelseite.sty
 Package: BA_Titelseite 2010/04/25
 )
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\topology.sty
-\c@thm=\count116
-\c@defn=\count117
-\c@conj=\count118
-\c@exmp=\count119
-\c@bsp=\count120
+\c@thm=\count130
+\c@defn=\count131
+\c@conj=\count132
+\c@exmp=\count133
+\c@bsp=\count134
 )
-\c@case=\count121
+\c@case=\count135
 
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\titlepage.tex)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.aux
@@ -609,53 +737,57 @@ Package: BA_Titelseite 2010/04/25
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.43799pt on input line 19.
+Package xypdf Info: Line width: 0.43799pt on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen146
-\scratchbox=\box33
-\nofMPsegments=\count123
-\nofMParguments=\count124
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen147
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count136
+\scratchdimen=\dimen166
+\scratchbox=\box53
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen167
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks44
 ) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.tex) [1
-
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.toc)
+\tf@toc=\write4
+ [1
 
 ]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\basics.tex [2
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.tex) [2
+
+]
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\basics.tex [3
 
 
 ]
@@ -678,7 +810,41 @@ Overfull \hbox (5.47958pt too wide) in paragraph at lines 67--68
 -gie der kom-pak-ten 3-Mannigfaltigkeit
  []
 
-[3]) [4] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.tex [5
+[4] <xymatrix 2x2 223> [5]
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+Package epstopdf Info: Source file: <Images/surgery.eps>
+(epstopdf)                    date: 2014-06-19 14:46:07
+(epstopdf)                    size: 63056 bytes
+(epstopdf)             Output file: <Images/surgery-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-06-19 15:25:31
+(epstopdf)                    size: 7225 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/surgery-eps-converte
+d-to.pdf Images/surgery.eps>
+(epstopdf)             \includegraphics on input line 103.
+Package epstopdf Info: Output file is already uptodate.
+<Images/surgery-eps-converted-to.pdf, id=41, 258.9675pt x 98.3675pt>
+File: Images/surgery-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Images/surgery-eps-converted-to.pdf>
+Package pdftex.def Info: Images/surgery-eps-converted-to.pdf used on input line
+ 103.
+(pdftex.def)             Requested size: 258.96684pt x 98.36723pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+[6 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/surgery-eps-converte
+d-to.pdf>]) [7] [8]
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.tex [9
 
 
 ]
@@ -688,7 +854,7 @@ ist []uber $\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/it/10.95 end-lich pr[]asentiert.
 Des-wei-te-ren kann die Pr[]asentationsmatrix
  []
 
-) [6] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\proofs.tex <xymatrix
+) [10] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\proofs.tex <xymatrix
 2x2 116>
 Overfull \hbox (19.62076pt too wide) in paragraph at lines 14--16
 \OT1/cmr/m/n/10.95 Mannigfaltigkeit de-fi-niert und []uber Poin-care bzw. Lef-
@@ -696,7 +862,7 @@ schetz Dua-lit[]at nach $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/
 it/10.95 M\OT1/cmr/m/n/10.95 )$ []ubertragen
  []
 
-[7
+[11
 
 
 ] <xymatrix 2x2 154>
@@ -705,30 +871,30 @@ Overfull \hbox (8.52242pt too wide) in paragraph at lines 25--27
 der Pull-back ei-ner []Uberlagerung
  []
 
-[8] <xymatrix 3x2 264>
-Overfull \hbox (21.64716pt too wide) in paragraph at lines 59--63
+[12] <xymatrix 3x2 264>
+Overfull \hbox (21.64716pt too wide) in paragraph at lines 64--68
 \OT1/cmr/m/n/10.95 Die n[]achste Gleich-heit, dass der Rang auf den Top-Homolog
 ien von $\OML/cmm/m/it/10.95 S$ \OT1/cmr/m/n/10.95 und $\OML/cmm/m/it/10.95 M$ 
 []\OT1/cmr/m/n/10.95 ubereinstimmen,
  []
 
-[9] <xymatrix 4x2 170> [10] <xymatrix 4x1 127> [11]
-Overfull \hbox (35.77455pt too wide) in paragraph at lines 133--134
+[13] <xymatrix 4x2 170> [14] [15] <xymatrix 4x1 127>
+Overfull \hbox (35.77455pt too wide) in paragraph at lines 138--139
 []\OT1/cmr/m/n/10.95 Dieses Er-geb-nis lie-fert nun einen Zu-sam-men-hang zwi-s
 chen den Thur-ston Norm-minimierenden
  []
 
-) [12] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.tex
+) [16] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.tex
 Overfull \hbox (42.7716pt too wide) in paragraph at lines 5--7
 \OT1/cmr/m/n/10.95 Fl[]ache fra-gen, in-wie-weit man ei-ne Fl[]ache wie in Lem-
 ma 4.1[] auf all-ge-mei-ne-ren 3-Mannigfaltigkeiten
  []
 
-<xymatrix 4x1 127> <xymatrix 2x2 130> [13
+<xymatrix 4x1 127> <xymatrix 2x2 130> [17
 
 
 ] <xymatrix 3x2 135> <xymatrix 3x3
-277>) [14] [15] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.tex
+277>) [18] [19] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -736,15 +902,15 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
-) [16
+) [20
 
 
 ]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.tex) [17
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.tex) [21
 
 
-] [18]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl) [19
+] [22]
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl) [23
 
 ]
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.aux
@@ -756,13 +922,13 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux)) ) 
 Here is how much of TeX's memory you used:
- 6505 strings out of 493921
- 87258 string characters out of 3147279
- 232434 words of memory out of 3000000
- 9648 multiletter control sequences out of 15000+200000
- 13447 words of font info for 52 fonts, out of 3000000 for 9000
+ 7292 strings out of 493921
+ 99724 string characters out of 3147279
+ 250515 words of memory out of 3000000
+ 10365 multiletter control sequences out of 15000+200000
+ 13754 words of font info for 53 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 40i,18n,51p,1775b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,18n,51p,1775b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fo
@@ -770,23 +936,26 @@ nts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on main.pdf (21 pages, 318885 bytes).
+/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+sbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/xypic/xyatip10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xyp
+ic/xybtip10.pfb>
+Output written on main.pdf (25 pages, 369763 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
+ 193 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
