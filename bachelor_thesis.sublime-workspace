@@ -28,10 +28,7 @@
 			}
 		},
 		{
-			"contents": "%!TEX root = main.tex\n\\documentclass[11pt, a4paper, german]{scrartcl}\n\n\\usepackage[german]{babel}\n\\usepackage[utf8]{inputenc}\n\n\\usepackage{amsmath,amssymb}\n\\usepackage{amsthm}\n\\usepackage[arrow, matrix, curve]{xy}\n\\usepackage{easy-todo}\n\n\\usepackage{picinpar}\n\\usepackage{cutwin}\n\\usepackage{graphicx}\n\\usepackage{wrapfig}\n\\graphicspath{ {Images/} {../Images/}}\n\\usepackage{epstopdf}\n\n\n\\usepackage{BA_Titelseite}\n\\usepackage{topology}\n\n\\input{titlepage.tex}\n\n\\begin{document}\n\n\\maketitle\n\\tableofcontents\n\\include{intro}\n\\include{basics}\n\\include{chapter}\n\\include{proofs}\n\\include{examples}\n\\include{notizen}\n%maybe Appendix: Algebraische Sichweise \n\\appendix\n\\include{algebra}\n\n\\bibliography{ref}\n\\bibliographystyle{plain}\n\n\\end{document}\n",
 			"file": "main.tex",
-			"file_size": 762,
-			"file_write_time": 130476663346396397,
 			"settings":
 			{
 				"buffer_size": 741,
@@ -39,13 +36,10 @@
 			}
 		},
 		{
-			"contents": "%!TEX root = main.tex\n\\section{Grundlegendes}\n    Zunächst wird ein Überblick über die nötigen Definitionen gegeben. Zuvor noch eine Beschränkung der Räume die in dieser Arbeit behandelt werden:\n\n\n    \\subsection{Die betrachteten Räume}\n        Im Folgenden sei $M$ eine kompakte, orientierbare, zusammenhängende $3$-dimensionale Mannigfaltigkeit. Falls diese einen Rand hat, ist er homöomorph zu einer disjunkten Vereinigung von Tori.\n\n\n    \\subsection{Alexander Invarianten}\n    	Ein Clou der folgenden Methoden ist es, die Struktur einer Überlagerung --- genauer gesagt ihre Decktransformationen --- auszunutzen, indem man den Gruppenring betrachtet. Der Gruppenring $R[G]$ ist algebraischer Herkunft und kann für allgemeine kommutative Ringe $R$ und Gruppen bzw. Monoide $G$ definiert werden, jedoch genügt es für diese Arbeit eine speziellere Definition heranzuziehen, für den Fall das $G=F$ eine endlich erzeugte freie abelsche Gruppe und $R=\\ZZ$ ist.\n    	\\begin{defn}[Gruppenring]\n    		Sei $F$ eine freie abelsche Gruppe. Dann ist der \\textit{Gruppenring} definiert als:\n    		\\[\n    			\\ZZ[F] = \\sum_{i \\in I} a_i f_i, a_i \\in \\ZZ, f_i \\in F, |I| < \\infty\n    		\\]\n    	\\end{defn}\n        \\label{wirkung:gruppenring}\n    	Falls also $F$ nun eine unendlich zyklische Gruppe mit Erzeuger $t$ ist, lässt sich der Gruppenring über $F$ als $\\ZZ[F] = \\ZZ[t^{\\pm 1}]$, also als Ring der formalen Laurentpolynome in der Variablen $t$ auffassen. \n    	Grundlage für die Definitionen der Alexander Invarianten ist die zur Abelianisierung der Fundamentalgruppe gehörende Überlagerung. Allgemeiner sei $M$ eine 3-Mannigfaltigkeit mit den obigen Beschränkungen und $\\phi: G=\\pi_1(M) \\to F$ ein Homomorphismus in eine freie abelsche Gruppe F. Aus der Überlagerungstheorie ist bekannt, dass nun eine zusammenhängende Mannigfaltigkeit $\\hat M_\\phi$ existiert, die $M$ überlagert und auf Level der Fundamentalgruppen $ker \\phi \\cong \\pi_1 (\\hat M_\\phi) \\stackrel{p_*}{\\hookrightarrow} \\pi_1(M)$ einbettet. Diese ist bis auf Homöomorphie eindeutig. Die Decktransformationsgruppe ist dann isomorph zum Quotienten $\\pi_1(M)/p_*\\pi_1(\\hat M_\\phi) \\cong F$. Dieser operiert dann auf $\\hat M_\\phi$ durch Homöomorphismen, induziert also auch eine Operation auf $\\pi_1(\\hat M_\\phi)$ und auf $H_1(\\hat M_\\phi)$. Da $\\ZZ$ auf jeder abelschen Gruppe wirkt, ist folgende Definition gerechtfertigt:\n    	\\begin{defn}[Alexander Modul]\n    		Der Alexander Modul ist definiert als\n    		\\[\n    			A_\\phi(M) = H_1(\\hat M_\\phi)\n    		\\]\n    		aufgefasst als $\\ZZ[F]$-Modul, mit der induzierten Wirkung der Decktransformationen.\n    	\\end{defn}\n    	Es wird sich bei weiterer Inspektion herausstellen, dass der Alexander Modul im Fall einer kompakten 3-Mannigfaltigkeit immer endlich erzeugt ist. \n    	Da es sich bei dem Gruppenring nicht um einen Hauptidealring handelt, ist es im Allgemeinen nicht möglich eine Zerlegung des Alexander Moduls in zyklische direkte Summanden zu finden. Als algebraische Invariante, wird dem Modul stattdessen hier ein Reihe von Idealen in dem Gruppenring zugewiesen --- die Elementarideale. Da der Alexander Modul endlich erzeugt über dem Gruppenring ist, existiert eine freie Auflösung, aus derer Präsentation für den Modul wir die Elementarideale gewinnen möchten. Betrachte die endliche Präsentation:\n    	\\[\n    		\\ZZ[F]^k \\stackrel{X}{\\to} \\ZZ[F]^n \\stackrel{\\alpha}{\\to} A_\\phi(M) \\to 0\n    	\\]\n    	wobei $X$ eine darstellende Matrix bezüglich der kanonischen Basen $e_1, \\cdots , e_k$ und $e'_1, \\cdots ,e'_n$ ist. Diese Präsentationsmatrix ist bis auf Vertauschen von Zeilen, Hinzufügen von Einheitsblöcken oder Nullspalten und Addieren eines Vielfachen einer Spalte oder Zeile auf eine jeweils andere eindeutig. Das liefert die nächste Definition\n    	\\begin{defn}\n    		Definiere das $i$-te Elementarideal von $M$ bezüglich $\\phi$ $E_i(A_\\phi(M)) \\subset \\ZZ [F]$ als das von den $(n-i-1)$-Minoren erzeugte Ideal.  \n    	\\end{defn}\n\n    	Natürlich lassen sich Elementarideale für alle endlich präsentierten Moduln über kommutativen Ringen analog definieren.\n\n    	Falls $\\phi$ die Abelianisierung ist, definiert diese Invariante des Alexander Moduls natürlich auch eine Invariante der Mannigfaltigkeit. Nun ist $\\ZZ[F]$ kein Hauptidealring, jedoch ist es durchaus interessant als weitere Invariante das kleinste Hauptideal zu betrachten das ein Elementarideal enthält.\n    	\\begin{defn}(Alexander Polynom)\n    		Definiere das Alexander Polynom $\\Delta_\\phi$ als einen größten gemeinsamen Teiler von $E_1(A_\\phi(M))$.\n    		%Ist das überhaupt definiert wenn phi nicht Abelianisierung?\n    	\\end{defn}\n    	\\begin{bem}\n    		In dem Gruppenring sind die Einheiten genau die Gruppenelemente. (im Allgemeinen nicht ganz). Das Alexander Polynom ist bis auf Multiplikation mit einer Einheit aus dem Gruppenring wohldefiniert.\n    	\\end{bem}\n\n    	Bleibt nur noch die Alexander Norm zu definieren, die eine Norm auf der ersten Kohomologie der 3-Mannigfaltigkeit beschreibt.\n    	\\begin{defn}\n    		Sei  $\\Delta \\in \\ZZ [F]$ das Alexander Polynom das zu der Abelianisierung der Fundamentalgruppe gehört. So ist $\\Delta$ von der Form:\n    		\\begin{align*}\n    		    			\\Delta = &\\sum_{k=1}^n a_k f_k& a_k \\neq 0, f_i = f_j \\Rightarrow i=j\n    		\\end{align*}\n    		Sei nun $\\phi \\in \\hom (F,\\ZZ) \\cong H^1 (M,\\ZZ)$, dann definieren wir die Alexander Norm von $\\phi$ als\n    		\\[\n    			||\\phi||_A = \\begin{cases}\n    				0 , &\\text{ wenn } \\Delta=0\\\\\n    				\\sup \\phi (f_i - f_j) &\n    			\\end{cases}\n    		\\]\n    		Wobei das Supremum über die Gruppenelemente $f_i$ genommen wird, die in $\\Delta$ auftauchen.\n\n    	\\end{defn}\n\n    \\subsection{Thurston Invariante}\n        Ziel ist es eine weitere Norm auf der ersten Kohomologie der kompakten 3-Mannigfaltigkeit zu definieren. Poincaré Dualität liefert in diesem Fall einen Isomorphismus $H^1(M;\\ZZ) \\to H_2(M;\\ZZ)$. Eine zu $\\phi \\in H^1(M,\\ZZ)$ duale Fläche wird später noch explizit beschrieben werden. Tatsächlich ist es sogar ein bedeutendes Zwischenresultat, das eine solche Fläche immer mit Eigenschaften gewählt werden kann die bestimmten Abschätzungen genügen. Auf der anderen Seite sollte so eine gewählte Fläche auch eine Minimalitätseigenschaft erfüllen und zwar bezüglich der folgenden Norm:\n        \\begin{defn}[Thurston Norm]\n        	Definiere die Thurston Norm für $\\phi \\in H^1(M,\\ZZ)$ als\n        	\\[\n        	        		||\\phi||_T = \\{\\min \\chi_-(S)| \\text{ S ist orientierbar eingebettete Fläche dual zu } \\phi \\},\n        	        	\\]        	\n        	wobei $\\chi_-(S)=\\sum \\max (-\\chi(S_i),0)$  und $S=\\sqcup S_i$ die Zusammenhangskomponenten von $S$ sind.\n        \\end{defn}\n\n\n        Als Abschluss dieses einführenden Kapitels, soll noch folgendes essentielles --- wenn auch im Folgenden nicht zwingend benötigtes --- Lemma gezeigt werde:\n        \\begin{lem}\n        \\label{lem:norm}\n        	Die Alexander Norm und die Thurston Norm definieren Halbnormen auf der ersten Kohomologie einer kompakten 3-Mannigfaltigkeit. \n        \\end{lem}\n        \\begin{proof}\n        \\begin{minipage}{\\linewidth}\n            Bei der Alexander Norm ist nichts zu zeigen, die Halbnormeigenschaften ergeben sich unmittelbar aus der Definition.\\\\\n            Im Falle der Thurston Norm, ist das Lemma Gegenstand der ersten zwei Kapitel aus \\cite{Thurston1986}, dessen Beweis mit leichten Anpassungen im Folgenden kurz skizziert werden soll.\n            Es muss die Skalarmultiplikativität und die Subadditivität gezeigt werden also:\n            \\begin{align}\n                ||\\lambda\\phi||_T & = \\lambda ||\\phi||_T ,&\\lambda \\in\\ZZ \\label{eq:scalarmul} \\\\\n                ||\\phi + \\psi||_T &\\leq ||\\phi||_T + ||\\psi||_T ,& \\phi,\\psi \\in H^1(M) \\label{eq:subadd}\n            \\end{align} \n\n\n            Da die Thurston Norm aus den Eigenschaften der dualen Flächen hervorgeht, ist es nötig sich Gedanken zu den Homologieklassen zu machen. Dann ist für \\ref{eq:scalarmul} offensichtlich ein gutes Indiz, falls für repräsentierende, orientierte, eingebettete Flächen, dessen Homologieklassen sich teilen, also $S,T$ mit $[S],[T]\\in H_2(M,\\partial M)$ und $[S]=\\lambda [T]$, das Vielfache $S$ bereits disjunkte Vereinigung von $\\lambda$ zusammenhängenden Komponenten $S_i$ ist, mit $[S_i]=[T]$. \\\\\n            Für $[S]=\\phi \\in H^1(M;\\ZZ)$, existiert eine glatte Abbildung $f:M \\to S^1$ die $\\phi$ repräsentiert, in obigem Sinne. Urbilder regulärer Werte ergeben nach \\todo{regwert} duale Flächen. Nun geht aus der später Folgenden Konstruktion~\\ref{constr:presurf} hervor, dass ohne Einschränkung $S=f^{-1}(s)$ gewählt werden kann, also dass jede Fläche so repräsentiert werden kann. Sei deswegen auch $g:M \\to S^1$ glatt mit dem regulären Wert $t$, sodass $g^{-1}(t)=T$. Betrachtet man die Überlagerung $p: S^1 \\stackrel {z^\\lambda} \\to  S^1$, liefert wegen $\\im\\pi_1(f) \\subset \\lambda \\ZZ$, die Überlagerungstheorie einen eindeutigen Lift $\\hat f$:\n            \\[\n                \\begin{xy}\n                    \\xymatrix{M \\ar[r]^{\\hat f} \\ar[d]_g \\ar[dr]^f&S^1 \\ar[d]^p \\\\\n                             S^1 \\ar[r]_p & S^1}\n                \\end{xy}\n            \\]\n            Das Quadrat kommutiert bis auf Homotopie, also $p\\hat f \\simeq p g$, denn beide Abbildungen identifizieren sich unter der Bijektion $H^1(M;\\ZZ) \\cong [M,S^1]$ mit $\\lambda \\phi$, also impliziert die Existenz dieser Bijektion, dass $[p\\hat f] = [pg]$. Somit folgt auch, dass Urbilder regulärer Werte aus $S^1$ unter $\\hat f$ homolog zu solchen aus $g$ sind. Da $p^{-1}(s)=\\{s_1,\\cdots,s_n\\}$ sicher reguläre Werte von $\\hat f$ sind (folgt zum Beispiel aus der Kettenregel für Differentiale), sind die Urbilder $S_1,\\cdots,S_n$ disjunkte, eingebettete, orientierte Flächen mit $[S_i]=[T]$. Da $S$ auch minimal (bezüglich der Thurston-Norm) gewählt werden kann, folgt also $||[S]||_T \\geq \\lambda ||\\frac 1\\lambda [S]||_T = \\lambda ||T||_T$. Nun lässt sich aber aus einer minimierenden Fläche für $T$ (sei $T$ selbst so gewählt), zum Beispiel aus der zweiseitigen glatten Einbettung $T \\times (-\\epsilon,\\epsilon) \\to M$, $\\lambda$ disjunkt eingebettete Kopien von $T$ gewinnen, die selbstverständlich auch $[S]$ repräsentieren, also $||\\lambda \\phi||_T = \\lambda ||\\phi||_T$.\\\\\n\n            Um nun die Subbadditivität \\ref{eq:subadd} zu zeigen, ist es nötig sich die Geometrie der $||\\cdot||_T$-minimierenden Flächen $S,T$ mit $[S]=\\phi, [T]=\\psi$ genauer zu betrachten. Die Differentialtopologie liefert mit dem Transversalitätstheorem diffeotope Approximationen von $T$, die transversal zu $S$ sind, deswegen seien also ohne Einschränkung $S \\transversal T$ transversal (Es folgt außerdem durch die Transversalität, dass $S\\cap T$ eine glatte, kompakte 1-Mannigfaltigkeit ist (Pullback bleibt in Kategorie). Die Klassifikation von 1-Mannigfaltigkeiten liefert, dass diese also eine disjunkte Vereinigung von Kreisen und abgeschlossenen Intervallen ist). Des Weiteren soll ohne Einschränkung keine Komponente des Schnittes $S\\cap T$  eine Scheibe beranden, die in $S$ oder $T$ enthalten ist. Diese Annahme kann man wie folgt einsehen:\\\\\n         %   \\begin{window}[1,r, \\includegraphics{surgery},{Chirurgie}]\n                Ohne Einschränkung sei die Scheibe $D$ mit einer solchen Komponente $\\partial D \\subset S \\cap T$ als Rand, auf dem Inneren disjunkt von $T$, da sie ohne Einschränkung in $S$ liegt, und ein nichttrivialer Schnitt mit $T$ eine Komponente aus $S\\cap T$ liefert, deren trivialer Nullbordismus in $S$ dank Transversalität, weniger Komponenten im Schnitt mit $T$ hat als die ursprüngliche Scheibe. So fahre man endlich oft fort, bis der Durchschnitt trivial ist beziehungsweise die berandete Scheibe, $T$ nicht berührt. Nun lässt sich eine hinreichend kleine offene Tubenumgebung von $\\partial D$ aus $T$ entfernen. Diese kann wie folgt gewählt werden: sei $\\nu(S) \\to M$ eine Tubenumgebung von $S$ die sich aufgrund der Zweiseitigkeit wie folgt wählen lässt: $\\alpha: S \\times (-\\epsilon,\\epsilon) \\to M$, sodass $\\im\\alpha|_{S\\times (-\\frac 12\\epsilon,\\frac 12 \\epsilon)} \\cap T$ eine Tubenumgebung von $S\\cap T \\subset T$ ist. Dann lässt sich diese Tubenumgebung bei $\\partial D$ aus $T$ entfernen und mittels der Zweiseitigkeit um $D$, findet man zwei Kopien $D_{\\frac \\epsilon 2}, D_{-\\frac \\epsilon 2}$ sowieso Anklebevorschriften, mit denen diese Scheiben an die beiden durch Ausschneiden entstandenden Kreis-Randkomponenten kleben kann. Als Resultat ergeben sich Flächen $S,T'$, deren Durchschnitt um eine Komponente reduziert wurde und offensichtlich $[T]=[T']$ gilt. \\todo{kein Weg aus dem Durchschnitt ist rel Endpunkt homotop zu einem Rand}\\\\\n        %   \\end{window}\n            Von nun an seien $S,T$ transversale Flächen, deren Durchschnitt den obigen Anforderungen genügt. Ziel ist es nun, den Zykel, der die Vereinigung repräsentiert, als eingebettete Fläche zu repräsentieren. Beachtet man die Orientierungen, so kann man an jeder Komponente des Durchschnitts die Vereinigung aufschneiden (die lokal aussieht wie die Gerade an der sich zwei orientierte Ebenen im $\\RR^3$ schneiden), und entlang der Orientierungen in nur einer Möglichkeit wieder verkleben, so dass man eine Mannigfaltigkeit erhält (dies funktioniert offensichtlich an den Durchschnittkomponenten mit Rand, aber auch den den geschlossenen Komponenten, da die Orientierungen auf $S$ und $T$ global gewählt sind). Natürlich können alle diese Klebe- und Schneideprozesse glatt durchgeführt werden. Nun erhält man eine glatte, orientierte Fläche $U$, die (nach gegebenfalls leichter Modifikation) auch eigentlich eingebettet ist. Nun muss dieses Ergebnis und die Auswirkungen der Konstruktionen auf die Flächen diskutiert werden. Die uneinschränkenden Konstruktionen zu Beginn, können natürlich die Euler Charakteristik verändern, jedoch resultieren daraus weiterhin Thurston-Norm minimierende Flächen. Zwei solche Flächen gegeben, erbt die letztere Konstruktion, die aus $S\\cup T$ eine homologe Fläche macht, die Summe der Eulercharakteristika:\n            \\begin{eqnarray*}\n                \\chi(U) = \\chi(S) + \\chi(T) &\\implies& \\chi_-(U)=\\chi_-(S) + \\chi_-(T)\n            \\end{eqnarray*}\n            , wobei die Implikation gilt, da bei der Konstruktion von $U$ keine Komponenten mit positiver Eulercharakterstik entstehen, unter den an $S$ und $T$ gestellten Annahmen. Dies liefert nun die Subbadditivität der Thurston-Norm auf den Homologieklassen.\n        \\end{minipage}\n        \\end{proof}\n\n        Häufig stellt man Annahmen an die 3-Mannigfaltikeit, die es verbieten, dass Homologieklassen von Sphären oder Tori repräsentiert werden können. In dem Fall würde dann sogar $||\\phi||_T=0 \\Leftrightarrow \\phi=0$ gelten. Dies alles motiviert natürlich, diese Norm zu einer Vektorraumnorm auf $H^1(M;\\QQ)$ oder $H^1(M;\\RR)$ fortzusetzen. \n        \\begin{bem}[Fortsetzung von $||\\cdot||_T$]\n            Will man $||\\cdot||_T: H^1(M;\\ZZ) \\to \\RR$ fortsetzen, so hilft die in Lemma~\\ref{lem:norm} gezeigte Skalarmultiplikativität. Da $H^1(M;\\ZZ)$ als $\\ZZ$-Modul frei mit Rang $n$ ist, liefert die Einbettung $\\ZZ^n \\into \\QQ^n$ zusammen mit der Linearität der Thurston-Norm eine lineare Fortsetzung auf den Strahlen (1-dimensionale Untervektorräume), die von Gitterpunkten erzeugt werden. Da aber für jedes $q \\in \\QQ^n$, bereits $aq \\in \\ZZ^n$ gilt (für großes $a\\in \\ZZ$), liefert dies bereits eine Fortsetzung auf $H^1(M;\\QQ)$. Nun ist aber diese Fortsetzung eine konvexe Funktion, also auf jedem Kompaktum Lipschitz-stetig und somit auf jedem Kompaktum $K\\cap \\QQ^n, K\\subset \\RR^n$ in eindeutiger Weise stetig auf $K$ fortsetzbar --- es folgt die Existenz von $||\\cdot||_T:H^1(M;\\RR) \\to \\RR$.\n        \\end{bem}\n        Nun stehen die Definitionen der Invarianten bereit, die auf den folgenden Seiten untersucht werden sollen.",
 			"file": "basics.tex",
-			"file_size": 16267,
-			"file_write_time": 130476670898746934,
 			"settings":
 			{
-				"buffer_size": 15770,
+				"buffer_size": 15709,
 				"line_ending": "Windows"
 			}
 		},
@@ -77,7 +71,7 @@
 			"file": "proofs.tex",
 			"settings":
 			{
-				"buffer_size": 16812,
+				"buffer_size": 16980,
 				"line_ending": "Windows"
 			}
 		},
@@ -355,7 +349,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -371,8 +365,8 @@
 						"selection":
 						[
 							[
-								6125,
-								6125
+								972,
+								972
 							]
 						],
 						"settings":
@@ -380,30 +374,38 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -412,28 +414,20 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 882.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -509,7 +503,7 @@
 						"translation.y": 210.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -585,7 +579,7 @@
 						"translation.y": 28.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -594,15 +588,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15770,
+						"buffer_size": 15709,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10215,
-								10215
+								4814,
+								4814
 							]
 						],
 						"settings":
@@ -610,30 +604,38 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -642,28 +644,20 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1805.0,
+						"translation.y": 623.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -740,7 +734,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -816,7 +810,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -894,7 +888,7 @@
 						"translation.y": 115.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -903,15 +897,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16812,
+						"buffer_size": 16980,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4770,
-								4770
+								16234,
+								16234
 							]
 						],
 						"settings":
@@ -919,30 +913,38 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -951,27 +953,19 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2751.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1047,7 +1041,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1124,7 +1118,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

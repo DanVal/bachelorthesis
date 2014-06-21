@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  19 JUN 2014 22:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  21 JUN 2014 16:19
 entering extended mode
 **C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
 (C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
@@ -791,32 +791,32 @@ Package xypdf Info: Line width: 0.43799pt on input line 25.
 
 
 ]
-Overfull \hbox (11.4798pt too wide) in paragraph at lines 32--34
+Overfull \hbox (11.4798pt too wide) in paragraph at lines 35--37
 \OT1/cmr/m/n/10.95 wobei $\OML/cmm/m/it/10.95 X$ \OT1/cmr/m/n/10.95 ei-ne dar-s
 tel-len-de Ma-trix bez[]uglich der ka-no-ni-schen Ba-sen $\OML/cmm/m/it/10.95 e
 []; []  ; e[]$ \OT1/cmr/m/n/10.95 und $\OML/cmm/m/it/10.95 e[]; []  ; e[]$
  []
 
 
-Overfull \hbox (4.12723pt too wide) in paragraph at lines 40--41
+Overfull \hbox (4.12723pt too wide) in paragraph at lines 43--44
 []\OT1/cmr/m/n/10.95 Falls $\OML/cmm/m/it/10.95 $ \OT1/cmr/m/n/10.95 die Abe-l
 ia-ni-sie-rung ist, de-fi-niert die-se In-va-ri-an-te des Alex-an-der Mo-duls n
 at[]urlich
  []
 
 
-Overfull \hbox (5.47958pt too wide) in paragraph at lines 67--68
+Overfull \hbox (5.47958pt too wide) in paragraph at lines 70--71
 \OT1/cmr/m/n/10.95 Ziel ist es ei-ne wei-te-re Norm auf der er-sten Ko-ho-mo-lo
 -gie der kom-pak-ten 3-Mannigfaltigkeit
  []
 
 [4] <xymatrix 2x2 223> [5]
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
@@ -828,17 +828,17 @@ Package epstopdf Info: Source file: <Images/surgery.eps>
 (epstopdf)                    size: 7225 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/surgery-eps-converte
 d-to.pdf Images/surgery.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
 <Images/surgery-eps-converted-to.pdf, id=41, 258.9675pt x 98.3675pt>
 File: Images/surgery-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/surgery-eps-converted-to.pdf>
 Package pdftex.def Info: Images/surgery-eps-converted-to.pdf used on input line
- 103.
+ 106.
 (pdftex.def)             Requested size: 258.96684pt x 98.36723pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
@@ -906,11 +906,18 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 
 ]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.tex) [21
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.tex [21
 
 
-] [22]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl) [23
+] <xymatrix
+2x2 182>
+Overfull \hbox (7.89502pt too wide) in paragraph at lines 38--41
+\OT1/cmr/m/n/10.95 end-lich er-zeug-ten Grup-pen de-fi-nie-ren, wo-bei der Alex
+-an-der Mo-dul $\OML/cmm/m/it/10.95 G[]=G[]$ \OT1/cmr/m/n/10.95 als Gruppenring
+-
+ []
+
+) [22] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl) [23
 
 ]
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.aux
@@ -922,13 +929,13 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux)) ) 
 Here is how much of TeX's memory you used:
- 7292 strings out of 493921
- 99724 string characters out of 3147279
- 250515 words of memory out of 3000000
- 10365 multiletter control sequences out of 15000+200000
+ 7293 strings out of 493921
+ 99734 string characters out of 3147279
+ 249523 words of memory out of 3000000
+ 10366 multiletter control sequences out of 15000+200000
  13754 words of font info for 53 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 54i,18n,51p,1775b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,18n,51p,1775b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fo
@@ -953,7 +960,7 @@ s/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/xypic/xyatip10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xyp
 ic/xybtip10.pfb>
-Output written on main.pdf (25 pages, 369763 bytes).
+Output written on main.pdf (25 pages, 373840 bytes).
 PDF statistics:
  193 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

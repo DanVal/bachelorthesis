@@ -21,4 +21,23 @@ Die Abbildung $G \to G/[G,G] \to F$ ist kanonisch. Also seien $g_1,\cdots,g_n,n=
 \[
 	\hat t_i(x) = \bar{ g_i} \bar{ x}\overline{ g_i^{-1}} = \overline{{} g_i x g_i^{-1}}
 \]
-Diese sind unabhängig der gewählten $x_i$.
+Diese sind unabhängig der gewählten $g_i$. 
+\begin{bem}
+ 	Das ist eine Form der expliziten Konstruktion des Falles, wenn man von einer induzierten Operation einer zerfällenden kurzen exakten Sequenz redet:
+ 	\[
+ 		\seq {G'/G''} {G/G''} {G/G'}
+ 	\]
+ 	Da $F= G/G'$ frei abelsch ist, zerfällt diese Sequenz und man erhält eine Abbildung $F \to \Aut(G'/G'')$ genauer gesagt, eine Gruppenwirkung auf $G'/G''$ durch Konjugation unter der Identifikation $G'/G''\into G/G''$ mit zurückgezogenen Elementen aus $F$. Dies ist wohldefiniert da das Bild von $G'/G''$ einem Kern entspricht, also Normalteiler ist. Offensichtlich stimmt diese Operation mit der obigen überein.
+ \end{bem} 
+ Mit $\alpha(g_i)=t_i$ als ein Element der Basis von $F$, ist die Gruppenwirkung von $F$ auf $H_1(\hat M)$, die durch die Decktransformationen induzierte $t_i\gamma = t_{i*}\gamma,t_i \in F \cong D(M), \gamma \in H_1(\hat M)$. Also ist nur zu zeigen, dass folgendes Diagramm kommutiert:
+\[
+	\begin{xy}
+		\xymatrix{H_1(\hat M) \ar[d]_{t_i} \ar[r]^{p'_*} & G'/G'' \ar[d]^{\hat t_i}\\
+		H_1(\hat M)  \ar[r]^{p'_*} & G'/G'' }
+	\end{xy}
+\]
+und somit die Operationen verträglich sind. Davon überzeugt man sich, indem man die Wirkung von $t_i$ näher betrachtet: nach Hurewicz lässt sich ein Zykel aus $H^1(\hat M)$ als Schleife darstellen. Die Decktransformation $t_i$ schiebt diese Schleife nun auf eine Schleife, die homolog ist zu der Kompositionskonjugation mit einer zu einem Weg gelifteten Schleife $\tau_i, [\tau_i] \in \pi_1(M)$, welche die Decktransformation $t_i$ erzeugt. \\
+Also lassen sich alle Definitionen der Alexander Invarianten analog zu Abschnitt~\ref{sec:defs}, auf endlich erzeugten Gruppen definieren, wobei der Alexander Modul $G'/G''$ als Gruppenring-Modul über $G/G'=F$ aufgefasst wird. Fast! Die Definition der Elementarideale setzt noch voraus, dass dieser Modul endlich erzeugt ist.
+
+
+Es stellt sich sogar heraus, dass in den meisten Fällen auch die Thurston Norm, aus der Fundamentalgruppe berechnet werden kann, indem man getwistete Alexander Polynome verwendet, die mit ähnlichen Methoden wie oben, allein aus der Fundamentalgruppe gewonnen werden können.
