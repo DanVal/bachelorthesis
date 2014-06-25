@@ -2,7 +2,9 @@
 
 \section{Algebra}
 
-Tatsächlich könnte man diese Bachelorarbeit fast ausschließlich algebraisch verstehen --- wenigstens den Teil über die Alexanderinvarianten. Natürlich ist dieser Arbeit aus dem Bereich der Topologie, ein Geschmack oder die Illusion gegeben, man arbeite nur mit direkten Eigenschaften der Räume. Bei der Thurstonnorm ist dies tatsächlich gegeben, durch die Deftinition einar Funktion auf einem Vektorraum mittels geometrischer Eigenschaften der Mannigfaltigkeit. Jedoch handelt es sich bei den Alexanderinvarianten, insbesondere dem Alexander Polynom, lediglich um Invarianten einer abelschen Gruppe. Durch Anwendung auf die Fundamentalgruppe, erhält man also Invarianten von Räumen. Natürlich verliert das Alexander Polynom von 3-Mannigfaltigkeiten durch diese "Faktorisierung" nicht allzu viel an Reiz, da die Fundamentalgruppe eine recht starke Invariante von 3-Mannigfaltigkeiten ist, siehe z.B. Ergebnisse von \todo{warum Fundamentalgruppe stark ist} . Im Folgenden sollen nun kurz die Alexander Invarianten verallgemeinert von Gruppen definiert werden und ein paar Zusammenhänge zu dem obigen Fall
+Tatsächlich könnte man diese Bachelorarbeit fast ausschließlich algebraisch verstehen --- wenigstens den Teil über die Alexanderinvarianten. Natürlich ist dieser Arbeit aus dem Bereich der Topologie, ein Geschmack oder die Illusion gegeben, man arbeite nur mit direkten Eigenschaften der Räume. Bei der Thurstonnorm ist dies tatsächlich gegeben, durch die Deftinition einar Funktion auf einem Vektorraum mittels geometrischer Eigenschaften der Mannigfaltigkeit. Jedoch handelt es sich bei den Alexanderinvarianten, insbesondere dem Alexander Polynom, lediglich um Invarianten einer abelschen Gruppe. Durch Anwendung auf die Fundamentalgruppe, erhält man also Invarianten von Räumen. Natürlich verliert das Alexander Polynom von 3-Mannigfaltigkeiten durch diese "Faktorisierung" nicht allzu viel an Reiz, da die Fundamentalgruppe eine recht starke Invariante von 3-Mannigfaltigkeiten ist, siehe z.B. Ergebnisse von \todo{warum Fundamentalgruppe stark ist} . Im Folgenden sollen nun kurz die Alexander Invarianten verallgemeinert von Gruppen definiert werden und ein paar Zusammenhänge zu dem obigen Fall.
+
+Dieser Abschnitt ist ein typisches Beispiel, für Aussagen die tautologisch erscheinen und gefährlich verschwimmen. Ich bitte dies zu entschuldigen und versuche sowohl Verwirrung als auch Redundanz minimal zu halten.
 
 Es lässt sich der Alexander Modul definieren als (entspricht strikt genommen nicht der obigen Definition, hier enthält er einen freien Summand mehr, also betrachte $E_1$).
 
@@ -40,4 +42,82 @@ und somit die Operationen verträglich sind. Davon überzeugt man sich, indem ma
 Also lassen sich alle Definitionen der Alexander Invarianten analog zu Abschnitt~\ref{sec:defs}, auf endlich erzeugten Gruppen definieren, wobei der Alexander Modul $G'/G''$ als Gruppenring-Modul über $G/G'=F$ aufgefasst wird. Fast! Die Definition der Elementarideale setzt noch voraus, dass dieser Modul endlich erzeugt ist.
 
 
-Es stellt sich sogar heraus, dass in den meisten Fällen auch die Thurston Norm, aus der Fundamentalgruppe berechnet werden kann, indem man getwistete Alexander Polynome verwendet, die mit ähnlichen Methoden wie oben, allein aus der Fundamentalgruppe gewonnen werden können.
+Es stellt sich sogar heraus, dass in den meisten Fällen auch die Thurston Norm, aus der Fundamentalgruppe berechnet werden kann, indem man getwistete Alexander Polynome verwendet, die mit ähnlichen Methoden wie oben, allein aus der Fundamentalgruppe gewonnen werden können. Sie beinhalten meist noch mehr Daten als das gewöhnliche Alexander Polynom. Außerdem lässt sich mit dem Grad dieser Polynome, die Abschätzung aus Theorem ref verallgemeinern.
+
+Um ohne topologische Methoden einzusehen, dass der Alexander Modul endlich erzeugt ist, ist es nötig den Gruppenring und noethersche Moduln genauer zu betrachten.
+
+\begin{lem}
+	Sei $\phi:G \to F$ eine Abbildung von Gruppen. Bezeichne $\hat \phi: \ZZ[G] \to \ZZ[F]$ die Fortsetzung auf die Gruppenringe. Dann gilt:
+	\[
+		\ker\hat\phi = m(\ker\phi)
+	\]
+	wobei für eine Untergruppe (Normalteiler?) $H\subset G$ das Augmentationsideal $m(H) = \langle(h-1), h \in H\rangle$.
+\end{lem}
+\begin{proof}
+	Um einen lästigen expliziten Beweis zu vermeiden, lässt sich einfach zeigen, dass für ein kommutativer Ring mit $R$ mit $1\neq 0$ einen exakten Funktor $R[\cdot]$ liefert. Dann folgt nämlich aus:
+	\[
+		\seq {\ker\phi} G F
+	\]
+	die Einbettung von $\ZZ[\ker\phi]$ durch
+	\[
+		\seq {\ZZ[\ker\phi]} {\ZZ[G]}{\ZZ[F]}
+	\]
+\end{proof}
+
+
+Der obige Isomorphismus liefert also, dass der Alexander Modul endlich erzeugt ist, genau dann wenn $m(G)/m(\ker\phi)m(G)$ als $\ZZ[F]$ Modul endlich erzeugt ist. Die $\ZZ[F]$ Modul Struktur, ist gesichert durch obiges Lemma, das $\ZZ[F]=\ZZ[G]/m(\ker\phi)$ liefert und der zu betrachtende Modul also ein Quotient von dem $\ZZ[F]$ Modul (hier sogar beidseitiges Ideal, also insbesondere endlich erzeugt, da $\ZZ[F]$ noethersch) $m(G)/m(\ker\phi) \subset \ZZ[F]$ ist. Mit den Betrachtungen über Quotienten von noetherschen Modul zu Beginn der Arbeit, stellt sich die Fragestellung als trivial heraus (man sollte natürlich den Isomorphiesatz kennen, dass $(G/N)/(H/N)\cong G/H$ für Normalteiler). Es ergibt sich also folgendes Lemma:
+
+\begin{lem}
+	Der Alexander Modul einer endlich erzeugten Gruppe ist endlich erzeugt.
+\end{lem}
+
+
+
+Diese Maschinerie sollte nun genügen um die endliche Erzeugbarkeit der algebraischen Variante des Alexander Moduls zu zeigen. Dies und bisherige Resultate sollen in folgender Proposition festgehalten werden:
+
+\begin{prop}
+	Es sei $G$ eine endlich erzeugte Gruppe, $F \cong \ZZ^b$ eine freie abelsche Gruppe mit $b\leq b_1(G)$ und $\phi: G \to F$ ein Epimorphismus. Außerdem bezeichne wie oben $G'=\ker\phi$ und $G''=[G',G']$ die Kommutatoruntergruppe. Die folgende zerfallende Sequenz liefert eine Gruppenwirkung von $F$ auf $G'$:
+	\[
+		\seq {G'} G F
+	\]
+	Weiter liefert diese Sequenz eine exakte Sequenz von $\ZZ[F]$ Moduln
+	\[
+		\seq {m(\ker\phi)/m(\ker\phi)m(G)} {m(G)/m(\ker\phi)m(G)} {m(F)}
+	\]
+	und einen Isomorphismus von $\ZZ[F]$ Moduln $G'/G'' \cong m(\ker\phi)/m(\ker\phi)m(G)$.\\
+	Insbesondere ist der Alexander Modul endlich erzeugt.
+\end{prop}
+\begin{proof}
+		Man betrachte folgendes Diagramm:
+		\begin{equation}
+		\label{eq:diagalg}
+			\begin{xy}
+				\xymatrix{	0 \ar[r]&	m(\ker\phi) \ar[r] \ar[d]&	m(G) \ar[r] \ar[d]& m(F) \ar[r] \ar[d]&	0\\
+							0 \ar[r]&	m(\ker\phi)	\ar[r] 		&	\ZZ[G] \ar[r]	&	\ZZ[F] \ar[r] &		0}
+			\end{xy}			
+		\end{equation}
+		Die zweite Reihe ist exakt, die folgt aus der exakten Funktorialität von $\ZZ[]$ und die Exaktheit nach Anwendung des Schlangenlemmas auf folgendes kommutatives Diagramm mit exakten Reihen hervor geht:
+		\[
+			\begin{xy}
+				\xymatrix{	0 \ar[r]&	m(\ker\phi) \ar[r] \ar[d]&	\ZZ[G] \ar[r] \ar[d]& \ZZ[F] \ar[r] \ar[d]&	0\\
+							0 \ar[r]&		0		\ar[r] 		&	\ZZ \ar[r]	&	\ZZ \ar[r] &		0}
+			\end{xy}
+		\]
+		Sei $m=m(\ker\phi)\subset \ZZ[\ker\phi]$ (man kann leicht zeigen $\ZZ[G]\cdot m = m(\ker\phi) \subset \ZZ[G]$). Da $m\cdot m(G)\subset m\cdot \ZZ[G] = m(\ker\phi)$, faktorisieren die injektiven Abbildungen aus Diagramm~\ref{eq:diagalg}. Die erste Zeile nimmt dann die gewünschte Form aus der Proposition an, außerdem lassen sich die Strukturen als $\ZZ[F]$-Modul Strukturen auffassen.\\
+		Es ist also noch der Isomorphismus zu zeigen. Dieser lässt sich einfach angeben:
+		\begin{align*}
+			G'/G'' 	&\to 		m(G')/m(G')\dot m(G)\\
+			[g']		&\mapsto	[(g'-1)]\\
+			[g']		&\mathrel{\reflectbox{\ensuremath{\mapsto}}}  [(g'-1)g]
+		\end{align*}
+		Diese Abbildungen sind wohldefiniert und einander invers, da $[(g'-1)g]=[(g'-1)g-(g'-1)(g-1)]=[(g'-1)]$.
+	\end{proof}	
+
+	Diese Proposition liefert einen Zusammehang der obigen algebraischen Definition des Alexander Moduls, mit der algebraischen Definition von Milnor. In \cite{McMullen2002} sagt er, diese sei als Gruppenring-Modul isomorph zu $H_1(\hat M,\hat p;\ZZ)$, wobei dies die freie abelsche universelle Überlagerung relativ der diskreten Menge aller Urbilder von einem Basispunkt $p \in M$. Die lange exakte Homologie Sequenz des Paares $(\hat M,\hat p)$ liefert also einen $\oplus_{f \in F - \{0\}}\ZZ$~Summanden, algebraisch lässt sich dies auch einsehen:
+	\begin{prop}
+	 	Der Modul $m(F)\subset \ZZ[F]$ ist frei über $\ZZ$ mit Basis $\langle (f-1),f\in F \rangle$. Also splittet die exakte Sequenz und es gilt als abelsche Gruppen:
+	 	\[
+	 		m(G)/m(G)m(\ker\phi) \cong m(\ker\phi)/m(\ker\phi)m(G) \oplus m(F) \cong  m(\ker\phi)/m(\ker\phi)m(G) \oplus \bigoplus_{f\in F-\{0\}} \ZZ
+	 	\]
+	 	 Für eine Basis $f_i$ von $F$ ist $\langle(f_i-1)\rangle$ ein $\ZZ[F]$ Erzeugendensystem von $m(F)$.
+	 \end{prop} 

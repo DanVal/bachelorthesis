@@ -8,5 +8,5 @@
 \contentsline {subsection}{\numberline {3.1}\IeC {\"U}ber endlich erzeugte Moduln eines noetherschen Rings}{9}
 \contentsline {section}{\numberline {4}Beweis des Theorems}{11}
 \contentsline {section}{\numberline {5}Folgerungen, Bemerkungen und Beispiele}{17}
-\contentsline {section}{\numberline {6}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{20}
-\contentsline {section}{\numberline {A}Algebra}{21}
+\contentsline {section}{\numberline {6}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{21}
+\contentsline {section}{\numberline {A}Algebra}{22}
