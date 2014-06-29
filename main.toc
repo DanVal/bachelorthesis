@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {3}Vorbereitungen}{9}
 \contentsline {subsection}{\numberline {3.1}\IeC {\"U}ber endlich erzeugte Moduln eines noetherschen Rings}{9}
 \contentsline {subsection}{\numberline {3.2}Poincar\IeC {\'e} und Lefschetz Dualit\IeC {\"a}t}{10}
-\contentsline {section}{\numberline {4}Beweis des Theorems}{12}
-\contentsline {section}{\numberline {5}Folgerungen, Bemerkungen und Beispiele}{19}
-\contentsline {section}{\numberline {6}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{26}
-\contentsline {section}{\numberline {A}Algebra}{27}
+\contentsline {section}{\numberline {4}Algebraische Alexander Invarianten}{12}
+\contentsline {section}{\numberline {5}Beweis des Theorems}{17}
+\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{24}
+\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{31}

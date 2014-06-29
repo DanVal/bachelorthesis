@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  28 JUN 2014 18:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  29 JUN 2014 17:33
 entering extended mode
 **C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
 (C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
@@ -999,10 +999,10 @@ Package: BA_Titelseite 2010/04/25
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\basics.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\proofs.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux)
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux)
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux))
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
@@ -1093,7 +1093,7 @@ Package epstopdf Info: Source file: <Images/surgery.eps>
 d-to.pdf Images/surgery.eps>
 (epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
-<Images/surgery-eps-converted-to.pdf, id=43, 258.9675pt x 98.3675pt>
+<Images/surgery-eps-converted-to.pdf, id=44, 258.9675pt x 98.3675pt>
 File: Images/surgery-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/surgery-eps-converted-to.pdf>
@@ -1126,14 +1126,14 @@ erted-to.pdf>]) [8]
 
 
 ]
-Overfull \hbox (6.07086pt too wide) in paragraph at lines 34--35
+Overfull \hbox (6.07086pt too wide) in paragraph at lines 35--36
 []\OT1/cmr/bx/n/10.95 Lemma 3.2. []$\OML/cmm/m/it/10.95 M$ \OT1/cmr/m/it/10.95 
 ist []uber $\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/it/10.95 end-lich pr[]asentiert. 
 Des-wei-te-ren kann die Pr[]asentationsmatrix
  []
 
 
-Overfull \hbox (6.2422pt too wide) in paragraph at lines 61--63
+Overfull \hbox (6.2422pt too wide) in paragraph at lines 62--64
 []\OT1/cmr/m/it/10.95 Bemerkung \OT1/cmr/m/n/10.95 (Dua-le 1-ko-di-men-sio-na-l
 e Un-ter-man-nig-fal-tig-kei-ten)\OT1/cmr/m/it/10.95 . []\OT1/cmr/m/n/10.95 Sei
  $\OML/cmm/m/it/10.95 N$ \OT1/cmr/m/n/10.95 ei-ne $\OML/cmm/m/it/10.95 n$\OT1/c
@@ -1141,7 +1141,7 @@ mr/m/n/10.95 -dimensionale
  []
 
 
-Overfull \hbox (2.86105pt too wide) in paragraph at lines 69--70
+Overfull \hbox (2.86105pt too wide) in paragraph at lines 70--71
 \OT1/cmr/m/n/10.95 quenz lie-fert in dem die-se bei-den Ter-me auf-tau-chen und
  wei-ter nur $[](\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95
  N\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 Z\OT1/cmr/m/n/10.9
@@ -1149,19 +1149,63 @@ Overfull \hbox (2.86105pt too wide) in paragraph at lines 69--70
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
-) [11] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\proofs.tex <xymatrix
-2x2 116>
+) [11] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.tex [12
+
+
+]
+<xymatrix 2x2 182>
+Overfull \hbox (7.89502pt too wide) in paragraph at lines 45--48
+\OT1/cmr/m/n/10.95 end-lich er-zeug-ten Grup-pen de-fi-nie-ren, wo-bei der Alex
+-an-der Mo-dul $\OML/cmm/m/it/10.95 G[]=G[]$ \OT1/cmr/m/n/10.95 als Gruppenring
+-
+ []
+
+[13]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+ [14] <xymatrix
+5x2 416> <xymatrix 5x2 416> [15]
+Overfull \hbox (29.28917pt too wide) detected at line 136
+\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/10.9
+5 )\OML/cmm/m/it/10.95 =m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/
+10.95 )\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/it/10.95 \OT1/cm
+r/m/n/10.95 ) [] \OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/it/10.9
+5 \OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/
+it/10.95 \OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm
+/m/it/10.95 G\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 m\O
+T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 F\OT1/cmr/m/n/10.95 ) [] \OML/cmm/m/it/10
+.95 m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 )\OML/cmm/m
+/it/10.95 =m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 )\OM
+L/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/10.95 )
+ \OMS/cmsy/m/n/10.95  [] \U/msb/m/n/10.95 Z
+ []
+
+)
+Overfull \hbox (0.13393pt too wide) in paragraph at lines 141--38
+$[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G; \U/msb/m/n/10.95 Z\OT1/cmr/m/n/10
+.95 ) \OMS/cmsy/m/n/10.95 
+ \U/msb/m/n/10.95 R$ \OT1/cmr/m/n/10.95 de-fi-nie-ren kann, die mit der Thursto
+n-Norm auf $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 M\OT
+1/cmr/m/n/10.95 ; \U/msb/m/n/10.95 R\OT1/cmr/m/n/10.95 )$ []ubereinstimmt. 
+ []
+
+[16] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\proofs.tex <xymatrix 2x2
+116>
 Overfull \hbox (19.62076pt too wide) in paragraph at lines 14--16
 \OT1/cmr/m/n/10.95 Mannigfaltigkeit de-fi-niert und []uber Poin-care bzw. Lef-
 schetz Dua-lit[]at nach $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/
 it/10.95 M\OT1/cmr/m/n/10.95 )$ []ubertragen
  []
 
-[12
+[17
 
 
 ] <xymatrix 2x2 154>
@@ -1170,35 +1214,33 @@ Overfull \hbox (8.52242pt too wide) in paragraph at lines 25--27
 der Pull-back ei-ner []Uberlagerung
  []
 
-[13] <xymatrix 3x2 264>
+[18] <xymatrix 3x2 264>
 Overfull \hbox (21.64716pt too wide) in paragraph at lines 65--69
 \OT1/cmr/m/n/10.95 Die n[]achste Gleich-heit, dass der Rang auf den Top-Homolog
 ien von $\OML/cmm/m/it/10.95 S$ \OT1/cmr/m/n/10.95 und $\OML/cmm/m/it/10.95 M$ 
 []\OT1/cmr/m/n/10.95 ubereinstimmen,
  []
 
-[14] <xymatrix 4x2 170> [15] [16] <xymatrix 4x1 127>
+[19] <xymatrix 4x2 170> [20] [21] <xymatrix 4x1 127>
 Overfull \hbox (35.77455pt too wide) in paragraph at lines 139--140
 []\OT1/cmr/m/n/10.95 Dieses Er-geb-nis lie-fert nun einen Zu-sam-men-hang zwi-s
 chen den Thur-ston Norm-minimierenden
  []
 
-[17]) [18] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.tex
-Overfull \hbox (42.7716pt too wide) in paragraph at lines 5--7
-\OT1/cmr/m/n/10.95 Fl[]ache fra-gen, in-wie-weit man ei-ne Fl[]ache wie in Lem-
-ma 4.1[] auf all-ge-mei-ne-ren 3-Mannigfaltigkeiten
- []
-
-<xymatrix 4x1 127> <xymatrix 2x2 130> [19
+[22]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 168.
+) [23] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.tex
+<xymatrix 4x1 127> <xymatrix 2x2 130> [24
 
 
 ] <xymatrix 3x2 135> <xymatrix 3x3
-277> [20]
+277> [25]
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-[21]
+[26]
 Overfull \hbox (37.01796pt too wide) in paragraph at lines 91--93
 \OT1/cmr/m/n/10.95 Hier wird un-ter dem nat[]urlichen Iso-mor-phis-mus $\OML/cm
 m/m/it/10.95 H[]\OT1/cmr/m/n/10.95 ((\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 ; 
@@ -1219,7 +1261,7 @@ Package epstopdf Info: Source file: <Images/hopf.eps>
 o.pdf Images/hopf.eps>
 (epstopdf)             \includegraphics on input line 99.
 Package epstopdf Info: Output file is already uptodate.
-<Images/hopf-eps-converted-to.pdf, id=119, 497.86pt x 497.86pt>
+<Images/hopf-eps-converted-to.pdf, id=135, 497.86pt x 497.86pt>
 File: Images/hopf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/hopf-eps-converted-to.pdf>
@@ -1231,20 +1273,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--102
 []\OT1/cmtt/m/n/10.95 Hopf Verschlingung
  []
 
-
+[27]
 Underfull \hbox (badness 1173) in paragraph at lines 102--104
 []\OT1/cmr/m/n/10.95 Das tri-vi-al-ste nicht-triviale Bei-spiel ei-ner Ver-
  []
 
-[22 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/hopf-eps-converted-
-to.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 134.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
 
 Overfull \hbox (11.27505pt too wide) in paragraph at lines 136--137
 [][] 
@@ -1260,46 +1293,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--157
 
  []
 
-[23]
+[28 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/hopf-eps-converted-
+to.pdf>]
 Overfull \hbox (1.56483pt too wide) in paragraph at lines 223--224
 [][] 
  []
 
-[24]) [25] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.tex)
-[26
+[29]) [30] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.tex)
+[31
 
 
-] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.tex [27
-
-
-]
-<xymatrix 2x2 182>
-Overfull \hbox (7.89502pt too wide) in paragraph at lines 40--43
-\OT1/cmr/m/n/10.95 end-lich er-zeug-ten Grup-pen de-fi-nie-ren, wo-bei der Alex
--an-der Mo-dul $\OML/cmm/m/it/10.95 G[]=G[]$ \OT1/cmr/m/n/10.95 als Gruppenring
--
- []
-
-[28]
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
- [29] <xymatrix 5x2 416> <xymatrix 5x2 416>
-Overfull \hbox (29.28917pt too wide) detected at line 131
-\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/10.9
-5 )\OML/cmm/m/it/10.95 =m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/
-10.95 )\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/it/10.95 \OT1/cm
-r/m/n/10.95 ) [] \OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/it/10.9
-5 \OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/
-it/10.95 \OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm
-/m/it/10.95 G\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 m\O
-T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 F\OT1/cmr/m/n/10.95 ) [] \OML/cmm/m/it/10
-.95 m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 )\OML/cmm/m
-/it/10.95 =m\OT1/cmr/m/n/10.95 ([] \OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 )\OM
-L/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/10.95 )
- \OMS/cmsy/m/n/10.95  [] \U/msb/m/n/10.95 Z
- []
-
-[30]) [31] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.lod)
+] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.lod)
 \tf@lod=\write6
 
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl) [32
@@ -1309,18 +1313,18 @@ L/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/10.95 )
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\basics.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.aux)
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\proofs.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux)
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux)
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\algebra.aux)) ) 
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.aux)) ) 
 Here is how much of TeX's memory you used:
- 19055 strings out of 493921
- 350277 string characters out of 3147279
- 471330 words of memory out of 3000000
- 21893 multiletter control sequences out of 15000+200000
+ 19058 strings out of 493921
+ 350320 string characters out of 3147279
+ 472367 words of memory out of 3000000
+ 21896 multiletter control sequences out of 15000+200000
  15677 words of font info for 61 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 64i,18n,62p,1985b,886s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,18n,62p,1987b,886s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fo
@@ -1346,7 +1350,7 @@ ublic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xypic/xy
 atip10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on main.pdf (34 pages, 452803 bytes).
+Output written on main.pdf (34 pages, 460940 bytes).
 PDF statistics:
  239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
