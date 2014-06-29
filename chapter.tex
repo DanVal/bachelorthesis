@@ -53,3 +53,37 @@ Sei im Folgenden nun $M$ ein endlich erzeugter $R$-Modul wobei $R$ einen noether
 	Zweifaches Anwenden dieses Argumentes liefert unmittelbar die Aussage mit surjektiven Homomorphismen $R^n \to M$ und $M \to M/N$
 \end{proof}
 
+\subsection{Poincaré und Lefschetz Dualität}
+\label{sec:poinc}
+
+	Bei Betrachtung der Definition der Thurston-Norm auf $H^1(M)$, fällt auf dass diese nur Eigenschaften der dualen Klasse nutzt (genaugenommen ist die Thurston-Norm auch einfach eine stetige Abbildung auf $H_2(M)$ beziehungsweise $H_2(M,\partial M)$, die via Dualität auf die Kohomologie übertragen wird). Und tatsächlich werden die folgenden Seiten teilweise in ein wildes Hin- und Herspringen zwischen Homologie und Kohomologie ausarten. Aus diesem Grund sollen hier noch einmal wichtige Grundlagen und Berechnungsmöglichkeiten, die später verwendet werden, erklärt werden.
+	\begin{bem}[Duale 1-kodimensionale Untermannigfaltigkeiten]
+	Sei $N$ eine $n$-dimensionale orientierte glatte Mannigfaltigkeit (mit CW-Struktur).
+		Bekanntlicherweise gilt:
+		\[
+					H_2(N,\partial N;\ZZ)\cong H^1(N;\ZZ) \cong \Hom(H_1(N),\ZZ) \cong \Hom(\pi_1(N),\ZZ) \cong  [N,S^1]
+		\]		
+		wobei der
+		\begin{enumerate}
+			\item -te Isomorphismus bei $\partial N= \emptyset$ Poincaré und sonst Lefschetz Dualität ist
+			\item -te Isomorphismus gilt, da das universelle Koeffiziententheorem eine exakte Sequenz liefert in dem diese beiden Terme auftauchen und weiter nur $\Ext(H_0(N),\ZZ) = 0$
+			\item -te Isomorphismus gilt, da nach Hurewicz die Abbildung $\pi_1(N)\to H_1(N)$ die Abelianisierung ist (Details später)
+			\item -te Isomorphismus gilt, indem man zeigt, dass jede Abbildung vom 1-Skelett $X^1 \subset N \to S^1$ auf $N$ fortgesetzt werden kann. Da das 1-Skelett die Fundamentalgruppe (oder Homologie) erzeugt, also die Inklusion eine surjektive Abbildung $i_*:\pi_1(X^1)\onto\pi_1(N)$ induziert, lässt sich auf diese Weise jeder Homomorphismus $\pi_1(N)\to \ZZ$ auf dem 1-Skelett definieren und fortsetzen. 
+		\end{enumerate}
+	Also liefert jeder Homomorphismus $\phi \in H^1(N;\ZZ)$ eine Homotopieklasse von Abbildungen in $[N,S^1]$ und umgekehrt liefert jede Abbildung $N\to S^1$ einen induzierten Homomorphismus der Kohomologiegruppen. Die Differentialtopologie liefert nun, dass für jede Homotopieklasse aus $[N,S^1]$ ein glatter Repräsentant existiert und die Existenz eines regulären Wertes in $S^1$. Jedes Urbild eines solchen regulären Wertes ist dann eine 1-kodimensionale orientierte Mannigfaltigkeit (mit Rand), welche als Homologieklasse dual zu $\phi$ ist. Genauer gilt sogar Folgendes:
+	\begin{thm}
+		Sei $f:N^n\to K^m$ eine stetige Abbildung glatter Mannigfaltigkeiten. Dann lässt sich $f$ beliebig nah durch glatte Abbildungen approximieren (was dies genau heißt, wird später nicht benötigt, deshalb weggelassen) welche homotop zu $f$ sind.
+	\end{thm}
+	\begin{thm}[Sard und Satz vom regulären Wert]
+		Sei $f:N^n \to K^m$ eine glatte Abbildung. Dann liegen die regulären Werte von $f$ dicht in $K$. Das Urbild eines regulären Wertes ist eine abgeschlossene glatte orientierte Untermannigfaltigkeit in $K$ der Kodimension $m$. Ein regulärer Wert ist ein Punkt aus $K$, bei dessen Urbild $f$ an jedem Punkt einen Epimorphismus auf den Tangentialräumen definiert. 
+	\end{thm}
+	\begin{thm}
+		Sei $f:N \to S^1$ eine glatte Abbildung. Jedes Urbild eines regulären Wertes definiert nach obigem Satz ein Element in $H_{n-1}(N,\partial N;\ZZ)$ als Bild der Fundamentalklasse des Urbilds unter der Inklusion. Diese ist Poincaré beziehungsweise Lefschetz dual zu $[f]\in H^1(N;\ZZ)$.
+	\end{thm}
+	Alle diese Aussagen sind bekannte elementare Aussagen der Differentialtopologie und können etwa in \todo{Krec} nachgelesen werden. \\
+	Dies liefert Möglichkeiten etwa zu zeigen, dass eine eingebettete Fläche in einer 3-Mannigfaltigkeit dual zu einer Abbildung Kohomologieklasse ist. Ist beispielsweise eine zweiseitige Fläche gegeben, so lässt die Zweiseitigkeit eine besonders einfache Möglichkeit einer Quotientenabbildung nach $S^1$ zu, die eine Darstellung der Fläche als Urbild eines regulären Wertes zulässt. Mehr dazu später.\\
+	\end{bem}
+	Transversalität und 
+	\begin{bem}[Schnittzahlen]
+		Ein weiteres 
+	\end{bem}
