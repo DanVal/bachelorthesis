@@ -18,6 +18,51 @@
     	Andererseits bedeutet gegebenes verschwindendes Alexander Polynom $\Delta_{\pi_1(M)}=0$, dass das Alexander Ideal trivial ist. Das Alexander Ideal aber 
     \end{proof}
 
+    Man sieht also, dass der Fall $b_1(\ker\phi)=\infty$ ein eher triviales Beispiel zur Verifizierung der Abschätzung aus Theorem~\ref{thm:haupttheorem}, also scheinbar uninteressant. Jedoch erschwert das die Situation zur die Berechnung Thurston-Norm, da die untere Schranke entfällt. Nun genug Motivation --- mit der folgenden Proposition soll eine möglichst hohe untere Schranke für das Geschlecht einer Thurston-minimalen zusammenhängenden Fläche angegeben werden:
+
+    \begin{prop}
+        Sei $M$ eine 3-Mannigfaltigkeit wie oben und $\phi: \pi_1 \to \ZZ \in H^1(M;\ZZ)$ surjektiv. Weiter sei $H_1(M_\phi)$ ein endlich erzeugter $\laurent \ZZ t$-Modul, wobei $t$ ein Erzeuger der Decktransformationen ist. Nun existiert eine eingebettete orientierbare Fläche $(S,\partial S) \subset (M,\partial M)$, die Folgendes erfüllt:
+        \begin{itemize}
+            \item $[S]=\phi$
+            \item $\chi_-(S) = \thur \phi$
+            \item $S$ ist zusammenhängend
+            \item Zerlege $H_1(M_\phi;\QQ)\cong \mathcal{F} \oplus \mathcal{T}$ als $\laurent \QQ t$ nach der Klassifikation von endlich erzeugten Moduln über Hauptidealringen in freien und torsions Anteil. Dann ist dies auch eine direkte Summe von $\QQ$-Vektorräumen. Dann soll:
+            \[
+                b_1(S) \geq  \Rang_{\laurent \QQ t}(H_1(M_\phi;\QQ)) + \dim(H_1(M_\phi;\QQ)/\mathcal F) = \Rang_{\laurent \QQ t} (\mathcal F) + \dim \mathcal T
+            \]
+            %\item $H_2(S)\cong H_3(M)$
+        \end{itemize}
+    \end{prop} 
+    \begin{bem}
+        Die Aussage ist analog zu Lemma~\ref{lem:minS}, wobei die Aussagen 
+    \end{bem}
+    \begin{proof}
+        Man wähle unter den eingebetteten Fläche welche die ersten beiden Eigenschaften erfüllen, also Thurston-Norm-minimierend sind, eine Fläche aus deren Anzahl an Zusammenhangskomponenten möglichst gering ist. Mit der gleichen Konstruktion des Graphen wie im Beweis des Lemmas~\ref{lem:minS} argumentiert man, dass $S$ zusammenhängend ist.\\
+        Da $\mathcal F \subset H_1(M_\phi;\QQ)$ als Moduln über dem Ring der rationalen Laurentpolynome endlich erzeugt sind, erzeugt ein kompakter Teilraum der Überlagerung $\mathcal F$ als Gruppenring Modul. Mit diesem Argument folgt wie im Beweis des Lemmas, dass $b_1(S)\geq \Rang(\mathcal F)$. Da $\mathcal T \subset H_1(M_\phi;\QQ)$ nun endlich erzeugt als Vektorraum ist, folgt mit dem Kompaktheitsargument, dass auch hier $S$ diesen Vektorraum erzeugt, also $b_1(S)\geq \dim \mathcal T$. $\mathcal F$ und $\mathcal T$ sind invariant bezüglich der Decktransformationen (sie sind direkte Summanden über dem Gruppenring). Das erlaubt uns Repräsentanten $f_1,\cdots,f_{\Rang(\mathcal F)},t_1,\cdots,t_{\dim\mathcal T}$ zu wählen, die Basis eines $\Rang(\mathcal F)+\dim\mathcal T$-dimensionalen $\QQ$-Vektorraums sind und die $f_i$ erzeugen $\mathcal F$ als Gruppenringmodul. Offensichtlich ist dieser Raum \emph{nicht} $t_*$-invariant, genauer: dieser Vektorraum ist eine direkte Summe aus einem $t_*$-invarianten und einem nicht-$t_*$-invarianten Raum. Allerdings folgt nun aus den obigen Überlegungen, dass die $f_i$ so gewählt werden können, dass die Inklusion $S\into M_\phi$ auf der ersten Homologie mit $\QQ$-Koeffizienten, eine lineare Abbildung induziert dessen Bild $\langle f_1,\cdots,f_{\Rang(\mathcal F)},t_1,\cdots,t_{\dim\mathcal T} \rangle$ enthält.
+    \end{proof}
+
+    Leider sieht man, dass Lemma~\ref{lem:minS} nicht direktes Corollar dieser Proposition ist, da im letzten Beweis $b_2(S)=b_3(M)$ nicht gezeigt werden kann. Ist $b_2(S)=0$ (da $S$ zusammenhängend ist $b_2 \in \{0,1\}$), so folgt $\partial S \neq \emptyset$ und somit $\partial M \neq \emptyset$, also Gleichheit $b_2(S)=b_3(M)$. Ist allerdings $b_1(S)=1$, also $S$ eine geschlossene Fläche, so folgt \emph{nicht} zwangsweise, dass $M$ geschlossen ist:
+    \begin{bsp}
+     Man betrachte etwa den 3-dimensionalen Torus $M=T=S^1\times S^1 \times S^1$ mit $H_1(M)=\ZZ^3 \cong \Hom(H_1(M),\ZZ) \cong H^1(M;\ZZ)$ nach dem universellen Koeffiziententheorem und der Produktverträglichkeit der Fundamentalgruppe, so wie Hurewicz. Nun betrachte man eine Fläche die dual zu einem der kanonischen Erzeuger der Fundamentalgruppe ist, am einfachsten wäre zum Beispiel $S=* \times S^1 \times S^1$ mit der zugehörigen durch Aufschneiden und Verkleben -gewonnenen Überlagerung $\RR \times S^1 \times S^1$ die homologisch endlich erzeugt ist. Sicher ist es möglich einen glatt eingebetteten $2$-Volltorus $U\cong S^1\times D$ aus dem Komplement von der betrachteten Fläche $S$ zu finden. Betrachtet man nun die Mannigfaltigkeit $N=M - \mathring U$, so erhält man eine glatte orientierbare Mannigfaltigkeit mit Rand $(N,\partial N)= (M- \mathring U, \partial U)$, die auch sonst alle Voraussetzungen der vorhergehenden Proposition erfüllt. Da $U$ zu $S$ durchschnittsleer gewählt wurde, ist $[S]$ sicherlich eine nicht-triviale Homologieklasse in $H_2(N,\partial N;\ZZ)$. Nun ist die durch Aufschneiden und Verkleben an $S$ - gewonnene Überlagerung über dem Gruppenring endlich erzeugt, aber $b_2(S)=1 \neq 0 = b_3(N)$.
+    
+    \end{bsp}
+
+    \begin{tikzpicture}
+    %Torus
+    \draw (0,0) ellipse (1.6 and .9);
+    %Hole
+    \begin{scope}[scale=.8]
+    \path[rounded corners=24pt] (-.9,0)--(0,.6)--(.9,0) (-.9,0)--(0,-.56)--(.9,0);
+    \draw[rounded corners=28pt] (-1.1,.1)--(0,-.6)--(1.1,.1);
+    \draw[rounded corners=24pt] (-.9,0)--(0,.6)--(.9,0);
+    \end{scope}
+    %Cut 1
+   % \draw[densely dashed] (0,-.9) arc (270:90:.2 and .365);
+   % \draw (0,-.9) arc (-90:90:.2 and .365);
+    %Cut 2
+    \draw (0,.9) arc (90:270:.2 and .348);
+    \draw[densely dashed] (0,.9) arc (90:-90:.2 and .348);
+    \end{tikzpicture}
     
     \begin{bsp}
     	Sei $M$ eine Faserung $M\to S^1$ über dem Kreis ist, also es gibt einen Diffeomorphismus einer zusammenhängenden Fläche $\varphi: S \times 0 \to S\times 1$, so dass folgendes Diagramm kommutiert:

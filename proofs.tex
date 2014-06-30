@@ -174,7 +174,7 @@ Nur hier wird $b_1=1$ verwendet
 		 \] 
 	\end{defn}
 
-	Man sieht leicht ein, dass dies wohldefiniert ist und nicht von der Zellzerlegung von $M$ abhängt. Weiter ergibt sich, dass $H_1( M_{ab(G)} ,  p_{ab(G)}) \cong H_1(M,p;\ZZ[ab(G)]$ natürlich isomorph sind. Der Beweis ergibt sich direkt aus der Bemerkung, dass die universelle Überlagerung buchstäblich universell überlagert, also insbesondere $M_{ab(G)}$ \todo{cite Hatcher Kapitel 1.3}
+	Man sieht leicht ein, dass dies wohldefiniert ist und nicht von der Zellzerlegung von $M$ abhängt. Weiter ergibt sich, dass $H_1( M_{ab(G)} ,  p_{ab(G)}) \cong H_1(M,p;\ZZ[ab(G)]$ natürlich isomorph sind. Der Beweis ergibt sich direkt aus dem Resultät aus der Überlagerungstheorie, dass die universelle Überlagerung buchstäblich universell überlagert, also insbesondere $M_{ab(G)}$ \todo{cite Hatcher Kapitel 1.3}
     
     Für die Abschätzung der beiden Halbnormen, ist es essenziell, dass das Alexander Ideal eine nicht allzu komplizierte Gestalt annehmen kann. McMullen zeigt \cite{McMullen2002} sogar, dass seine Definition des Alexander Ideals ein Produkt maximal dreier Faktoren ist, von denen eines immer der größte Teiler --- das Alexander Polynom --- ist. 
 
@@ -183,8 +183,33 @@ Nur hier wird $b_1=1$ verwendet
 	\[
 		E_1(m(G)/m(\ker\phi)m(G)) = 
 				\begin{cases}
-    				(\Delta_\phi)=(\Delta) , &\text{ wenn } b_1(M)\leq 1\\
+    				%(\Delta_\phi)=(\Delta) , &\text{ wenn } b_1(M)\leq 1\\
     				m(ab(G))^{1+b_3(M)}\cdot (\Delta) & 
     			\end{cases}
 	\]
 \end{thm}
+\begin{proof}
+	Nach obiger Bemerkung, zielt der Beweis darauf ab eine Präsentation der getwisteten Homologie $H_1(M,p;\ZZ[ab(G)]\cong I_m(G)$ zu finden. Dies soll explizit konstruiert werden, durch Betrachtung einer konkreten CW-Struktur und zellulärer Homologie. Glatte 3-Mannigfaltigkeiten sind stets triangulierbar, entweder überzeugt man sich durch die grundsätzliche Triangulierbarkeit von 3-Mannigfaltigkeiten nach dem Satz von Moise oder man glaubt an die Triangulierbarkeit von glatten Mannigfaltigkeiten, die etwa nach dem Satz von Whitehead folgt oder durch die Einbettbarkeit jeder Mannigfaltigkeit in den $\RR^N$, die von Whitney gezeigt wurde. Jedenfalls sei $\tau$ eine Triangulierung von $M$. Um eine explizite und vor allem möglichst simple CW-Struktur zu erhalten, wählt man sich nun zwei möglichst "`große"' Bäume $B,B'$ in den Strukturen von $M$, dessen Kontraktion den Homotopietyp von $M$ nicht ändert. Und zwar sei $B$ ein maximaler Baum im Graph des 1-Skeletts von $\tau$, also ein zusammenhängender, kreisloser Graph. Für $B'$ betrachtet man folgende Konstruktion eines Graphen $G$:  man nehme die Baryzentren aller $3$-Simplices als Knotenmenge und die kanten verbinden diese Knoten gemäß der Orientierung der $2$-Simplices von $\tau$. Offensichtlich gilt für jeden Baum in $G$, dass die zugehörige Vereinigung von $3$-Simplices die aus seinen Knoten hervorgeht ein topologischer Ball ist. Sei also $B'$ ein maximaler Baum in $G$. Das bedeutet insbesondere, dass $G/B'$ homöomorph zu einem Bouquet von Kreisen ist, denn $G$ ist zusammenhängend, da $M$ zusammenhängend ist. Da Homologie eine Homotopieinvariante ist, betrachte man den zellulären Kettenkomplex der aus dem CW-Komplex $M/B$ hervor geht, indem man durch die Konstruktion von $B'$ eine einzige 3-Zelle erhält, die aus Entnahme der Kanten aus $B'$ entsteht. Die Projektion $X \to X/A$ ist stets eine Homotopieäquivalenz, falls $A\into X$ eine Kofaserung und $A$ zusammenziehbar ist siehe Whitehead Kap 1 Corollar 5.13 und $(M,B)$ ist als CW-Paar eine Kofaserung. Aus dieser Struktur geht folgender zellulärer Kettenkomplex von $\ZZ[ab(G)]$-Moduln $C_i=C_i^{zell}(\widehat{M/B})\tensor_{\ZZ[G]}\ZZ[ab(G)]$ hervor:
+	\[
+		\begin{xy}
+		\xymatrix{C_3 \ar[r]^{\partial_3}  &C_2 \ar[r]^{\partial_2}  &C_1 \ar[r] &C_0 }
+		\end{xy}
+	\]
+	Sei $M$ nun zunächst geschlossen. Dann folgt mit Eulercharakteristik und Poincaré Dualität (und Homotopieinvarianz beziehungsweise Wohldefiniertheit der genutzten Invarianten):
+	\[
+		0=b_0(M)-b_3(M)+b_2(M)-b_1(M) = \chi(M) 
+	\]
+	\[
+		= \#\{\text{Differenz der Zellen in gerader und ungerader Dimension}\}
+	\]
+	also folgt dass obige CW-Struktur jeweils $n$ Zellen in Dimension 1 und 2 hat. Betrachtet man nun die relative Homologie zu der ausgezeichneten $0$-Zelle, folgt direkt für den Alexander-Modul $A_M(G)= H_1(M,*;\ZZ[ab(G)])=C_1/\im(\partial _2)$. Man beachte, dass die Moduln in dem betrachteten Kettenkomplex frei sind, denn: 
+	\begin{align*}
+		C_i &=C_i^{zell}(\widehat{M/B})\tensor_{\ZZ[G]}\ZZ[ab(G)] = \ZZ[G]^n \tensor_{\ZZ[G]} \ZZ[ab(G)] = \ZZ[ab(G)]^n\\
+		C_i^{zell}(\widehat{M/B}) &= \bigoplus_{g \in G} C_i^{zell}(M/B) = \ZZ[G]^n
+	\end{align*}
+	Also erhält man eine Präsentation von diesem Modul durch:
+	\[
+		C_2 \stackrel {\partial_2} \longrightarrow C_1 \onto C_1/\im(\partial_2) = A_M(G)
+	\]
+	$\partial_2$ lässt sich für gewählte $\ZZ[ab(G)]$-Basen von $C_1$ und $C_2$ als Matrix darstellen, also berechnet man $I_M(G)=E_1(A_M(G))=\langle \partial_2^{ij} \rangle$, wobei $\partial_2^{ij}$ die Determinante der $(n-1)\times (n-1)$ Matrix mit Koeffizienten in $\ZZ[ab(G)]$ ist, die durch Streichen der $i$-ten Zeile und $j$-ten Spalte von $\partial_2$ entsteht.
+\end{proof} 

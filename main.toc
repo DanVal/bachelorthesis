@@ -1,5 +1,5 @@
 \select@language {german}
-\contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{2}
+\contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{3}
 \contentsline {section}{\numberline {2}Grundlegendes}{3}
 \contentsline {subsection}{\numberline {2.1}Die betrachteten R\IeC {\"a}ume}{3}
 \contentsline {subsection}{\numberline {2.2}Alexander Invarianten}{3}
@@ -10,4 +10,4 @@
 \contentsline {section}{\numberline {4}Algebraische Alexander Invarianten}{12}
 \contentsline {section}{\numberline {5}Beweis des Theorems}{17}
 \contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{24}
-\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{31}
+\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{32}
