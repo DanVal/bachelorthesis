@@ -192,7 +192,7 @@ Nur hier wird $b_1=1$ verwendet
 	Nach obiger Bemerkung, zielt der Beweis darauf ab eine Präsentation der getwisteten Homologie $H_1(M,p;\ZZ[ab(G)]\cong I_m(G)$ zu finden. Dies soll explizit konstruiert werden, durch Betrachtung einer konkreten CW-Struktur und zellulärer Homologie. Glatte 3-Mannigfaltigkeiten sind stets triangulierbar, entweder überzeugt man sich durch die grundsätzliche Triangulierbarkeit von 3-Mannigfaltigkeiten nach dem Satz von Moise oder man glaubt an die Triangulierbarkeit von glatten Mannigfaltigkeiten, die etwa nach dem Satz von Whitehead folgt oder durch die Einbettbarkeit jeder Mannigfaltigkeit in den $\RR^N$, die von Whitney gezeigt wurde. Jedenfalls sei $\tau$ eine Triangulierung von $M$. Um eine explizite und vor allem möglichst simple CW-Struktur zu erhalten, wählt man sich nun zwei möglichst "`große"' Bäume $B,B'$ in den Strukturen von $M$, dessen Kontraktion den Homotopietyp von $M$ nicht ändert. Und zwar sei $B$ ein maximaler Baum im Graph des 1-Skeletts von $\tau$, also ein zusammenhängender, kreisloser Graph. Für $B'$ betrachtet man folgende Konstruktion eines Graphen $G$:  man nehme die Baryzentren aller $3$-Simplices als Knotenmenge und die kanten verbinden diese Knoten gemäß der Orientierung der $2$-Simplices von $\tau$. Offensichtlich gilt für jeden Baum in $G$, dass die zugehörige Vereinigung von $3$-Simplices die aus seinen Knoten hervorgeht ein topologischer Ball ist. Sei also $B'$ ein maximaler Baum in $G$. Das bedeutet insbesondere, dass $G/B'$ homöomorph zu einem Bouquet von Kreisen ist, denn $G$ ist zusammenhängend, da $M$ zusammenhängend ist. Da Homologie eine Homotopieinvariante ist, betrachte man den zellulären Kettenkomplex der aus dem CW-Komplex $M/B$ hervor geht, indem man durch die Konstruktion von $B'$ eine einzige 3-Zelle erhält, die aus Entnahme der Kanten aus $B'$ entsteht. Die Projektion $X \to X/A$ ist stets eine Homotopieäquivalenz, falls $A\into X$ eine Kofaserung und $A$ zusammenziehbar ist siehe Whitehead Kap 1 Corollar 5.13 und $(M,B)$ ist als CW-Paar eine Kofaserung. Aus dieser Struktur geht folgender zellulärer Kettenkomplex von $\ZZ[ab(G)]$-Moduln $C_i=C_i^{zell}(\widehat{M/B})\tensor_{\ZZ[G]}\ZZ[ab(G)]$ hervor:
 	\[
 		\begin{xy}
-		\xymatrix{C_3 \ar[r]^{\partial_3}  &C_2 \ar[r]^{\partial_2}  &C_1 \ar[r] &C_0 }
+		\xymatrix{C_3 \ar[r]^{\partial_3}  &C_2 \ar[r]^{\partial_2}  &C_1 \ar[r]^{\partial_2} &C_0 }
 		\end{xy}
 	\]
 	Sei $M$ nun zunächst geschlossen. Dann folgt mit Eulercharakteristik und Poincaré Dualität (und Homotopieinvarianz beziehungsweise Wohldefiniertheit der genutzten Invarianten):
@@ -211,5 +211,60 @@ Nur hier wird $b_1=1$ verwendet
 	\[
 		C_2 \stackrel {\partial_2} \longrightarrow C_1 \onto C_1/\im(\partial_2) = A_M(G)
 	\]
-	$\partial_2$ lässt sich für gewählte $\ZZ[ab(G)]$-Basen von $C_1$ und $C_2$ als Matrix darstellen, also berechnet man $I_M(G)=E_1(A_M(G))=\langle \partial_2^{ij} \rangle$, wobei $\partial_2^{ij}$ die Determinante der $(n-1)\times (n-1)$ Matrix mit Koeffizienten in $\ZZ[ab(G)]$ ist, die durch Streichen der $i$-ten Zeile und $j$-ten Spalte von $\partial_2$ entsteht.
+	$\partial_2$ lässt sich für gewählte $\ZZ[ab(G)]$-Basen von $C_1$ und $C_2$ als Matrix darstellen, also berechnet man $I_M(G)=E_1(A_M(G))=\langle \partial_2^{ij} \rangle$, wobei $\partial_2^{ij}$ die Determinante der $(n-1)\times (n-1)$ Matrix mit Koeffizienten in $\ZZ[ab(G)]$ ist, die durch Streichen der $i$-ten Zeile und $j$-ten Spalte von $\partial_2$ entsteht. Für die Berechnung dieser Matrix, berechnen wir zuerst $\partial_1$ und $\partial_3$.
+	Man fixiere einen Fundamentalbereich beziehungsweise einen Basispunkt $\hat e_o$, in diesem kann eine $\ZZ[G]$ Basis der $C_i^{zell}(\widehat M/B)$ gewählt werden. Ist also eine beliebige Zelle $e$ gegeben, so entsteht diese aus einem Element in dem fixierten Fundamentalbereich durch Multiplikation mit einem $g\in G$ (genauer bedeutet dies eine Anwendung der Decktransformation, die Zellen auf Zellen abbildet), $g\hat e = e$. Um also einzusehen, wie eine Basis für die freien $\ZZ[ab(G)]$ Moduln unter den obigen Isomorphismen aussieht, stellt man fest, dass für ein beliebiges $e\in C_i^{zell}(\widehat M/B)$ gilt: $e\tensor 1 \mapsto g\hat e \tensor 1 \mapsto \hat e \tensor [g] \mapsto [g]\hat e $, wobei also die fixierten Zellen die kanonischen Koordinaten von $\ZZ[ab(G)]^n$ darstellen. Dies lässt nun zu, dass man die komplizierte Situation fast vergessen könnte, indem man die kanonischen simplen Koordinaten verwendet. Was geschieht nun durch Anwendung von $\partial_1$? Sei $e$ eine generische 1-Zelle in $C_1^{zell}(\widehat M/B)$, dann ist $e=g\hat e$ und $\overline{\pi(\hat e)}$ stellt per Definition das Bild einer (nicht notwendigerweise glatten, es sind auch keine differenzierbaren Eigenschaften von $M/B$ gefordert!) Abbildung $S^1 \to M/B$ dar, also ein Element $\hat g \in \pi_1(M/B,e_0) = G$. Also berechnet sich das Bild von $\hat e$ unter der Randabbildung durch den (natürlich nicht geschlossenen) Lift dieses Elementes, nämlich $\partial(e\tensor 1)=\partial(g \hat e \tensor 1) = \partial(\hat e \tensor [g])= (\hat e_0 - \hat g \hat e_0)\tensor [g]= (1-\hat g)g\hat e_0\tensor 1$. Die zu Beginn recht kompliziert wirkende Situation, wurde in den letzten Abschnitten und durch allerlei Verträglichkeiten deutlich gelockert und ermöglicht es nun kanonisch --- fast tautologisch --- zwischen verschiedenen Identifikationen zu wechseln. Sei also $\hat e_1^1 ,\cdots, \hat e_1^n$ die fixierten 1-Zellen in der Überlagerung, also eine Basis des $\ZZ[F]^n$ dann erhalten wir die Matrixdarstellung des Homomorphismus $\ZZ[F]^n \stackrel {\partial_1} \to \ZZ[F]=\langle \hat e_0\rangle$
+	\[
+		\partial_1 = (1-\hat g_1, \cdots , 1- \hat g_n)
+	\]
+	wobei $\hat g_i \in \pi_1(M/B,e_0)=G$ die Klasse von $\hat e_i$ in $M/B$ ist.\\
+	Ähnlich fährt man nun mit der Berechnung von $\partial_3$ fort. Sei $\hat e$ eine der fixierten 2-Zellen aus $C_2^{zell}(\widehat M/B)$, also ein Element der $\ZZ[G]$-Basis von $C_2^{zell}(\widehat M/B)$ oder anders: ein Element der $\ZZ[F]$-Basis von $C_2$. Erinnert man sich an die Wahl von $\tau$, so ist $\hat e$ in $M$ Seite von zwei 3-Simplices $\sigma,\sigma'$. Durch $B'$ existiert nun ein eindeutiger (Geodätische in Bäumen sind eindeutig) Pfad, der die Baryzentren dieser zwei 3-Simplices verbindet. \todo{stimmt denn alles mit den Orientierungen überein? bei den Bäumen? wenn eine Kante durch eine Seite geht, kürzen die isch dann weg?} Schließt man diesen Pfad nun zu einer Schleife, durch die (nach obiger Konstruktion von $G'\supset B'$) zu $\hat e$ gehörige Kante, so liefert diese Schleife wieder ein Element $\hat h \in \pi_1(M/B)=G$. Um nun das Bild von der fixierten 3-Zelle $\hat e_3$ unter $\partial_3$ festzustellen, fasse man $\tau/B$ als CW-Struktur auf und erwäge man folgendes Diagramm:\\
+	\centering
+	\begin{tikzcd}[column sep=small]
+	& C_3^{\tau,zell}(\widehat {M/B})  \arrow[dl] \arrow[dr] \ar[dr, shift ={(1,0)}] & \\
+	C_3^{zell}(\widehat {M/B}) \arrow{rr} & & C_2^{zell}(\widehat {M/B})
+	\end{tikzcd}
+\\ 
+	\begin{tikzpicture}
+	\node (P0) at (90:2.8cm) {$C_3^{\tau,zell}(\widehat {M/B}) $};
+	\node (P1) at (90+72:2.5cm) {$C_3^{zell}(\widehat {M/B})$} ;
+	\node (P2) at (90+4*72:2.5cm) {$C_2^{zell}(\widehat {M/B})$};
+	\node (P00) at (90+2:2.8cm) {$e$};
+	\node (P11) at (90+72:2.5cm) {$e$} ;
+	\node (P22) at (90+4*72:2.5cm) {$e$};
+	\draw
+	(P0) edge[->,>=angle 90] node[left] {$1\otimes\phi$} (P1)
+	(P1) edge[->,>=angle 90]  (P2)
+	(P0) edge[->,>=angle 90] node[right] {$\phi$} (P2);
+	\end{tikzpicture}
+
+
+\begin{tikzpicture}
+	\node (P0) at (0,0) {$C_3^{\tau,zell}(\widehat {M/B}) $};
+	\node (P1) at (-3,-3) {$C_3^{zell}(\widehat {M/B})$} ;
+	\node (P2) at (3,-3) {$C_2^{zell}(\widehat {M/B})$};
+	\node [font=\tiny] (P0r) at (1.7,0) {$\sigma + \sigma' + \sum \sigma_3$};
+	\node [font=\tiny] (P0l) at (-1.7,0) {$\sum \sigma_3$};
+	\node [font=\tiny] (P11) at (-4.7,-3) {$\hat e_3$} ;
+	\node [font=\tiny] (P22) at (4.7,-3) {$1\hat e-\hat h \hat e + \sum$};
+	\draw
+	(P0) edge[->,>=angle 90] node[left] {$\sum$} (P1)
+	(P1) edge[->,>=angle 90]  (P2)
+	(P0) edge[->,>=angle 90] node[right] {$\partial$} (P2)
+	(P0r) edge[|->] (P22)
+	(P0l) edge[|->] (P11);
+	\end{tikzpicture}
+
+
+	\[
+		\begin{xy}
+			\xymatrix{&C_3^{\tau,zell}(\widehat {M/B}) \ar[dl]  \ar[dr]&\\
+					C_3^{zell}(\widehat {M/B})\ar[rr]&& C_2^{zell}(\widehat {M/B})}
+		\end{xy}
+	\]
+	Also stellt sich heraus, dass für die fixierten Zellen $\hat e_2^1,\cdots, \hat e_2^n$ als Identifikation einer Basis von $\ZZ[F]$, sich die Abbildung $\partial_3$ als Matrix auffassen lässt:
+	\[
+		\partial_3 = (1-\hat h_1,\cdots, 1-\hat h_n)^T
+	\]
+	wobei die $\hat h_i \in G$ eindeutig aus $\hat e_2^i$ mit der obigen Konstruktion hervorgehen. Offensichtlich gilt jeweils: $\langle \hat g_i \rangle = \langle \hat h_i \rangle = ab(G)$. Die Arbeit ist nun getan, von hier an möchten wir die Topologie vergessen und behandeln unsere Modulhomomorphismen mit algebraischen Methoden:\\
+
 \end{proof} 
