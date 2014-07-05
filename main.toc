@@ -3,11 +3,17 @@
 \contentsline {section}{\numberline {2}Grundlegendes}{5}
 \contentsline {subsection}{\numberline {2.1}Die betrachteten R\IeC {\"a}ume}{5}
 \contentsline {subsection}{\numberline {2.2}Alexander Invarianten}{5}
-\contentsline {subsection}{\numberline {2.3}Thurston Invariante}{7}
-\contentsline {section}{\numberline {3}Vorbereitungen}{11}
-\contentsline {subsection}{\numberline {3.1}\IeC {\"U}ber endlich erzeugte Moduln eines noetherschen Rings}{11}
-\contentsline {subsection}{\numberline {3.2}Poincar\IeC {\'e} und Lefschetz Dualit\IeC {\"a}t}{12}
-\contentsline {section}{\numberline {4}Algebraische Alexander Invarianten}{14}
-\contentsline {section}{\numberline {5}Beweis des Theorems}{19}
-\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{29}
-\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{37}
+\contentsline {subsection}{\numberline {2.3}Thurston Invariante}{9}
+\contentsline {section}{\numberline {3}Vorbereitungen}{13}
+\contentsline {subsection}{\numberline {3.1}\IeC {\"U}ber endlich erzeugte Moduln eines noetherschen Rings}{13}
+\contentsline {subsection}{\numberline {3.2}Poincar\IeC {\'e} und Lefschetz Dualit\IeC {\"a}t}{15}
+\contentsline {section}{\numberline {4}Algebraische Alexander Invarianten}{17}
+\contentsline {subsection}{\numberline {4.1}Herleitung der algebraischen Idee}{17}
+\contentsline {subsection}{\numberline {4.2}Eine \IeC {\"a}quivalente Definition von McMullen?}{21}
+\contentsline {subsection}{\numberline {4.3}Rationale Alexander Invarianten}{22}
+\contentsline {section}{\numberline {5}Beweis des Theorems}{23}
+\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{36}
+\contentsline {subsection}{\numberline {6.1}Zu der Thurston-Norm bei \IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{36}
+\contentsline {subsection}{\numberline {6.2}Faserungen}{38}
+\contentsline {subsection}{\numberline {6.3}Knoten und Verschlingungen}{40}
+\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{45}

@@ -1,21 +1,78 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{Burde2003}
+\bibitem{Alexander.1928}
+J.~W. Alexander.
+\newblock Topological invariants of knots and links.
+\newblock {\em Transactions of the American Mathematical Society},
+  30(2):275--306, 1928.
+
+\bibitem{Burde.2003}
 Gerhard Burde and Heiner Zieschang.
-\newblock {\em Knots}, volume~5.
-\newblock Walter de gruyter, 2003.
+\newblock {\em Knots}, volume~5 of {\em De Gruyter studies in mathematics}.
+\newblock Walter de Gruyter, Berlin and New York, 2nd rev. and extended ed
+  edition, 2003.
 
-\bibitem{McMullen2002}
-Curtis~T McMullen.
+\bibitem{Gordon.1989}
+C.~McA. Gordon and J.~Luecke.
+\newblock Knots are determined by their complements.
+\newblock {\em Journal of the American Mathematical Society}, 2(2):371--415,
+  1989.
+
+\bibitem{Hatcher.2002}
+Allen Hatcher.
+\newblock {\em Algebraic topology}.
+\newblock Cambridge University Press, Cambridge and New York, 2002.
+
+\bibitem{Hirsch.1991}
+Morris~W. Hirsch.
+\newblock {\em Differential topology}, volume~33 of {\em Graduate texts in
+  mathematics}.
+\newblock Springer, New York [u.a.], corr. 4. print edition, 1991.
+
+\bibitem{Kreck.2010}
+Matthias Kreck.
+\newblock {\em Differential algebraic topology: From stratifolds to exotic
+  spheres}, volume v. 110 of {\em Graduate studies in mathematics}.
+\newblock American Mathematical Society, Providence and R.I, 2010.
+
+\bibitem{LickorishW.B.Raymond.1997}
+{Lickorish, W. B. Raymond}.
+\newblock {\em An introduction to knot theory}, volume 175 of {\em Graduate
+  texts in mathematics}.
+\newblock Springer, New York, 1997.
+
+\bibitem{MCMULLEN.2002}
+C.~McMullen.
 \newblock The alexander polynomial of a 3-manifold and the thurston norm on
   cohomology.
-\newblock In {\em Annales Scientifiques de l’{\'E}cole Normale
-  Sup{\'e}rieure}, volume~35, pages 153--171. Elsevier, 2002.
+\newblock {\em Annales Scientifiques de l'{\'E}cole Normale Sup{\'e}rieure},
+  35(2):153--171, 2002.
 
-\bibitem{Thurston1986}
+\bibitem{Milnor.2009}
+J.~Milnor.
+\newblock Infinite cyclic coverings.
+\newblock {\em Collected Papers}, 2:71--89, 2009.
+
+\bibitem{Moise.1952}
+Edwin~E. Moise.
+\newblock Affine structures in 3-manifolds: V. the triangulation theorem and
+  hauptvermutung.
+\newblock {\em Annals of Mathematics}, 56(1):96--114, 1952.
+
+\bibitem{Seifert.1934}
+H.~Seifert.
+\newblock {\em {\"U}ber das Geschlecht von Knoten}.
+\newblock Springer, Berlin, 1934.
+
+\bibitem{Thurston.1986}
 William~P. Thurston.
 \newblock {\em A norm for the homology of 3-manifolds}, volume 339 of {\em
   American Mathematical Society: Memoirs}.
 \newblock American Mathematical Society, Providence, 1986.
+
+\bibitem{Waldhausen.1968}
+Friedhelm Waldhausen.
+\newblock On irreducible 3-manifolds which are sufficiently large.
+\newblock {\em The Annals of Mathematics}, 87(1):56, 1968.
 
 \end{thebibliography}

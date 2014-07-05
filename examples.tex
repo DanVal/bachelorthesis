@@ -1,7 +1,11 @@
 %!TEX root = main.tex
 
 \section{Folgerungen, Bemerkungen und Beispiele}
-    
+    Einleitung KApitel
+
+    \subsection{Zu der Thurston-Norm bei Überlagerungen mit unendlich großer Bettizahl}
+        
+    \label{verallggruppenring}
     Wie oben bereits vorgeschlagen, kann man nun fragen, welche Anforderungen man an eine Thurston-minimierenden Fläche stellen darf falls $b_1(\ker\phi)=\infty$, also inwieweit lässt sich Lemma~\ref{lem:minS} verallgemeinern? Intuitiv würde man einer unendlich zyklischen Überlagerung schnell die Fähigkeit absprechen, endlich erzeugte Homologiegruppen (über $\ZZ$) zu haben, sind diese Voraussetzungen vielleicht zu restriktiv? Die gute Nachricht ist, dass obiger Beweis nahezu problemlos übertragen werden kann, wenn man nur die endliche Erzeugbarkeit von $\ker\phi$ als $\laurent \QQ t$-Modul fordert. Ob oder wann dies sinnvoll ist soll kurz diskutiert werden, anhand Überlegungen zu nicht endlich erzeugten $\ker\phi$.\\
     Die folgende Proposition kann als Verallgemeinerung der Formel $b_1(\ker\phi)=\Grad\Delta\phi$ aus Corollar~\ref{cor:degreealex} gesehen werden:
     \begin{prop}
@@ -63,7 +67,11 @@
     \draw (0,.9) arc (90:270:.2 and .348);
     \draw[densely dashed] (0,.9) arc (90:-90:.2 and .348);
     \end{tikzpicture}
-    
+
+    \subsection{Faserungen}
+
+    In diesem Abschnitt, wollen wir uns mit Faserungen über dem Kreis beschäftigen.
+        
     \begin{bsp}
     	Sei $M$ eine Faserung $M\to S^1$ über dem Kreis ist, also es gibt einen Diffeomorphismus einer zusammenhängenden Fläche $\varphi: S \times 0 \to S\times 1$, so dass folgendes Diagramm kommutiert:
     			\todo{f mittig}
@@ -77,26 +85,19 @@
     	\[
     		0 \to \ker\phi \to \pi_1(M) \to \ZZ \to 0
     	\]
-    	folgt auch das die Fundamentalgruppe von $M$ im Falle einer Faserung endlich erzeugt ist. Falls $M$ nun zusätzlich noch ein Knotenkomplement eines Knotens $K$ ist, gilt $\ker\phi = [\pi_1(M),\pi_1(M)]$. Also beweisen diese Überlegungen, dass die Kommutatorunteruntergruppe einer Knotengruppe isomorph zu der Fundamentalgruppe einer Seifertfläche des Knotengeschlechts ist, siehe zum Beispiel Theorem 4.6 in~\cite{Burde2003}.\\
+    	folgt auch das die Fundamentalgruppe von $M$ im Falle einer Faserung endlich erzeugt ist. Falls $M$ nun zusätzlich noch ein Knotenkomplement eines Knotens $K$ ist, gilt $\ker\phi = [\pi_1(M),\pi_1(M)]$. Also beweisen diese Überlegungen, dass die Kommutatorunteruntergruppe einer Knotengruppe isomorph zu der Fundamentalgruppe einer Seifertfläche des Knotengeschlechts ist, siehe zum Beispiel Theorem 4.6 in~\cite{Burde.2003}.\\
         Es stellt sich die Frage, in wie weit eine Faserung eindeutig ist. Beispielsweise ist im Falle eines Vektorbündels über einem zusammenhängendem Raum, die Dimension eindeutig. Falls aber $b_1(M)>1$ ist und $\phi,\psi \in H^1(M;\ZZ)$ Repräsentanten in $[M,S^1]$ haben die Faserungen sind, folgt dann etwa: $||\phi||_T=||\psi||_T$? Existieren Diffeomorphismen zwischen Abbildungstori zu Flächen verschiedenen Geschlechts? Tatsächlich sind die Faserungen nicht eindeutig siehe Beispiel~\ref{ex:fiberedfaces}.\\
     	Möchte man dennoch das Alexander Polynom $\Delta_f=\Delta_\phi$ einer Faserung $f$ berechnen \todo{gilt das für Betti>1?}(falls $b_1(M)=1$ ist $\Delta_f=\Delta_M$), schließlich benutzt diese Invariante ja noch Informationen über die Deckgruppe, genügt es nach Lemma~\ref{lem:charPol}, die lineare Form von Vektorräumen $t_* \in \Aut(H_1(M_\phi;\QQ))$ zu berechnen. Aber da der Erzeuger $t$ der Decktransformationen folgendem kommutativen Diagramm genügen muss:
-    	\begin{eqnarray*}
-    		\begin{xy}
+    	\begin{equation*}
+     		    	\begin{xy}
     			\xymatrix{
-    				M_\phi \ar[rr]^t \ar[dr] && M_\phi \ar[dl]\\
-    				&M&}
-    		\end{xy} 
-    		&
-    		\text{gleichbedeutend:}
-    		&
-    		    	\begin{xy}
-    			\xymatrix{
-    				S \ar[d]^{\simeq} \ar[rr]_\cong && S \ar[d]^{\simeq} \\
-    				S \times \RR \ar[rr]^{\hat t}_\cong \ar[dr] && S\times \RR \ar[dl]\\
-    				&S\times I / \varphi&}
+    				&S \ar[d]^{\simeq} \ar[dl] \ar[rr]_\cong && S \ar[d]^{\simeq}\ar[dr]& \\
+    				M_\phi \ar[ddrr] \ar[r]^\cong&S \times \RR \ar[rr]^{\hat t}_\cong \ar[dr] && S\times \RR \ar[dl] \ar[r]^\cong&M_\phi \ar[ddll]\\
+    				&&S\times I / \varphi \ar[d]^\cong&&\\
+                    &&M&&}
     		\end{xy}
-    	\end{eqnarray*}
-    	muss in jedem Fall gelten: $t_* = \hat t_* = \varphi$ unter gegebenen Identifikationen mit $S$. Also berechnet sich das Alexander Polynom $\Delta_f$ zu dem charakteristischen Polynom der Abbildung $\varphi_*:H_1(S;\QQ)\to H_1(S;\QQ)$, wobei die Koeffizienten entsprechend in $\ZZ$ gewählt werden, so dass es größter gemeinsamer Teiler des entsprechend zurückgezogenen Ideals unter der Lokalisierung $\ZZ \to \ZZ^{-1}\ZZ=\QQ$ ist. Alternativ lässt sich das Alexander Polynom einer Faserung $[f]$ auch berechnen, indem man die Aufschneide und Verklebe Konstruktion für unendlich zyklische Überlagerungen verwendet. Dort stellt man fest, dass jede aufgeschnittene Kopie den Homotpietyp der Fläche hat und dass bei Verkleben je zweier Kopien, die Relationen von $\varphi_*$. Dies liefert eine Präsentation als Gruppenring Modul, wobei man feststellt, dass alle diese Relationen äquivalent sind, da die Decktransformationen die Einheiten des Gruppenrings sind. Man beachte, dass dies ein Spezialfall der "`Aufschneiden und Verkleben"'-Konstruktion ist, da $M$ selber durch Verkleben entsteht aus $S\times I$. So erhält man also eine $n$-blättrige Überlagerung von $M$, indem man $n$ Kopien von $S\times I$ anhand $\phi$ aneinander klebt.\\
+    	\end{equation*}
+    	und andererseits $t_*$ von einem Lift der zur Faserung dualen Schleife induziert wird, muss in jedem Fall gelten: $t_* = \hat t_* = \varphi$ unter gegebenen Identifikationen mit $S$. Also berechnet sich das Alexander Polynom $\Delta_f$ zu dem charakteristischen Polynom der Abbildung $\varphi_*:H_1(S;\QQ)\to H_1(S;\QQ)$, wobei die Koeffizienten entsprechend in $\ZZ$ gewählt werden, so dass es größter gemeinsamer Teiler des entsprechend zurückgezogenen Ideals unter der Lokalisierung $\ZZ \to \ZZ^{-1}\ZZ=\QQ$ ist. Alternativ lässt sich das Alexander Polynom einer Faserung $[f]$ auch berechnen, indem man die Aufschneide und Verklebe Konstruktion für unendlich zyklische Überlagerungen verwendet. Dort stellt man fest, dass jede aufgeschnittene Kopie den Homotpietyp der Fläche hat und dass bei Verkleben je zweier Kopien, die Relationen von $\varphi_*$. Dies liefert eine Präsentation als Gruppenring Modul, wobei man feststellt, dass alle diese Relationen äquivalent sind, da die Decktransformationen die Einheiten des Gruppenrings sind. Man beachte, dass dies ein Spezialfall der "`Aufschneiden und Verkleben"'-Konstruktion ist, da $M$ selber durch Verkleben entsteht aus $S\times I$. So erhält man also eine $n$-blättrige Überlagerung von $M$, indem man $n$ Kopien von $S\times I$ anhand $\phi$ aneinander klebt.\\
         Dies liefert die Möglichkeit in diesem Beispiel für $b_1(M)=1$ das Theorem zu verifizieren (nicht wie oben zu nutzen), indem man berechnet: \todo{Orientierbarkeit und}
         \[
             ||\phi||_A=\Grad(\Delta_\phi)=\Grad (\Delta_f) = \Grad \det (\varphi_*-tI) = g(S) = \chi_-(S) +2 = ||\phi||_T+2
@@ -110,16 +111,18 @@
 
     \begin{bsp}
     \label{ex:fiberedfaces}
-        Eine wichtige Anwendung der Thurston Norm und dieser Abschätzung besteht in den sogenannten \textit{fibered faces}, die im Folgenden als gefaserte Seiten bezeichnet werden. Bisher wurden bereits Kohomologieklassen $\phi \in H^1(M;\ZZ)$ betrachtet, mit einer korrespondenten Abbildung $M \to S^1$ die eine Faserung darstellt. Bei solchen herrscht Gleichheit im Theorem (siehe ref). Diese Klassen werden auch als \textit{gefasert} bezeichnet. Tatsächlich stellt Thurston in $\cite{Thurston1986}$ fest, dass Informationen über diese Eigenschaft durch die Thurston-Norm festgestellt werden. Wie in Bemerkung~\ref{rem:extendingthurston} gezeigt, lässt sich die Thurston-Norm durch Erweiterung der Skalare (tensorieren mit $\RR$), fortsetzen. Thurston hat in $\cite{Thurston1986}$ außerdem gezeigt, dass der Einheitsball dieser Norm auf $H^1(M;\RR)$ ein beschränktes konvexes Polytop ist, also die konvexe Hülle einer endlichen Anzahl an Elementen. Eine berandende Seite dieses Polytops, nennt man gefaserte Seite, falls alle Elemente $\phi \in H^1(M;\ZZ)$ die auf einem vom Ursprung ausgehendem Strahl liegen der das Innere der Seite trifft, gefasert sind. Anders gesagt ist eine Seite gefasert, genau dann wenn jedes $\phi \in H^1(M;\ZZ)$, das in einem Kegel mit dem Inneren der Seite als Grundfläche und dem Ursprung als Spitze, gefasert ist. Natürlich ist das Polytop symmetrisch ($||-\phi||_T=||\phi||_T$) und die gefaserten Seiten treten auch in Paaren auf (eine Faserung $M \to S^1$ liefert mit einer orientierungsumkehrenden Reflektion $\tau$ das Inverse $M \to S^1 \stackrel \tau \to S^1$). Man sagt, gefaserte Klassen $\phi,\psi$ liegen in \textit{wirklich verschiedenen} gefaserten Kegeln, falls diese bis auf Symmetrie verschieden sind. 
+        Eine wichtige Anwendung der Thurston Norm und dieser Abschätzung besteht in den sogenannten \textit{fibered faces}, die im Folgenden als gefaserte Seiten bezeichnet werden. Bisher wurden bereits Kohomologieklassen $\phi \in H^1(M;\ZZ)$ betrachtet, mit einer korrespondenten Abbildung $M \to S^1$ die eine Faserung darstellt. Bei solchen herrscht Gleichheit im Theorem (siehe ref). Diese Klassen werden auch als \textit{gefasert} bezeichnet. Tatsächlich stellt Thurston in $\cite{Thurston.1986}$ fest, dass Informationen über diese Eigenschaft durch die Thurston-Norm festgestellt werden. Wie in Bemerkung~\ref{rem:extendingthurston} gezeigt, lässt sich die Thurston-Norm durch Erweiterung der Skalare (tensorieren mit $\RR$), fortsetzen. Thurston hat in $\cite{Thurston.1986}$ außerdem gezeigt, dass der Einheitsball dieser Norm auf $H^1(M;\RR)$ ein beschränktes konvexes Polytop ist, also die konvexe Hülle einer endlichen Anzahl an Elementen. Eine berandende Seite dieses Polytops, nennt man gefaserte Seite, falls alle Elemente $\phi \in H^1(M;\ZZ)$ die auf einem vom Ursprung ausgehendem Strahl liegen der das Innere der Seite trifft, gefasert sind. Anders gesagt ist eine Seite gefasert, genau dann wenn jedes $\phi \in H^1(M;\ZZ)$, das in einem Kegel mit dem Inneren der Seite als Grundfläche und dem Ursprung als Spitze, gefasert ist. Natürlich ist das Polytop symmetrisch ($||-\phi||_T=||\phi||_T$) und die gefaserten Seiten treten auch in Paaren auf (eine Faserung $M \to S^1$ liefert mit einer orientierungsumkehrenden Reflektion $\tau$ das Inverse $M \to S^1 \stackrel \tau \to S^1$). Man sagt, gefaserte Klassen $\phi,\psi$ liegen in \textit{wirklich verschiedenen} gefaserten Kegeln, falls diese bis auf Symmetrie verschieden sind. 
     \end{bsp}
 
     \begin{bem}
         Zwei Normen zu abzuschätzen ist gleichbedeutend eine Inklusionsbeziehung ihrer Einheitsbälle festzustellen.
     \end{bem}
 
+    \subsection{Knoten und Verschlingungen}
+        
     \begin{bsp}[Verschlingungen]
     \label{ex:links}
-        Thurston liefert einige Beispiele in Form von Verschlingungskomplementen, als er sein Ergebnis über die Existenz "`seiner"' Norm und ihren Einheitsball veröffentlicht \cite{Thurston1986}. Eine Verschlingung bezeichnet eine gemeinsame disjunkte Einbettung von mehreren Knoten, also eine glatte Einbettung $L: \sqcup_{i=1}^m S^1 \to S^3$. Als $M_L$ bezeichnen wir wieder die kompakte 3-Mannigfaltigkeit, die aus Entfernen einer offenen Tubenumgebung hervorgeht. Wählt man auf $\sqcup S^1$ die Standardorientierung, erhält man wie im Fall eines Knotenkomplements, kanonische Erzeuger von $H^1(M_L)$, nämlich durch folgende Überlegungen: eine Orientierung einer Komponente liefert (nach festgelegter Konvention) einen orientierten Meridian, das ist eine Schleife die in $M_L\stackrel \simeq \into M - \im(L)$ homotop zu einer Einbettung einer Einheitssphäre einer Faser unter einer Tubenabbildung ist (es lässt sich in einem trivialen Bündel leicht von einer Einheitssphäre sprechen). Diese liefern kanonische Erzeuger der ersten Homologie $H_1(M_L) \cong \ZZ^m$ die kanonische Basis des Dualraums $l_1,\cdots,l_m \in H^1(M_L)\cong H_1(M_L)$ geht also kanonisch aus den Komponenten der Verschlingung $L_1,\cdots,L_m$ hervor. Außerdem liefert dies eine kanonische Identifikation mit dem Laurentring $\ZZ[ab(G)]=\ZZ[l_1^{\pm 1},\cdots,l_m^{\pm 1}]$ (analog wie im Knotenfall). Um also beispielsweise den Einheitsball der Thurston-Norm zu beschreiben, lassen sich ebenfalls (per Konvention) die Koordinaten $l_i=l_i \tensor 1 \in H^1(M)\tensor \RR = H^1(M;\RR)$ verwenden (diese Konvention nutzt natürlich, dass die eben beschriebene Konstruktion kanonisch ist).\\
+        Thurston liefert einige Beispiele in Form von Verschlingungskomplementen, als er sein Ergebnis über die Existenz "`seiner"' Norm und ihren Einheitsball veröffentlicht \cite{Thurston.1986}. Eine Verschlingung bezeichnet eine gemeinsame disjunkte Einbettung von mehreren Knoten, also eine glatte Einbettung $L: \sqcup_{i=1}^m S^1 \to S^3$. Als $M_L$ bezeichnen wir wieder die kompakte 3-Mannigfaltigkeit, die aus Entfernen einer offenen Tubenumgebung hervorgeht. Wählt man auf $\sqcup S^1$ die Standardorientierung, erhält man wie im Fall eines Knotenkomplements, kanonische Erzeuger von $H^1(M_L)$, nämlich durch folgende Überlegungen: eine Orientierung einer Komponente liefert (nach festgelegter Konvention) einen orientierten Meridian, das ist eine Schleife die in $M_L\stackrel \simeq \into M - \im(L)$ homotop zu einer Einbettung einer Einheitssphäre einer Faser unter einer Tubenabbildung ist (es lässt sich in einem trivialen Bündel leicht von einer Einheitssphäre sprechen). Diese liefern kanonische Erzeuger der ersten Homologie $H_1(M_L) \cong \ZZ^m$ die kanonische Basis des Dualraums $l_1,\cdots,l_m \in H^1(M_L)\cong H_1(M_L)$ geht also kanonisch aus den Komponenten der Verschlingung $L_1,\cdots,L_m$ hervor. Außerdem liefert dies eine kanonische Identifikation mit dem Laurentring $\ZZ[ab(G)]=\ZZ[l_1^{\pm 1},\cdots,l_m^{\pm 1}]$ (analog wie im Knotenfall). Um also beispielsweise den Einheitsball der Thurston-Norm zu beschreiben, lassen sich ebenfalls (per Konvention) die Koordinaten $l_i=l_i \tensor 1 \in H^1(M)\tensor \RR = H^1(M;\RR)$ verwenden (diese Konvention nutzt natürlich, dass die eben beschriebene Konstruktion kanonisch ist).\\
 
     \end{bsp}
         \todo{siehe Kommentar Thurston, dass keine Komponente Scheibe beranden oder Kreisring beranden soll}

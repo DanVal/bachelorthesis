@@ -1,19 +1,11 @@
-\contentsline {todos}{{1. }Hier rein \IeC {\"u}ber Glattheit <-> simpliziale approx wie in lee paul neuwirth}{5}
-\contentsline {todos}{{2. }ref(sp\IeC {\"a}ter)}{5}
-\contentsline {todos}{{3. }regwert}{8}
-\contentsline {todos}{{4. }kein Weg aus dem Durchschnitt ist rel Endpunkt homotop zu einem Rand}{9}
-\contentsline {todos}{{5. }Krec}{13}
-\contentsline {todos}{{6. }warum Fundamentalgruppe stark ist}{14}
-\contentsline {todos}{{7. }ein solcher existiert immer}{20}
-\contentsline {todos}{{8. }eventuelle Umstrukturierung: Konstruktionen, zuerst der Graph (und somit als Korollar, dass jede duale orientierte (somit zweiseitige) Fl\IeC {\"a}che als Urbild dargestellt werden kann), dann die zyklische \IeC {\"U}berlagerung}{20}
-\contentsline {todos}{{9. }was wenn $M_i$ Tori als Rand hat}{21}
-\contentsline {todos}{{10. }komische Richtung ggf. oben \IeC {\"a}ndern}{22}
-\contentsline {todos}{{11. }induzierten Abbildung auf der Menge der Ideale sind}{23}
-\contentsline {todos}{{12. }cite Hatcher Kapitel 1.3}{25}
-\contentsline {todos}{{13. }stimmt denn alles mit den Orientierungen \IeC {\"u}berein? bei den B\IeC {\"a}umen? wenn eine Kante durch eine Seite geht, k\IeC {\"u}rzen die isch dann weg?}{27}
-\contentsline {todos}{{14. }Konvention (zur Verallgemeinerung des Grades) ist $||\phi ||_A=0 wenn \Delta _\phi =0$}{29}
-\contentsline {todos}{{15. }f mittig}{31}
-\contentsline {todos}{{16. }Erw\IeC {\"a}hnen, dass ker(phi) immer den Kern als Abbildung auf der FG bedeutet}{31}
-\contentsline {todos}{{17. }gilt das f\IeC {\"u}r Betti>1?}{32}
-\contentsline {todos}{{18. }Orientierbarkeit und}{32}
-\contentsline {todos}{{19. }siehe Kommentar Thurston, dass keine Komponente Scheibe beranden oder Kreisring beranden soll}{33}
+\contentsline {todos}{{1. }kein Weg aus dem Durchschnitt ist rel Endpunkt homotop zu einem Rand}{11}
+\contentsline {todos}{{2. }refmoise}{13}
+\contentsline {todos}{{3. }ref}{19}
+\contentsline {todos}{{4. }ein solcher existiert immer}{24}
+\contentsline {todos}{{5. }eventuelle Umstrukturierung: Konstruktionen, zuerst der Graph (und somit als Korollar, dass jede duale orientierte (somit zweiseitige) Fl\IeC {\"a}che als Urbild dargestellt werden kann), dann die zyklische \IeC {\"U}berlagerung}{24}
+\contentsline {todos}{{6. }Konvention (zur Verallgemeinerung des Grades) ist $||\phi ||_A=0 wenn \Delta _\phi =0$}{36}
+\contentsline {todos}{{7. }f mittig}{38}
+\contentsline {todos}{{8. }Erw\IeC {\"a}hnen, dass ker(phi) immer den Kern als Abbildung auf der FG bedeutet}{38}
+\contentsline {todos}{{9. }gilt das f\IeC {\"u}r Betti>1?}{39}
+\contentsline {todos}{{10. }Orientierbarkeit und}{40}
+\contentsline {todos}{{11. }siehe Kommentar Thurston, dass keine Komponente Scheibe beranden oder Kreisring beranden soll}{41}
