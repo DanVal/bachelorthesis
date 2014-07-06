@@ -16,8 +16,8 @@
 \contentsline {subsection}{\numberline {5.2}$||\cdot ||_T$-minimierende Fl\IeC {\"a}chen}{26}
 \contentsline {subsection}{\numberline {5.3}Darstellungen des Alexander Ideals}{29}
 \contentsline {subsection}{\numberline {5.4}Kombinieren der Ergebnisse}{37}
-\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{38}
-\contentsline {subsection}{\numberline {6.1}Zu der Thurston-Norm bei \IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{38}
-\contentsline {subsection}{\numberline {6.2}Faserungen}{40}
-\contentsline {subsection}{\numberline {6.3}Knoten und Verschlingungen}{42}
-\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{47}
+\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{39}
+\contentsline {subsection}{\numberline {6.1}Zu der Thurston-Norm bei \IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{39}
+\contentsline {subsection}{\numberline {6.2}Faserungen}{41}
+\contentsline {subsection}{\numberline {6.3}Knoten und Verschlingungen}{43}
+\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{48}
