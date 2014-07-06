@@ -39,7 +39,7 @@ und somit die Operationen verträglich sind. Davon überzeugt man sich, indem ma
 Also lassen sich alle Definitionen der Alexander Invarianten analog zu Kapitel~\ref{sec:defs}, auf endlich erzeugten Gruppen definieren, wobei der Alexander Modul $G'/G''$ als Modul über $\ZZ [G/G']= \ZZ F$ aufgefasst wird. Fast! Die Definition der Elementarideale setzt noch voraus, dass dieser Modul endlich erzeugt ist. Wir hatten bisher nur gesehen, dass dies für Fundamentalgruppen von 3-Mannigfaltigkeiten stimmt, indem wir eine endliche CW-Struktur ausgenutzt haben. Dies wird am Ende des Kapitels festgestellt.
 
 \begin{bem}
-Es stellt sich sogar heraus, dass in den vielen Fällen auch die Thurston Norm, aus der Fundamentalgruppe berechnet werden kann, indem man getwistete Alexander Polynome verwendet --- die mit ähnlichen Methoden wie oben, allein aus der Fundamentalgruppe gewonnen werden können. Sie beinhalten meist noch mehr Daten als das gewöhnliche Alexander Polynom und es lässt sich mit dem induzierten Norm dieser Polynome, die Abschätzung aus Theorem~\ref{thm:haupttheorem} verallgemeinern. Diese Resultate wurden in mehreren Arbeiten von Friedl unter verschiedenen Zusammenarbeiten entwickelt, etwa in \cite{Friedl.2011,Friedl.2008,Friedl.2008b,Friedl.2007,Friedl.2006,Friedl.2008c}. Weiter nützen die getwisteten Alexander Polynome um bis zu einem gewissen Grade eine Umkehrung der Gleichheit aus Theorem~\ref{thm:haupttheorem} bei Faserungen, siehe~\cite{Friedl.2006,Friedl.2008b}.
+Es stellt sich sogar heraus, dass in den vielen Fällen auch die Thurston Norm, aus der Fundamentalgruppe berechnet werden kann, indem man getwistete Alexander Polynome verwendet --- die mit ähnlichen Methoden wie oben, allein aus der Fundamentalgruppe gewonnen werden können. Sie beinhalten meist noch mehr Daten als das gewöhnliche Alexander Polynom und es lässt sich mit dem induzierten Norm dieser Polynome, die Abschätzung aus Theorem~\ref{thm:haupttheorem} verallgemeinern. Diese Resultate wurden in mehreren Arbeiten von Friedl unter verschiedenen Zusammenarbeiten entwickelt, etwa in \cite{Friedl.2011,Friedl.2008,Friedl.2008b,Friedl.2007,Friedl.2006,Friedl.2008c}. Weiter nützen die getwisteten Alexander Polynome um bis zu einem gewissen Grade eine Umkehrung der Gleichheit aus Theorem~\ref{thm:haupttheorem} bei Faserungen zu ermöglichen, siehe~\cite{Friedl.2006,Friedl.2008b}.
 \end{bem}
 
 Um ohne topologische Methoden einzusehen, dass der Alexander Modul endlich erzeugt ist, ist es nötig den allgemeinen Gruppenring und noethersche Moduln genauer zu betrachten. Wir werden uns im Folgenden etwas mehr Mühe geben als eigentlich nötig wäre, um einen Zusammenhang mit dem nächsten Kapitel herzustellen, in welchem andere Definitionen der Alexander Invarianten verwendet werden.
@@ -76,7 +76,10 @@ Der Beweis ist einfach, obgleich man elementweise oder mit funktoriellen Methode
 
 \begin{bsp}
 	\label{ex:eilmaclane}
-	Wir werden später auf das Augmentationsideal $m(F)$ für $F\cong \ZZ^n$ treffen. In Anlehnung an das vorherige Beispiel und der Betonung auf die in der Einleitung erwähnte Übersetzung algebraischer Probleme in topologische, gilt sogar weiter: $m(F)$ ist ein freier $\ZZ[F]$-Modul genau dann wenn $n=1$. Dies liefert Gruppenkoh betr von $T^n$ \todo{Maclanespace}
+	Wir werden später auf das Augmentationsideal $m(F)$ für $F\cong \ZZ^n$ treffen. In Anlehnung an das vorherige Beispiel und der Betonung auf die in der Einleitung erwähnte Übersetzung algebraischer Probleme in topologische, gilt sogar weiter: $m(F)$ ist ein freier $\ZZ[F]$-Modul genau dann wenn $n=1$. Denn wenn $m(F)$ frei ist, so liefert dies eine freie Auflösung von $\ZZ$ (über die Augmentationsabbildung als $\ZZ[F]$-Modul aufgefasst) über $\ZZ[F]$ der Länge 1. Also $H^2(F) = \Ext^2_{\ZZ[F]}(\ZZ [F],\ZZ)=0$. Aber die Gruppenkohomologie berechnet sich topologisch als 
+	\[
+	H^2(F)=H^2(K(F,1))=H^2(T^n)=\ZZ^{\binom n2}		
+	\]
 \end{bsp}
 
 
@@ -175,10 +178,10 @@ Welche Folgerungen ziehen wir aus diesen Ergebnissen? Nun ja, zunächst untersch
 	 \label{ssec:rationalalex}
 	 Wie man oben den ganzzahligen Gruppenring erhalten hat, so erhält man auch den rationalen Gruppenring $\QQ[G]=\ZZ[G] \tensor_\ZZ \QQ$. Da sowohl die Theorie der Vektorräume, also $\QQ$-Moduln, als auch die Theorie der Moduln über Hauptidealringen --- etwa $\laurent \QQ t$ (vgl. Lemma~\ref{lem:QThauptidealring}) ---  sehr überschaubar ist, bietet es sich an auch rationale Alexander Invarianten zu definieren. Allerdings betrachtet diese Arbeit ganzzahlige Alexander Invarianten, also ist die Nützlichkeit der rationalen Alexander Invarianten in diesem Kontext fraglich, es sei denn solche Berechnungen würden zur Bestimmung der ganzzahligen Alexander Invarianten führen. Deswegen dient dieser Abschnitt lediglich dem Hinweis, dass das rationale Alexander Polynom dieselben Informationen wie das ganzzahlige Alexander Polynom enthält, die Berechnung also unabhängig von einer $\laurent \ZZ t$ oder einer $\laurent \QQ t$ Präsentation ist.
 
-	 Bekanntlicherweise nennt man ein Polynom primitiv, falls keine nicht Einheit des zugrunde liegenden Ringes alle Koeffizienten teilt. 
+	 Bekannterweise nennt man ein Polynom primitiv, falls keine nicht Einheit des zugrunde liegenden Ringes alle Koeffizienten teilt. 
 	 \begin{lem}
 	 \label{lem:primitiv}
-	 	Seien $f,g \in \laurent \ZZ t$ zwei Laurentpolynome und $f$ primitiv. ist die Teilbarkeit von $g$ durch $f$ gleichbedeutend in den Ringen $\laurent \ZZ t$ und $\laurent \QQ t$.
+	 	Seien $f,g \in \laurent \ZZ t$ zwei Laurentpolynome und $f$ primitiv. Dann ist die Teilbarkeit von $g$ durch $f$ gleichbedeutend in den Ringen $\laurent \ZZ t$ und $\laurent \QQ t$.
 	 \end{lem}
 	 \begin{proof}
 	 	Falls $f|g$ in $\laurent \ZZ t $ gilt, so trivialerweise in $\laurent \QQ t$. Sei umgekehrt $g=pf$ mit $p \in \laurent \QQ t$. Dann ist für ein $q \in \QQ$ das Polynom $\tilde p \in \laurent \ZZ t$ primitiv mit $q\tilde p = p$. Aber das Produkt zweier primitiver Polynome $\tilde p f = g/q$ ist primitiv, also $q \in \ZZ$.

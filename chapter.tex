@@ -20,7 +20,7 @@ Um die Situation für spätere Berechnungen angenehmer zu gestalten und überhau
 \end{bem}
 
 	\begin{proof}
-	Da $M$ eine kompakte 3-Mannigfaltigkeit ist, existiert eine endliche CW Struktur, vergleiche~\cite{Moise.1952}. Da es für CW Komplexe gleichbedeutend ist die zelluläre Homologie zu berechnen, reicht es den zellulären Kettenkomplex zu einer endlichen CW Struktur betrachten. Da in diesem alle Kettengruppen frei und endlich erzeugt von den Zellen der CW Struktur sind, folgt dass in dem Kettenkomplex der Überlagerung (mit der vererbten CW-Struktur) alle Kettengruppen als $\ZZ[F]$-Moduln endlich erzeugt sind, denn die Decktransformationen $F$ assoziieren die Erzeuger der Kettengruppen als $\ZZ$-Moduln der Überlagerung, die das gleiche Bild unter der Überlagerungsabbildung haben. Das bedeutet für jeden freien $\ZZ$-Summand der Kettengruppen der Mannigfaltigkeit erhält man einen freien $\ZZ[F]$-Summand der Kettengruppen der Überlagerung. Wenn jetzt nachgewiesen werden kann, dass das Bilden der Homologie verträglich ist mit dem Bilden der Homologie als Gruppenring Moduln, so wären alle Homologiegruppen der Überlagerung als Quotienten von $\ZZ[F]$-Moduln endlich erzeugt. Aber da die Wirkung von $F$ auf der Homologie durch Diffeomorphismen induziert wird, so ist die Verträglichkeit durch die elementare Tatsache gegeben, dass Abbildungen von Räumen Kettenkomplexabbildungen induzieren, also Verträglichkeit mit den Randoperatoren gegeben ist.
+	Da $M$ eine kompakte 3-Mannigfaltigkeit ist, existiert eine endliche CW Struktur, vergleiche~\cite{Moise.1952}. Da es für CW Komplexe gleichbedeutend ist die zelluläre Homologie zu berechnen, reicht es den zellulären Kettenkomplex einer endlichen CW Struktur zu betrachten. Da in diesem alle Kettengruppen frei und endlich erzeugt von den Zellen der CW Struktur sind, folgt dass in dem Kettenkomplex der Überlagerung (mit der vererbten CW-Struktur) alle Kettengruppen als $\ZZ[F]$-Moduln endlich erzeugt sind, denn die Decktransformationen $F$ assoziieren die Erzeuger der Kettengruppen als $\ZZ$-Moduln der Überlagerung, die das gleiche Bild unter der Überlagerungsabbildung haben. Das bedeutet für jeden freien $\ZZ$-Summand der Kettengruppen der Mannigfaltigkeit erhält man einen freien $\ZZ[F]$-Summand der Kettengruppen der Überlagerung. Wenn jetzt nachgewiesen werden kann, dass das Bilden der Homologie verträglich ist mit dem Bilden der Homologie als Gruppenring Moduln, so wären alle Homologiegruppen der Überlagerung als Quotienten von $\ZZ[F]$-Moduln endlich erzeugt. Aber da die Wirkung von $F$ auf der Homologie durch Diffeomorphismen induziert wird, so ist die Verträglichkeit durch die elementare Tatsache gegeben, dass Abbildungen von Räumen Kettenkomplexabbildungen induzieren, also Verträglichkeit mit den Randoperatoren gegeben ist.
 \end{proof}
 
 Für Berechnungen ist folgende bereits verwendete Proposition nützlich:
@@ -70,9 +70,9 @@ Sei im Folgenden nun $M$ ein noetherscher $R$-Modul. Dies ist zum Beispiel gegeb
 		\]		
 		wobei der
 		\begin{enumerate}
-			\item -te Isomorphismus bei $\partial N= \emptyset$ Poincaré und sonst Lefschetz Dualität ist
-			\item -te Isomorphismus gilt, da das universelle Koeffiziententheorem eine exakte Sequenz liefert in dem diese beiden Terme auftauchen und weiter nur $\Ext(H_0(N),\ZZ) = 0$
-			\item -te Isomorphismus gilt, da nach Hurewicz die Abbildung $\pi_1(N)\to H_1(N)$ die Abelianisierung ist (siehe Bemerkung~\ref{bem:fundhomologie})
+			\item -te Isomorphismus bei $\partial N= \emptyset$ Poincaré und sonst Lefschetz Dualität ist,
+			\item -te Isomorphismus gilt, da das universelle Koeffiziententheorem eine exakte Sequenz liefert in dem diese beiden Terme auftauchen und weiter nur $\Ext(H_0(N),\ZZ) = 0$,
+			\item -te Isomorphismus gilt, da nach Hurewicz die Abbildung $\pi_1(N)\to H_1(N)$ die Abelianisierung ist (siehe Bemerkung~\ref{bem:fundhomologie}),
 			\item -te Isomorphismus gilt, indem man zeigt, dass jede Abbildung auf dem 1-Skelett $X^1 \subset N \to S^1$ auf $N$ fortgesetzt werden kann. Da das 1-Skelett die Fundamentalgruppe (oder Homologie) erzeugt, also die Inklusion eine surjektive Abbildung $i_*:\pi_1(X^1)\onto\pi_1(N)$ induziert, lässt sich auf diese Weise jeder Homomorphismus $\pi_1(N)\to \ZZ$ auf den Erzeugern aus dem 1-Skelett (genauer möchte man, dass diese Abbildung auf einem maximalen Baum konstant ist) definieren und fortsetzen. 
 		\end{enumerate}
 	Also liefert jeder Homomorphismus $\phi \in H^1(N;\ZZ)$ eine Homotopieklasse von Abbildungen in $[N,S^1]$ und umgekehrt liefert jede Abbildung $N\to S^1$ einen induzierten Homomorphismus der Homologiegruppen. Die Differentialtopologie liefert nun, dass für jede Homotopieklasse aus $[N,S^1]$ ein glatter Repräsentant existiert und die Existenz eines regulären Wertes in $S^1$. Jedes Urbild eines solchen regulären Wertes ist dann eine 1-kodimensionale orientierte Mannigfaltigkeit (mit Rand wenn überhaupt im Rand von $N$ eigentlich eingebettet), welche als Homologieklasse dual zu $\phi$ ist. Genauer gilt sogar Folgendes:
@@ -88,9 +88,6 @@ Sei im Folgenden nun $M$ ein noetherscher $R$-Modul. Dies ist zum Beispiel gegeb
 		Sei $f:N \to S^1$ eine glatte Abbildung. Jedes Urbild eines regulären Wertes definiert nach obigem Satz ein Element in $H_{n-1}(N,\partial N;\ZZ)$ als Bild der Fundamentalklasse der Untermannigfaltigkeit unter der Inklusion. Diese ist Poincaré beziehungsweise Lefschetz dual zu $[f]\in H^1(N;\ZZ)$.
 	\end{thm}
 	Alle diese Aussagen sind bekannte elementare Aussagen der Differentialtopologie und können etwa in \cite{Kreck.2010} oder mit elementaren Methoden in \cite{Hirsch.1991} (bis auf \ref{thm:thom}) nachgelesen werden. 
+
+	Dies liefert Möglichkeiten etwa zu zeigen, dass eine eingebettete Fläche in einer 3-Mannigfaltigkeit dual zu einer Abbildung Kohomologieklasse ist. Ist beispielsweise eine zweiseitige Fläche gegeben, so lässt der zweiseitige Kragen eine offensichtliche Möglichkeit einer Quotientenabbildung nach $S^1$ zu, die eine Darstellung der Fläche als Urbild eines regulären Wertes zulässt. Mehr dazu später in Kapitel~\ref{sec:constr}.
 	
-	Dies liefert Möglichkeiten etwa zu zeigen, dass eine eingebettete Fläche in einer 3-Mannigfaltigkeit dual zu einer Abbildung Kohomologieklasse ist. Ist beispielsweise eine zweiseitige Fläche gegeben, so lässt der zweiseitige Kragen eine offensichtliche Möglichkeit einer Quotientenabbildung nach $S^1$ zu, die eine Darstellung der Fläche als Urbild eines regulären Wertes zulässt. Mehr dazu später.
-	
-	\begin{bem}[Schnittzahlen]
-		Ein weiteres 
-	\end{bem}
