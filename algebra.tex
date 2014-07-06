@@ -2,30 +2,31 @@
 
 \section{Algebraische Alexander Invarianten}
 \label{sec:algebra}
-Tatsächlich könnte man diese Bachelorarbeit fast ausschließlich algebraisch verstehen --- wenigstens den Teil über die Alexander-Invarianten. Natürlich ist dieser Arbeit aus dem Bereich der Topologie, ein Geschmack oder die Illusion gegeben, man arbeite mit direkten Eigenschaften der Räume. Bei der Thurston-Norm ist dies sicherlich noch eher gegeben, durch die Deftinition einar Funktion auf einem Vektorraum mittels geometrischer Eigenschaften der Mannigfaltigkeit. Jedoch handelt es sich bei den Alexander-Invarianten, insbesondere dem Alexander Polynom, lediglich um Invarianten einer endlich erzeugten Gruppe. Durch Anwendung dieser Invarianten auf die Fundamentalgruppe eines topologischen Raumes, erhält man also Invarianten von Räumen. Natürlich verliert das Alexander Polynom von 3-Mannigfaltigkeiten durch diese "`Faktorisierung"' nicht allzu viel an Reiz, da die Fundamentalgruppe eine recht starke Invariante von 3-Mannigfaltigkeiten darstellt, beispielsweise liefert sie durch einfache Anwendung von Hurewicz und Dualitätssätzen (Poincaré/Lefschetz, universelles Koeffiziententheorem) alle Homologiegruppen der 3-Mannigfaltigkeit und eine Klasse von 3-Mannigfaltigkeiten, die sogenannten `Haken-Mannigfaltigkeiten' sind durch ihre Fundamentalgruppe klassifiziert, der Beweis dazu stammt von Waldhausen~\cite{Waldhausen.1968} (auf Wikipedia steht noch viel). Im Folgenden sollen nun die Alexander-Invarianten von endlich erzeugten Gruppen definiert werden und Zusammenhänge verschiedener Definitionen erkannt werden.
+Tatsächlich könnte man diese Bachelorarbeit fast ausschließlich algebraisch verstehen --- wenigstens den Teil über die Alexander-Invarianten. Natürlich ist dieser Arbeit aus dem Bereich der Topologie, der Geschmack oder die Illusion gegeben, man arbeite mit direkten Eigenschaften der Räume. Bei der Thurston-Norm ist dies sicherlich noch eher gegeben, durch die Deftinition einar Funktion auf einem Vektorraum mittels geometrischer Eigenschaften der Mannigfaltigkeit. Jedoch handelt es sich bei den Alexander-Invarianten, insbesondere dem Alexander Polynom, lediglich um Invarianten einer endlich erzeugten Gruppe. Durch Anwendung dieser Invarianten auf die Fundamentalgruppe eines topologischen Raumes, erhält man also Invarianten von Räumen. Natürlich verliert das Alexander Polynom von 3-Mannigfaltigkeiten durch diese "`Faktorisierung"' nicht allzu viel an Reiz, da die Fundamentalgruppe eine recht starke Invariante von 3-Mannigfaltigkeiten darstellt, beispielsweise liefert sie durch einfache Anwendung von Hurewicz und Dualitätssätzen (Poincaré/Lefschetz, universelles Koeffiziententheorem) alle Homologiegruppen der 3-Mannigfaltigkeit und eine Klasse von 3-Mannigfaltigkeiten, die sogenannten `Haken-Mannigfaltigkeiten' sind durch ihre Fundamentalgruppe klassifiziert, der Beweis dazu stammt von Waldhausen~\cite{Waldhausen.1968}. Im Folgenden sollen nun die Alexander Invarianten von endlich erzeugten Gruppen definiert werden und Zusammenhänge verschiedener Definitionen erkannt werden.
 
-Natürlich bergen algebraische Invarianten mit solchen Eigenschaften immer mehrere Vorzüge. Zum einen werden topologische Probleme in algebraische übersetzt, die dann mit algebraischen Methoden untersucht werden können. Scheint andererseits ein algebraisches Problem nur schwer lösbar, so ergibt sich die Möglichkeit einen topologischen Kontext zu finden, in dem sich die algebraische Ursprungssituation als Invariante ergibt, dessen Ergebnisse und Berechnungen sich aber vielleicht mit topologischen Eigenschaften des Raumes leichter handhaben lassen. Siehe etwa Beispiel $K(\ZZ^n,1)$.
+Natürlich bergen algebraische Invarianten mit solchen Eigenschaften immer mehrere Vorzüge. Zum einen werden topologische Probleme in algebraische übersetzt, die dann mit algebraischen Methoden untersucht werden können. Scheint andererseits ein algebraisches Problem nur schwer lösbar, so ergibt sich die Möglichkeit einen topologischen Kontext zu finden, in dem sich die algebraische Ursprungssituation als Invariante ergibt, dessen Ergebnisse und Berechnungen sich aber vielleicht mit topologischen Eigenschaften des Raumes leichter handhaben lassen, siehe etwa Beispiel~\ref{ex:eilmaclane}.
 
-Es soll zunächst eine analoge Definition zu den bekannten Alexander-Invarianten aus Kapitel~\ref{sec:defs} gegeben werden. Anschließend soll eine weitere Definition gegeben werden, die beispielsweise McMullen in \cite{MCMULLEN.2002} nutzt und ein Zusammenhang hergestellt werden --- warum diese Definitionen streng genommen nicht äquivalent sind und warum das kein Problem darstellt.
+Es soll zunächst eine analoge Definition zu den bekannten Alexander Invarianten aus Kapitel~\ref{sec:defs} gegeben werden. Anschließend wollen wir eine weitere Definition betrachten, die beispielsweise McMullen in \cite{MCMULLEN.2002} nutzt und ein Zusammenhang hergestellt werden --- warum diese Definitionen streng genommen nicht äquivalent sind und warum das kein Problem darstellt.
 
 \subsection{Herleitung der algebraischen Idee}
     
-Nun müssen wir uns mit der Problematik beschäftigen die eingangs bei der Definition des Gruppenrings erwähnt wurde, nämlich dass der entstehende Gruppenring von nicht-abelschen Gruppen nicht mehr kommutativ ist, man also beispielsweise zwischen Links- und Rechtsmoduln über dem Gruppenring unterscheiden muss. Im Folgenden soll es sich falls nicht explizit anders angekündigt um Linksmoduln handeln.
+Nun müssen wir uns mit der Problematik beschäftigen die eingangs bei der Definition des Gruppenrings erwähnt wurde, nämlich dass der entstehende Gruppenring von nicht-abelschen Gruppen nicht mehr kommutativ ist, man also beispielsweise zwischen Links- und Rechtsmoduln über dem Gruppenring unterscheiden muss.
 
-Sei $G$ die Fundamentalgruppe von $M$ und $F$ ein freier abelscher Quotient von $G$, dessen Rang durch $b_1(G)$ nach oben beschränkt ist. Sei außerdem $\alpha:G\to F$ die Quotientenabbildung. Dann erhält man einen Gruppenisomorphismus $p'_*: H_1(\hat M) \to \ker\alpha/[\ker\alpha,\ker\alpha]$ der durch die Überlagerungsprojektion $\hat M = M_\alpha \to M$ zu $\alpha$ induziert wird. Ziel wäre es zu zeigen, dass diese Abbildung auch einen Isomorphismus von $\ZZ[F]$-Moduln liefert. Daraus würden natürlich gleiche Präsentationen folgen, die zu gleichen Elementaridealen führen und so fort. Hierfür benötigt man jedoch überhaupt eine $\ZZ[F]$-Modul Struktur auf dem Quotienten $G'/G''$ für $G'=\ker\alpha, G''=[G',G']$. Diese soll zunächst definiert werden:\\
-Falls $\alpha$ die maximale freie abelsche Quotientenabbildung $G \to G/[G,G] \to F \cong \ZZ^{b_1(G)}$ so ist $\alpha$ kanonisch. Also seien $g_1,\cdots,g_n,n=b_1(G)$ Elemente die auf eine Basis von $F$ abgebildet werden. Diese definieren dann Automorphismen von $G'/G''$ durch 
+Sei $G$ die Fundamentalgruppe von $M$ und $F$ eine freier abelsche Gruppe zusammen mit einem Epimorphismus $\alpha:G \to F$. Also faktorisiert $\alpha$ durch die maximale freie abelsche Quotientenabbildung $G \to G/[G,G] \to ab(G) \cong \ZZ^{b_1(G)}$ die als Komposition kanonischer Abbildungen kanonisch ist. Folglich ist der Rang von $F$ durch $b_1(G)$ nach oben beschränkt. Dann erhält man einen Gruppenisomorphismus $p'_*: H_1(\hat M) \to \ker\alpha/[\ker\alpha,\ker\alpha]$ der durch die Überlagerungsprojektion $\hat M = M_\alpha \to M$ zu $\alpha$ induziert wird. Ziel wäre es zu zeigen, dass diese Abbildung auch einen Isomorphismus von $\ZZ[F]$-Moduln liefert. Daraus würden natürlich gleiche Präsentationen folgen, die zu gleichen Elementaridealen führen und so fort. Hierfür benötigt man jedoch überhaupt eine $\ZZ[F]$-Modul Struktur auf dem Quotienten $G'/G''$ für $G'=\ker\alpha, G''=[G',G']$. Diese soll zunächst definiert werden:
+
+Es seien $g_1,\cdots,g_m,m\leq b_1(G)$ Elemente die auf eine Basis von $F$ abgebildet werden. Diese definieren dann Automorphismen von $G'/G''$ durch 
 \[
-	\hat t_i(x) = \bar{ g_i} \bar{ x}\overline{ g_i^{-1}} = \overline{{} g_i x g_i^{-1}}
+	\hat t_i(x) =  [g_i]  [x][ g_i^{-1}] = [ g_i x g_i^{-1}]
 \]
-Diese sind unabhängig der gewählten $g_i$. 
+Man prüft leicht, dass diese unabhängig der gewählten $g_i$ sind. Es sei für den Beweis bemerkt, dass die Kommutatoruntergruppe $G''\subset G'$ eine charakteristische Untergruppe ist. 
 \begin{bem}
  	Das ist eine Form der expliziten Konstruktion des Falles, wenn man von einer induzierten Operation einer zerfällenden kurzen exakten Sequenz redet:
  	\[
  		\seq {G'/G''} {G/G''} {G/G'}
  	\]
- 	Da $F= G/G'$ frei abelsch ist, zerfällt diese Sequenz und man erhält eine Abbildung $F \to \Aut(G'/G'')$ genauer gesagt, eine Gruppenwirkung auf $G'/G''$ durch Konjugation unter der Identifikation $G'/G''\into G/G''$ mit zurückgezogenen Elementen aus $F$. Dies ist wohldefiniert da das Bild von $G'/G''$ einem Kern entspricht, also Normalteiler ist. Offensichtlich stimmt diese Operation mit der obigen überein und verallgemeinert diese für allgemeine nicht-kanonische Abbildungen $\alpha$ auf eine freie abelsche Gruppe $F$.
+ 	Da $F= G/G'$ frei abelsch ist, zerfällt diese Sequenz und man erhält eine Abbildung $F \to \Aut(G'/G'')$ genauer gesagt, eine Gruppenwirkung auf $G'/G''$ durch Konjugation unter der Einbettung $G'/G''\into G/G''$ mit zurückgezogenen Elementen aus $F$. Dies ist wohldefiniert da das Bild von $G'/G''$ einem Kern entspricht, also Normalteiler ist. Offensichtlich stimmt diese Operation mit der obigen überein.
  \end{bem} 
- Also kann $\alpha:G\to F$ wieder nicht kanonisch sein, nach der Bemerkung ist sind die $\hat t_i$ auch wohldefiniert, falls $g_1,\dots,g_m, m\leq b_1(G)$ auf eine Basis von $\ZZ^m$ abgebildet wird.
+ 
  Mit $\alpha(g_i)=t_i$ als ein Element der Basis von $F$, ist die Gruppenwirkung von $F$ auf $H_1(\hat M)$, die durch die Decktransformationen $F$ induzierte $t_i\gamma = t_{i*}\gamma,t_i \in F , \gamma \in H_1(\hat M)$. Also ist nur zu zeigen, dass folgendes Diagramm kommutiert:
 \[
 	\begin{xy}
@@ -33,12 +34,15 @@ Diese sind unabhängig der gewählten $g_i$.
 		H_1(\hat M)  \ar[r]^{p'_*} & G'/G'' }
 	\end{xy}
 \]
-und somit die Operationen verträglich sind. Davon überzeugt man sich, indem man die Wirkung von $t_i$ näher betrachtet: nach Hurewicz lässt sich ein Zykel aus $H^1(\hat M)$ als Schleife darstellen. Die Decktransformation $t_i$ schiebt diese Schleife nun auf eine Schleife, die homolog ist zu der Konjugation mit einer zu einem Weg gelifteten Schleife $\tau_i, [\tau_i] \in \pi_1(M)$, welche die Decktransformation $t_i$ erzeugt. Aber wegen $\alpha([\tau_i])=t_i$ ist $\hat t_i$ auch nur K \\
-Also lassen sich alle Definitionen der Alexander Invarianten analog zu Kapitel~\ref{sec:defs}, auf endlich erzeugten Gruppen definieren, wobei der Alexander Modul $G'/G''$ als Gruppenring-Modul über $G/G'=F$ aufgefasst wird. Fast! Die Definition der Elementarideale setzt noch voraus, dass dieser Modul endlich erzeugt ist. Wir hatten bisher nur gesehen, dass die für Fundamentalgruppen von 3-Mannigfaltigkeiten stimmt, indem wir eine endliche CW-Struktur ausgenutzt haben. Dies wird am Ende des Kapitels festgestellt.
+und somit die Operationen verträglich sind. Davon überzeugt man sich, indem man die Wirkung von $t_i$ näher betrachtet: nach Hurewicz lässt sich ein Zykel aus $H^1(\hat M)$ als Schleife darstellen. Die Decktransformation $t_i$ bildet diese Schleife nun auf eine Schleife ab, die homolog ist zu der Konjugation mit einer zu einem Weg gelifteten Schleife $\tau_i, [\tau_i] \in \pi_1(M,p)$, welche die Decktransformation $t_i$ erzeugt. Aber wegen $\alpha([\tau_i])=t_i$ ist $\hat t_i$ auch nur Konjugation mit $\tau_i$.
 
-Es stellt sich sogar heraus, dass in den meisten Fällen auch die Thurston Norm, aus der Fundamentalgruppe berechnet werden kann, indem man getwistete Alexander Polynome verwendet, die mit ähnlichen Methoden wie oben, allein aus der Fundamentalgruppe gewonnen werden können. Sie beinhalten meist noch mehr Daten als das gewöhnliche Alexander Polynom. Außerdem lässt sich mit dem Grad dieser Polynome, die Abschätzung aus Theorem~\ref{thm:haupttheorem} verallgemeinern.\todo{ref}
+Also lassen sich alle Definitionen der Alexander Invarianten analog zu Kapitel~\ref{sec:defs}, auf endlich erzeugten Gruppen definieren, wobei der Alexander Modul $G'/G''$ als Modul über $\ZZ [G/G']= \ZZ F$ aufgefasst wird. Fast! Die Definition der Elementarideale setzt noch voraus, dass dieser Modul endlich erzeugt ist. Wir hatten bisher nur gesehen, dass dies für Fundamentalgruppen von 3-Mannigfaltigkeiten stimmt, indem wir eine endliche CW-Struktur ausgenutzt haben. Dies wird am Ende des Kapitels festgestellt.
 
-Um ohne topologische Methoden einzusehen, dass der Alexander Modul endlich erzeugt ist, ist es nötig den allgemeinen Gruppenring und noethersche Moduln genauer zu betrachten.
+\begin{bem}
+Es stellt sich sogar heraus, dass in den vielen Fällen auch die Thurston Norm, aus der Fundamentalgruppe berechnet werden kann, indem man getwistete Alexander Polynome verwendet --- die mit ähnlichen Methoden wie oben, allein aus der Fundamentalgruppe gewonnen werden können. Sie beinhalten meist noch mehr Daten als das gewöhnliche Alexander Polynom und es lässt sich mit dem induzierten Norm dieser Polynome, die Abschätzung aus Theorem~\ref{thm:haupttheorem} verallgemeinern. Diese Resultate wurden in mehreren Arbeiten von Friedl unter verschiedenen Zusammenarbeiten entwickelt, etwa in \cite{Friedl.2011,Friedl.2008,Friedl.2008b,Friedl.2007,Friedl.2006,Friedl.2008c}. Weiter nützen die getwisteten Alexander Polynome um bis zu einem gewissen Grade eine Umkehrung der Gleichheit aus Theorem~\ref{thm:haupttheorem} bei Faserungen, siehe~\cite{Friedl.2006,Friedl.2008b}.
+\end{bem}
+
+Um ohne topologische Methoden einzusehen, dass der Alexander Modul endlich erzeugt ist, ist es nötig den allgemeinen Gruppenring und noethersche Moduln genauer zu betrachten. Wir werden uns im Folgenden etwas mehr Mühe geben als eigentlich nötig wäre, um einen Zusammenhang mit dem nächsten Kapitel herzustellen, in welchem andere Definitionen der Alexander Invarianten verwendet werden.
 
 \begin{defn}[Augmentationsideal]
 \label{def:augmentation}
@@ -49,18 +53,21 @@ Um ohne topologische Methoden einzusehen, dass der Alexander Modul endlich erzeu
 	Falls $G=H$ so definiere: $m(G)=m_G(G)$.
 \end{defn}
 
+\begin{bem}
 Das Augmentationsideal erhält seinen Namen, da es aus dem Kern der Augmentationsabbildung, die jedes Gruppenelement auf die Eins abbildet, entsteht:
 \[
 	m_G(G) = \ker(\ZZ[G] \to \ZZ)
 \]
 
+\end{bem}
 \begin{lem}
+\label{lem:augmker}
 	Sei $\phi:G \to F$ ein Homomorphismus mit Fortsetzung $\hat \phi: \ZZ[G] \to \ZZ[F]$. Dann gilt:
 	\[
 		\ker(\hat\phi) = m_G(\ker\phi)= m(\ker\phi) \ZZ[G] = \ZZ[G] m(\ker\phi) 
 	\]
 \end{lem}
-Der Beweis ist einfach, obgleich man elementweise oder mit funktoriellen Methoden argumentiert und wird deswegen übersprungen. Die Beidseitigkeit des Ideal folgt aus der Eigenschaft, dass $\ker\hat\phi$ Normalteiler ist, und zeigt dass die Definition~\ref{def:augmentation} des Augmentationsideals, ein beidseitiges Ideal liefert.
+Der Beweis ist einfach, obgleich man elementweise oder mit funktoriellen Methoden argumentiert und wird deswegen übersprungen. Die Beidseitigkeit des Ideal folgt aus der Eigenschaft, dass $\ker\hat\phi$ Normalteiler ist, und so zeigt man auch, dass die Definition~\ref{def:augmentation} des Augmentationsideals, ein beidseitiges Ideal liefert.
 
 
 \begin{bsp}
@@ -68,63 +75,18 @@ Der Beweis ist einfach, obgleich man elementweise oder mit funktoriellen Methode
 \end{bsp}
 
 \begin{bsp}
-	Wir werden später auf das Augmentationsideal $m(F)$ für $F\cong \ZZ^n$ treffen. In Anlehnung an das vorherige Beispiel und der Betonung auf die in der Einleitung erwähnte Übersetzung algebraischer Probleme in topologische, gilt sogar weiter: $m(F)$ ist ein freier $\ZZ[F]$-Modul genau dann wenn $n=1$. Dies liefert Gruppenkoh betr von $T^n$ 
+	\label{ex:eilmaclane}
+	Wir werden später auf das Augmentationsideal $m(F)$ für $F\cong \ZZ^n$ treffen. In Anlehnung an das vorherige Beispiel und der Betonung auf die in der Einleitung erwähnte Übersetzung algebraischer Probleme in topologische, gilt sogar weiter: $m(F)$ ist ein freier $\ZZ[F]$-Modul genau dann wenn $n=1$. Dies liefert Gruppenkoh betr von $T^n$ \todo{Maclanespace}
 \end{bsp}
 
 
-Der obige Isomorphismus liefert also, dass der Alexander Modul endlich erzeugt ist, genau dann wenn $m(G)/m(\ker\phi)m(G)$ als $\ZZ[F]$ Modul endlich erzeugt ist. Die $\ZZ[F]$ Modul Struktur, ist gesichert durch obiges Lemma, das $\ZZ[F]=\ZZ[G]/m(\ker\phi)$ liefert und der zu betrachtende Modul also ein Quotient von dem $\ZZ[F]$ Modul (hier sogar beidseitiges Ideal, also insbesondere endlich erzeugt, da $\ZZ[F]$ noethersch) $m(G)/m(\ker\phi) \subset \ZZ[F]$ ist. Mit den Betrachtungen über Quotienten von noetherschen Modul zu Beginn der Arbeit, stellt sich die Fragestellung als trivial heraus (man sollte natürlich den Isomorphiesatz kennen, dass $(G/N)/(H/N)\cong G/H$ für Normalteiler). Es ergibt sich also folgendes Lemma:
-
-\begin{lem}
-	Der Alexander Modul einer endlich erzeugten Gruppe ist endlich erzeugt.
-\end{lem}
-
-
-
-Diese Maschinerie sollte nun genügen um die endliche Erzeugbarkeit der algebraischen Variante des Alexander Moduls zu zeigen. Dies und bisherige Resultate sollen in folgender Proposition festgehalten werden:
-
-\begin{prop}
-	Es sei $G$ eine endlich erzeugte Gruppe, $F \cong \ZZ^b$ eine freie abelsche Gruppe mit $b\leq b_1(G)$ und $\phi: G \to F$ ein Epimorphismus. Außerdem bezeichne wie oben $G'=\ker\phi$ und $G''=[G',G']$ die Kommutatoruntergruppe. Die folgende zerfallende Sequenz liefert eine Gruppenwirkung von $F$ auf $G'$:
-	\[
-		\seq {G'} G F
-	\]
-	Weiter liefert diese Sequenz eine exakte Sequenz von $\ZZ[F]$-Moduln
-	\[
-		\seq {m(\ker\phi)/m(\ker\phi)m(G)} {m(G)/m(\ker\phi)m(G)} {m(F)}
-	\]
-	und einen Isomorphismus von $\ZZ[F]$-Moduln $G'/G'' \cong m(\ker\phi)/m(\ker\phi)m(G)$.\\
-	Insbesondere ist der Alexander Modul endlich erzeugt.
-\end{prop}
-\begin{proof}
-		Man betrachte folgendes Diagramm:
-		\begin{equation}
-		\label{eq:diagalg}
-			\begin{xy}
-				\xymatrix{	0 \ar[r]&	m(\ker\phi) \ar[r] \ar[d]&	m(G) \ar[r] \ar[d]& m(F) \ar[r] \ar[d]&	0\\
-							0 \ar[r]&	m(\ker\phi)	\ar[r] 		&	\ZZ[G] \ar[r]	&	\ZZ[F] \ar[r] &		0}
-			\end{xy}			
-		\end{equation}
-		Die zweite Reihe ist exakt, die folgt aus der exakten Funktorialität von $\ZZ[]$ und die Exaktheit nach Anwendung des Schlangenlemmas auf folgendes kommutatives Diagramm mit exakten Reihen hervor geht:
-		\[
-			\begin{xy}
-				\xymatrix{	0 \ar[r]&	m(\ker\phi) \ar[r] \ar[d]&	\ZZ[G] \ar[r] \ar[d]& \ZZ[F] \ar[r] \ar[d]&	0\\
-							0 \ar[r]&		0		\ar[r] 		&	\ZZ \ar[r]	&	\ZZ \ar[r] &		0}
-			\end{xy}
-		\]
-		Sei $m=m(\ker\phi)\subset \ZZ[\ker\phi]$ (man kann leicht zeigen $\ZZ[G]\cdot m = m(\ker\phi) \subset \ZZ[G]$). Da $m\cdot m(G)\subset m\cdot \ZZ[G] = m(\ker\phi)$, faktorisieren die injektiven Abbildungen aus Diagramm~\ref{eq:diagalg}. Die erste Zeile nimmt dann die gewünschte Form aus der Proposition an, außerdem lassen sich die Strukturen als $\ZZ[F]$-Modul Strukturen auffassen.\\
-		Es ist also noch der Isomorphismus zu zeigen. Dieser lässt sich einfach angeben:
-		\begin{align*}
-			G'/G'' 	&\to 		m(G')/m(G')\dot m(G)\\
-			[g']		&\mapsto	[(g'-1)]\\
-			[g']		&\mathrel{\reflectbox{\ensuremath{\mapsto}}}  [(g'-1)g]
-		\end{align*}
-		Diese Abbildungen sind wohldefiniert und einander invers, da $[(g'-1)g]=[(g'-1)g-(g'-1)(g-1)]=[(g'-1)]$.
-	\end{proof}	
 
 \subsection{Eine äquivalente Definition von McMullen?}
     
-In der Arbeit von McMullen~\cite{MCMULLEN.2002} verwendet er unterschiedliche Definitionen der Alexander Invarianten. Tatsächlich stellen sich diese auch bei Berechnungen als günstig heraus, da relative Homologie betrachtet wird. Ist es jedoch möglich Berechnungen für die obigen Definitionen der Alexander Invarianten zu ersetzen? Die Frage soll nun geklärt werden, dafür zunächst die Definitionen:
+In der Arbeit von McMullen~\cite{MCMULLEN.2002} verwendet er unterschiedliche Definitionen der Alexander Invarianten. Tatsächlich stellen sich diese auch bei Berechnungen als günstig heraus, da relative Homologie betrachtet wird. Ist es jedoch möglich Berechnungen für die obigen Definitionen der Alexander Invarianten zu ersetzen? Mit anderen Worten, inwieweit sind die Definitionen äquivalent? Die Frage soll nun geklärt werden, dafür zunächst die Definitionen:
 
 \begin{defn}
+\label{def:Mcmullen}
 	Sei $\phi: G \to F$ die kanonische Abbildung auf den maximalen frei abelschen Quotienten für eine endlich erzeugte Gruppe $G$. Dann ist der Alexander Modul von $G$ nach McMullen's Definition der $\ZZ[F]$-Modul:
 	\[
 		A_M(G) = m(G)/m(G)m(\ker\phi)
@@ -135,41 +97,98 @@ In der Arbeit von McMullen~\cite{MCMULLEN.2002} verwendet er unterschiedliche De
 	\]
 	und dem Alexander Polynom, so dass $(\Delta_M ) \supset I_M(G)$ das kleinste Hauptideal ist.
 
-	Falls $G=\pi_1(M,p)$ kann man den isomorphen $\ZZ[F]$-Modul mit der per Decktransformationen induzierten $F$-Wirkung als Definition verwenden 
+	Falls $G=\pi_1(M,p)$ kann man den isomorphen $\ZZ[F]$-Modul mit der per Decktransformationen $(M_\phi,\pi^{-1}p) \to (M_\phi,\pi^{-1}p)$ induzierten $F$-Wirkung als Definition verwenden 
 	\[
 		A_M(G)= H_1(M_\phi,\pi^{-1}p;\ZZ)
 	\]
 	wobei $M_\phi \stackrel \pi \to M$ die universelle abelsche Überlagerung ist.
 \end{defn}
+Die Kennzeichnung mit der Definitionen mit $M$, deutet die Definition nach McMullen an, nicht etwa die Mannigfaltigkeit. Dies wird später ohne Zweideutigkeiten verwendet. Lemma~\ref{lem:augmker} liefert $\ZZ[F]=\ZZ[G]/m(\ker\phi)$, also ist die algebraische Definition von McMullen als Quotient ein $\ZZ F$-Modul (genauer verwendet man hier den Isomorphiesatz $(G/N)/(H/N)\cong G/H$), insbesondere noethersch.
 
+Die bisherige Maschinerie sollte nun genügen um die endliche Erzeugbarkeit der algebraischen Variante des Alexander Moduls zu zeigen. Dies und bisherige Resultate sollen in folgender Proposition festgehalten werden:
 
-	Diese Proposition liefert einen Zusammehang der obigen algebraischen Definition des Alexander Moduls, mit der algebraischen Definition von Milnor. In \cite{MCMULLEN.2002} sagt er, diese sei als Gruppenring-Modul isomorph zu $H_1(\hat M,\hat p;\ZZ)$, wobei dies die freie abelsche universelle Überlagerung relativ der diskreten Menge aller Urbilder von einem Basispunkt $p \in M$. Die lange exakte Homologie Sequenz des Paares $(\hat M,\hat p)$ liefert also einen $\oplus_{f \in F - \{0\}}\ZZ$~Summanden, algebraisch lässt sich dies auch einsehen:
-	\begin{prop}
-	 	Der Modul $m(F)\subset \ZZ[F]$ ist frei über $\ZZ$ mit Basis $\langle (f-1),f\in F \rangle$. Also splittet die exakte Sequenz und es gilt als abelsche Gruppen:
-	 	\[
-	 		m(G)/m(G)m(\ker\phi) \cong m(\ker\phi)/m(\ker\phi)m(G) \oplus m(F) \cong  m(\ker\phi)/m(\ker\phi)m(G) \oplus \bigoplus_{f\in F-\{0\}} \ZZ
-	 	\]
-	 \end{prop} 
+\begin{prop}
+\label{prop:alexmodules}
+	Es sei $G$ eine endlich erzeugte Gruppe, $F \cong \ZZ^b$ eine freie abelsche Gruppe mit $b\leq b_1(G)$ und $\phi: G \to F$ ein Epimorphismus. Außerdem bezeichne wie oben $G'=\ker\phi$ und $G''=[G',G']$ die Kommutatoruntergruppe. Die folgende zerfallende Sequenz liefert eine Gruppenwirkung von $F$ auf $G'$:
+	\[
+		\seq {G'} G F
+	\]
+	Weiter liefert diese Sequenz eine exakte Sequenz von $\ZZ[F]$-Moduln
+		\begin{align}
+		\seq {m(\ker\phi)/m(\ker\phi)m(G)} {m(G)/m(\ker\phi)m(G)} {m(F)} \label{seq:alexmodules}
+		\end{align}
+		und einen Isomorphismus von $\ZZ[F]$-Moduln $G'/G'' \cong m(\ker\phi)/m(\ker\phi)m(G)$.
 
+	Insbesondere ist der Alexander Modul endlich erzeugt.
+\end{prop}
+\begin{bem}
+	Für abelsche Gruppen ist $m(F)$ frei und die Sequenz zerfällt immer. Für $\ZZ[F]$-Moduln zerfällt sie genau dann wenn $F\cong \ZZ$ siehe Beispiel~\ref{ex:eilmaclane}.
+\end{bem}
+\begin{proof}
+		Man betrachte folgendes Diagramm:
+		\begin{equation}
+		\label{eq:diagalg}
+			\begin{xy}
+				\xymatrixcolsep{4pc}\xymatrix{	0 \ar[r]&	m_G(\ker\phi) \ar[r] \ar[d]&	m(G) \ar[r] \ar[d]& m(F) \ar[r] \ar[d]&	0\\
+							0 \ar[r]&	m_G(\ker\phi)	\ar[r] 		&	\ZZ[G] \ar[r]	&	\ZZ[F] \ar[r] &		0}
+			\end{xy}			
+		\end{equation}
+		Die zweite Reihe ist exakt, nach Lemma~\ref{lem:augmker} und die Exaktheit der ersten Reihe geht nach Anwendung des Schlangenlemmas auf folgendes kommutatives Diagramm mit exakten Reihen, deren Spalten die Augmentationsabbildungen sind, hervor:
+		\[
+			\xymatrixcolsep{4pc}\begin{xy}
+				\xymatrix{	0 \ar[r]&	m_G(\ker\phi) \ar[r] \ar[d]&	\ZZ[G] \ar[r] \ar[d]& \ZZ[F] \ar[r] \ar[d]&	0\\
+							0 \ar[r]&		0		\ar[r] 		&	\ZZ \ar[r]	&	\ZZ \ar[r] &		0}
+			\end{xy}
+		\]
+		Da $m(\ker\phi)\cdot m(G) \subset m \cdot \ZZ[G] = m_G(\ker\phi)$ nach Lemma~\ref{lem:augmker},faktorisieren die injektiven Abbildungen aus Diagramm~\ref{eq:diagalg}. Die erste Zeile nimmt dann die gewünschte Form der exakten Sequenz~\eqref{seq:alexmodules} aus der Proposition an. Dies ergibt eine exakte Sequenz von $\ZZ[F]$-Moduln.
 
-	 Also handelt es sich bei der 3-Mannigfaltigkeit um eine Faserung, so folgt aus dem Theorem, dass man rein algebraisch aus der Fundamentalgruppe $G$, eine Halbnorm auf $\Hom(G,\ZZ)\tensor \RR$ definieren kann, die mit der Thurston-Norm auf $H^1(M;\RR)$ übereinstimmt.
+		Es ist also noch der behauptete Isomorphismus zu zeigen. Dieser lässt sich einfach angeben:
+		\begin{align*}
+			G'/G'' 	&\to 		m(G')/m(G')\dot m(G)\\
+			[g']		&\mapsto	[(g'-1)]\\
+			[g']		&\mathrel{\reflectbox{\ensuremath{\mapsto}}}  [(g'-1)g]
+		\end{align*}
+		Diese Abbildungen sind wohldefiniert und einander invers, da $[(g'-1)g]=[(g'-1)g-(g'-1)(g-1)]=[(g'-1)]$.
+	\end{proof}	
+	
+\begin{cor}
+		Jeder Alexander Modul einer endlich erzeugten Gruppe ist endlich erzeugt. \qed
+\end{cor}
+
+Da die Gruppenwirkung von $F$ auf der Homologie der Überlagerung durch Abbildungen von Räumen induziert wird, liefert die lange exakte Sequenz des Paares $(M_\phi,\pi^{-1} p)$ eine exakte Sequenz von $\ZZ[F]$ Moduln. Da die von der Inklusion induzierte Abbildung $\ZZ[F]\cong H_0(\pi^{-1} p) \to H_0 (M_\phi) \cong \ZZ$ Auswertung der Koeffizienten entspricht, liefert die lange exakte Homologiesequenz des Paares die folgende kurze exakte Sequenz von $\ZZ[F]$-Moduln:
+\[
+	0 \to H_1(M_\phi) \to H_1(M_\phi,\pi^{-1} p ) \to m(F) \to 0
+\]
+Diese stimmt also genau mit der Sequenz~\eqref{seq:alexmodules}, dem allgemeineren algebraischen Resultat aus Proposition~\ref{prop:alexmodules} überein.
+
+Welche Folgerungen ziehen wir aus diesen Ergebnissen? Nun ja, zunächst unterscheiden sich die gegebenen Definitionen von McMullen mit denen aus Kapitel~\ref{sec:defs}, sowohl die Alexander Moduln als auch die Alexander Ideale. Eine völlige Äquivalenz ergibt sich also nicht, aber die oben gesicherte Beziehung in der exakten Sequenz liefert zusammen mit dem folgenden Lemma die Gleichheit der kleinsten Hauptideale und somit der Alexander Polynome und der Alexander Norm. Dies legitimiert die Verwendung der unterschiedlichen Definitionen im kommenden Beweis des Theorems~\ref{thm:haupttheorem} als Mittel zum Zweck.
+
+\begin{lem}
+ 	Für eine kurze exakte Sequenz von $\ZZ[F]$-Moduln
+ 	\[
+ 	 	\seq AB{m(F)}
+ 	 \] wobei $F\cong \ZZ^n$, stimmen $\Delta_i(A)=\Delta_{i+1}(B)$ überein. 
+ \end{lem} 
+ Siehe zum Beispiel die Arbeit von Traldi~\cite{Traldi.1982}.
 
 	 \subsection{Rationale Alexander Invarianten}
 	 \label{ssec:rationalalex}
-	 Wie man oben den ganzzahligen Gruppenring erhalten hat, so erhält man auch den rationalen Gruppenring $\QQ[G]=\ZZ[G] \tensor_\ZZ \QQ$. Da $\QQ$-Moduln Vektorräume sind und die Theorie der Vektorräume sehr überschaubar ist, bietet es sich an auch rationale Alexander Invarianten zu definieren. Allerdings soll in dieser Arbeit darauf möglichst verzichtet werden, es sei denn solche Berechnungen würden der Bestimmung der ganzzahligen Alexander Invarianten führen. Deswegen dient dieser Abschnitt lediglich dem Hinweis, dass das rationale Alexander Polynom dieselben Informationen wie das ganzzahlige Alexander Polynom enthält, die Berechnung also unabhängig von einer $\laurent \ZZ t$ oder einer $\laurent \QQ t$ Präsentation ist.
+	 Wie man oben den ganzzahligen Gruppenring erhalten hat, so erhält man auch den rationalen Gruppenring $\QQ[G]=\ZZ[G] \tensor_\ZZ \QQ$. Da sowohl die Theorie der Vektorräume, also $\QQ$-Moduln, als auch die Theorie der Moduln über Hauptidealringen --- etwa $\laurent \QQ t$ (vgl. Lemma~\ref{lem:QThauptidealring}) ---  sehr überschaubar ist, bietet es sich an auch rationale Alexander Invarianten zu definieren. Allerdings betrachtet diese Arbeit ganzzahlige Alexander Invarianten, also ist die Nützlichkeit der rationalen Alexander Invarianten in diesem Kontext fraglich, es sei denn solche Berechnungen würden zur Bestimmung der ganzzahligen Alexander Invarianten führen. Deswegen dient dieser Abschnitt lediglich dem Hinweis, dass das rationale Alexander Polynom dieselben Informationen wie das ganzzahlige Alexander Polynom enthält, die Berechnung also unabhängig von einer $\laurent \ZZ t$ oder einer $\laurent \QQ t$ Präsentation ist.
 
 	 Bekanntlicherweise nennt man ein Polynom primitiv, falls keine nicht Einheit des zugrunde liegenden Ringes alle Koeffizienten teilt. 
 	 \begin{lem}
+	 \label{lem:primitiv}
 	 	Seien $f,g \in \laurent \ZZ t$ zwei Laurentpolynome und $f$ primitiv. ist die Teilbarkeit von $g$ durch $f$ gleichbedeutend in den Ringen $\laurent \ZZ t$ und $\laurent \QQ t$.
 	 \end{lem}
 	 \begin{proof}
-	 	Falls $f|g$ in $\laurent \ZZ t $ gilt, so trivialerweise in $\laurent \QQ t$. Sei umgekehrt $g=pf \in \laurent \QQ t$. Dann ist für ein $q \in \QQ$ das Polynom $\tilde p \in \laurent \ZZ t$ primitiv mit $q\tilde p = p$. Aber das Produkt zweier primitiver Polynome $\tilde p f = g/q$ ist primitiv, also $q \in \ZZ$.
+	 	Falls $f|g$ in $\laurent \ZZ t $ gilt, so trivialerweise in $\laurent \QQ t$. Sei umgekehrt $g=pf$ mit $p \in \laurent \QQ t$. Dann ist für ein $q \in \QQ$ das Polynom $\tilde p \in \laurent \ZZ t$ primitiv mit $q\tilde p = p$. Aber das Produkt zweier primitiver Polynome $\tilde p f = g/q$ ist primitiv, also $q \in \ZZ$.
 	 \end{proof}
 
 	 \begin{bem}
 	 	Hat man eine Präsentationsmatrix $(x_{ij})_{ij}$ eines $\ZZ[F]$-Moduls gegeben. So liefert die Rechtsexaktheit des Tensorierens eine Präsentationsmatrix des tensorierten $\QQ[F]$-Moduls durch $(x_{ij} \tensor 1)_{ij}$.
 	 \end{bem}
 
+	 Unter Ausnutzung von Lemma~\ref{lem:primitiv}, wird in~\cite[Lemma~2.2]{Shinohara.1972} die folgende Proposition mit elementaren Mitteln gezeigt, deswegen sei der einfache Beweis hier übersprungen:
 	 \begin{prop}
 	 	\label{prop:tensoring}
 	 	Seien jeweils $A,A\tensor \QQ$ endlich erzeugte $\laurent \ZZ t, \laurent \QQ t$-Moduln. Dann existiert ein eindeutiges $q\in Q$, sodass für $q\Delta^i(A) \in \laurent \ZZ t$ primitiv ist und für $\Delta^i_\QQ(A\tensor \QQ) \in \laurent \QQ t$ gilt:
@@ -177,6 +196,3 @@ In der Arbeit von McMullen~\cite{MCMULLEN.2002} verwendet er unterschiedliche De
 	 		 \Delta^i_\QQ(A) = q\Delta^i(A) 
 	 	\]
 	 \end{prop}
-	     \begin{proof}
-	     	Wähle 
-	     \end{proof}

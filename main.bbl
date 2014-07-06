@@ -12,6 +12,38 @@ Gerhard Burde and Heiner Zieschang.
 \newblock Walter de Gruyter, Berlin and New York, 2nd rev. and extended ed
   edition, 2003.
 
+\bibitem{Friedl.2007}
+Stefan Friedl.
+\newblock Reidemeister torsion, the thurston norm and harvey's invariants.
+\newblock {\em Pacific Journal of Mathematics}, 230(2):271--296, 2007.
+
+\bibitem{Friedl.2006}
+Stefan Friedl and Taehee Kim.
+\newblock The thurston norm, fibered manifolds and twisted alexander
+  polynomials.
+\newblock {\em Topology}, 45(6):929--953, 2006.
+
+\bibitem{Friedl.2008c}
+Stefan Friedl and Taehee Kim.
+\newblock Twisted alexander norms give lower bounds on the thurston norm.
+\newblock {\em Transactions of the American Mathematical Society},
+  360(9):4597--4618, 2008.
+
+\bibitem{Friedl.2008}
+Stefan Friedl and Stefano Vidussi.
+\newblock Twisted alexander polynomials and symplectic structures.
+\newblock {\em American Journal of Mathematics}, 130(2):455--484, 2008.
+
+\bibitem{Friedl.2008b}
+Stefan Friedl and Stefano Vidussi.
+\newblock Twisted alexander polynomials detect fibered 3-manifolds.
+\newblock {\em arXiv preprint arXiv:0805.1234}, 2008.
+
+\bibitem{Friedl.2011}
+Stefan Friedl and Stefano Vidussi.
+\newblock A survey of twisted alexander polynomials.
+\newblock In {\em The Mathematics of Knots}, pages 45--94. Springer, 2011.
+
 \bibitem{Gordon.1989}
 C.~McA. Gordon and J.~Luecke.
 \newblock Knots are determined by their complements.
@@ -42,9 +74,9 @@ Matthias Kreck.
 \newblock Springer, New York, 1997.
 
 \bibitem{MCMULLEN.2002}
-C.~McMullen.
-\newblock The alexander polynomial of a 3-manifold and the thurston norm on
-  cohomology.
+{McMullen, C.}
+\newblock {The Alexander polynomial of a 3-manifold and the Thurston norm on
+  cohomology}.
 \newblock {\em Annales Scientifiques de l'{\'E}cole Normale Sup{\'e}rieure},
   35(2):153--171, 2002.
 
@@ -64,11 +96,22 @@ H.~Seifert.
 \newblock {\em {\"U}ber das Geschlecht von Knoten}.
 \newblock Springer, Berlin, 1934.
 
+\bibitem{Shinohara.1972}
+Y.~Shinohara and D.~W. Sumners.
+\newblock Homology invariants of cyclic coverings with application to links.
+\newblock {\em Transactions of the American Mathematical Society},
+  163:101--121, 1972.
+
 \bibitem{Thurston.1986}
 William~P. Thurston.
 \newblock {\em A norm for the homology of 3-manifolds}, volume 339 of {\em
   American Mathematical Society: Memoirs}.
 \newblock American Mathematical Society, Providence, 1986.
+
+\bibitem{Traldi.1982}
+Lorenzo Traldi.
+\newblock The determinantal ideals of link modules. i.
+\newblock {\em Pacific J. Math.}, pages 215--222, 1982.
 
 \bibitem{Waldhausen.1968}
 Friedhelm Waldhausen.

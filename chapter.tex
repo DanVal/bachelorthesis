@@ -3,26 +3,34 @@
 \section{Vorbereitungen}
 \label{sec:vorbereitungen}
 
-Wie sich im ersten Beweis herausstellen wird, ist der Gruppenring $\ZZ[F]$ für eine abelsche freie Gruppe $F$ noethersch, da allerdings als Grundring der Ring der ganzen Zahlen dient, existieren Ideale die keine Hauptideale sind. Die Theorie der endlich erzeugten Moduln über Hauptidealringen ist sehr ergiebig --- der Elementarteilersatz erlaubt die Zerlegung eines solchen Moduls in zyklische Moduln. Um Invarianten auf endlich erzeugten Moduln über noetherschen Ringen zu erhalten, lassen sich verschiedene Schritte im Beweis des Elementarteilersatzes bis zu einem bestimmten Grad nachahmen. Mit dieser Hintergrundgedanken ergeben sich die Elementarideale. 
+Wie sich im ersten Beweis herausstellen wird, ist der Gruppenring $\ZZ[F]$ für eine abelsche freie Gruppe $F$ noethersch. Da allerdings als Grundring der Ring der ganzen Zahlen dient, existieren Ideale die keine Hauptideale sind. Die Theorie der endlich erzeugten Moduln über Hauptidealringen ist sehr ergiebig --- der Elementarteilersatz erlaubt die Zerlegung eines solchen Moduls in zyklische Moduln. Um Invarianten auf endlich erzeugten Moduln über noetherschen Ringen zu erhalten, lassen sich verschiedene Schritte im Beweis des Elementarteilersatzes bis zu einem bestimmten Grad nachahmen. Mit dieser Hintergrundgedanken ergeben sich die oben definierten Elementarideale. 
+
+Dieses Kapitel soll im ersten Teil grundlegende Eigenschaften noetherscher Moduln herausstellen und dann im zweiten Teil auf differentialtopologische Ergebnisse hinweisen. Diese Resultate werden den Großteil der Hilfsmittel für die Arbeit vorbereiten, sollen aber noch mit Kapitel~\ref{sec:algebra} durch etwas tiefergehende Algebra ergänzt und vervollständigt werden.
 
 \subsection{Über endlich erzeugte Moduln eines noetherschen Rings}
 
+Um die Situation für spätere Berechnungen angenehmer zu gestalten und überhaupt erst die Definition der Alexander Invarianten zu berechtigen, überzeugt man sich zunächst dass der Alexander Modul tatsächlich endlich erzeugt über dem Gruppenring $\ZZ[F]$ ist. 
 
-
-Um die Situation für spätere Berechnungen angenehmer zu gestalten, überzeugt man sich zunächst, dass der Alexander Modul tatsächlich endlich erzeugt über dem Gruppenring ist. Dieser Satz hätte ebenso gut an das Ende diesen Abschnittes gepasst, als Ergebnis/Nutzen, jedoch soll die Zielsetzung dieses Kapitels nicht vorenthalten werden: 
-%Hier oder vor Elementar: keine zykl. Zerlegung von Moduln da nicht HIR, 
 \begin{prop}
 \label{prop:alexendlerz}
-		$A_\phi(M)$ ist ein endlich erzeugter $\ZZ[F]-Modul$.
+		$A_\phi(M)$ ist ein endlich erzeugter $\ZZ[F]$-Modul.
 \end{prop}
 \begin{bem}\label{rem:AlexModulendlerz}
 	Eine algebraische Variante des Beweises befindet sich im nachfolgenden Kapitel~\ref{sec:algebra}. 
 \end{bem}
 
 	\begin{proof}
-	Da $M$ eine kompakte 3-Mannigfaltigkeit ist, existiert eine endliche CW Struktur\todo{refmoise}. Da es für CW Komplexe gleichbedeutend ist die zelluläre Homologie zu berechnen, reicht es den zellulären Kettenkomplex zu einer endlichen CW Struktur betrachten. Da in diesem alle Kettengruppen frei und endlich erzeugt von den Zellen der CW Struktur sind, folgt dass in dem Kettenkomplex der Überlagerung alle Kettengruppen als Gruppenring-Moduln endlich erzeugt sind, denn die Decktransformationen assoziieren die Erzeuger der Kettengruppen der ganzzahligen Homologie der Überlagerung die das gleiche Bild unter der Überlagerungsabbildung haben, das bedeutet für freien $\ZZ$-Summand der Kettengruppen der Mannigfaltigkeit erhält man einen freien $\ZZ[F]$ Summand der Kettengruppen der Überlagerung. Wenn jetzt nachgewiesen werden kann, dass die Quotientenbildung der Kettengruppen als Übergang zur Homologie verträglich ist mit der Quotientenbildung als Gruppenring Moduln, würde es genügen dass der Ring noethersch ist und der Alexander Modul wäre als Quotient endlich erzeugter Moduln über einem noetherschen Ring endlich erzeugt (siehe Lemma~\ref{lem:quotient}), genauso wie alle Homologiegruppen dann über dem Gruppenring endlich erzeugt wären. Aber da die Wirkung von $F$ auf der Homologie durch Diffeomorphismen induziert wird, so ist die Verträglichkeit durch die elementare Tatsache gegeben, dass Abbildungen von Räumen Kettenkomplexabbildungen induzieren, also Verträglichkeit mit den Randoperatoren gegeben ist.
+	Da $M$ eine kompakte 3-Mannigfaltigkeit ist, existiert eine endliche CW Struktur, vergleiche~\cite{Moise.1952}. Da es für CW Komplexe gleichbedeutend ist die zelluläre Homologie zu berechnen, reicht es den zellulären Kettenkomplex zu einer endlichen CW Struktur betrachten. Da in diesem alle Kettengruppen frei und endlich erzeugt von den Zellen der CW Struktur sind, folgt dass in dem Kettenkomplex der Überlagerung (mit der vererbten CW-Struktur) alle Kettengruppen als $\ZZ[F]$-Moduln endlich erzeugt sind, denn die Decktransformationen $F$ assoziieren die Erzeuger der Kettengruppen als $\ZZ$-Moduln der Überlagerung, die das gleiche Bild unter der Überlagerungsabbildung haben. Das bedeutet für jeden freien $\ZZ$-Summand der Kettengruppen der Mannigfaltigkeit erhält man einen freien $\ZZ[F]$-Summand der Kettengruppen der Überlagerung. Wenn jetzt nachgewiesen werden kann, dass das Bilden der Homologie verträglich ist mit dem Bilden der Homologie als Gruppenring Moduln, so wären alle Homologiegruppen der Überlagerung als Quotienten von $\ZZ[F]$-Moduln endlich erzeugt. Aber da die Wirkung von $F$ auf der Homologie durch Diffeomorphismen induziert wird, so ist die Verträglichkeit durch die elementare Tatsache gegeben, dass Abbildungen von Räumen Kettenkomplexabbildungen induzieren, also Verträglichkeit mit den Randoperatoren gegeben ist.
+\end{proof}
 
-	Es bleibt also nur noch zu zeigen, dass es sich bei $\ZZ[F]$ um einen noetherschen Ring handelt. Da $F\cong \ZZ^n$, seien $f_1,\cdots,f_n$ Erzeuger von $F$. Nach dem Hilbertschen Basissatz ist der Polynomenring über $\ZZ$ in endlich vielen Variablen noethersch. Ebenso ist die Lokalisierung eines noetherschen Ringes noethersch, da jedes Ideal in der Lokalisierung Bild eines endlich erzeugten Ideals ist. Also genügt es eine Surjektion von einem solchen in den Gruppenring zu finden, denn ein surjektiver Ringhomomorhpismus, ordnet jedem Ideal im überlagerten Ring, ein endlich erzeugtes Ideal im ursprünglichen Ring zu und somit auch ein endliches Erzeugendensystem. Aber ein solcher ist gegeben durch Ausnutzen der universellen Eigenschaft des Polynomrings und der Lokalisierung:
+Für Berechnungen ist folgende bereits verwendete Proposition nützlich:
+\begin{prop}
+	Für eine endlich erzeugte frei abelsche Gruppe $F$, ist der ganzzahlige Gruppenring $\ZZ[F]$ noethersch.
+\end{prop}
+\begin{proof}
+	Da $F\cong \ZZ^n$, seien $f_1,\cdots,f_n$ Erzeuger von $F$.
+
+	Nach dem Hilbertschen Basissatz ist der Polynomenring über $\ZZ$ in endlich vielen Variablen noethersch. Ebenso ist die Lokalisierung eines noetherschen Ringes noethersch, da jedes Ideal in der Lokalisierung Bild eines endlich erzeugten Ideals ist. Also genügt es eine Surjektion von einem solchen in den Gruppenring zu finden, denn ein surjektiver Ringhomomorhpismus, ordnet jedem Ideal im überlagerten Ring, ein endlich erzeugtes Ideal im ursprünglichen Ring zu und somit auch ein endliches Erzeugendensystem. Aber ein solcher Epimorphismus von einem --- nach den obigen Überlegungen --- noetherschen Ring ist gegeben durch Ausnutzen der universellen Eigenschaft des Polynomrings und der Lokalisierung:
 	\begin{align*}
 			\ZZ[X_1^{\pm 1},\cdots,X_{n}^{\pm 1}] & \to  \ZZ[F]\\
 			X_i &\mapsto  f_i
@@ -30,13 +38,13 @@ Um die Situation für spätere Berechnungen angenehmer zu gestalten, überzeugt 
 \end{proof}
 
 \begin{bem}
-	Offensichtlich ist die angegebene Abbildung von dem Ring der Laurentpolynome in mehreren Variablen nach $\ZZ[F]$ injektiv und somit ein Isomorphismus. Es wird im Folgenden weitgehend auf eine Identifikation unter diesem Isomorphismus verzichtet, da eine solche von der Wahl einer Basis abhängt. Jedoch wird sich herausstellen, dass im Falle eines Verschlingungskomplements mit $\lambda$ Komponenten eine kanonische Basis für $F\cong \ZZ^\lambda$ existiert, wo sich diese Identifikation als nützlich herausstellen wird, siehe Beispiel~\ref{ex:links}.
+	Offensichtlich ist die angegebene Abbildung von dem Ring der multivariablen Laurentpolynome nach $\ZZ[F]$ injektiv und somit ein Isomorphismus. Es wird im Folgenden weitestgehend auf eine Identifikation unter diesem Isomorphismus verzichtet, da eine solche von der Wahl einer Basis abhängt. Jedoch wird sich herausstellen, dass im Falle eines Verschlingungskomplements mit $\lambda$ Komponenten eine kanonische Basis für $F\cong \ZZ^\lambda$ existiert, wo sich diese Identifikation als nützlich herausstellen wird, siehe Kapitel~\ref{sec:links}.
 \end{bem}
 
 
-Sei im Folgenden nun $M$ ein endlich erzeugter $R$-Modul, wobei $R$ einen noetherschen Ring bezeichnet.
+Sei im Folgenden nun $M$ ein noetherscher $R$-Modul. Dies ist zum Beispiel gegeben, wenn $R$ ein noetherscher Ring ist und $M$ endlich erzeugter $R$-Modul.
 \begin{lem}
-	$M$ ist über $R$ endlich präsentiert. 
+	$M$ ist über $R$ endlich präsentiert. Insbesondere sind Elementarideale noetherscher Moduln definiert.
 \end{lem}
 \begin{proof}
 	$M$ ist endlich erzeugt über $R$ also existiert folgende exakte Sequenz:
@@ -49,22 +57,13 @@ Sei im Folgenden nun $M$ ein endlich erzeugter $R$-Modul, wobei $R$ einen noethe
 	\]
 \end{proof}
 
-\begin{lem}
-	\label{lem:quotient} Das ist doch alles Quatsch
-	Sei $N\subset M$ ein Untermodul von $M$. Dann ist der Faktormodul $M/N$ noethersch über $R$.
-\end{lem}
-\begin{proof}
-	Sei $X \to Y$ ein surjektiver Homomorphismus von Moduln über einem noetherschen Ring. Dann folgt aus noetherschen Eigenschaft von $X$ auch die von $Y$, da Untermoduln von $Y$ von den Bildern der endlich vielen Erzeuger der zurückgezogenen Untermoduln erzeugt werden. \\
-	Anwenden dieses Argumentes liefert unmittelbar die Aussage mit der Komposition von den surjektiven Homomorphismen $R^n \to M$ und $M \to M/N$
-\end{proof} 
-Das war ja richtig Quatsch!
 
 \subsection{Poincaré und Lefschetz Dualität}
 \label{sec:poinc}
 
-	Bei Betrachtung der Definition der Thurston-Norm auf $H^1(M)$, fällt auf dass diese nur Eigenschaften der dualen Homologieklasse nutzt (genaugenommen definiert Thurston in~\cite{Thurston.1986} die Thurston-Norm auch als stetige Abbildung auf $H_2(M)$ beziehungsweise $H_2(M,\partial M)$, die via Dualität auf die Kohomologie übertragen wird). Und tatsächlich werden die folgenden Seiten teilweise in ein wildes Hin- und Herspringen zwischen Homologie und Kohomologie ausarten. Aus diesem Grund sollen hier noch einmal wichtige Grundlagen und Berechnungsmöglichkeiten, die später verwendet werden, erklärt werden.
+	Bei Betrachtung der Definition der Thurston-Norm auf $H^1(M)$ fällt auf dass diese nur Eigenschaften der dualen Homologieklasse nutzt (genaugenommen definiert Thurston in~\cite{Thurston.1986} diese Halbnorm auch als stetige Abbildung auf $H_2(M)$ beziehungsweise $H_2(M,\partial M)$, die via Dualität auf die Kohomologie übertragen wird). Und tatsächlich werden die folgenden Seiten teilweise in ein wildes Hin- und Herspringen zwischen Homologie und Kohomologie ausarten. Aus diesem Grund sollen hier noch einmal wichtige Grundlagen und Berechnungsmöglichkeiten, die später verwendet werden, erklärt werden.
 	\begin{bem}[Duale 1-kodimensionale Untermannigfaltigkeiten]
-	Sei $N$ eine $n$-dimensionale orientierte glatte Mannigfaltigkeit (mit CW-Struktur).
+	Sei $N$ eine glatte orientierte $n$-dimensionale Mannigfaltigkeit (mit CW-Struktur).
 		Bekanntlicherweise gilt:
 		\[
 					H_{n-1}(N,\partial N;\ZZ)\cong H^1(N;\ZZ) \cong \Hom(H_1(N),\ZZ) \cong \Hom(\pi_1(N),\ZZ) \cong  [N,S^1]
@@ -73,23 +72,25 @@ Das war ja richtig Quatsch!
 		\begin{enumerate}
 			\item -te Isomorphismus bei $\partial N= \emptyset$ Poincaré und sonst Lefschetz Dualität ist
 			\item -te Isomorphismus gilt, da das universelle Koeffiziententheorem eine exakte Sequenz liefert in dem diese beiden Terme auftauchen und weiter nur $\Ext(H_0(N),\ZZ) = 0$
-			\item -te Isomorphismus gilt, da nach Hurewicz die Abbildung $\pi_1(N)\to H_1(N)$ die Abelianisierung ist (siehe Bemerkung zu Homomorphismen der Abelianisierung in~\ref{bem:fundhomologie})
-			\item -te Isomorphismus gilt, indem man zeigt, dass jede Abbildung vom 1-Skelett $X^1 \subset N \to S^1$ auf $N$ fortgesetzt werden kann. Da das 1-Skelett die Fundamentalgruppe (oder Homologie) erzeugt, also die Inklusion eine surjektive Abbildung $i_*:\pi_1(X^1)\onto\pi_1(N)$ induziert, lässt sich auf diese Weise jeder Homomorphismus $\pi_1(N)\to \ZZ$ auf dem 1-Skelett (genauer möchte man, dass diese Abbildung auf einem maximalen Baum konstant ist) definieren und fortsetzen. 
+			\item -te Isomorphismus gilt, da nach Hurewicz die Abbildung $\pi_1(N)\to H_1(N)$ die Abelianisierung ist (siehe Bemerkung~\ref{bem:fundhomologie})
+			\item -te Isomorphismus gilt, indem man zeigt, dass jede Abbildung auf dem 1-Skelett $X^1 \subset N \to S^1$ auf $N$ fortgesetzt werden kann. Da das 1-Skelett die Fundamentalgruppe (oder Homologie) erzeugt, also die Inklusion eine surjektive Abbildung $i_*:\pi_1(X^1)\onto\pi_1(N)$ induziert, lässt sich auf diese Weise jeder Homomorphismus $\pi_1(N)\to \ZZ$ auf den Erzeugern aus dem 1-Skelett (genauer möchte man, dass diese Abbildung auf einem maximalen Baum konstant ist) definieren und fortsetzen. 
 		\end{enumerate}
 	Also liefert jeder Homomorphismus $\phi \in H^1(N;\ZZ)$ eine Homotopieklasse von Abbildungen in $[N,S^1]$ und umgekehrt liefert jede Abbildung $N\to S^1$ einen induzierten Homomorphismus der Homologiegruppen. Die Differentialtopologie liefert nun, dass für jede Homotopieklasse aus $[N,S^1]$ ein glatter Repräsentant existiert und die Existenz eines regulären Wertes in $S^1$. Jedes Urbild eines solchen regulären Wertes ist dann eine 1-kodimensionale orientierte Mannigfaltigkeit (mit Rand wenn überhaupt im Rand von $N$ eigentlich eingebettet), welche als Homologieklasse dual zu $\phi$ ist. Genauer gilt sogar Folgendes:
+	\end{bem}
 	\begin{thm}
 		Sei $f:N^n\to K^m$ eine stetige Abbildung glatter Mannigfaltigkeiten. Dann lässt sich $f$ beliebig nah durch glatte Abbildungen approximieren (wie die Güte der Approximation genau gemessen wird ist hier von keiner Bedeutung) welche homotop zu $f$ sind.
 	\end{thm}
 	\begin{thm}[Sard und Satz vom regulären Wert]
 		Sei $f:N^n \to K^m$ eine glatte Abbildung. Dann liegen die regulären Werte von $f$ dicht in $K$. Das Urbild eines regulären Wertes ist eine abgeschlossene glatte orientierte eigentlich eingebettete Untermannigfaltigkeit in $K$ der Kodimension $m$. Ein regulärer Wert ist ein Punkt aus $K$, bei dessen Urbild $f$ an jedem Punkt einen Epimorphismus auf den Tangentialräumen definiert. 
 	\end{thm}
-	\begin{thm}
+	\begin{thm}[Thom]
+	\label{thm:thom}
 		Sei $f:N \to S^1$ eine glatte Abbildung. Jedes Urbild eines regulären Wertes definiert nach obigem Satz ein Element in $H_{n-1}(N,\partial N;\ZZ)$ als Bild der Fundamentalklasse der Untermannigfaltigkeit unter der Inklusion. Diese ist Poincaré beziehungsweise Lefschetz dual zu $[f]\in H^1(N;\ZZ)$.
 	\end{thm}
-	Alle diese Aussagen sind bekannte elementare Aussagen der Differentialtopologie und können etwa in \cite{Kreck.2010} oder mit elementaren Methoden in \cite{Hirsch.1991} nachgelesen werden. \\
-	Dies liefert Möglichkeiten etwa zu zeigen, dass eine eingebettete Fläche in einer 3-Mannigfaltigkeit dual zu einer Abbildung Kohomologieklasse ist. Ist beispielsweise eine zweiseitige Fläche gegeben, so lässt der zweiseitige Kragen eine offensichtliche Möglichkeit einer Quotientenabbildung nach $S^1$ zu, die eine Darstellung der Fläche als Urbild eines regulären Wertes zulässt. Mehr dazu später.\\
-	\end{bem}
-	Transversalität und 
+	Alle diese Aussagen sind bekannte elementare Aussagen der Differentialtopologie und können etwa in \cite{Kreck.2010} oder mit elementaren Methoden in \cite{Hirsch.1991} (bis auf \ref{thm:thom}) nachgelesen werden. 
+	
+	Dies liefert Möglichkeiten etwa zu zeigen, dass eine eingebettete Fläche in einer 3-Mannigfaltigkeit dual zu einer Abbildung Kohomologieklasse ist. Ist beispielsweise eine zweiseitige Fläche gegeben, so lässt der zweiseitige Kragen eine offensichtliche Möglichkeit einer Quotientenabbildung nach $S^1$ zu, die eine Darstellung der Fläche als Urbild eines regulären Wertes zulässt. Mehr dazu später.
+	
 	\begin{bem}[Schnittzahlen]
 		Ein weiteres 
 	\end{bem}
