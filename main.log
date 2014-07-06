@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  6 JUL 2014 21:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  6 JUL 2014 21:40
 entering extended mode
 **C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
 (C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
@@ -1280,16 +1280,6 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
  [40] <xymatrix 2x2 130> [41] <xymatrix 5x4 580>
 [42] [43]
-Overfull \hbox (37.01796pt too wide) in paragraph at lines 130--132
-\OT1/cmr/m/n/10.95 Hier wird un-ter dem nat[]urlichen Iso-mor-phis-mus $\OML/cm
-m/m/it/10.95 H[]\OT1/cmr/m/n/10.95 ((\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 ; 
-\U/msb/m/n/10.95 R\OT1/cmr/m/n/10.95 ) [] \OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/1
-0.95 (\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 ; \U/msb/m/n/10.95 R\OT1/cmr/m/n/
-10.95 )[] [] [](\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 
-M\OT1/cmr/m/n/10.95 ; \U/msb/m/n/10.95 R\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95
- ; \U/msb/m/n/10.95 R\OT1/cmr/m/n/10.95 )$
- []
-
 Package epstopdf Info: Source file: <Images/hopf.eps>
 (epstopdf)                    date: 2014-06-28 12:21:44
 (epstopdf)                    size: 24754 bytes
@@ -1298,37 +1288,37 @@ Package epstopdf Info: Source file: <Images/hopf.eps>
 (epstopdf)                    size: 8252 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/hopf-eps-converted-t
 o.pdf Images/hopf.eps>
-(epstopdf)             \includegraphics on input line 139.
+(epstopdf)             \includegraphics on input line 147.
 Package epstopdf Info: Output file is already uptodate.
-<Images/hopf-eps-converted-to.pdf, id=198, 497.86pt x 497.86pt>
+ <Images/hopf-eps-converted-to.pdf, id=198, 497.86pt x 497.86pt>
 File: Images/hopf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/hopf-eps-converted-to.pdf>
-Package pdftex.def Info: Images/hopf-eps-converted-to.pdf used on input line 13
-9.
+Package pdftex.def Info: Images/hopf-eps-converted-to.pdf used on input line 14
+7.
 (pdftex.def)             Requested size: 125.47794pt x 125.47505pt.
  [44 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/hopf-eps-converted
 -to.pdf>]
-Overfull \hbox (11.27505pt too wide) in paragraph at lines 177--178
+Overfull \hbox (11.27505pt too wide) in paragraph at lines 185--186
 [][] 
  []
 
 
-Overfull \hbox (13.36748pt too wide) in paragraph at lines 193--194
+Overfull \hbox (13.36748pt too wide) in paragraph at lines 201--202
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--198
+Underfull \hbox (badness 10000) in paragraph at lines 161--206
 
  []
 
 [45]
-Overfull \hbox (1.56483pt too wide) in paragraph at lines 265--266
+Overfull \hbox (1.56483pt too wide) in paragraph at lines 273--274
 [][] 
  []
 
-[46]) [47] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.tex)
+) [46] [47] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\notizen.tex)
 [48
 
 
@@ -1349,7 +1339,7 @@ Overfull \hbox (1.56483pt too wide) in paragraph at lines 265--266
 Here is how much of TeX's memory you used:
  20244 strings out of 493921
  383436 string characters out of 3147279
- 500256 words of memory out of 3000000
+ 500257 words of memory out of 3000000
  23054 multiletter control sequences out of 15000+200000
  20963 words of font info for 82 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1382,7 +1372,7 @@ ti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on main.pdf (52 pages, 563510 bytes).
+Output written on main.pdf (52 pages, 563394 bytes).
 PDF statistics:
  316 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
