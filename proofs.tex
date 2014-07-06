@@ -1,44 +1,85 @@
 %!TEX root = main.tex
 \section{Beweis des Theorems}
+\label{sec:proofs}
+Der Beweis des Theorems und somit der Aufbau dieses Kapitels lässt sich in wenigen Worten grob skizzieren. Zu Beginn werden Konstruktionen entwickelt, die es erlauben konkret mit dualen Flächen zu arbeiten. Anschließend werden zuerst Thurston- dann Alexander-Norm einer Kohomologieklasse $\phi$ mit der ersten Bettischen Zahl ihres Kerns in $\pi_1(G)$ verglichen. Die Transitivität dieser Abschätzung liefert dann das Theorem. 
 
-Bevor die Wahl einer dualen Fläche spezifiziert wird, sodass die zu zeigende Abschätzung daraus folgen wird, widmet sich der folgende Teil der zu betrachtenden Überlagerung bezüglich einer Homologieklasse. Will man mit einer Überlagerung Berechnungen anstellen, so sollte man sie möglichst gut kennen. Deswegen folgt nun eine explizite Konstruktion, die sich im späteren Beweis als hilfreich herausstellen wird.
+\subsection{Konstruktionen}
+
+Bevor die Wahl einer dualen Fläche spezifiziert wird, widmet sich der folgende Teil der zu betrachtenden Überlagerung bezüglich einer Homologieklasse. Will man mit einer Überlagerung Berechnungen anstellen, so sollte man sie möglichst gut kennen. Deswegen folgt nun eine explizite Konstruktion, die sich im späteren Beweis als hilfreich herausstellen wird.
 
 \begin{constr}[Aufschneiden an einer Fläche]
 	\label{constr:cut}
-	Aus der Überlagerungstheorie ist bekannt, dass zu jeder normalen Untergruppe der Fundamentalgruppe eines hinreichend gut zusammenhängendem Hausdorffraum (insbesondere Mannigfaltigkeiten), auch eine normale Überlagerung existiert, die bis auf Überlagerungsisomorphie eindeutig ist. Nun definiert aber ein Element $\phi\in H^1(M,\ZZ)$ einen Homomorphismus auf der ersten Homologiegruppe und somit nach den Feststellungen aus der Bemerkung zu Homomorphismen der Abelianisierung in~\ref{bem:fundhomologie}, auch eines $\phi = \hat \phi \in \Hom(\pi_1(M),\ZZ)$. 
+	Aus der Überlagerungstheorie ist bekannt, dass zu jeder normalen Untergruppe der Fundamentalgruppe eines hinreichend gut zusammenhängendem Hausdorffraum (insbesondere Mannigfaltigkeiten), auch eine normale Überlagerung existiert, die bis auf Überlagerungsisomorphie eindeutig ist, siehe~\cite[Chapter~1.3]{Hatcher.2002}. Nun definiert aber ein Element $\phi\in H^1(M,\ZZ)$ einen Homomorphismus auf der ersten Homologiegruppe und somit nach den Feststellungen aus Bemerkung~\ref{bem:fundhomologie} auch einen Homomorphismus $\phi = \hat \phi \in \Hom(\pi_1(M),\ZZ)$. 
 
-	Dieses $\phi$ liefert also die eindeutige normale Untergruppe $[\pi_1(M),\pi_1(M)]\subset\ker\hat\phi = \ker \phi \subset \pi_1(M)$, welche wiederrum eine Überlagerung definiert, die fortan $M_\phi$ genannt wird. Da die Thurston-Norm eigentlich eine Halbnorm auf der zweiten Homologie einer 3-Mannigfaltigkeit definiert und über Poincaré bzw.~Lefschetz Dualität nach $H_1(M)$ übertragen wird, stellt sich die Frage nach einer Abhängigkeit der Überlagerung von einer dualen Fläche. Sei also $(S,\partial S) \subset (M\partial M)$ eine eingebettete orientierte Fläche. Da diese Kodimension $1$ hat, ist sie auch zweiseitig, hat also eine Umgebung $U$, sodass ein Diffeomorphismus $S\times (-\epsilon,\epsilon) \to U$ existiert dessen Einschränkung auf $S\times \{0\}$ die Inklusion ist. Das bedeutet, dass die 3-Mannigfaltigkeit an $S$ "`aufgeschnitten"' werden kann (siehe etwa~\cite[Kapitel~4.2]{Burde.2003}), wobei das Aufschneiden bedeutet, das Komplement der Fläche zu betrachten (das Resultat ist offensichtlich eine Mannigfaltigkeit, jedoch können Eigenschaften wie Kompaktheit oder Randbedingungen entfallen). Will man nun durch Aufschneiden gewonnene Kopien $(M_i)_{i\in \ZZ}, M_i \cong M-S$ wieder verkleben, erweist sich die Zweiseitigkeit der Fläche als günstig sogar notwendig (sonst würde nur eine Kopie von $S$ als Rand entstehen). Ein zuvor fixierter zweiseitiger Diffeomorphismus $h: S\times (-\epsilon,\epsilon) \to M$ liefert nämlich durch $h(S,(-\epsilon,0))$ und $h(S,(0,\epsilon))$ offene Mengen $M_i^-$ und $M_i^+$ in den $M_i$. Durch den strukturerhaltenden Diffeomorphismus $h$, können nun $M_i$ und $M_{i+1}$ jeweils entlang $M_i^+$ und $M_{i+1}^-$ verklebt werden --- genauer: $h$ liefert eine Äquivalenzrelation auf der disjunkten Vereinigung 
+	Dieses $\phi$ liefert also die normale Untergruppe $[\pi_1(M),\pi_1(M)]\subset \ker \phi \subset \pi_1(M)$, welche wiederrum eine Überlagerung definiert, die fortan $M_\phi$ genannt wird. Zur Berechnung der Thurston-Norm und ihrem angekündigten Vergleich mit $b_1(\ker\phi)=b_1(M_\phi)$ stellt sich die Frage nach einer Abhängigkeit der Überlagerung $M_\phi$ von einer dualen Fläche. Sei also $(S,\partial S) \subset (M\partial M)$ eine eingebettete orientierte Fläche. Da diese Kodimension~$1$ und eine Orientierung hat, ist sie auch zweiseitig, besitzt also eine Umgebung $U \subset M$, sodass ein Diffeomorphismus $S\times (-\epsilon,\epsilon) \to U$ existiert dessen Einschränkung auf $S\times \{0\}$ die Inklusion ist. Das bedeutet, dass die 3-Mannigfaltigkeit an $S$ "`aufgeschnitten"' werden kann (siehe etwa~\cite[Kapitel~4.2]{Burde.2003}), wobei das Aufschneiden bedeutet, das Komplement der Fläche zu betrachten (das Resultat ist offensichtlich eine Mannigfaltigkeit, jedoch können Eigenschaften wie Kompaktheit oder Randbedingungen entfallen). Will man nun die durch Aufschneiden gewonnene Kopien $(M_i)_{i\in \ZZ}, M_i \cong M-S$ wieder verkleben, erweist sich die Zweiseitigkeit der Fläche als günstig sogar notwendig (sonst würde nur \emph{eine} Kopie von $S$ als Rand entstehen). Eine zuvor fixierte zweiseitige glatte Einbettung $h: S\times (-\epsilon,\epsilon) \to M$ liefert nämlich durch $h(S,(-\epsilon,0))$ und $h(S,(0,\epsilon))$ offene Mengen $M_i^-$ und $M_i^+$ in den $M_i$. Durch den strukturerhaltenden Diffeomorphismus $h$ auf sein Bild, können nun $M_i$ und $M_{i+1}$ jeweils entlang $M_i^+$ und $M_{i+1}^-$ verklebt werden --- genauer: $h$ liefert eine Äquivalenzrelation auf der disjunkten Vereinigung 
 	\[
 		\cdots \sqcup M_{i-1} \sqcup (S \times (-\epsilon,\epsilon)) \sqcup M_i \sqcup  (S \times (-\epsilon,\epsilon)) \sqcup M_{i+1} \sqcup \cdots,
 	\]
-	sodass der Quotient eine unendlich zyklische Überlagerung mit der offensichtlichen Projektion bildet. Da entlang offenen Mengen verklebt wird, also durch die "`Überlappungen"', ist es möglich den gewonnenen Quotienten mit einer differenzierbaren Struktur zu versehen, so dass die Inklusionen der $M_i$ glatte Einbettungen, durch die Offenheit also Untermannigfaltigkeiten sind. Ein weiterer Vorteil dieser expliziten Konstruktion ist es, die Decktransformationsgruppe zu sehen. Sie ist durch einen Erzeuger $t$ über $t\mapsto 1$ zu $\ZZ$ isomorph und unter diesem Isomorphismus entspricht $n\in \ZZ$ einer Translation aller $M_i$ um $n$. Es bleibt nur noch zu zeigen, dass diese Überlagerung auch \textit{die} zu $S$ gehörige Überlagerung ist, die in dem obigen Sinne dem dualen $\phi$ entspricht. Dies sieht man ein, indem man sich unter dem Isomorphismus $H^1(M;\ZZ)\cong [M,S^1]$ einen glatten Repräsentanten des Bildes von $\phi$ aussucht. Natürlich existiert so einer nach den Bemerkungen in~\ref{sec:poinc} immer, jedoch soll dieser für den gewünschten Nachweis explizit $S$ als Urbild ergeben. Dafür wähle man einen zweiseitigen Kragen $S\times (-\epsilon,\epsilon) \subset M$ und definiere eine Abbildung $M\to S^1$ indem $S\times 0$ auf $p\in S^1$ abgebildet wird und $M-S \times (-\epsilon,\epsilon)$ auf den antipodalen Punkt und auf $S^1\times (-\epsilon,\epsilon)$ gemäß der Projektion auf den zweiten Faktor fortgesetzt wird. (\todo{ein solcher existiert immer}). \todo{eventuelle Umstrukturierung: Konstruktionen, zuerst der Graph (und somit als Korollar, dass jede duale orientierte (somit zweiseitige) Fläche als Urbild dargestellt werden kann), dann die zyklische Überlagerung}. Bekanntlicherweise finden wir eine solche Abbildung $f$ und ein $p \in S^1$, sodass $f^{-1}(p)$ genau die orientierte Fläche ist. Durch paralleles Aufschneiden von $M$ an $S$ und $S^1$ and $p$ erhält man folgendes kommutatives Diagramm von Überlagerungen:
+	sodass der Quotient eine unendlich zyklische Überlagerung mit der offensichtlichen Projektion bildet. Da entlang offenen Mengen verklebt wird, also durch die "`Überlappungen"', ist es möglich den gewonnenen Quotienten mit einer differenzierbaren Struktur zu versehen, so dass die Inklusionen der $M_i$ glatte Einbettungen, durch die Offenheit also Untermannigfaltigkeiten sind.
+
+	Ein weiterer Vorteil dieser expliziten Konstruktion ist es, die Decktransformationsgruppe zu sehen. Sie ist durch einen Erzeuger $t$ über $t\mapsto 1$ zu $\ZZ$ isomorph und unter diesem Isomorphismus entspricht $n\in \ZZ$ einer Translation aller $M_i$ um $n$. Es bleibt nur noch zu zeigen, dass diese Überlagerung auch \textit{die} zu $S$ gehörige Überlagerung ist, die in dem obigen Sinne dem dualen $\phi$ entspricht. Dies sieht man zum Beispiel ein, indem man sich unter dem Isomorphismus $H^1(M;\ZZ)\cong [M,S^1]$ einen glatten Repräsentanten des Bildes von $\phi$ aussucht. Natürlich existiert so einer nach den Bemerkungen in~\ref{sec:poinc} immer, jedoch soll dieser für den gewünschten Nachweis explizit $S$ als Urbild eines regulären Wertes ergeben. Dafür wähle man einen zweiseitigen Kragen $S\times (-\epsilon,\epsilon) \subset M$ und definiere eine Abbildung $f:M\to S^1$, die $S\times 0$ auf $p\in S^1$ abbildet, $M-S \times (-\epsilon,\epsilon)$ konstant auf den antipodalen Punkt von $p$ abbildet und auf $S^1\times (-\epsilon,\epsilon)$ gemäß der Projektion auf den zweiten Faktor fortgesetzt wird. Bezüglich dieser glatt konstruierten Abbildung $f$ ist der Wert $p$ regulär und $f^{-1}p=S$ mit der richtigen Orientierung, falls die Zweiseitigkeit entsprechend dem obigen Kommentar gewählt wurde. Durch paralleles Aufschneiden von $M$ an $S$ und $S^1$ and $p$ (analog wie oben nur 2 Dimensionen tiefer) erhält man folgendes kommutatives Diagramm von Überlagerungen:
 	\[
 		\begin{xy}
 			\xymatrix{M_\phi \ar[r] \ar[d] &\RR \ar[d]\\
 						M \ar[r]& S^1}
 		\end{xy}
 	\]
-	Andererseits ist dies auch ein Pullback Diagramm, da aber der Pullback einer Überlagerung bezüglich $[f]$ bis auf Diffeomorphie eindeutig ist, folgt dass die unendlich zyklische Überlagerung durch Aufschneiden und Verkleben zu $\ker(f_*:\pi_1(M)\to\pi_1(S^1)) = \ker\phi$ ist.
+
+	Dieses Diagramm ist ist aber nun ein Pullback Diagramm von glatten Faserbündeln. Also ist die Diffeomorphieklasse von $M_\phi$ eindeutig. 
+\end{constr}
+Wir können festhalten:
+\begin{cor}
+\label{cor:verklvertr}
+		Die unendlich zyklische Überlagerung die durch Aufschneiden und Verkleben an einer zu $\phi$ dualen Fläche entsteht entspricht der normalen Untergruppe $ \ker\phi$ ist.
+\end{cor}
+\begin{cor}
+\label{cor:preimage}
+	Jede zu $\phi$ duale Fläche kann als Urbild eines regulären Wertes einer glatten Abbildung $M\to S^1$ dargestellt werden, mit $H_1(M \to S^1)=\phi$
+\end{cor}
+
+\begin{constr}[Graph einer orientierten 1-kodimensionalen Untermannigfaltigkeit]
+	\label{constr:graph}
+	Sei $S$ ein beliebiger zu $\phi \in H^1(M,\ZZ)$ eigentlich eingebetteter, orientierter Repräsentant. Wir haben gesehen, dass mit obiger Konstruktion eine Abbildung $f:M\to S^1$ entsteht mit $f^{-1}p=S$. Diese Abbildung soll in dieser Konstruktion faktorisiert werden über einen Graphen.
+	Bezeichne $S=S_1\sqcup \cdots \sqcup S_n$ und $M-S = M_1 \sqcup \cdots \sqcup M_m$ die Zusammenhangskomponenten von $S$ bzw. $M-S$. Betrachte nun den gerichteten Graphen $G$ dessen Knoten bijektiv den Komponenten $M_i$ entsprechen und dessen Kanten aus den Komponenten $S_i$ mit ihrer Orientierung hervorgehen, also ein Graph mit $m$ Knoten und $n$ Kanten, wobei eine Kante von einem Knoten zu einem anderen verläuft, wenn ihre assoziierten Komponenten $M_i, M_j$ durch das entsprechende Flächenstück von $S$ getrennt werden, sodass die Komponenten das zweiseitige Flächenstück an der negativen beziehungsweise positiven Seite berühren je nachdem ob die Kante vom assoziierten Knoten aus oder eingeht.
+
+	Mit genau diesen zweiseitigen Umgebungen der Flächenkomponenten ist es möglich sich ähnlich wie oben eine Abbildung $M \to G$ zu definieren, welche die Assoziierungen respektiert. Dafür betrachte man die glatte Einbettung (welche die Zweiseitigkeit der Komponenten respektiert):
+	\[
+		\sqcup (S_i \times (-\epsilon,\epsilon)) \stackrel = \longrightarrow S \times (-\epsilon,\epsilon) \into M
+	\]
+	Dann existiert analog zur obigen Konstruktion die Quotientenabbildung $q:M\to G$ auf den Graph, durch Kollabieren der $M_i\cap (M -S \times(-\epsilon,\epsilon))$ auf ihre Knoten und Projektion von $(-\epsilon,\epsilon)$ auf das Innere der Kanten des Graphen. Betrachtet man außerdem $G \to S^1$ die Abbildung die jede Kante entsprechend ihrer Richtung einmal um die Sphäre $S^1 = I/\partial I$ abbildet und die Knoten auf den antipodalen Punkt des ausgezeichneten Punktes $p\in S^1 = [\partial I]$. Bezüglich der Komposition der beiden Abbildungen $M \to S^1$, ist nun $\phi$ das Bild des Erzeugers von $H^1(S^1)$ unter der Rückziehung auf der Kohomologie, da $M \to S^1$ eine zu $S$ duale Kohomologieklasse definiert (da $S=(M\to S^1)^{-1}p$ ist). Sei $f$ nach wie vor die Abbildung aus der letzten Konstruktion so erhalten wir:
+	
+	\begin{align}
+		\begin{xy}
+				\xymatrix{M \ar[r] \ar@/^1pc/[rr]^f & G \ar[r] & S^1 }
+			\end{xy}
+		\label{eq:graphlift}
+	\end{align}
+	Da $M$ zusammenhängend ist, ist es auch $G$.
 \end{constr}
 
-\begin{constr}[Fläche als Urbild eines regulären Wertes]
-	\label{constr:presurf}
-	Sei $S$ ein beliebiger zu $\phi \in H^1(M,\ZZ)$ eingebetteter, orientierbarer Repräsentant. Dann existiert eine Abbildung $M \to S^1$, die einen Erzeuger auf $\phi$ zurückzieht, und ein regulärer Wert $p \in S^1$, so dass $S=f^{-1}(p)$. 
-\end{constr}
+Im Folgenden wollen wir häufig den Spezialfall betrachten, dass $\phi: H_1(M) \to \ZZ$ surjektiv ist. 
+\begin{defn}
+	Ein solches $\phi \in H^1(M;\ZZ)$ heißt primitiv.
+\end{defn}
 
-Nun wollen wir uns eine besondere Art von Flächen anschauen, nämlich die Repräsentanten der zu $\phi$ dualen Klasse, bei denen $\chi_-$ minimal ist. Das immer ein Repräsentat existiert, der gewissen Eigenschaften genügt, sichert der folgende Satz:
+\subsection{$\thur \cdot$-minimierende Flächen}
+    
+Nun wollen wir uns eine besondere Art von Flächen anschauen, nämlich die Repräsentanten der zu $\phi$ dualen Klasse, bei denen $\chi_-$ minimal ist. Dass immer ein Repräsentat existiert, der gewissen Eigenschaften genügt, sichert der folgende Satz:
 
 \begin{lem}
 	\label{lem:minS}
-	Sei $\phi \in \Hom (\pi_1(M),\ZZ)$ ein primitives Element dessen Kern endlichen Rang hat. Dann existiert eine zusammenhängende Thurstonnorm-minimierende Fläche $(S,\partial S) \subset (M,\partial M)$ mit $\phi \mapsto [S]$ unter Poincaré Dualität und $b_2(S)=b_3(M)$, so dass folgende Abschätzung erfüllt ist:
+	Sei $\phi \in \Hom (\pi_1(M),\ZZ)$ ein primitives Element mit $b_1(\ker\phi)<\infty$. Dann existiert eine zusammenhängende Thurstonnorm-minimierende Fläche $(S,\partial S) \subset (M,\partial M)$ mit $\phi \mapsto [S]$ unter Poincaré Dualität und $b_2(S)=b_3(M)$, so dass folgende Abschätzung erfüllt ist:
 	\[
-	b_1(S) \leq b_1(ker(\phi))
+	b_1(S) \leq b_1(\ker(\phi))
 	\]
 \end{lem}
 \begin{proof}
-	Wähle unter allen Thurstonnorm-minimierenden Flächen eine orientierte Fläche $S$ mit einer geringsten Anzahl an Zusammenhangskomponenten.\\
-	\textit{Behauptung: Diese Fläche ist zusammenhängend}\\
-	Bezeichne $S=S_1\sqcup \cdots \sqcup S_n$ und $M-S = M_1 \sqcup \cdots \sqcup M_m$ die Zusammenhangskomponenten von $S$ bzw. $M-S$. Betrachte nun den gerichteten Graphen $G$ dessen Knoten bijektiv den Komponenten $M_i$ entsprechen und dessen Kanten aus den Komponenten $S_i$ mit ihrer Orientierung hervorgehen, also ein Graph mit $m$ Knoten und $n$ Kanten, wobei eine Kante von einem Knoten zu einem anderen verläuft, wenn ihre assoziierten Komponenten $M_i, M_j$ durch das entsprechende Flächenstück von $S$ getrennt werden, wobei die Komponenten das zweiseitige Flächenstück an der negativen beziehungsweise positiven Seite berühren je nachdem ob die Kante vom assoziierten Knoten aus oder eingeht. Mit genau diesen zweiseitigen Umgebungen der Flächenkomponenten ist es möglich sich eine Abbildung $M \to G$ zu definieren, welche die Assoziierungen respektiert. Sei außerdem $G \to S^1$ die Abbildung die jede Kante entsprechend ihrer Richtung einmal um die Sphäre abbildet und die Knoten auf einen ausgezeichneten Punkt. Bezüglich der Komposition der beiden Abbildungen $M \to S^1$, ist nun $\phi$ das Bild des Erzeugers von $H^1(S^1)$ unter der Rückziehung auf der Kohomologie, da $M \to S^1$ eine zu $S$ duale Kohomologieklasse definiert. Genauer gesagt, kann die Abbildung offensichtlich so gewählt werden, dass das Urbild eines Punktes (verschieden dem ausgezeichneten) einer zu $S$ homologen Fläche ist, also $M \to S^1$ unter der bekannten Bijektion $H^1(M,\ZZ) \cong [M,S^1]$ genau $\phi$ entspricht. Unter diesen Identifikationen, ist klar, dass $G$ diffeomorph zu einem Kreis ist. Dafür betrachte man folgendes Diagramm von Pullbacks von Überlagerungen:
+	Wähle unter allen Thurston-Norm-minimierenden Flächen eine orientierte Fläche $S$ mit einer geringsten Anzahl an Zusammenhangskomponenten.\\
+	\textit{Behauptung: Diese Fläche ist zusammenhängend}.
+	Man betrachte den aus $S$ entstehenden Graphen nach Konstruktion~\ref{constr:graph}.
+	Wir werden zeigen, dass unter der Minimalitätsanforderung von $S$ unter diesen Identifikationen klar ist, dass $G$ ein topologischer Kreis ist und $G\to S^1$ die Identität. Das impliziert die Behauptung.
+
+	Dafür betrachte man folgendes Diagramm von Pullbacks von Überlagerungen:
 
 	\[
 	 	\begin{xy}
@@ -48,8 +89,7 @@ Nun wollen wir uns eine besondere Art von Flächen anschauen, nämlich die Repr�
 	 		}
 	 	\end{xy}
 	 \] 
-
-	 Man erhält unendlich zyklische Überlagerungen, also unendlich zyklische Decktransformationsgruppen. Jedes Element in $\pi_1(G_\phi)$ ist homotop zu einem Lift einer Schleife  aus $\pi_1(G)$ ($G$ erbt den Zusammenhang von $M$, deswegen die Vernachlässigung des Basispunktes). Unter der oben gezeigten Kompatibilitätsvorraussetzung dieser Überlagerungen durch Pullbacks mit den Überlagerungen durch Aufschneiden an dualen Flächen (deswegen die suggestive Schreibweise $M_\phi$), entsteht $G_\phi$ durch "`Aufschneiden an den Knoten"', also liftet jede Schleife aus $G$ trivial. Folglich ist $G_\phi$ einfach zusammenhängend, überlagert $G$ also universell. Somit ist $\pi_1(G)= \ZZ$. Also ist $G$ als Graph vom Homototyp ein Kreis. Da $G$ aber auch die Kompaktheit von $M$ erbt, ist nur noch die Existenz von Knoten ohne ein- oder ausgehende Kanten auszuschließen um zu zeigen das $G$ ein topologischer Kreis ist. Diese ist aber durch die Minimalitätseigenschaft im Bezug auf die Komponenten der gewählten Fläche ausgeschlossen, da solche Kanten einer nullhomologen Kette entsprechen. Dies sieht man, falls $M$ geschlossen ist wie folgt ein: Sei $M_i$ ein Knoten der nur eingehende oder nur ausgehende Kanten besitzt, etwa $S_i, i \in I$. Dann ist ohne Beschränkung der Allgemeinheit $(M_i,\sqcup_{i\in I}S_i)$ eine Mannigfaltigkeit mit Rand (je nach Geschmack betrachte man sonst die umgekehrte Orientierung auf den $S_i$ oder das Komplement von $M_i$). Die Homologieklasse von $\hat S = \sqcup S$ ist das Bild der Fundamentalklassen unter der von der Inklusion $H_2(i:\hat S \into M)$ induzierten Abbildung. Doch $ \hat S \stackrel i \into M = \hat S \stackrel j \into M_i \cup \hat S \stackrel k \into M$ faktorisiert und mit Funktorialität faktorisiert auch $H_2(i)=H_2(k)H_2(j)$ aber $H_2(j)=0$. Hier wurde benutzt, dass der Rand einer Mannigfaltigkeit als Klasse mit Kodimension $1$ nullhomolog ist (aus der langen exakten Sequenz für das Paar folgt, dass die Inklusion von Rändern auf der Homologie der Kodimension 1 eine triviale Abbildung induziert, da der Randoperator einen Isomorphismus induziert). Falls $M$ jedoch nicht geschlossen ist, so folgt mit einem einfachen Schnittzahlenargument, dass jede Homologieklasse als Schleife ausgewertet auf $[\hat S]$ (als duale Kohomologieklasse), die Summe der transversalen Schnitte mit Vorzeichen ergibt, also $\hat S$ dual zu dem trivialen Homomorphismus $\pi_1(M)\to \ZZ$ ist, folglich würde dies  eine Fläche mit $|I|$ weniger Komponenten liefern:
+	 Man erhält unendlich zyklische Überlagerungen, also unendlich zyklische Decktransformationsgruppen. Jedes Element in $\pi_1(G_\phi)$ ist homotop zu einem Lift einer Schleife  aus $\pi_1(G)$ (Vernachlässigung des Basispunktes ist in dieser Situation keine Einschränkung). Unter der oben gezeigten Kompatibilitätsvorraussetzung dieser Überlagerungen durch Pullbacks, mit den Überlagerungen durch Aufschneiden an dualen Flächen (deswegen die suggestive Schreibweise $M_\phi$), entsteht $G_\phi$ durch "`Aufschneiden an den Knoten"', also liftet jede Schleife aus $G$ trivial. Folglich ist $G_\phi$ einfach zusammenhängend, überlagert $G$ also universell. Somit ist $\pi_1(G)= \ZZ$. Also ist $G$ als Graph vom Homototyp ein Kreis. Da $G$ aber auch die Kompaktheit von $M$ erbt, ist nur noch die Existenz von Knoten ohne ein- oder ausgehende Kanten auszuschließen, um zu zeigen das $G$ ein topologischer Kreis ist. Diese ist aber durch die Minimalitätseigenschaft im Bezug auf die Komponenten der gewählten Fläche ausgeschlossen, da solche Kanten einer nullhomologen Kette entsprechen. Dies sieht man, falls $M$ geschlossen ist wie folgt ein: Sei $M_i$ ein Knoten der nur eingehende oder nur ausgehende Kanten besitzt, etwa $S_i, i \in I$. Dann ist ohne Beschränkung der Allgemeinheit $(M_i,\sqcup_{i\in I}S_i)$ eine Mannigfaltigkeit mit Rand (je nach Geschmack betrachte man sonst die umgekehrte Orientierung auf den $S_i$ oder das Komplement von $M_i$). Die Homologieklasse von $\hat S = \sqcup_{i \in I} S$ ist das Bild der Fundamentalklassen unter der von der Inklusion $H_2(i:\hat S \into M)$ induzierten Abbildung. Doch $ \hat S \stackrel i \into M = \hat S \stackrel j \into M_i \cup \hat S \stackrel k \into M$ faktorisiert und mit Funktorialität faktorisiert auch $H_2(i)=H_2(k)H_2(j)$ aber $H_2(j)=0$. Hier wurde benutzt, dass der Rand einer Mannigfaltigkeit als Klasse mit Kodimension $1$ nullhomolog ist (aus der langen exakten Sequenz für das Paar folgt, dass die Inklusion von Rändern auf der Homologie der Kodimension 1 eine triviale Abbildung induziert, da der Randoperator einen Isomorphismus induziert). Falls $M$ jedoch nicht geschlossen ist, so folgt mit einem einfachen Schnittzahlenargument, dass jede Homologieklasse als transversale Schleife ausgewertet auf $[\hat S]$ (als duale Kohomologieklasse), die Summe der transversalen Schnitte mit Vorzeichen ergibt, also $\hat S$ dual zu dem trivialen Homomorphismus $\pi_1(M) \stackrel 0\to \ZZ$ ist, also selbst nullhomolog. Folglich würde dies eine Fläche mit $|I|$ weniger Komponenten und somit einen Widerspruch liefern:
 	 \[
 	 	[S]=[\sqcup_{i\not \in I} S_i\bigsqcup \sqcup_{i\in I} S_i] = [\sqcup_{i\not \in I} S_i ]+[ \sqcup_{i\in I} S_i] = [\sqcup_{i\not \in I}S_i]
 	 \]
@@ -57,41 +97,41 @@ Nun wollen wir uns eine besondere Art von Flächen anschauen, nämlich die Repr�
 
 	 Die nächste Gleichheit --- \emph{die Übereinstimmung des Ranges auf den Top-Homologien von $S$ und $M$} --- hängt von der Existenz eines Randes ab. Da $(S,\partial S) \subset (M,\partial M)$ folgt aus $\partial S \neq \emptyset$ direkt $b_2(S)=b_3(M)=0$. Falls $S$ aber leeren Rand hat, gilt $b_2(S)=1$ und es muss $b_3(M)=1$ gezeigt werden. Dazu wird die Existenz eines Randes von $M$ widerlegt:
 
-	 Nach Annahme existeren nur Tori als Randkomponenten. Sei $T \subset \partial M$ eine solche Randkomponente. Da $S$ keinen Rand hat, also $T$ nicht berührt, enthält die durch Aufschneiden an $S$ erhaltene unendlich zyklische Überlagerung $M_\phi$ auch unendlich zyklisch viele Kopien von $T$ als Randkomponenten. Genauer: unter Verwendung dieser Aufschneide Konstruktion aus~\ref{constr:cut}, liftet $T$ in jedes $M_i \cong M - S \supset T$. Im Folgenden soll die Notation $\hat M_i$ für die (wieder) kompakte (Unter-)Mannigfaltigkeit von $M_\phi$ verwendet werden, die den Fundamentalbereich darstellt, der $M_i$ enthält. Zusammen mit der langen exakten Sequenz für eine kompakte orienierbare Mannigfaltigkeit $(N,\partial N)$
+	 Nach Annahme existeren nur Tori als Randkomponenten. Sei $T \subset \partial M$ eine solche Randkomponente. Da $S$ keinen Rand hat, also $T$ nicht berührt, enthält die durch Aufschneiden an $S$ erhaltene unendlich zyklische Überlagerung $M_\phi$ auch unendlich zyklisch viele Kopien von $T$ als Randkomponenten. Genauer: unter Verwendung dieser Aufschneide-Konstruktion~\ref{constr:cut}, liftet $T$ in jedes $M_i \cong M - S \supset T$, auf der sich die Projektion zu einem Diffeomorphismus einschränkt. Im Folgenden soll die Notation $\overline M_i$ für die (wieder) kompakte (Unter-)Mannigfaltigkeit von $M_\phi$ verwendet werden, die den Fundamentalbereich darstellt, der $M_i$ enthält. Zusammen mit der langen exakten Sequenz für eine kompakte orienierbare Mannigfaltigkeit $(N,\partial N)$
 	\[
 	 \begin{xy}
 	 	\xymatrix{
 	 	H_2(N;\QQ) \ar[r]&  H_2(N,\partial N ; \QQ) \ar[r]^\delta & H_1(\partial N;\QQ) \ar[r]^{i_*}& H_1(N;\QQ) \\
-	 	& &H^1(N;\QQ) \ar[ru]_\cong \ar[lu]^\cong&}
+	 	& &H^1(N;\QQ) \ar[ru]_{\cong} \ar[lu]^{\text{Lefschetz Dualität: }\cong \qquad~}&}
 	 \end{xy}
 	 \] 
 	 und der daraus folgenden Abschätzung
 	 \[
 	 	b_1(\partial N) = \dim(\im \delta) + \dim(\im i_*) \leq  2b_1(N)
 	 \]
-	 erhält man für jede kompakte zusammenhängende (implizite Anforderung an $I\subset \ZZ$) Untermannigfaltigkeit der Form 
+	 erhält man für jede kompakte zusammenhängende (man bemerke die implizite Anforderung an $I\subset \ZZ$) Untermannigfaltigkeit der Form 
 	 \[
-	  	\bigcup_{i\in I} \hat M_i \subset M_\phi 
+	  	\bigcup_{i\in I} \overline M_i \subset M_\phi 
 	  \]
 	  die Abschätzung:
 	  \[
-	   	b_1(\bigcup_{i\in I} \hat M_i)\geq \frac{1}{2}b_1(\partial \bigcup_{i\in I} \hat M_i) \geq \frac{1}{2}b_1(\sqcup_{i \in I}T) = |I|
+	   	b_1(\bigcup_{i\in I} \overline M_i)\geq \frac{1}{2}b_1(\partial \bigcup_{i\in I} \overline M_i) \geq \frac{1}{2}b_1(\sqcup_{i \in I}T) = |I|
 	  \]
 
 
-	  Nun folgt aber aus der Mayer Vietoris Sequenz (für entsprechende offene Umgebungen) die exakte Sequenz:
+	 \noindent Nun folgt aber aus der Mayer Vietoris Sequenz (für entsprechende offene Umgebungen\footnote{Stichworte hier: das allgemeine Theorem über Tubenumgebungen, Umgebungsdeformationsretrakt}) die exakte Sequenz:
 	  \[
-	  	\cdots\to H_1(S\sqcup S;\QQ) \to H_1(\bigcup_{i \in I} \hat M_i;\QQ) \oplus H_1(M_\phi -\bigcup_{i \in I} \hat M_i;\QQ) \to H_1(M_\phi;\QQ) \to 0
+	  	\cdots\to H_1(S\sqcup S;\QQ) \to H_1(\bigcup_{i \in I} \overline M_i;\QQ) \oplus H_1(M_\phi -\bigcup_{i \in I} \overline M_i;\QQ) \to H_1(M_\phi;\QQ) \to 0
 	  \]
 	  und somit
 	  \[
-	  	b_1(M_\phi)= b_1(\bigcup_{i \in I} \hat M_i)+b_1(M_\phi -\bigcup_{i \in I} \hat M_i)-b_1(S\sqcup S) \geq |I| -2b_1(S)
+	  	b_1(M_\phi)= b_1(\bigcup_{i \in I} \overline M_i)+b_1(M_\phi -\bigcup_{i \in I} \overline M_i)-b_1(S\sqcup S) \geq |I| -2b_1(S)
 	  \]
 	  Da aber $b_1(M_\phi)$ nach Voraussetzung endlich ist und $|I|$ beliebig groß, folgt also dass der Rand von $M_\phi$ keine Tori enthält und somit leer ist.
 
-	  Um nun noch\emph{ die Abschätzung $b_1(M_\phi) \leq b_1(S)$ }zu zeigen, wird erneut die Konstruktion der Überlagerung durch Aufschneiden und Verkleben zur Hilfe genommen. Da $\ker\phi \tensor \QQ \cong H_1(M_\phi;\QQ)$ nach Voraussetzung ein endlich erzeugter $\QQ$-Vektorraum ist, wird $H_1(M_\phi;\QQ)$ von einem kompakten Teilraum, etwa der Untermannigfaltigkeit $\hat M_1 \cup \cdots \cup \hat M_k \into M_\phi$ und somit auch $t^k(\hat M_1 \cup \cdots \cup \hat M_k )  = \hat M_{k+1} \cup \cdots \cup \hat M_{2k}\into M_\phi$, erzeugt (heißt: die Inklusionen erzeugen Epimorphismen auf der ersten Homologie). Mit diesem Wissen liefert die folgende exakte Sequenz (induziert nach Mayer-Vietoris) die gesuchte Abschätzung:
+	  Um nun noch\emph{ die Abschätzung $b_1(M_\phi) \leq b_1(S)$ }zu zeigen, wird erneut die Konstruktion der Überlagerung durch Aufschneiden und Verkleben zur Hilfe genommen. Da $\ker\phi \tensor \QQ \cong H_1(M_\phi;\QQ)$ nach Voraussetzung ein endlich erzeugter $\QQ$-Vektorraum ist, wird $H_1(M_\phi;\QQ)$ von einem kompakten Teilraum, etwa der Untermannigfaltigkeit $\overline M_1 \cup \cdots \cup \overline M_k \into M_\phi$ und somit auch $t^k(\overline M_1 \cup \cdots \cup \overline M_k )  = \overline M_{k+1} \cup \cdots \cup \overline M_{2k}\into M_\phi$, erzeugt (heißt: die Inklusionen erzeugen Epimorphismen auf der ersten Homologie). Mit diesem Wissen liefert die folgende exakte Sequenz (induziert nach Mayer-Vietoris) die gesuchte Abschätzung:
 	  \[
-	  	\cdots \to H_1(S;\QQ) \to H_1(\bigcup_{i\leq k}\hat M_i;\QQ) \oplus H_1(\bigcup_{i>k} \hat M_i;\QQ) \onto H_1(M_\phi;\QQ)
+	  	\cdots \to H_1(S;\QQ) \to H_1(\bigcup_{i\leq k}\overline M_i;\QQ) \oplus H_1(\bigcup_{i>k} \overline M_i;\QQ) \onto H_1(M_\phi;\QQ)
 	  \]
 \end{proof}
 
@@ -102,13 +142,15 @@ Da die erste Homologie der Überlagerung natürlich bessere Chancen hat, als Mod
 	Tatsächlich liefert dieses Lemma sogar \emph{die} Abschätzung des Theorems~\ref{thm:haupttheorem} wie wir nachher sehen werden. Gilt hier also Gleichheit, so folgt auch die Gleichheit in dem Theorem. Diese Bemerkung bietet also dem Leser die Möglichkeit noch einmal kurz inne zu halten und sich die Natur der Abschätzung anhand der vorhergehenden Seiten zu verdeutlichen.
 \end{bem}
 
-Nun vergleicht das vorangegangene Lemma also die Thurston Norm einer Kohomologieklasse mit dem Rang ihres Kerns. Wie letzerer mit der Alexander Norm in Verbindung steht, stellt folgendes Lemma (vgl.~\cite[Assertion~4]{Milnor.2009}) für $b_1(M)=1$ fest:
+\subsection{Darstellungen des Alexander Ideals}
+    
+Nun vergleicht das vorangegangene Kapitel also die Thurston Norm einer Kohomologieklasse mit dem Rang ihres Kerns. Wie letzerer mit der Alexander Norm in Verbindung steht, stellt folgendes Lemma (vgl.~\cite[Assertion~4]{Milnor.2009}) für $b_1(M)=1$ fest:
 \begin{lem}
 	\label{lem:charPol}
-	Es sei wieder $\phi \in H^1(M;\ZZ)$ eine primitive Klasse und $\ker \phi \tensor \QQ$ ein endlich dimensionaler Vektorraum. Weiter sei $t$ ein Erzeuger der Decktransformationsgruppe von $M_\phi$, sodass analog zu der $\laurent \ZZ t$-Modul Struktur auf dem $\ZZ$-Modul $H_1(M_\phi;\ZZ)$ aus \ref{wirkung:gruppenring} der $\QQ$-Modul $H_1(M_\phi;\QQ)$ als Modul über dem rationalen Gruppenring $\QQ[\langle t \rangle]$ aufgefasst werden kann, wobei der Gruppenring kanonisch mit $\QQ[t^{\pm 1}]$ identifiziert wird. Dann ist das Elementarideal $E_0(H_1(M_\phi))\subset \QQ[t^{\pm1}]$ bezüglich einer $\QQ[t^{\pm 1}]$-Präsentation ein Hauptideal das von dem charakteristischen Polynom des induzierten Automorphismus $t_*$ erzeugt wird.
+	Es sei wieder $\phi \in H^1(M;\ZZ)$ eine primitive Klasse und $\ker \phi \tensor \QQ$ ein endlich dimensionaler Vektorraum. Weiter sei $t$ ein Erzeuger der Decktransformationsgruppe von $M_\phi$, sodass analog zu der $\laurent \ZZ t$-Modul Struktur auf dem $\ZZ$-Modul $H_1(M_\phi;\ZZ)$ der $\QQ$-Modul $H_1(M_\phi;\QQ)$ als Modul über dem rationalen Gruppenring $\QQ[\langle t \rangle]$ aufgefasst werden kann, wobei der Gruppenring kanonisch mit $\QQ[t^{\pm 1}]$ identifiziert wird. Dann ist das Elementarideal $E_0(H_1(M_\phi))\subset \QQ[t^{\pm1}]$ bezüglich einer $\QQ[t^{\pm 1}]$-Präsentation ein Hauptideal das von dem charakteristischen Polynom des induzierten Automorphismus $t_*$ erzeugt wird.
 \end{lem}
 \begin{cor}
-	Insbesondere erzeugt für $b_1(M)=1$ das Alexander Polynom den Alexander Modul. \qed
+	Insbesondere erzeugt für $b_1(M)=1$ das Alexander Ideal ein Hauptideal. \qed
 \end{cor}
 Um zunächst die Aussage klarzustellen, sei darauf hingewiesen, dass nach dem universellen Koeffiziententheorem für Homologie gilt, dass $H_1(M_\phi;\QQ) \cong H_1(M_\phi;\ZZ)\tensor_\ZZ \QQ$ und weiter folgt das entsprechende Corollar für das Alexander Polynom durch Proposition~\ref{prop:tensoring}.
 In dem Beweis wollen wir nutzen, dass $\laurent\QQ t$ ein Hauptidealring ist. Deswegen folgendes Hilfsmittel:
@@ -116,7 +158,7 @@ In dem Beweis wollen wir nutzen, dass $\laurent\QQ t$ ein Hauptidealring ist. De
 \label{lem:QThauptidealring}
 	$\laurent\QQ t$ ist ein Hauptidealring.
 \end{lem}
-Natürlich könnte man $\QQ$ für dieses Lemma durch jeden beliebigen Körper $\KK$ ersetzen. Allerdings entfällt durch Tensorieren mit einem endlichen Körper nicht jegliche Torsion, entsprechend birgt das mögliche Probleme bei Anwendung des universellen Koeffiziententheorems, da der $\Tor$ Anteil nicht zwangsweise verschwindet.
+Natürlich könnte man $\QQ$ für dieses Lemma durch jeden beliebigen Körper $\KK$ ersetzen. Allerdings entfällt durch Tensorieren mit einem endlichen Körper nicht jegliche Torsion, entsprechend birgt das mögliche Probleme bei Anwendung des universellen Koeffiziententheorems, da der $\Tor$ Anteil nicht zwangsweise verschwindet und somit hält Proposition~\ref{prop:tensoring} nicht mehr.
 \begin{proof}
 	Da $\QQ$ ein Körper ist, ist $\QQ[t]$ ein Hauptidealring. Nun ist allgemeiner die Eigenschaft für einen Ring ein Hauptidealring zu sein abgeschlossen unter Lokalisierung. Der Beweis läuft durch Betrachtung der kanonische Lokalisierungsabbildung:
 	\[
@@ -124,17 +166,24 @@ Natürlich könnte man $\QQ$ für dieses Lemma durch jeden beliebigen Körper $\
 	\]
 	Die Ideale in der Lokalisierung sind genau die erweiterten Ideale aus dem ursprünglichen Ring, wegen der Erhaltung durch $\laurent \QQ t \supset I=\alpha_*(\alpha^*(I))$, wobei $\alpha^* = \alpha^{-1}$ die Kontraktion eines Ideals bezeichnet und $\alpha_*(I) = \laurent \QQ t \cdot \alpha(I)$ die Erweiterung eines Ideals. Da aber jedes Element in $\laurent \QQ t$ durch Multiplizieren mit der Einheit $t^N$ im Erzeugnis eines Polynoms liegt, wird ein Erzeuger aus dem Hauptideal $\alpha^*(I)$ auf einen Haupterzeuger in $I$ abgebildet. 
 \end{proof}
- In der Tat ist dieser Beweis in dem Fall des Laurentrings doch mehr als einleuchtend, allerdings merkt man sich so auch gut den Beweis für allgemeine Lokalisierungen, indem man bemerkt, dass man das Multiplizieren mit der Einheit $t^N$ einfach erreichen lässt durch Multiplikation mit Elementen aus der multiplikativen Menge an der lokalisiert wurde --- den neuen Einheiten aus dem lokalisierten Ring.
+ In der Tat ist dieser Beweis in dem Fall des Laurentrings doch mehr als einleuchtend, allerdings merkt man sich so auch gut den Beweis für allgemeine Lokalisierungen, indem man bemerkt, dass sich das Multiplizieren mit der Einheit $t^N$ einfach erreichen lässt durch Multiplikation mit Elementen aus der multiplikativen Menge an der lokalisiert wurde --- den neuen Einheiten aus dem lokalisierten Ring.
+
+\begin{cor}
+	Die ganzzahligen Alexander Polynome $\Delta_\phi^i$ sind durch $A_\phi(G) \tensor \QQ$ vollständig charakterisiert.
+\end{cor}
+\begin{proof}
+	Der Beweis folgt aus Zusammentragen der Ergebnisse aus Beispiel~\ref{bsp:hauptidealelementarteiler}, Proposition~\ref{prop:tensoring} und Lemma~\ref{lem:QThauptidealring}.
+\end{proof}
 
  Nach dem Einschub algebraischer Natur, nun der Beweis des Lemmas~\ref{lem:charPol}:
-\begin{proof}
+\begin{proof}[Beweis von Lemma~\ref{lem:charPol}]
 	Da $H_1(M_\phi,\QQ)$ ein endlich dimensionaler Vektorraum ist, werden durch den Erzeuger $t$ des Quotienten $\pi_1(M)/\ker(\phi) \cong \ZZ$ der Decktransformationen Relationen auf den Basiselementen $x_1,\cdots,x_n$ eingeführt:	
 	\begin{align*}
 		t_*x_1 &= \sum a_i^1 x_i \\
 				&\vdots \\
 		t_*x_n &= \sum a_i^n x_i
 	\end{align*}
-	Diese Gleichungen definieren genau die quadratische Matrix des Automorphismus von Vektorräumen $t_* \in \Aut (H_1(M_\phi;\QQ))$, die also als Spalten die $a^i$ hat. Durch subtrahieren der obigen Gleichungen, erhält man eine formale Matrix der Form $A-tI$. Diese Matrix ist aber gleichzeitig die Präsentationsmatrix der freien Auflösung:
+	Diese Gleichungen definieren genau die quadratische Matrix $A$ des Automorphismus von Vektorräumen $t_* \in \Aut (H_1(M_\phi;\QQ))$ bezüglich der Basis $(x_i)_i$, die also als Spalten die $a^i$ hat. Durch subtrahieren der obigen Gleichungen, erhält man eine formale Matrix der Form $A-tI$. Diese Matrix ist aber gleichzeitig die Präsentationsmatrix der freien Auflösung:
 	\[
 		\begin{xy}
 			\xymatrix@L+5pt{\laurent \QQ t ^n \ar[r]_{e_r\mapsto \sum a_i^rx_i-tx_r} & \laurent \QQ t ^n \ar[r] & H_1(M_\phi;\QQ) \ar[r] &0\\}
@@ -145,7 +194,7 @@ Natürlich könnte man $\QQ$ für dieses Lemma durch jeden beliebigen Körper $\
 
 
 
-Dieses Ergebnis liefert nun im Fall einen Zusammenhang zwischen den Thurston-Norm-minimierenden Flächen, deren erste Bettizahl nach Lemma~\ref{lem:minS} immer mit oberer Schranke $b_1(\ker\phi)$ gewählt werden kann, und der dem Grad des Alexander Polynoms eines Homomorphismus der Fundamentalgruppe. Falls also $b_1(M)=1$, so folgt bereits der Zusammenhang mit dem Alexander Polynom von $M$:
+Diese Überlegungen liefern nun einen Zusammenhang zwischen den Thurston-Norm-minimierenden Flächen, deren erste Bettizahl nach Lemma~\ref{lem:minS} immer mit oberer Schranke $b_1(\ker\phi)$ gewählt werden kann, und dem Grad des Alexander Polynoms von $\phi$. Weiter, falls also $b_1(M)=1$, so folgt bereits der Zusammenhang mit der Alexander-Norm von $M$. Dies wollen wir in folgendem Corollar festhalten.
 \begin{cor}
 \label{cor:degreealex}
 	Sei $\phi \in H^1(M;\ZZ)$ eine primitive Klasse. Dann gilt:
@@ -286,19 +335,17 @@ Dieses Ergebnis liefert nun im Fall einen Zusammenhang zwischen den Thurston-Nor
 	Falls $M$ nun Rand hat, liefert der gleiche Beweis mit etwas Vernunft das gleiche Ergebnis. 
 \end{proof} 
 
-Für den Fall, dass $b_1(M)=1$, so wissen wir bereits einfach, dass $I(M)$ unabhängig der beiden angegebenen Definitionen ein Hauptideal ist. Weiter haben wir bereits gesehen, wie das Alexander Polynom einer Kohomologieklasse $\phi$ in Zusammenhang mit $b_1(\ker \phi)$ steht durch Gleichheit mit dem Grad. Letzteres, also einen Beziehung von $b_1(\ker\phi)$ und $||\phi||_A$ soll nun im Fall für $b_1(M)\geq 1$ hergeleitet werden (falls $b_1(M)=1$ so stimmt die Alexander-Norm mit dem Grad des Alexander Polynoms überein).
+Für den Fall, dass $b_1(M)=1$, so wissen wir bereits einfach, dass $I(M)$ unabhängig der beiden angegebenen Definitionen ein Hauptideal ist. Weiter haben wir in diesem Fall bereits gesehen, wie die Alexander-Norm einer Kohomologieklasse $\phi$ in Zusammenhang mit $b_1(\ker \phi)$ steht (falls $b_1(M)=1$ so stimmt die Alexander-Norm mit dem Grad des Alexander Polynoms überein). Letzteres, also einen Beziehung von $b_1(\ker\phi)$ und $||\phi||_A$ soll nun im Fall für $b_1(M)\geq 1$ hergeleitet werden.
 
-\begin{thm}
-	Falls $\Delta_G \neq 0$ mit $G=\pi_1(M)$, so gilt für primitive $\phi \in ^1(M;\ZZ)$ (die in einem offenen Kegel der Alexander-Einheitskugel liegen):
+\begin{lem}
+\label{lem:alexnorm}
+	Falls $\Delta_G \neq 0$ mit $G=\pi_1(M)$, so gilt für primitive $\phi \in H^1(M;\ZZ)$ die in einem offenen Kegel durch eine offene berandende Seite des Polytops der Alexander-Einheitskugel liegen:
 	\[
 		b_1(\ker\phi) = ||\phi||_A + 1 + b_3(M)
 	\]
-\end{thm}
+\end{lem}
 \begin{proof}
-	Zur Berechnung des Alexander Polynoms einer Gruppe verwendet man häufig eine Abbildung auf den maximalen frei abelschen Quotienten, die man auf den ganzzahligen Gruppenringen fortsetzt. Dies ermöglicht einem zwischen verschiedenen Ebenen hin und herzuspringen. Ähnlich soll nun hier $\phi \in H^1(M;\ZZ) \cong \Hom(G,\ZZ) $, unter der Identifikation als Homomorphismus der Fundamentalgruppe fortgesetzt werden:
-	\[
-		\hat \phi:\ZZ[G] \to \laurent \ZZ t
-	\]
+	Zur Berechnung des Alexander Polynoms einer Gruppe verwendet man häufig eine Abbildung auf den maximalen frei abelschen Quotienten, die man auf den ganzzahligen Gruppenringen fortsetzt. Dies ermöglicht einem zwischen verschiedenen Ebenen hin und herzuspringen. Ähnlich soll nun hier $\phi \in H^1(M;\ZZ) \cong \Hom(G,\ZZ) $ fortgesetzt werden: $		\hat \phi:\ZZ[G] \to \laurent \ZZ t$.\\
 	Wendet man diesen fortgesetzten Homomorphismus auf $\Delta_G\in \ZZ G$ an erhält man: \[
 		\hat \phi \Delta_G = \hat \phi (\sum \lambda_i g_i)= \sum \lambda_i \phi(g_i) = \sum \lambda_i t^{\phi(g_i)} = \sum \hat \lambda_{\phi(g_i)} t^{\phi(g_i)}
 	\]
@@ -306,14 +353,21 @@ Für den Fall, dass $b_1(M)=1$, so wissen wir bereits einfach, dass $I(M)$ unabh
 	\[
 		\Grad \phi(\Delta_G) = \sup_{\hat \lambda_{\phi(g_{i/j})} \neq 0} (\phi(g_i)- \phi(g_j))
 	\]
+	Da nun aber $\phi$ aus einem Kegel durch eine offene Seite des Alexander Polytops gewählt wurde, verschwinden unter $\hat \phi$ keine Koeffizienten die den Grad maximieren, also:
+	\[
+		\sup_{\hat \lambda_{\phi(g_{i/j})} \neq 0} (\phi(g_i)- \phi(g_j)) = \sup_{\lambda_i}(\phi(g_i)- \phi(g_j))
+	\]
+	nun folgt das Lemma mit $(\Delta_\phi)=\phi(I(G))=\langle(t-1)^{1+b_1(M)}\hat\phi\Delta_G \rangle	$.
 \end{proof}
 
+\subsection{Kombinieren der Ergebnisse}
+    
 Mit folgendem Beweis endet schließlich dieses Kapitel und somit der Beweis des Haupttheorems.
 
 \begin{proof}[Beweis von Theorem~\ref{thm:haupttheorem}(McMullen)]
 	Sei wieder $G=\pi_1(M)$ und ohne Einschränkung $\Delta_G\neq 0$. Definiere weiter \[
 	P=\begin{cases}
-		b_3(M)+1 &, \text{falls } b_1(M) \geq 2	\\
+		b_3(M)+1 &, \text{ falls } b_1(M) \geq 2	\\
 		0
 	\end{cases}
 	\]	

@@ -12,8 +12,12 @@
 \contentsline {subsection}{\numberline {4.2}Eine \IeC {\"a}quivalente Definition von McMullen?}{20}
 \contentsline {subsection}{\numberline {4.3}Rationale Alexander Invarianten}{22}
 \contentsline {section}{\numberline {5}Beweis des Theorems}{24}
-\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{37}
-\contentsline {subsection}{\numberline {6.1}Zu der Thurston-Norm bei \IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{37}
-\contentsline {subsection}{\numberline {6.2}Faserungen}{39}
-\contentsline {subsection}{\numberline {6.3}Knoten und Verschlingungen}{41}
-\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{46}
+\contentsline {subsection}{\numberline {5.1}Konstruktionen}{24}
+\contentsline {subsection}{\numberline {5.2}$||\cdot ||_T$-minimierende Fl\IeC {\"a}chen}{26}
+\contentsline {subsection}{\numberline {5.3}Darstellungen des Alexander Ideals}{29}
+\contentsline {subsection}{\numberline {5.4}Kombinieren der Ergebnisse}{37}
+\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{38}
+\contentsline {subsection}{\numberline {6.1}Zu der Thurston-Norm bei \IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{38}
+\contentsline {subsection}{\numberline {6.2}Faserungen}{40}
+\contentsline {subsection}{\numberline {6.3}Knoten und Verschlingungen}{42}
+\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{47}
