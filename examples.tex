@@ -106,12 +106,11 @@
         Eine wichtige Anwendung der Thurston-Norm und dieser Abschätzung besteht in den sogenannten \textit{fibered faces}, die im Folgenden als gefaserte Seiten bezeichnet werden. Bisher wurden bereits Kohomologieklassen $\phi \in H^1(M;\ZZ)$ betrachtet, mit einer korrespondenten Abbildung $M \to S^1$ die eine Faserung darstellt. Bei solchen herrscht nach dem letzten Beispiel Gleichheit im Theorem~\ref{thm:haupttheorem}. Diese Klassen werden auch als \textit{gefasert} bezeichnet. Tatsächlich stellt Thurston in \cite{Thurston.1986} fest, dass Informationen über diese Eigenschaft durch die Thurston-Norm festgestellt werden. Wie in Bemerkung~\ref{rem:extendingthurston} gezeigt, lässt sich die Thurston-Norm durch Erweiterung der Skalare (tensorieren mit $\RR$), fortsetzen. Thurston hat in \cite{Thurston.1986} außerdem gezeigt, dass der Einheitsball dieser Norm auf $H^1(M;\RR)/V$ (wobei $V$ ein degenerierter Unterraum ist) ein beschränktes konvexes Polytop ist, also die konvexe Hülle einer endlichen Anzahl an Elementen. Eine berandende Seite dieses Polytops, nennt man gefaserte Seite, falls alle Elemente $\phi \in H^1(M;\ZZ)$ die auf einem vom Ursprung ausgehendem Strahl liegen, der das Innere der Seite trifft, gefasert sind. Anders gesagt ist eine Seite gefasert, genau dann wenn jedes $\phi \in H^1(M;\ZZ)$, das in einem Kegel mit dem Inneren der Seite als Grundfläche und dem Ursprung als Spitze, gefasert ist. Natürlich ist das Polytop symmetrisch ($||-\phi||_T=||\phi||_T$) und die gefaserten Seiten treten auch in Paaren auf --- eine Faserung $M \to S^1$ liefert mit einer orientierungsumkehrenden Reflektion $\tau$ das Inverse $M \to S^1 \stackrel \tau \to S^1$. Man sagt, gefaserte Klassen $\phi,\psi$ liegen in \textit{wirklich verschiedenen} gefaserten Kegeln, falls diese bis auf Symmetrie verschieden sind. 
     \end{bsp}
 
-    \begin{bem}
-        Zwei Normen zu abzuschätzen ist gleichbedeutend eine Inklusionsbeziehung ihrer Einheitsbälle festzustellen.
-    \end{bem}
 
     \subsection{Knoten und Verschlingungen}
     \label{sec:links}
+
+
         \begin{bsp}
         Eine (Halb-)Norm auf einem Vektorraum, liefert stets eine (Halb-)Norm auf seinem Dualraum. Diese ist für einen Vektorraum $(V,|\cdot|)$ auf dem Dualraum $(V^*,||\cdot||)$ definiert durch:
         \[
@@ -119,15 +118,18 @@
          \] 
          Entsprechend übertragen sich die Alexander und Thurston Norm auf die erste (relative) Homologie und die zweite (relative) Kohomologie der 3-Mannigfaltigkeit. 
     \end{bsp}
+    \begin{bem}
+        Zwei Normen zu abzuschätzen ist gleichbedeutend eine Inklusionsbeziehung ihrer Einheitsbälle festzustellen. 
+    \end{bem}
     \begin{bsp}[Verschlingungen]
     \label{ex:links}
         Thurston liefert in \cite{Thurston.1986} einige Beispiele in Form von Verschlingungskomplementen, als er seine Ergebnisse über die Existenz der Thurston-Norm und ihren Einheitsball veröffentlicht. Eine Verschlingung bezeichnet eine gemeinsame disjunkte Einbettung von mehreren Knoten, also eine glatte Einbettung $L: \sqcup_{i=1}^m S^1 \to S^3$. Als $M_L$ bezeichnen wir wieder die kompakte 3-Mannigfaltigkeit, die aus Entfernen einer offenen Tubenumgebung hervorgeht. Wählt man auf $\sqcup S^1$ eine Standardorientierung, erhält man wie im Fall eines Knotenkomplements, kanonische Erzeuger von $H^1(M_L)$: Die Orientierung einer Komponente liefert (nach festgelegter Konvention) einen homologisch eindeutigen orientierten Meridian, das ist eine Schleife die in $M_L\stackrel \simeq \into M - \im(L)$ homotop zu einer Einbettung einer Einheitssphäre einer Faser unter einer Tubenabbildung ist (es lässt sich in einem trivialen Bündel leicht von einer Einheitssphäre sprechen). Diese liefern kanonische Erzeuger der ersten Homologie $H_1(M_L) \cong \ZZ^m$ die kanonische Basis des Dualraums $l_1,\cdots,l_m \in H^1(M_L)\cong H_1(M_L)$ geht also kanonisch aus den Komponenten der Verschlingung $L_1,\cdots,L_m$ hervor. Außerdem liefert dies eine kanonische Identifikation mit dem Laurentring $\ZZ[ab(G)]=\ZZ[l_1^{\pm 1},\cdots,l_m^{\pm 1}]$ (analog wie im Knotenfall). Um also beispielsweise den Einheitsball der Thurston-Norm zu beschreiben, lassen sich ebenfalls die Koordinaten $l_i=l_i \tensor 1 \in H^1(M)\tensor \RR = H^1(M;\RR)$ verwenden. Falls die Komponenten wirklich verschlungen sind, also keine Komponente eine Scheibe in $M_L$ berandet und paarweise keine Komponenten als Rand eines Kreisrings hervorgehenden, so folgt dass die Thurston-Norm eine Norm auf $H^1(M_L)$ definiert. Dies folgt da sich die Eulercharakteristik einer Fläche mit $n$ Randkomponenten als $2-2g-n$ berechnet --- durch Hinzufügen von $n$ 2-Zellen erhält man eine geschlossene Fläche mit Eulercharakteristik $2-2g$. Nun wollen wir einige Einheitskugeln von Verschlingungen berechnen.
     \end{bsp}
        
 
-        \textbf{Knoten}
+        \subsubsection*{Knoten}
 
-        Im Fall, dass der Link nur aus einer Komponente besteht --- es sich also um einen Knoten handelt --- ist $H^1(M;\RR)\cong \RR$. Sei $\phi$ ein Erzeuger der ganzzahligen Kohomologie, dann ist $\phi$ dual zu der Seifertfläche und jede duale Fläche ist eine Seifertfläche. Somit ist (solange nicht vom Unknoten geredet wird) wie oben erwähnt $||\phi||_T=2g(L)+1$. Also ist die abgeschlossene Einheitskugel der Thurston-Norm gegeben durch:
+        Im Fall, dass der Link nur aus einer Komponente besteht --- es sich also um einen Knoten handelt --- ist $H^1(M;\RR)\cong \RR$. Sei $\phi$ ein Erzeuger der ganzzahligen Kohomologie, dann ist $\phi$ dual zu der Seifertfläche und jede duale Fläche die Lemma~\ref{lem:minS} erfüllt ist eine Seifertfläche. Somit ist (solange nicht vom Unknoten geredet wird) wie oben erwähnt $||\phi||_T=2g(L)+1$. Also ist die abgeschlossene Einheitskugel der Thurston-Norm gegeben durch:
         \begin{eqnarray*}
             H^1(M;\RR) &\cong & \RR \\
             {[- \frac{1}{2g(L)+1} \phi,\frac 1 {2g(L)+1} \phi]} & = \overline B_{||\cdot||_T}=& {[- \frac 1 {2g(L)+1}, \frac 1 {2g(L)+1}]}
@@ -138,9 +140,9 @@
         \]
         Hier wird unter dem natürlichen Isomorphismus eines Vektorraums in seinen Bidualraum $H_1((M;\RR) \cong H_1(M;\RR)^{**} \cong \Hom(H^1(M;\RR),\RR)$ die duale Thurston-Norm über der ersten Homologie aufgefasst und $\hat \alpha$ als Erzeuger der ganzzahligen Homologie, genauer gesagt, der Homologieklasse --- nach obiger Konvention --- \emph{des} Meridians (also gilt $\phi(\hat \alpha)=1$). 
         \begin{bem}
-            Da dies keine Arbeit über die Eulercharakteristik einer Fläche ist, möge der Leser in den folgenden Beispielen zur Berechnung der Eulercharakteristik dualer Flächen (hier: Seifertflächen) seine liebste Formel verwenden.
+            Da dies keine Arbeit über die Eulercharakteristik einer Fläche ist, möge der Leser in den folgenden Beispielen zur Berechnung der Eulercharakteristik dualer Flächen seine liebste Formel verwenden, so dass die expliziten Rechnungen übersprungen werden können.
         \end{bem}
-        \textbf{Hopf Verschlingung}
+        \subsubsection*{Hopf Verschlingung}
 
         \begin{wrapfigure}{r}{0.4\textwidth}
             \centering
@@ -148,13 +150,16 @@
             \caption{Die Hopf Verschlingung}
             \label{fig:hopf}
         \end{wrapfigure}
-        Das trivialste nicht-triviale Beispiel einer Verschlingung mit mehreren Komponenten ist der Hopf Link. Er besteht aus zwei ineinander verschlungenen Unknoten, $L_1, L_2$. Betrachtet man nun zwei Scheiben und verklebt diese mit zwei umgekehrt verdrehten Bändern, so erhält man die Hopf Verschlingung als Rand. Äquivalent möge man sich einen Kreisring $S^1 \times I$ nehmen, der zweifach verdreht ist und beobachtet, dass dieser eine Seifertfläche $S$ darstellt. Das Geschlecht dieser Seifertfläche ist $0$, da es sich um eine Sphäre handelt, aus der zwei offene Scheiben entnommen wurde. Andersherum erhält man durch Ankleben zweier Scheiben die Eulercharakteristik $\chi_-(S)=0$. Da zu gegebener Orientierung $[S] = \epsilon_1 [l_1]+ \epsilon_2 [l_2]$ ($\epsilon_i \in \{\pm 1\}$) verschwindet mit der Subbadditivität die Thurston-Norm auf dem Vektorraum $H^1(M;\RR)$, also ist die Einheitskugel nicht kompakt, sondern der gesamte Raum. Geht man jedoch zur dualen Norm über, erhält man wieder ein kompaktes Polytop mit ganzzahligen Eckpunkten: 
+        Das trivialste nicht-triviale Beispiel einer Verschlingung mit mehreren Komponenten ist der Hopf Link. Er besteht aus zwei ineinander verschlungenen Unknoten, $L_1, L_2$. Betrachtet man nun zwei Scheiben und verklebt diese mit zwei umgekehrt verdrehten Bändern, so erhält man die Hopf Verschlingung als Rand. Äquivalent möge man sich einen Kreisring $S^1 \times I$ nehmen, der zweifach verdreht ist und beobachtet, dass dieser eine Seifertfläche $S$ darstellt. Das Geschlecht dieser Seifertfläche ist $0$, da es sich um eine Sphäre handelt, aus der zwei offene Scheiben entnommen wurde und somit $\chi_-(S)=0$. Mit anderen Worten ist die obige Bedingung, dass die Thurston-Norm eine Norm ist, nicht erfüllt. Entsprechend existieren Elemente in $H^1(M_L;\RR)$ die sich zu 0 auswerten und durch die Linearität der Thurston-Norm entsteht ein degenerierter Untervektorraum (man überprüft leicht, dass die Fortsetzung nach $\RR$ auch verschwindet). Mit der Subadditivität verschwindet die Thurston-Norm auf dem Vektorraum $H^1(M;\RR)$, also ist die Einheitskugel nicht kompakt, sondern der gesamte Raum. Geht man jedoch zur dualen Norm über, erhält man wieder ein kompaktes Polytop mit ganzzahligen Eckpunkten: 
         \[
               \overline B_{||\cdot||_T^*}= \{\alpha \in H_1(M;\RR)| \sup_{\{\phi \in H^1(M;\RR)\}} \phi(\alpha)\leq 1\}=0
         \] 
-        \textbf{Whitehead Verschlingung}
 
-        Die Whitehead Verschlingung ist ein Link der aus zwei Komponenten $L_1,L_2$ besteht. Offensichtlich berandet jede Komponente $L_i$ in $M_{L_i}$ eine Scheibe, die sich in $M_L$ auf eine Kreisscheibe mit zwei entnommenen offenen Scheiben einrschänkt (an den Stellen, an dem die offene Tubenumgebung des anderen Knotens die Scheibe durchdringt). Bei diesen Repräsentanten für $l_1$ beziehungsweise $l_2$ berechnet sich die Eulercharakteristik zu $-1$, also gilt $||\pm l_i||_T\leq 1$, offensichtlich gilt aber Gleichheit. (Nun ist aber in diesem Fall die Thurston-Norm eine tatsächliche Norm, ) Genauso offensichtlch gilt $||l_1+l_2||_T>0$: die Verschlingungszahl des Whitehead Links ist offensichtlich $0$ (dies sieht man indem man eine Projektion betrachtet in dem die eine Komponente der Unknoten ist), jedoch haben die Randkomponenten jeder Einbettung eines Kreisring $S^1\times I \into S^3$ Verschlingungszahl $\neq 0$ oder sind trivial (durch einen Äquator zu trennen). Also folgt $2 \leq ||l_1+l_2||_T \leq ||l_1||_T+||l_2||_T =2$ für eine Seifertfläche. Diese ist sogar einfach durch die Seifert-Konstruktion zu erhalten. Folglich:
+        Die folgenden Beispiele sind aus Thurston's Arbeit~\cite{Thurston.1986} entnommen. Die Berechnungen von Thurston bedienen sich lauter Argumente warum keine repräsentierende Fläche existieren kann, die eine geringere Komplexität als die bisher gefundenen hat. Wir werden natürlich unsere Anstrengungen belohnen und Theorem~\ref{thm:haupttheorem} nutzen, um die Thurston-Norm-minimierende Flächen bequemer festzustellen.
+
+        \subsubsection*{Whitehead Verschlingung}
+
+        Die Whitehead Verschlingung ist ein Link der aus zwei Komponenten $L_1,L_2$ besteht. Offensichtlich berandet jede Komponente $L_i$ in $M_{L_i}$ eine Scheibe, die sich in $M_L$ auf eine Kreisscheibe mit zwei entnommenen offenen Scheiben einschränkt (an den Stellen, an denen die offene Tubenumgebung des anderen Knotens die Scheibe durchdringt). Bei diesen Repräsentanten für $l_1$ beziehungsweise $l_2$ berechnet sich die Eulercharakteristik zu $-1$, also gilt $||\pm l_i||_T\leq 1$, offensichtlich gilt aber Gleichheit undin diesem Fall die Thurston-Norm eine tatsächliche Norm. Genauso offensichtlch gilt $||l_1+l_2||_T>0$: die Verschlingungszahl des Whitehead Links ist offensichtlich $0$ (dies sieht man indem man eine Projektion betrachtet in dem die eine Komponente der Unknoten ist), jedoch haben die Randkomponenten jeder Einbettung eines Kreisring $S^1\times I \into S^3$ Verschlingungszahl $\neq 0$ oder sind trivial (durch einen Äquator zu trennen). Also folgt, dass diese Fläche Geschlecht $\ge 1$ hat und somit $2 \leq ||l_1+l_2||_T \leq ||l_1||_T+||l_2||_T =2$ für eine Seifertfläche. Mit Theorem~\ref{thm:haupttheorem} ließe sich diese untere Abschätzung auch mit $\Delta_L = (L_1-1)(L_2-1) = L_1L_2 -L_1-L_2+1$ berechnen, da $\thur {l_1+l_2} \geq \alex {l_1+l_2} \geq (l_1+l_2) (L_1+L_2-0)=2$ Diese ist Seifert-Fläche ergibt sich sogar durch die Seifert-Konstruktion. Folglich:
         \begin{align*}
             ||l_1+l_2||_T =||-(l_1+l_2)||_T &\stackrel * = ||-l_1+l_2||_T = ||l_1-l_2||_T \\
             &=2
@@ -183,7 +188,7 @@
             }
         
             \end{tikzpicture}
-                \caption{$\thurball$}
+                \caption{$\thurball$}\label{fig:whiteheadthur}
         
         
         \end{subfigure}    
@@ -204,10 +209,16 @@
     \end{subfigure}
     \caption{Einheitskugeln der Whitehead Verschlingung in $H^1(M;\RR)$ und $H_1(M;\RR)$}
     \end{figure}
-    Die $8$ berechneten Punkte liegen auf dem Rand von $\thurball$ (die Norm ist stetig), einer konvexen Teilmenge. Es ist eine leichte Übung, dass jede konvexe Teilmenge zweier nächster Punkte im Rand dieser konvexen Teilmenge enthalten sein muss. Aufgrund der Monotonie folgt die Behauptung für die Einheitskugel. Für die duale Norm, berechnet man entweder $8$ verschiedene Randpunkte, oder beobachtet für jedes $\alpha \in H_1(M;\RR)$ auf welchem Elementen (eine Gerade) $\phi \in H^1(M_L;\RR)$ das Supremum $\phi \alpha$ angenommen wird und sieht direkt das Ergebnis.
-    \textbf{Borromäische Ringe}
+    Die $8$ berechneten Punkte liegen auf dem Rand von $\thurball$ (die Norm ist stetig), einer konvexen Teilmenge. Es ist eine leichte Übung, dass jede konvexe Teilmenge zweier nächster Punkte in Abbildung~\ref{fig:whiteheadthur} im Rand dieser konvexen Teilmenge enthalten sein muss. Aufgrund der Monotonie folgt die Behauptung für die Einheitskugel. Für die duale Norm, berechnet man entweder $8$ verschiedene Randpunkte, oder beobachtet für jedes $\alpha \in H_1(M;\RR)$ auf welchen Elementen (eine Gerade) $\phi \in H^1(M_L;\RR)$ das Supremum $\phi \alpha$ angenommen wird und sieht direkt das Ergebnis.
 
-    Seien $L=L_1 + L_2 + L_3$ die Borromäischen Ringe. Offensichtlich hat jede duale Fläche zu $l_i$, die Komponente $L_i$ als Rand, (sonst wäre der Meridian aufgrund eines Schnittzahlen Argumentes im Kern von $l_i$). Folglich hat also jede Fläche dual zu $l_i$ mindestens 3 Randkomponenten. Da eine Sphäre mit 3 (also eine abgeschlossene Scheibe mit 2 Durchlöcherungen) entnommenen offenen Scheiben, wobei die eine Randkomponente aufgespannt wird von der entnommenen Komponente $\nu(L_i)$, bereits dual zu $l_i$ ist gilt wieder $\thur {\pm l_i}=1$ für jedes $i$. Ähnlich wie beim letzten Beispiel der Whitehead Verschlingungen, möchten wir nun --- in Dimension 3 --- die berandenden Seiten der Einheitskugel durch Berechnung einiger Punkte feststellen und sie dadurch feststellen. Als nächstes betrachte man $l=l_1+l_2+l_3$, also ist eine Geschlecht-minimale Seifertfläche gesucht. Allerdings lässt sich die Thurston-Norm von $l$ auch mit geschickter Argumentation begründen. Zunächst gilt für die Halbnorm $\thur l \leq \thur {l_1} + \thur {l_2} + \thur{l_3}=3 \implies \thur l \in \{1,3\}$. Außerdem gilt für alle $\phi,\psi \in \{\pm l_1 \pm l_2 \pm l_3\}: \thur \phi = \thur \psi$, da duale Flächen unter Veränderung der Orientierung einzelner Komponenten in $1-1$ Beziehung stehen, also ist das Geschlecht $g(L)$ der Borromäischen Ringe unabhängig von der Orientierung. Durch Bestimmung der Werte an $\pm l_i$ folgt schon, dass jede konxeve Menge die konvexe Hülle der Einheitspunkte $\pm l_i$ enthalten muss --- den Einheits-Oktaeder. Also ist $\thur l \neq 1$, sonst würden zwei benachoverlinete der obigen Randpunkte 
+    \subsubsection*{Borromäische Ringe}
+
+    Seien $L=L_1 + L_2 + L_3$ die Borromäischen Ringe. Offensichtlich hat jede duale Fläche zu $l_i$, die Komponente $L_i$ als Rand, (sonst wäre der Meridian aufgrund eines Schnittzahlenarguments im Kern von $l_i$). Folglich hat also jede Fläche dual zu $l_i$ mindestens 3 Randkomponenten. Da eine Sphäre mit 3 entnommenen offenen Scheiben (also eine abgeschlossene Scheibe mit 2 Durchlöcherungen), wobei die eine Randkomponente aufgespannt wird von der entnommenen Komponente $\nu(L_i)$, bereits dual zu $l_i$ ist gilt wieder $\thur {\pm l_i}=1$ für jedes $i$. Ähnlich wie beim letzten Beispiel der Whitehead Verschlingungen, möchten wir nun --- in Dimension 3 --- die berandenden Seiten der Einheitskugel durch Berechnung einiger Punkte feststellen und sie dadurch bestimmen. Es berechnet sich $\Delta_L = L_1L_2L_3 -\sum L_iL_j + \sum L_i -1$ und somit folgt leicht die Alexander-Norm einer beliebigen Kohomologieklasse, insbesondere:
+    \[
+        3= \alex {\pm l_1 \pm l_2 \pm l_3} \leq \thur {\pm l_1 \pm l_2 \pm l_3} \leq  \thur {l_1} + \thur {l_2} + \thur{l_3}=3
+    \]
+
+    Wegen $\thur {\pm l_i} = 1$  und $\thur {\frac13(\pm l_1 \pm l_2 \pm l_3)}=1$ folgt dass die Randseiten der Einheitskugel, die Standard-2-Simplices sind, die von den Einheitsvektoren aufgespannt werden. Somit berechnet sich $\thurball$ zu einem Oktahedron, siehe Abbildung~\ref{fig:borromthur}. Mit derselben Überlegung wie im vorhergehenden Beispiel, erkennt man strahlenweise die Form von $\dualthurball$ als Würfel.
 
 \begin{figure}
 \centering
@@ -241,7 +252,7 @@
             \draw[thick] (2/3,2/3,2/3-0.2) -- (2/3,2/3,2/3+0.2);
             \node[above] at (2/3+0.2,2/3,2/3+0.2) {$l/3$};
         \end{tikzpicture}
-        \caption{$\thurball$}
+        \caption{$\thurball$}\label{fig:borromthur}
     \end{subfigure}
     \hfill
     \begin{subfigure}[r]{0.4\textwidth}
