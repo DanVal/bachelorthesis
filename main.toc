@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.3}Thurston Invariante}{9}
 \contentsline {section}{\numberline {3}Vorbereitungen}{13}
 \contentsline {subsection}{\numberline {3.1}\IeC {\"U}ber endlich erzeugte Moduln eines noetherschen Rings}{13}
-\contentsline {subsection}{\numberline {3.2}Poincar\IeC {\'e} und Lefschetz Dualit\IeC {\"a}t}{15}
+\contentsline {subsection}{\numberline {3.2}Poincar\IeC {\'e} und Lefschetz Dualit\IeC {\"a}t}{14}
 \contentsline {section}{\numberline {4}Algebraische Alexander Invarianten}{17}
 \contentsline {subsection}{\numberline {4.1}Herleitung der algebraischen Idee}{17}
 \contentsline {subsection}{\numberline {4.2}Eine \IeC {\"a}quivalente Definition von McMullen?}{20}
@@ -20,4 +20,3 @@
 \contentsline {subsection}{\numberline {6.1}Zu der Thurston-Norm bei \IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{39}
 \contentsline {subsection}{\numberline {6.2}Faserungen}{41}
 \contentsline {subsection}{\numberline {6.3}Knoten und Verschlingungen}{43}
-\contentsline {section}{\numberline {7}Pers\IeC {\"o}nliche Notizen w\IeC {\"a}hrend der Erstellung}{48}
