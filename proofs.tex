@@ -3,64 +3,69 @@
 \label{sec:proofs}
 Der Beweis des Theorems, der an McMullen's Beweis in~\cite{MCMULLEN.2002} orientiert ist, und somit der Aufbau dieses Kapitels lässt sich in wenigen Worten grob skizzieren. Zu Beginn werden Konstruktionen entwickelt, die es erlauben explizit mit dualen Flächen zu arbeiten. Anschließend werden zuerst Thurston- dann Alexander-Norm einer Kohomologieklasse $\phi$ mit der ersten Bettischen Zahl ihres Kerns in $\pi_1(G)$ verglichen. Die Transitivität dieser Abschätzung liefert dann das Theorem. 
 
-\subsection{Konstruktionen}
-\label{sec:constr}
-Bevor die Wahl einer dualen Fläche spezifiziert wird, widmet sich der folgende Teil der zu betrachtenden Überlagerung bezüglich einer Homologieklasse. Will man mit einer Überlagerung Berechnungen anstellen, so sollte man sie möglichst gut kennen. Deswegen folgt nun eine explizite Konstruktion, die sich im späteren Beweis als hilfreich herausstellen wird.
+% \subsection{Konstruktionen}
+% \label{sec:constr}
+% Bevor die Wahl einer dualen Fläche spezifiziert wird, widmet sich der folgende Teil der zu betrachtenden Überlagerung bezüglich einer Homologieklasse. Will man mit einer Überlagerung Berechnungen anstellen, so sollte man sie möglichst gut kennen. Deswegen folgt nun eine explizite Konstruktion, die sich im späteren Beweis als hilfreich herausstellen wird.
 
-\begin{constr}[Aufschneiden an einer Fläche]
-	\label{constr:cut}
-	Aus der Überlagerungstheorie ist bekannt, dass zu jeder normalen Untergruppe der Fundamentalgruppe eines hinreichend gut zusammenhängendem Hausdorffraum (insbesondere Mannigfaltigkeiten), auch eine normale Überlagerung existiert, die bis auf Überlagerungsisomorphie eindeutig ist, siehe~\cite[Chapter~1.3]{Hatcher.2002}. Nun definiert aber ein Element $\phi\in H^1(M,\ZZ)$ einen Homomorphismus auf der ersten Homologiegruppe und somit nach den Feststellungen aus Bemerkung~\ref{bem:fundhomologie} auch einen Homomorphismus $\phi = \hat \phi \in \Hom(\pi_1(M),\ZZ)$. 
+% \begin{constr}[Aufschneiden an einer Fläche]
+% 	\label{constr:cut}
+% 	Aus der Überlagerungstheorie ist bekannt, dass zu jeder normalen Untergruppe der Fundamentalgruppe eines hinreichend gut zusammenhängendem Hausdorffraum (insbesondere Mannigfaltigkeiten), auch eine normale Überlagerung existiert, die bis auf Überlagerungsisomorphie eindeutig ist, siehe~\cite[Chapter~1.3]{Hatcher.2002}. Nun definiert aber ein Element $\phi\in H^1(M,\ZZ)$ einen Homomorphismus auf der ersten Homologiegruppe und somit nach den Feststellungen aus Bemerkung~\ref{bem:fundhomologie} auch einen Homomorphismus $\phi = \hat \phi \in \Hom(\pi_1(M),\ZZ)$. 
 
-	Dieses $\phi$ liefert also die normale Untergruppe $[\pi_1(M),\pi_1(M)]\subset \ker \phi \subset \pi_1(M)$, welche wiederrum eine Überlagerung definiert, die fortan $M_\phi$ genannt wird. Zur Berechnung der Thurston-Norm und ihrem angekündigten Vergleich mit $b_1(\ker\phi)=b_1(M_\phi)$ stellt sich die Frage nach einer Abhängigkeit der Überlagerung $M_\phi$ von einer dualen Fläche. Sei also $(S,\partial S) \subset (M,\partial M)$ eine eingebettete orientierte Fläche. Da diese Kodimension~$1$ und eine Orientierung hat, ist sie auch zweiseitig, besitzt also eine Umgebung $U \subset M$, sodass ein Diffeomorphismus $S\times (-\epsilon,\epsilon) \to U$ existiert, dessen Einschränkung auf $S\times \{0\}$ die Inklusion ist\footnote{Diese Zweiseitigkeit soll natürlich kompatibel mit den Orientierungen von $S$ und $M$ sein. Dies wird im Folgenden stets verlangt.}. Das bedeutet, dass die 3-Mannigfaltigkeit an $S$ "`aufgeschnitten"' werden kann (siehe etwa~\cite[Kapitel~4.2]{Burde.2003}), wobei das Aufschneiden bedeutet, das Komplement der Fläche zu betrachten (das Resultat ist offensichtlich eine Mannigfaltigkeit, jedoch können Eigenschaften wie Kompaktheit oder Randbedingungen entfallen). Will man nun die durch Aufschneiden gewonnene Kopien $(M_i)_{i\in \ZZ}, M_i \cong M-S$ wieder verkleben, erweist sich die Zweiseitigkeit der Fläche als günstig sogar notwendig (sonst würde nur \emph{eine} Kopie von $S$ als Rand entstehen). Eine zuvor fixierte zweiseitige glatte Einbettung $h: S\times (-\epsilon,\epsilon) \to M$ liefert nämlich durch $h(S,(-\epsilon,0))$ und $h(S,(0,\epsilon))$ offene Mengen $M_i^-$ und $M_i^+$ in den $M_i$. Durch den strukturerhaltenden Diffeomorphismus $h$ auf sein Bild, können nun $M_i$ und $M_{i+1}$ jeweils entlang $M_i^+$ und $M_{i+1}^-$ verklebt werden --- genauer: $h$ liefert eine Äquivalenzrelation auf der disjunkten Vereinigung 
-	\[
-		\cdots \sqcup M_{i-1} \sqcup (S \times (-\epsilon,\epsilon)) \sqcup M_i \sqcup  (S \times (-\epsilon,\epsilon)) \sqcup M_{i+1} \sqcup \cdots,
-	\]
-	sodass der Quotient eine unendlich zyklische Überlagerung mit der offensichtlichen Projektion bildet. Da entlang offener Mengen verklebt wird, also durch die "`Überlappungen"', ist es möglich den gewonnenen Quotienten mit einer differenzierbaren Struktur zu versehen, so dass die Inklusionen der $M_i$ glatte Einbettungen, durch die Offenheit also Untermannigfaltigkeiten sind.
+% 	Dieses $\phi$ liefert also die normale Untergruppe $[\pi_1(M),\pi_1(M)]\subset \ker \phi \subset \pi_1(M)$, welche wiederrum eine Überlagerung definiert, die fortan $M_\phi$ genannt wird. Zur Berechnung der Thurston-Norm und ihrem angekündigten Vergleich mit $b_1(\ker\phi)=b_1(M_\phi)$ stellt sich die Frage nach einer Abhängigkeit der Überlagerung $M_\phi$ von einer dualen Fläche. Sei also $(S,\partial S) \subset (M,\partial M)$ eine eingebettete orientierte Fläche. Da diese Kodimension~$1$ und eine Orientierung hat, ist sie auch zweiseitig, besitzt also eine Umgebung $U \subset M$, sodass ein Diffeomorphismus $S\times (-\epsilon,\epsilon) \to U$ existiert, dessen Einschränkung auf $S\times \{0\}$ die Inklusion ist\footnote{Diese Zweiseitigkeit soll natürlich kompatibel mit den Orientierungen von $S$ und $M$ sein. Dies wird im Folgenden stets verlangt.}. Das bedeutet, dass die 3-Mannigfaltigkeit an $S$ "`aufgeschnitten"' werden kann (siehe etwa~\cite[Kapitel~4.2]{Burde.2003}), wobei das Aufschneiden bedeutet, das Komplement der Fläche zu betrachten (das Resultat ist offensichtlich eine Mannigfaltigkeit, jedoch können Eigenschaften wie Kompaktheit oder Randbedingungen entfallen). Will man nun die durch Aufschneiden gewonnene Kopien $(M_i)_{i\in \ZZ}, M_i \cong M-S$ wieder verkleben, erweist sich die Zweiseitigkeit der Fläche als günstig sogar notwendig (sonst würde nur \emph{eine} Kopie von $S$ als Rand entstehen). Eine zuvor fixierte zweiseitige glatte Einbettung $h: S\times (-\epsilon,\epsilon) \to M$ liefert nämlich durch $h(S,(-\epsilon,0))$ und $h(S,(0,\epsilon))$ offene Mengen $M_i^-$ und $M_i^+$ in den $M_i$. Durch den strukturerhaltenden Diffeomorphismus $h$ auf sein Bild, können nun $M_i$ und $M_{i+1}$ jeweils entlang $M_i^+$ und $M_{i+1}^-$ verklebt werden --- genauer: $h$ liefert eine Äquivalenzrelation auf der disjunkten Vereinigung 
+% 	\[
+% 		\cdots \sqcup M_{i-1} \sqcup (S \times (-\epsilon,\epsilon)) \sqcup M_i \sqcup  (S \times (-\epsilon,\epsilon)) \sqcup M_{i+1} \sqcup \cdots,
+% 	\]
+% 	sodass der Quotient eine unendlich zyklische Überlagerung mit der offensichtlichen Projektion bildet. Da entlang offener Mengen verklebt wird, also durch die "`Überlappungen"', ist es möglich den gewonnenen Quotienten mit einer differenzierbaren Struktur zu versehen, so dass die Inklusionen der $M_i$ glatte Einbettungen, durch die Offenheit also Untermannigfaltigkeiten sind.
 
-	Ein weiterer Vorteil dieser expliziten Konstruktion ist es, die Decktransformationsgruppe zu sehen. Sie ist durch einen Erzeuger $t$ über $t\mapsto 1$ zu $\ZZ$ isomorph und unter diesem Isomorphismus entspricht $n\in \ZZ$ einer Translation aller $M_i$ um $n$. Es bleibt nur noch zu zeigen, dass diese Überlagerung auch \textit{die} zu $S$ gehörige Überlagerung ist, die in dem obigen Sinne dem dualen $\phi$ entspricht. Dies sieht man zum Beispiel ein, indem man sich unter dem Isomorphismus $H^1(M;\ZZ)\cong [M,S^1]$ einen glatten Repräsentanten des Bildes von $\phi$ aussucht. Natürlich existiert so einer nach den Bemerkungen in~\ref{sec:poinc} immer, jedoch soll dieser für den gewünschten Nachweis explizit $S$ als Urbild eines regulären Wertes ergeben. Dafür wähle man einen zweiseitigen Kragen $S\times (-\epsilon,\epsilon) \subset M$ und definiere eine Abbildung $f:M\to S^1$, die $S\times 0$ auf $p\in S^1$ abbildet, $M-S \times (-\epsilon,\epsilon)$ konstant auf den antipodalen Punkt von $p$ abbildet und auf $S^1\times (-\epsilon,\epsilon)$ gemäß der Projektion auf den zweiten Faktor fortgesetzt wird. Bezüglich dieser glatt konstruierten Abbildung $f$ ist der Wert $p$ regulär und $f^{-1}p=S$ mit der richtigen Orientierung, falls die Zweiseitigkeit entsprechend dem obigen Kommentar gewählt wurde. Durch paralleles Aufschneiden von $M$ an $S$, und $S^1$ an $p$ (analog wie oben nur 2 Dimensionen tiefer) erhält man folgendes kommutatives Diagramm von Überlagerungen:
-	\[
-		\begin{xy}
-			\xymatrix{M_\phi \ar[r] \ar[d] &\RR \ar[d]\\
-						M \ar[r]& S^1}
-		\end{xy}
-	\]
+% 	Ein weiterer Vorteil dieser expliziten Konstruktion ist es, die Decktransformationsgruppe zu sehen. Sie ist durch einen Erzeuger $t$ über $t\mapsto 1$ zu $\ZZ$ isomorph und unter diesem Isomorphismus entspricht $n\in \ZZ$ einer Translation aller $M_i$ um $n$. Es bleibt nur noch zu zeigen, dass diese Überlagerung auch \textit{die} zu $S$ gehörige Überlagerung ist, die in dem obigen Sinne dem dualen $\phi$ entspricht. Dies sieht man zum Beispiel ein, indem man sich unter dem Isomorphismus $H^1(M;\ZZ)\cong [M,S^1]$ einen glatten Repräsentanten des Bildes von $\phi$ aussucht. Natürlich existiert so einer nach den Bemerkungen in~\ref{sec:poinc} immer, jedoch soll dieser für den gewünschten Nachweis explizit $S$ als Urbild eines regulären Wertes ergeben. Dafür wähle man einen zweiseitigen Kragen $S\times (-\epsilon,\epsilon) \subset M$ und definiere eine Abbildung $f:M\to S^1$, die $S\times 0$ auf $p\in S^1$ abbildet, $M-S \times (-\epsilon,\epsilon)$ konstant auf den antipodalen Punkt von $p$ abbildet und auf $S^1\times (-\epsilon,\epsilon)$ gemäß der Projektion auf den zweiten Faktor fortgesetzt wird. Bezüglich dieser glatt konstruierten Abbildung $f$ ist der Wert $p$ regulär und $f^{-1}p=S$ mit der richtigen Orientierung, falls die Zweiseitigkeit entsprechend dem obigen Kommentar gewählt wurde. Durch paralleles Aufschneiden von $M$ an $S$, und $S^1$ an $p$ (analog wie oben nur 2 Dimensionen tiefer) erhält man folgendes kommutatives Diagramm von Überlagerungen:
+% 	\[
+% 		\begin{xy}
+% 			\xymatrix{M_\phi \ar[r] \ar[d] &\RR \ar[d]\\
+% 						M \ar[r]& S^1}
+% 		\end{xy}
+% 	\]
 
-	Dieses Diagramm ist ist aber nun ein Pullback Diagramm von glatten Faserbündeln. Also ist die Diffeomorphieklasse von $M_\phi$ eindeutig. 
-\end{constr}
-Wir können festhalten:
-\begin{cor}
-\label{cor:verklvertr}
-		Die unendlich zyklische Überlagerung, die durch Aufschneiden und Verkleben an einer zu $\phi$ dualen Fläche entsteht, entspricht der normalen Untergruppe $ \ker\phi$.
-\end{cor}
-\begin{cor}
-\label{cor:preimage}
-	Jede zu $\phi$ duale Fläche kann als Urbild eines regulären Wertes einer glatten Abbildung $M\to S^1$ dargestellt werden, mit $H_1(M \to S^1)=\phi$
-\end{cor}
+% 	Dieses Diagramm ist ist aber nun ein Pullback Diagramm von glatten Faserbündeln. Also ist die Diffeomorphieklasse von $M_\phi$ eindeutig. 
+% \end{constr}
+% Wir können festhalten:
+% \begin{cor}
+% \label{cor:verklvertr}
+% 		Die unendlich zyklische Überlagerung, die durch Aufschneiden und Verkleben an einer zu $\phi$ dualen Fläche entsteht, entspricht der normalen Untergruppe $ \ker\phi$.
+% \end{cor}
+% \begin{cor}
+% \label{cor:preimage}
+% 	Jede zu $\phi$ duale Fläche kann als Urbild eines regulären Wertes einer glatten Abbildung $M\to S^1$ dargestellt werden, mit $H_1(M \to S^1)=\phi$
+% \end{cor}
 
-\begin{constr}[Graph einer orientierten 1-kodimensionalen Untermannigfaltigkeit]
-	\label{constr:graph}
-	Sei $S$ ein beliebiger zu $\phi \in H^1(M,\ZZ)$ eigentlich eingebetteter, orientierter Repräsentant. Wir haben gesehen, dass mit obiger Konstruktion eine Abbildung $f:M\to S^1$ entsteht mit $f^{-1}p=S$. Diese Abbildung soll in dieser Konstruktion über einen Graphen faktorisiert werden.
-	Bezeichne $S=S_1\sqcup \cdots \sqcup S_n$ und $M-S = M_1 \sqcup \cdots \sqcup M_m$ die Zusammenhangskomponenten von $S$ bzw. $M-S$. Betrachte nun den gerichteten Graphen $G$, dessen Knoten bijektiv den Komponenten $M_i$ entsprechen und dessen Kanten aus den Komponenten $S_i$ mit ihrer Orientierung hervorgehen, also ein Graph mit $m$ Knoten und $n$ Kanten, wobei eine Kante von einem Knoten zu einem anderen verläuft, wenn ihre assoziierten Komponenten $M_i, M_j$ durch das entsprechende Flächenstück von $S$ getrennt werden, sodass die Komponenten das zweiseitige Flächenstück an der negativen beziehungsweise positiven Seite berühren, je nachdem ob die Kante vom assoziierten Knoten aus oder eingeht.
+% \begin{constr}[Graph einer orientierten 1-kodimensionalen Untermannigfaltigkeit]
+% 	\label{constr:graph}
+% 	Sei $S$ ein beliebiger zu $\phi \in H^1(M,\ZZ)$ eigentlich eingebetteter, orientierter Repräsentant. Wir haben gesehen, dass mit obiger Konstruktion eine Abbildung $f:M\to S^1$ entsteht mit $f^{-1}p=S$. Diese Abbildung soll in dieser Konstruktion über einen Graphen faktorisiert werden.
+% 	Bezeichne $S=S_1\sqcup \cdots \sqcup S_n$ und $M-S = M_1 \sqcup \cdots \sqcup M_m$ die Zusammenhangskomponenten von $S$ bzw. $M-S$. Betrachte nun den gerichteten Graphen $G$, dessen Knoten bijektiv den Komponenten $M_i$ entsprechen und dessen Kanten aus den Komponenten $S_i$ mit ihrer Orientierung hervorgehen, also ein Graph mit $m$ Knoten und $n$ Kanten, wobei eine Kante von einem Knoten zu einem anderen verläuft, wenn ihre assoziierten Komponenten $M_i, M_j$ durch das entsprechende Flächenstück von $S$ getrennt werden, sodass die Komponenten das zweiseitige Flächenstück an der negativen beziehungsweise positiven Seite berühren, je nachdem ob die Kante vom assoziierten Knoten aus oder eingeht.
 
-	Mit genau diesen zweiseitigen Umgebungen der Flächenkomponenten ist es möglich, ähnlich wie oben eine Abbildung $M \to G$ zu definieren, welche die Assoziierungen respektiert. Dafür betrachte man die glatte Einbettung (welche die Zweiseitigkeit der Komponenten respektiert):
-	\[
-		\sqcup (S_i \times (-\epsilon,\epsilon)) \stackrel = \longrightarrow S \times (-\epsilon,\epsilon) \into M
-	\]
-	Dann existiert analog zur obigen Konstruktion die Quotientenabbildung $q:M\to G$ auf den Graph, durch Kollabieren der $M_i\cap (M -S \times(-\epsilon,\epsilon))$ auf ihre Knoten und Projektion von $(-\epsilon,\epsilon)$ auf das Innere der Kanten des Graphen. Betrachtet man außerdem $G \to S^1$ die Abbildung die jede Kante entsprechend ihrer Richtung einmal um die Sphäre $S^1 = I/\partial I$ abbildet und die Knoten auf den antipodalen Punkt des ausgezeichneten Punktes $p\in S^1 = [\partial I]$. Bezüglich der Komposition der beiden Abbildungen $M \to S^1$, ist nun $\phi$ das Bild des Erzeugers von $H^1(S^1)$ unter der Rückziehung auf der Kohomologie, da $M \to S^1$ eine zu $S$ duale Kohomologieklasse definiert (da $S=(M\to S^1)^{-1}p$). Sei $f$ nach wie vor die Abbildung aus der letzten Konstruktion. Wir erhalten:
+% 	Mit genau diesen zweiseitigen Umgebungen der Flächenkomponenten ist es möglich, ähnlich wie oben eine Abbildung $M \to G$ zu definieren, welche die Assoziierungen respektiert. Dafür betrachte man die glatte Einbettung (welche die Zweiseitigkeit der Komponenten respektiert):
+% 	\[
+% 		\sqcup (S_i \times (-\epsilon,\epsilon)) \stackrel = \longrightarrow S \times (-\epsilon,\epsilon) \into M
+% 	\]
+% 	Dann existiert analog zur obigen Konstruktion die Quotientenabbildung $q:M\to G$ auf den Graph, durch Kollabieren der $M_i\cap (M -S \times(-\epsilon,\epsilon))$ auf ihre Knoten und Projektion von $(-\epsilon,\epsilon)$ auf das Innere der Kanten des Graphen. Betrachtet man außerdem $G \to S^1$ die Abbildung die jede Kante entsprechend ihrer Richtung einmal um die Sphäre $S^1 = I/\partial I$ abbildet und die Knoten auf den antipodalen Punkt des ausgezeichneten Punktes $p\in S^1 = [\partial I]$. Bezüglich der Komposition der beiden Abbildungen $M \to S^1$, ist nun $\phi$ das Bild des Erzeugers von $H^1(S^1)$ unter der Rückziehung auf der Kohomologie, da $M \to S^1$ eine zu $S$ duale Kohomologieklasse definiert (da $S=(M\to S^1)^{-1}p$). Sei $f$ nach wie vor die Abbildung aus der letzten Konstruktion. Wir erhalten:
 	
-	\begin{align}
-		\begin{xy}
-				\xymatrix{M \ar[r] \ar@/^1pc/[rr]^f & G \ar[r] & S^1 }
-			\end{xy}
-		\label{eq:graphlift}
-	\end{align}
-	Da $M$ zusammenhängend ist, ist es auch $G$.
-\end{constr}
+% 	\begin{align}
+% 		\begin{xy}
+% 				\xymatrix{M \ar[r] \ar@/^1pc/[rr]^f & G \ar[r] & S^1 }
+% 			\end{xy}
+% 		\label{eq:graphlift}
+% 	\end{align}
+% 	Da $M$ zusammenhängend ist, ist es auch $G$.
+% \end{constr}
 
-Im Folgenden wollen wir häufig den Spezialfall betrachten, dass $\phi: H_1(M) \to \ZZ$ surjektiv ist. 
-\begin{defn}
-	Ein solches $\phi \in H^1(M;\ZZ)$ heißt primitiv.
-\end{defn}
+% Im Folgenden wollen wir häufig den Spezialfall betrachten, dass $\phi: H_1(M) \to \ZZ$ surjektiv ist. 
+% \begin{defn}
+% 	Ein solches $\phi \in H^1(M;\ZZ)$ heißt primitiv.
+% \end{defn}
+
+% \subsection{$\thur \cdot$-minimierende Flächen}
+    
+% Nun wollen wir uns eine besondere Art von Flächen anschauen, nämlich die Repräsentanten der zu $\phi$ dualen Klasse, bei denen $\chi_-$ minimal ist. Dass immer ein Repräsentat existiert, der gewissen Eigenschaften genügt, sichert der folgende Satz:
+
 
 \subsection{$\thur \cdot$-minimierende Flächen}
     

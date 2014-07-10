@@ -1,13 +1,113 @@
 %!TEX root = main.tex
 
-\section{Vorbereitungen}
+\section{Vorbereitungen der benötigten Theorien}
 \label{sec:vorbereitungen}
 
-Wie sich im ersten Beweis herausstellen wird, ist der Gruppenring $\ZZ[F]$ für eine abelsche freie Gruppe $F$ noethersch. Da allerdings als Grundring der Ring der ganzen Zahlen dient, existieren Ideale die keine Hauptideale sind. Die Theorie der endlich erzeugten Moduln über Hauptidealringen ist sehr ergiebig --- der Elementarteilersatz erlaubt die Zerlegung eines solchen Moduls in zyklische Moduln. Um Invarianten auf endlich erzeugten Moduln über noetherschen Ringen zu erhalten, lassen sich verschiedene Schritte im Beweis des Elementarteilersatzes bis zu einem bestimmten Grad nachahmen. Mit diesen Hintergrundgedanken ergeben sich die oben definierten Elementarideale. 
+\subsection{Über noethersche Moduln und Gruppenringe}
 
-Dieses Kapitel soll im ersten Teil grundlegende Eigenschaften noetherscher Moduln herausstellen und dann im zweiten Teil auf differentialtopologische Ergebnisse hinweisen. Diese Resultate werden den Großteil der Hilfsmittel für die Arbeit vorbereiten, sollen aber noch in Kapitel~\ref{sec:algebra} durch etwas tiefergehende Algebra ergänzt und vervollständigt werden.
+Im Folgenden sei $R$ stets ein kommutativer Ring mit $1\neq 0$.
 
-\subsection{Über endlich erzeugte Moduln eines noetherschen Rings}
+Sei $M$ ein $R$-Modul. Dann ist $M$ noethersch, falls jeder Untermodul endlich erzeugt ist, insbesondere $M$ selbst. Ein Ring ist noethersch wenn er es als Modul über sich selbst ist. 
+\begin{lem}
+\label{lem:epimorphismusnoethersch}
+	Ein Epimorhpismus von einem noetherschen $R$-Modul $M$ in einen weiteren $R$-Modul $L$ impliziert, das $L$ noethersch ist.
+\end{lem}
+\begin{proof}
+	Jeder Untermodul aus $L$ besitzt ein endliches Erzeugendensystem als Bild endlich vieler Erzeuger des zurückgezogenen Untermoduls.
+\end{proof}
+\begin{lem}
+\label{lem:exaktnoethersch}
+	Für eine kurze exakte Sequenz von $R$-Moduln $\seq LMN$. Dann ist $M$ noethersch genau dann wenn $L$ und $N$ noethersch sind.
+\end{lem}
+\begin{proof}
+	Sei $M$ noethersch, so ist es mit Lemma~\ref{lem:epimorphismusnoethersch} auch $N$. $L$ ist isomorph zum Untermodul $\ker(M\to N)$. Umgekehrt erhalten wir für jeden Untermodul $M'$ eine kurze exakte Sequenz von Untermoduln mit den entsprechenden Einschränkungen $\seq {L'}{M'}{N'}$ wobei $L'$ und $N'$ als $R$-Untermoduln endlich erzeugt, somit auch $M'$.
+\end{proof}
+
+Sei im Folgenden $M$ noethersch. Dies ist zum Beispiel bei folgender Situation gegeben:
+\begin{cor}
+	Sei $R$ noethersch und $M$ endlich erzeugter $R$-Modul. Dann ist $M$ noethersch.
+\end{cor}
+\begin{proof}
+	Mit Lemma~\ref{lem:exaktnoethersch} ist die direkte Summe $R^n$ noethersch und mit Lemma~\ref{lem:epimorphismusnoethersch} ist es $M$.
+\end{proof}
+\begin{lem}
+	$M$ ist über $R$ endlich präsentiert. 
+\end{lem}
+\begin{proof}
+	$M$ ist als größter Untermodul endlich erzeugt über $R$ also existiert folgende exakte Sequenz:
+	\[
+		R^n \to M \to 0
+	\]
+	da $R^n$ aber noethersch ist und Kerne von Homomorphismen Untermoduln sind, kann die Sequenz auf der linken Seite folgendermaßen ergänzt werden:
+	\[
+		R^m \to R^n \to M \to 0
+	\]
+\end{proof}
+
+ Für eine solche freie Auflösung von $M$, die also für noethersche Moduln immer existiert, sind alle Relationen durch $\ker(R^n\to M)$ gegeben. Deswegen nennt man eine darstellende Matrix zur Abbildung $f$ aus $R^m \stackrel f \to R^n \onto M$ auch Präsentationsmatrix. Verschiedene Präsentationsmatrizen unterscheiden sich nur durch die folgenden Operationen, siehe etwa~\cite[Theorem~6.1]{LickorishW.B.Raymond.1997}:
+	\textbullet Vertauschen von Zeilen oder Spalten \textbullet Hinzufügen von Einheitsblöcken (direkte Summe mit der Identität) \textbullet Hinzufügen von Nullspalten \textbullet Addieren eines Vielfachen einer Spalte oder Zeile auf eine jeweils andere. Zusammen mit grundlegenden Eigenschaften der Determinante liefert das die Wohldefiniertheit der folgenden Definition:
+	\begin{defn}
+	Es sei $R^m \to R^n \onto M$ eine endliche Präsentation des $R$-Moduls $M$ mit einer Präsentationsmatrix $X \in R^{n \times m}$. Definiere das $i$-te Elementarideal $E_i(M) \subset R$, als das von den Determinanten der $(n-i)\times (n-i)$-Minoren von $X$ erzeugte Ideal.
+    	\end{defn}
+
+        Da sich jede Determinante als Linearkombination von den Determinanten der Minoren schreiben lässt, liefert das eine Inklusionsbeziehung der Elementarideale. Für $n-i\leq 0$ und $n-i > \min(m,n)$ definiert man die Elementarideale gemäß der folgenden aufsteigenden Kette (da ohne Einschränkung $m>n$):
+        \[
+             0=E_{-1}(A)\subset E_0(A) \subset \cdots \subset E_n(A) = R
+         \] 
+
+        \begin{bsp}
+        \label{bsp:hauptidealelementarteiler}
+            Ist $R$ ein Hauptidealring, so sind die Elementarideale durch den Elementarteilersatz vollständig charakterisiert.
+        \end{bsp}
+        \begin{bem}
+        	Das letzte Beispiel verwendet die Ergiebigkeit der Theorie der endlich erzeugten Moduln über Hauptidealringen. Die Elementarideale definieren nach den obigen Überlegungen Invarianten für endlich erzeugte Moduln über noetherschen Ringen. Dies ist durch eine Art Nachahmung der ersten Schritte des Elementarteilersatzes motiviert, die nur die endliche Präsentation der Moduln verwendet.
+        \end{bem}
+
+    Nun ist es später häufig nötig, Berechnungen über dem Gruppenring durchzuführen. Dafür wollen wir uns nun der Definition des Gruppenrings zuwenden und einige --- für Berechnungen essenzielle -- grundlegenden Eigenschaften des ganzzahligen Gruppenrings über einer frei abelschen Gruppe feststellen.
+
+     \begin{defn}[Gruppenring]
+    		Sei $G$ eine endlich erzeugte Gruppe. Dann ist der \textit{Gruppenring} definiert als die Menge aller endlichen formalen Summen:
+    		\[
+    			R[G] = \sum_{g \in G} a_g g, a_g \in \ZZ, g \in G
+    		\]
+            die durch komponentenweise Addition eine abelsche Gruppe wird und durch die Gruppenverknüpfung und die multiplikative Struktur von $R$ ein Ring mit Eins wird. Die Elemente $g \in G \subset R[G]$ werden als die Gruppenelemente in dem Gruppenring bezeichnet.
+    	\end{defn}
+    	Wir werden uns ausschließlich mit ganzzahligen oder rationalen Gruppenringen befassen, also mit $R \in \{ \ZZ,\QQ\}$.
+    	\begin{bem}
+    	\label{bem:gruppenwirkungmodul}
+    		Sei also $M$ ein $R$-Modul mit einer Gruppenwirkung von $G$. Dann lässt sich $M$ als $R[G]$-Modul auffassen. Insbesondere werden wir also abelsche Gruppen und $\QQ$-Vektorräume über dem ganzzahligen bzw.\ rationalen Gruppenring betrachten.
+    	\end{bem}
+        \begin{bem}
+            Da der Gruppenring die multiplikative Struktur von der Gruppenverknüpfung erbt, ist $\ZZ [G]$ im Allgemeinen nicht unbedingt kommutativ. Mit diesem Problem, das durch nicht-abelsche Gruppen $G$ entsteht, werden wir uns später beschäftigen müssen.
+        \end{bem}
+\begin{bsp}
+        Falls $G$ eine unendlich zyklische Gruppe mit Erzeuger $t$ ist, lässt sich der Gruppenring über $F$ als $\ZZ[F] = \ZZ[t^{\pm 1}]$, also als Ring der formalen Laurentpolynome in der Variablen $t$ auffassen. 
+\end{bsp}
+Tatsächlich gilt dies sogar etwas allgemeiner. Dies wollen wir zeigen um Eigenschaften für den ganzzahligen Gruppenring zu entwickeln, die wir aus dem multivariablen Laurentring ableiten. Für diesen gilt nämlich:
+\begin{prop}
+	Der Laurentring $\ZZ[X_1^{\pm 1},\cdots,X_{n}^{\pm 1}] $ ist noethersch.
+\end{prop}
+\begin{proof}
+	Nach dem Hilbertschen Basissatz ist der Polynomring über $\ZZ$ in endlich vielen Variablen noethersch. Ebenso ist die Lokalisierung eines noetherschen Ringes noethersch, da jedes Ideal in der Lokalisierung Bild eines endlich erzeugten Ideals ist. 
+\end{proof}
+
+Da der Laurentring mit $\ZZ$-Koeffizienten kein Hauptidealring ist, ist die vorhergehende Proposition so bedeutend. Die folgende Proposition wird zeigen, dass $\ZZ[F]$ für einen freien $\ZZ$-Modul $F$ auch kein Hauptidealring ist, wir also bemüht sind um eine möglichst vollständige Liste guter Eigenschaften von $\ZZ[F]$ die wir nutzen können.
+
+\begin{prop}
+\label{prop:gruppenringnoethersch}
+	Sei $F$ eine freie abelsche Gruppe, also $F\cong \ZZ^b$. Dann existiert ein Isomorphismus zwischen $\ZZ[F]$ und $\ZZ[X_1^{\pm 1},\cdots,X_{b}^{\pm 1}] $. Insbesondere ist $\ZZ[F]$ faktoriell und noethersch.
+\end{prop}
+\begin{proof}
+	Unter Ausnutzung der universellen Eigenschaft des Polynomrings und der Lokalisierung definiert man folgende Abbildung:
+	\begin{align*}
+			\ZZ[X_1^{\pm 1},\cdots,X_{n}^{\pm 1}] & \to  \ZZ[F]\\
+			X_i &\mapsto  f_i
+	\end{align*}
+	Wenn $f_i$ eine Basis von $F$ darstellt, so erhält man offensichtlich einen Isomorphismus.
+\end{proof}
+
+
+
 
 Um die Situation für spätere Berechnungen angenehmer zu gestalten und überhaupt erst die Definition der Alexander Invarianten zu berechtigen, überzeugt man sich zunächst davon, dass der Alexander Modul tatsächlich endlich erzeugt über dem Gruppenring $\ZZ[F]$ ist. 
 
@@ -23,46 +123,36 @@ Um die Situation für spätere Berechnungen angenehmer zu gestalten und überhau
 	Da $M$ eine kompakte 3-Mannigfaltigkeit ist, existiert eine endliche CW Struktur, vergleiche~\cite{Moise.1952}. Da es für CW Komplexe gleichbedeutend ist die zelluläre Homologie zu berechnen, reicht es den zellulären Kettenkomplex einer endlichen CW Struktur zu betrachten. Da in diesem alle Kettengruppen frei und endlich erzeugt von den Zellen der CW Struktur sind, folgt dass in dem Kettenkomplex der Überlagerung (mit der vererbten CW-Struktur) alle Kettengruppen als $\ZZ[F]$-Moduln endlich erzeugt sind, denn die Decktransformationen $F$ assoziieren die Erzeuger der Kettengruppen als $\ZZ$-Moduln der Überlagerung, die das gleiche Bild unter der Überlagerungsabbildung haben. Das bedeutet, für jeden freien $\ZZ$-Summanden der Kettengruppen der Mannigfaltigkeit erhält man einen freien $\ZZ[F]$-Summanden der Kettengruppen der Überlagerung. Wenn jetzt nachgewiesen werden kann, dass das Bilden der Homologie verträglich ist mit dem Bilden der Homologie als Gruppenring Moduln, so wären alle Homologiegruppen der Überlagerung als Quotienten von $\ZZ[F]$-Moduln endlich erzeugt. Aber da die Wirkung von $F$ auf der Homologie durch Diffeomorphismen induziert wird, so ist die Verträglichkeit durch die elementare Tatsache gegeben, dass Abbildungen von Räumen Kettenkomplexabbildungen induzieren, also Verträglichkeit mit den Randoperatoren gegeben ist.
 \end{proof}
 
-Für Berechnungen ist folgende bereits verwendete Proposition nützlich:
-\begin{prop}
-	Für eine endlich erzeugte frei abelsche Gruppe $F$, ist der ganzzahlige Gruppenring $\ZZ[F]$ noethersch.
-\end{prop}
-\begin{proof}
-	Da $F\cong \ZZ^n$, seien $f_1,\cdots,f_n$ Erzeuger von $F$.
+%
 
-	Nach dem Hilbertschen Basissatz ist der Polynomring über $\ZZ$ in endlich vielen Variablen noethersch. Ebenso ist die Lokalisierung eines noetherschen Ringes noethersch, da jedes Ideal in der Lokalisierung Bild eines endlich erzeugten Ideals ist. Also genügt es eine Surjektion von einem solchen in den Gruppenring zu finden, denn ein surjektiver Ringhomomorhpismus ordnet jedem Ideal im überlagerten Ring ein endlich erzeugtes Ideal im ursprünglichen Ring zu und somit auch ein endliches Erzeugendensystem. Aber ein solcher Epimorphismus von einem --- nach den obigen Überlegungen --- noetherschen Ring ist gegeben durch Ausnutzen der universellen Eigenschaft des Polynomrings und der Lokalisierung:
-	\begin{align*}
-			\ZZ[X_1^{\pm 1},\cdots,X_{n}^{\pm 1}] & \to  \ZZ[F]\\
-			X_i &\mapsto  f_i
-	\end{align*}
-\end{proof}
-
-\begin{bem}
-	Offensichtlich ist die angegebene Abbildung von dem Ring der multivariablen Laurentpolynome nach $\ZZ[F]$ injektiv und somit ein Isomorphismus. Es wird im Folgenden weitestgehend auf eine Identifikation unter diesem Isomorphismus verzichtet, da eine solche von der Wahl einer Basis abhängt. Jedoch wird sich herausstellen, dass im Falle eines Verschlingungskomplements mit $\lambda$ Komponenten eine kanonische Basis für $F\cong \ZZ^\lambda$ existiert. In diesem Fall werden wir diese Identifikation nutzen, siehe Kapitel~\ref{sec:links}.
-\end{bem}
+	% Nach dem Hilbertschen Basissatz ist der Polynomring über $\ZZ$ in endlich vielen Variablen noethersch. Ebenso ist die Lokalisierung eines noetherschen Ringes noethersch, da jedes Ideal in der Lokalisierung Bild eines endlich erzeugten Ideals ist. 
+	% Also genügt es eine Surjektion von einem solchen in den Gruppenring zu finden, denn ein surjektiver Ringhomomorhpismus ordnet jedem Ideal im überlagerten Ring ein endlich erzeugtes Ideal im ursprünglichen Ring zu und somit auch ein endliches Erzeugendensystem. Aber ein solcher Epimorphismus von einem --- nach den obigen Überlegungen --- noetherschen Ring ist gegeben durch Ausnutzen der universellen Eigenschaft des Polynomrings und der Lokalisierung:
+	% \begin{align*}
+	% 		\ZZ[X_1^{\pm 1},\cdots,X_{n}^{\pm 1}] & \to  \ZZ[F]\\
+	% 		X_i &\mapsto  f_i
+	% \end{align*}
 
 
-Sei im Folgenden nun $M$ ein noetherscher $R$-Modul. Dies ist zum Beispiel der Fall, wenn $R$ ein noetherscher Ring ist und $M$ endlich erzeugter $R$-Modul.
-\begin{lem}
-	$M$ ist über $R$ endlich präsentiert. Insbesondere sind Elementarideale noetherscher Moduln definiert.
-\end{lem}
-\begin{proof}
-	$M$ ist endlich erzeugt über $R$ also existiert folgende exakte Sequenz:
-	\[
-		R^n \to M \to 0
-	\]
-	da $R^n$ aber noethersch ist und Kerne von Homomorphismen Untermoduln sind, kann die Sequenz auf der linken Seite folgendermaßen ergänzt werden:
-	\[
-		R^m \to R^n \to M \to 0
-	\]
-\end{proof}
-
-
-\subsection{Poincaré und Lefschetz Dualität}
+\subsection{Poincaré und Lefschetz Dualität --- eine differentialtopologische Betrachtung}
 \label{sec:poinc}
 
-	Bei Betrachtung der Definition der Thurston-Norm auf $H^1(M)$ fällt auf, dass diese nur Eigenschaften der dualen Homologieklasse nutzt (genaugenommen definiert Thurston in~\cite{Thurston.1986} diese Halbnorm auch als stetige Abbildung auf $H_2(M)$ beziehungsweise $H_2(M,\partial M)$, die via Dualität auf die Kohomologie übertragen wird). Und tatsächlich werden die folgenden Seiten teilweise in ein wildes Hin- und Herspringen zwischen Homologie und Kohomologie ausarten. Aus diesem Grund sollen hier noch einmal wichtige Grundlagen und Berechnungsmöglichkeiten, die später verwendet werden, erklärt werden.
-	\begin{bem}[Duale 1-kodimensionale Untermannigfaltigkeiten]
+	Die Definition der Thurston-Norm in Kapitel~\todo{refthurston} wird uns eine Invariante auf $H^1(M;\ZZ)$ einer glatten Mannigfaltigkeit $M^m$ liefern, die durch Poincaré bzw.\ Lefschetz Dualität aus einer Invarianten auf $H_{m-1}(M,\partial M;\ZZ)$ hervorgeht. Und tatsächlich werden die folgenden Seiten teilweise in ein wildes Hin- und Herspringen zwischen Homologie und Kohomologie ausarten. Aus diesem Grund sollen hier noch einmal wichtige Grundlagen und Berechnungsmöglichkeiten, die später verwendet werden, erklärt werden.
+
+	Zunächst widmen wir uns einigen Konventionen und Identifikationen.
+	        \begin{bem}[Homomorphismen der Abelianisierung]
+            \label{bem:fundhomologie}
+            Es werden stillschweigend natürliche Identifikationen $H^1(M;\ZZ) \cong \Hom(H_1(M);\ZZ) \cong \Hom(\pi_1(M);\ZZ)$ verwendet. Die erste natürliche Identifikation liefert das universelle Koeffiziententheorem. Auch wenn die erhaltende Sequenz im Allgemeinen nicht natürlich zerfällt, so ist dies im Fall der ersten Kohomologie offensichtlich. Die zweite folgt, da ein Homomorphismus $\phi: H_1(M) \to \ZZ$ gleichbedeutend mit einem Homomorphismus $\hat\phi : \pi_1(M) \to \ZZ$ ist. Dies sieht man wie folgt ein: das Hurewicz Theorem besagt, dass die natürliche Abbildung $\pi_1(M) \to H_1(M)$, die durch Auffassen von Schleifen als singuläre 1-Zykel entsteht, die Abelianisierungsabbildung ist. Diese besitzt die universelle Eigenschaft der Quotientenabbildung zu dem Normalteiler $[\pi_1(M),\pi_1(M)]$. Da $\ZZ$ abelsch ist, folgt $[\pi_1(M),\pi_1(M)] \subset \ker \hat \phi$. Also faktorisiert $\hat \phi$ über eine eindeutige Abbildung $H_1(M) \to \ZZ$. Mit anderen Worten: Das folgende Diagramm kommutiert:
+            \[
+                \begin{xy}
+                    \xymatrix{\pi_1(M)\ar[r]^{\hat \phi} \ar[d] & \ZZ \\
+                                H_1(M)\ar[ru]_\phi}
+                \end{xy}
+            \]
+            Dies liefert die eins-zu-eins Beziehung, da $\phi$ nach dem Diagramm offensichtlich ein eindeutiges Element in $\Hom(\pi_1(M);\ZZ)$ definiert. \\ \par
+            \noindent\textbf{Konvention.} \emph{In dieser Arbeit bezeichne der Kern einer Klasse $\phi \in H^1(M;\ZZ)$ durchweg den Kern der mit $\phi$ identifizierten Abbildung auf der Fundamentalgruppe.}\\ \par
+        \end{bem}
+	\begin{bem}[Weitere Identifikationen]
+	\label{bem:identifications}
 	Sei $N$ eine glatte orientierte $n$-dimensionale Mannigfaltigkeit (mit CW-Struktur).
 		Bekanntlicherweise gilt:
 		\[
@@ -70,12 +160,17 @@ Sei im Folgenden nun $M$ ein noetherscher $R$-Modul. Dies ist zum Beispiel der F
 		\]		
 		wobei der
 		\begin{enumerate}
-			\item -te Isomorphismus bei $\partial N= \emptyset$ Poincaré und sonst Lefschetz Dualität ist,
+			\item -te Isomorphismus bei $\partial N= \emptyset$ nach Poincaré und sonst Lefschetz Dualität,
 			\item -te Isomorphismus gilt, da das universelle Koeffiziententheorem eine exakte Sequenz liefert in der diese beiden Terme auftauchen und weiter nur $\Ext(H_0(N),\ZZ) = 0$,
 			\item -te Isomorphismus gilt, da nach Hurewicz die Abbildung $\pi_1(N)\to H_1(N)$ die Abelianisierung ist (siehe Bemerkung~\ref{bem:fundhomologie}),
 			\item -te Isomorphismus gilt, indem man zeigt, dass jede Abbildung auf dem 1-Skelett $X^1 \subset N \to S^1$ auf $N$ fortgesetzt werden kann. Da das 1-Skelett die Fundamentalgruppe (oder Homologie) erzeugt, also die Inklusion eine surjektive Abbildung $i_*:\pi_1(X^1)\onto\pi_1(N)$ induziert, lässt sich auf diese Weise jeder Homomorphismus $\pi_1(N)\to \ZZ$ auf den Erzeugern aus dem 1-Skelett (genauer möchte man, dass diese Abbildung auf einem maximalen Baum konstant ist) definieren und fortsetzen. 
 		\end{enumerate}
-	Also liefert jeder Homomorphismus $\phi \in H^1(N;\ZZ)$ eine Homotopieklasse von Abbildungen in $[N,S^1]$ und umgekehrt liefert jede Abbildung $N\to S^1$ einen induzierten Homomorphismus der Homologiegruppen. Die Differentialtopologie liefert nun, dass für jede Homotopieklasse aus $[N,S^1]$ ein glatter Repräsentant existiert und die Existenz eines regulären Wertes in $S^1$. Jedes Urbild eines solchen regulären Wertes ist dann eine 1-kodimensionale orientierte Mannigfaltigkeit (mit Rand, wenn überhaupt, im Rand von $N$ eigentlich eingebettet), welche als Homologieklasse dual zu $\phi$ ist. Genauer gilt sogar Folgendes:
+
+
+	\end{bem}
+	\begin{bem}[Untermannigfaltigkeiten als Homologieklassen]
+	\label{bem:untermannigfaltigkeitenalshomologie}
+		Es sei $S^s$ eine $s$-dimensionale orientierte kompakte Mannigfaltigkeit. Die Orientierung liefert eine eindeutige Fundamentalklasse $[S] \in H_s(S)$ falls $S$ geschlossen ist und sonst $[S,\partial S] \in H_s(S,\partial S)$. Es sei $h:(S^s,\partial S) \into (N^n,\partial N)$ eine Einbettung. Dann definiert diese Einbettung eine Homologieklasse in $H_s(N,\partial N)$ als das Bild der eindeutigen Fundamentalklasse von $S$ unter der induzierten Abbildung $H_s(h)$. Für eine orientierbare kompakte Untermannigfaltigkeit $(S,\partial S) \subset (N,\partial N)$ liefert die Inklusion eine Einbettung und für eine gewählte Orientierung erhält man also eine Homologieklasse $[S]$ oder $[S,\partial S]$ in $H_s(N,\partial N)$.
 	\end{bem}
 	\begin{thm}
 		Sei $f:N^n\to K^m$ eine stetige Abbildung glatter Mannigfaltigkeiten. Dann lässt sich $f$ beliebig nah durch glatte Abbildungen approximieren (wie die Güte der Approximation genau gemessen wird ist hier von keiner Bedeutung), welche homotop zu $f$ sind.
@@ -85,9 +180,112 @@ Sei im Folgenden nun $M$ ein noetherscher $R$-Modul. Dies ist zum Beispiel der F
 	\end{thm}
 	\begin{thm}[Thom]
 	\label{thm:thom}
-		Sei $f:N \to S^1$ eine glatte Abbildung. Jedes Urbild eines regulären Wertes definiert nach obigem Satz ein Element in $H_{n-1}(N,\partial N;\ZZ)$ als Bild der Fundamentalklasse der Untermannigfaltigkeit unter der Inklusion. Diese ist Poincaré beziehungsweise Lefschetz dual zu $[f]\in H^1(N;\ZZ)$.
+		Sei $f:N \to S^1$ eine glatte Abbildung. Jedes Urbild eines regulären Wertes definiert nach obigem Theorem und der Bemerkung~\ref{bem:untermannigfaltigkeitenalshomologie} ein Element in $H_{n-1}(N,\partial N;\ZZ)$. Diese ist Poincaré beziehungsweise Lefschetz dual zu $[f]\in H^1(N;\ZZ)$.
 	\end{thm}
 	Alle diese Aussagen sind bekannte elementare Aussagen der Differentialtopologie und können etwa in \cite{Kreck.2010} oder mit elementaren Methoden in \cite{Hirsch.1991} (bis auf \ref{thm:thom}) nachgelesen werden. 
 
-	Dies liefert Möglichkeiten etwa zu zeigen, dass eine eingebettete Fläche in einer 3-Mannigfaltigkeit dual zu einer Kohomologieklasse ist. Ist beispielsweise eine zweiseitige Fläche gegeben, so lässt der zweiseitige Kragen eine offensichtliche Möglichkeit einer Quotientenabbildung nach $S^1$ zu, die eine Darstellung der Fläche als Urbild eines regulären Wertes zulässt. Mehr dazu später in Kapitel~\ref{sec:constr}.
+	Das Zusammentragen aller Ergebnisse bedeutet also: Jeder Homomorphismus $\phi \in H^1(N;\ZZ)$ definiert ein eindeutiges Element in $[N,S^1]$. und umgekehrt liefert jede Abbildung $N\to S^1$ einen induzierten Homomorphismus der Homologiegruppen. Die Differentialtopologie liefert nun die restlichen Schritte. Jede Homotopieklasse aus $[N,S^1]$ enthält einen glatten Repräsentanten. Für diesen existiert ein regulärer Wert in $S^1$. Jedes Urbild eines solchen regulären Wertes ist dann eine 1-kodimensionale orientierte Mannigfaltigkeit (mit Rand, wenn überhaupt, im Rand von $N$ eigentlich eingebettet), welche als Homologieklasse dual zu $\phi$ ist.
+
+	\subsection{Konstruktionen}
+	Als explizite Anwendung des letzten Kapitels leiten wir in diesem Kapitel Konstruktionen her, die gewisse Informationen von 1-kodimensionalen Mannigfaltigkeiten beinhalten.
+	\begin{lem}
+		Wenn $M$ eine glatte orientierte $n$-Mannigfaltigkeit ist und $N\subset M$ eine glatte $k$-dimensionale Untermannigfaltigkeit, dann korrespondieren die Orientierungen von $N$ bijektiv mit den Orientierungen von dem Normalenbündel $\nu (N;M)$ in $M$.
+	\end{lem}
+	\begin{proof}
+		Das Tangentialbündel von $N$ kann als Untervektorraumbündel von $TM$ aufgefasst werden; es ist unabhängig von der Einbettung. Falls $N$ nicht orientierbar ist, so ist es auch $\nu(N;M)$ nicht und umgekehrt. Sei also $N$ orientierbar, dann gilt für alle $x \in N$, dass die Faser $TN_x\oplus \nu(N;M)_x = TM_x$ die Orientierung von $M$ trägt, also $m_1,\cdots,m_n$ eine repräsentierende Basis der eindeutigen Orientierung ist. Also liefert die Lineare Algebra aus einer Orientierung von $N$, definiert durch die Basis des Tangentialraumes $n_1,\cdots,n_k$ eine eindeutige Orientierung von $\nu(N;M)_x$, repräsentiert durch die Basis $\nu_1,\cdots,\nu_{n-k}$, sodass die folgenden Orientierungen übereinstimmen: $[m_1,\cdots,m_n] = [n_1,\cdots,n_k,\nu_1,\cdots,\nu_{n-k}] $
+	\end{proof}
+
+	\begin{defn}
+		Eine Untermannigfaltigkeit der Kodimension 1 $N\subset M$ heißt zweiseitig, falls eine glatte Einbettung $N \times (-\epsilon,\epsilon) \into M$ existiert, die auf $N \times \{0\} $ mit der Inklusion von $N$ übereinstimmt. Eine solche Einbettung heißt auch zweiseitiger Kragen.
+	\end{defn}
+	\begin{bem}
+	\label{bem:zweiseitigkeit}
+		Offensichtlich ist die Zweiseitigkeit einer 1-kodimensionalen Untermannigfaltigkeit gleichbedeutend mit einer Orientierung, da $N \times (-\epsilon,\epsilon)$ diffeomorph zu $\nu(N;M)$ ist. Falls wir im Folgenden von einer orientierten 1-kodimensionale Mannigfaltigkeit $N$ in einer orientierten Mannigfaltigkeit $M$ reden, so soll mit ihrem zweiseitigen Kragen stets ein solcher gemeint sein, unter dessen Urbild jeder Repräsentant $\nu \in [\nu]$ einer Faser im Normalenbündel, der mit der Orientierung von $N$ in dieser Faser die Orientierung von $M$ ergibt, in $N\times (0,\epsilon)$ liegt.
+	\end{bem}
+
+Da wir im Folgenden nur 3-Mannigfaltigkeiten betrachten, so gestatten wir jetzt schon die Bequemlichkeit uns darauf zu reduzieren. Die 1-kodimensionalen Untermannigfaltigkeiten sind also diffeomorph zu Flächen.
+
+\label{sec:constr}
+Zu einer gegebenen Homologieklasse $  \phi \in H^1(M;\ZZ)$ finden wir nach Kapitel~\ref{sec:poinc}, sowohl den eindeutigen Homomorphismus $\phi:\pi_1(M) \to \ZZ$ als auch die glatte Abbildung $f:M \to S^1$ mit $\pi_1(f)=\phi$. Außerdem finden wir mit Kapitel~\ref{sec:poinc} eine zu $\hat \phi$ duale orientierte Untermannigfaltigkeit $S$ als Urbild von $f$. Mit den folgenden Konstruktionen soll bewiesen werden, dass jede duale orientierte eingebettete Fläche $(S,\partial S) \subset (M,\partial M)$ als Urbild eines regulären Wertes darstellbar ist. Weiter wollen wir häufig die zu $(\ker) \phi$ gehörige Überlagerung betrachten. Wir werden ein Verfahren entwickeln, in welchem wir durch Aufschneiden und Verkleben an $S$ diese Überlagerung erhalten. Genauer wollen wir zeigen: Sowohl durch Aufschneiden an $S$ als auch durch Zurückziehen der universellen Überlagerung von $S^1$ entlang $f$ erhalten wir die Überlagerung zu dem Normalteiler der Fundamentalgruppe $\ker\phi$.
+
+\begin{constr}[Aufschneiden an einer Fläche]
+	\label{constr:cut}
+	Aus der Überlagerungstheorie ist bekannt, dass zu jeder normalen Untergruppe der Fundamentalgruppe eines hinreichend gut zusammenhängendem Hausdorffraum (insbesondere Mannigfaltigkeiten), auch eine normale Überlagerung existiert, die bis auf Überlagerungsisomorphie eindeutig ist, siehe~\cite[Chapter~1.3]{Hatcher.2002}. Nun definiert aber ein Element $\phi\in H^1(M,\ZZ)$ nach obigen Überlegungen den Normalteiler $\ker\phi\subset \pi_1(M)$. In diesem Sinne nennen wir die Überlagerung zu $\phi$ fortan $M_\phi$. Für spätere Zwecke, wollen wir die dualen Homologieklassen von $\phi$ mit $b_1(\ker\phi)=b_1(M_\phi)$ vergleichen. Da jede duale Homologieklasse nach Kapitel~\ref{sec:poinc} eine Untermanigfaltigkeit als Repräsentanten besitzt, sei also $(S,\partial S) \subset (M,\partial M)$ eine eingebettete orientierte Fläche dual zu $\phi$. Da diese Kodimension~$1$ und eine Orientierung hat, ist sie nach Bemerkung~\ref{bem:zweiseitigkeit} auch zweiseitig. Fixiere also einen zweiseitigen Kragen $h:S\times (-\epsilon,\epsilon) \to M$\footnote{Diese Zweiseitigkeit sei natürlich stets mit der Kompatibilität mit der induzierten Orientierung des Normalenbündels gewählt. Dies wurde auch in Bemerkung~\ref{bem:zweiseitigkeit} verlangt und bedeutet auch Kompatibilität mit der Orientierung.}. Das bedeutet, dass die 3-Mannigfaltigkeit an $S$ "`aufgeschnitten"' werden kann (siehe etwa~\cite[Kapitel~4.2]{Burde.2003}), wobei das Aufschneiden bedeutet, das Komplement der Fläche zu betrachten (das Resultat ist offensichtlich eine Mannigfaltigkeit, jedoch können Eigenschaften wie Kompaktheit oder Randbedingungen entfallen). Will man nun die durch Aufschneiden gewonnene Kopien $(M_i)_{i\in \ZZ}, M_i \cong M-S$ wieder verkleben, erweist sich die Zweiseitigkeit der Fläche als günstig sogar notwendig (sonst würde nur \emph{eine} Kopie von $S$ als Rand entstehen). Der fixierte zweiseitige Kragen liefert nämlich durch $h(S,(-\epsilon,0))$ und $h(S,(0,\epsilon))$ offene Mengen $M_i^-$ und $M_i^+$ in den $M_i$. Durch den strukturerhaltenden Diffeomorphismus $h$ auf sein Bild, können nun $M_i$ und $M_{i+1}$ jeweils entlang $M_i^+$ und $M_{i+1}^-$ verklebt werden --- genauer: $h$ liefert eine Äquivalenzrelation auf der disjunkten Vereinigung 
+	\[
+		\cdots \sqcup M_{i-1} \sqcup (S \times (-\epsilon,\epsilon)) \sqcup M_i \sqcup  (S \times (-\epsilon,\epsilon)) \sqcup M_{i+1} \sqcup \cdots,
+	\]
+	sodass der Quotient eine unendlich zyklische Überlagerung mit der offensichtlichen Projektion bildet. Da entlang offener Mengen verklebt wird, also durch die "`Überlappungen"', ist es möglich den gewonnenen Quotienten mit einer differenzierbaren Struktur zu versehen, so dass die Inklusionen der $M_i$ glatte Einbettungen und somit Untermannigfaltigkeiten sind.
+
+	Als weiteren Vorteil dieser expliziten Konstruktion, sieht man explizit die Decktransformationsgruppe. Erzeugt von $t$ ist sie über $t\mapsto 1$ zu $\ZZ$ isomorph. Unter diesem Isomorphismus entspricht $n\in \ZZ$ einer Translation aller $M_i$ um $n$. Es bleibt nur noch zu zeigen, dass diese Überlagerung auch \textit{die} zu $[S]$ gehörige Überlagerung ist, die in dem obigen Sinne dem dualen $\phi$ entspricht (da $S$ immer noch die gewählte Orientierung bzw.\ den gewählten zweiseitigen Kragen trägt). Dies sieht man zum Beispiel ein, indem man sich unter dem Isomorphismus $H^1(M;\ZZ)\cong [M,S^1]$ einen glatten Repräsentanten des Bildes von $\phi$ aussucht. Natürlich existiert so einer nach den Bemerkungen in~\ref{sec:poinc} immer, jedoch soll dieser für den gewünschten Nachweis explizit $S$ als orientiertes Urbild eines regulären Wertes ergeben. Dafür konstruiert man sich aus dem fixierten zweiseitigen Kragen eine Abbildung $f:M\to S^1$, die $S\times 0$ auf $p\in S^1$ abbildet, $M-S \times (-\epsilon,\epsilon)$ konstant auf den antipodalen Punkt von $p$ abbildet und auf $S\times (-\epsilon,\epsilon)$ gemäß der Projektion auf den zweiten Faktor fortgesetzt wird. Bezüglich dieser glatt konstruierten Abbildung $f$ ist der Wert $p$ regulär und $f^{-1}p=S$ mit der richtigen Orientierung ausgestattet. Durch paralleles Aufschneiden von $M$ an $S$, und $S^1$ an $p$ (analog wie oben nur 2 Dimensionen tiefer) erhält man folgendes kommutatives Diagramm von Überlagerungen:
+	\[
+		\begin{xy}
+			\xymatrix{M_\phi \ar[r] \ar[d] &\RR \ar[d]\\
+						M \ar[r]& S^1}
+		\end{xy}
+	\]
+
+	Dieses Diagramm ist ist aber nun ein Pullback Diagramm von glatten Faserbündeln. Also ist die Diffeomorphieklasse von $M_\phi$ eindeutig. 
+\end{constr}
+Wir können festhalten:
+\begin{cor}
+\label{cor:verklvertr}
+		Die unendlich zyklische Überlagerung, die durch Aufschneiden und Verkleben an einer zu $\phi$ dualen Fläche entsteht, entspricht der normalen Untergruppe $ \ker\phi$.
+\end{cor}
+\begin{cor}
+\label{cor:preimage}
+	Jede zu $\phi$ duale Fläche kann als orientiertes Urbild eines regulären Wertes einer glatten Abbildung $M\to S^1$ dargestellt werden, mit $H_1(M \to S^1)=\phi$.
+\end{cor}
+Mit einer zu $\phi$ dualen Fläche ist eine eigentlich eingebettete orientierte 1-kodimensionale Untermannigfaltigkeit gemeint.
+
+\begin{constr}[Graph einer orientierten 1-kodimensionalen Untermannigfaltigkeit]
+	\label{constr:graph}
+	Sei $S$ ein beliebiger zu $\phi \in H^1(M,\ZZ)$ eigentlich eingebetteter, orientierter Repräsentant. Wir haben gesehen, dass mit obiger Konstruktion eine Abbildung $f:M\to S^1$ entsteht mit $f^{-1}p=S$. Diese Abbildung soll in dieser Konstruktion über einen Graphen faktorisiert werden.
+
+	Bezeichne $S=S_1\sqcup \cdots \sqcup S_n$ und $M-S = M_1 \sqcup \cdots \sqcup M_m$ die Zusammenhangskomponenten von $S$ bzw. $M-S$. Betrachte nun den gerichteten Graphen $G$, dessen Knoten bijektiv den Komponenten $M_i$ entsprechen und dessen Kanten aus den Komponenten $S_i$ mit ihrer Orientierung hervorgehen, also ein Graph mit $m$ Knoten und $n$ Kanten, wobei eine Kante von einem Knoten zu einem anderen verläuft, wenn ihre assoziierten Komponenten $M_i, M_j$ durch das entsprechende Flächenstück von $S$ getrennt werden, sodass die Komponenten das zweiseitige Flächenstück an der negativen beziehungsweise positiven Seite berühren, je nachdem ob die Kante vom assoziierten Knoten aus oder eingeht.
+
+	Mit genau diesen zweiseitigen Umgebungen der Flächenkomponenten ist es möglich, ähnlich wie oben eine Abbildung $M \to G$ zu definieren, welche die Assoziierungen respektiert. Dafür betrachte man den zweiseitigen Kragen auf den Komponenten von $S$:
+	\[
+		\sqcup (S_i \times (-\epsilon,\epsilon)) \stackrel = \longrightarrow S \times (-\epsilon,\epsilon) \into M
+	\]
+	Dann existiert analog zur obigen Konstruktion die Quotientenabbildung $q:M\to G$ auf den Graph, durch Kollabieren der $M_i\cap (M -S \times(-\epsilon,\epsilon))$ auf ihre Knoten und Projektion von $(-\epsilon,\epsilon)$ auf das Innere der Kanten des Graphen. Man betrachte außerdem $G \to S^1$ die Abbildung die jede Kante entsprechend ihrer Richtung, also orientierungserhaltend einmal um die Sphäre $S^1 = I/\partial I$ abbildet, sodass die Knoten nach $[\partial I]$ abgebildet werden. Außerdem seien die Mittelpunkte der Kanten das Urbild von dem antipodalen Punkt von $[I/\partial I]$ der genau $p\in S^1$ heißt. Bezüglich der Komposition der beiden Abbildungen $M \to S^1$, ist nun $\phi$ das Bild des Erzeugers von $H^1(S^1)$ unter der Rückziehung auf der Kohomologie, da $M \to S^1$ eine zu $S$ duale Kohomologieklasse definiert (da $S=(M\to S^1)^{-1}p$). Sei $f$ nach wie vor die Abbildung aus der letzten Konstruktion. Wir erhalten:
 	
+	\begin{align}
+		\begin{xy}
+				\xymatrix{M \ar[r] \ar@/^1pc/[rr]^f & G \ar[r] & S^1 }
+			\end{xy}
+		\label{eq:graphlift}
+	\end{align}
+	Da $M$ zusammenhängend ist, ist es auch $G$.
+\end{constr}
+
+Im Folgenden wollen wir häufig den Spezialfall betrachten, dass $\phi: H_1(M) \to \ZZ$ surjektiv ist. 
+\begin{defn}
+	Ein solches $\phi \in H^1(M;\ZZ)$ heißt primitiv.
+\end{defn}
+
+\subsection{Normen und Halbnormen auf $\ZZ$-Moduln und ihre Fortsetzungen}
+    
+    Ziel der folgenden Kapitel wird es sein, einer Diffeomorphieklasse von Mannigfaltigkeiten eine Halbnorm und somit eine Invariante zuzuordnen. Genauer gesagt werden es sogar mehrere Halbnormen sein. Die Halbnormen werden wir zunächst auf der ersten Kohomologie $H^1(M;\ZZ)$ definieren. 
+
+    \begin{defn}
+    	Eine ganzzahlige Halbnorm ist eine Abbildung $||\cdot||: \ZZ^n \to \ZZ$  die Skalarmultiplikativität und Subadditivität erfüllt. Also für alle $\lambda \in \ZZ$ und $v,w\in \ZZ^n$ soll $||\lambda v||=\vert\lambda\vert~||v||$ und die Dreiecksgleichung $||v+w||\le ||v||+||w||$ gelten.
+    \end{defn}
+    Es folgt natürlich aus der Skalarmultiplikativität, dass die $0$ trivial von der Halbnorm ausgewertet wird, da $||0|| = 0||0||$. Gilt auch die Umkehrung, also $||v||=0, v\in \ZZ^n \Rightarrow v=0$, so nennen wir $||\cdot ||$ eine ganzzahlige Norm. Analog seien rationale (Halb-)Normen und reelle (Halb-)Normen definiert. 
+    \begin{lem}
+    	Eine ganzzahlige Halbnorm lässt sich auf eine rationale Halbnorm fortsetzen. Eine ganzzahlige oder rationale Halbnorm lässt sich auf eine reelle Halbnorm fortsetzen. Das gleiche gilt für Normen.
+    \end{lem}
+    \begin{proof}
+    	Will man $||\cdot||:  \ZZ^n \to \ZZ$ rational fortsetzen so bemerkt man, dass die Einbettung $\ZZ^n \into \QQ^n$ die Norm bereits durch die geforderte Skalarmultiplikativität fortgesetzt wird. Sobald man einen Wert für einen Punkt auf einem 1-dimensionalen Unterraum hat, so hat man ihn bereits für den ganzen Unterraum. Jede Gerade durch den Ursprung in $\QQ^n$ schneidet einen und somit unendlich viele Gitterpunkte: Für jedes $q \in \QQ^n$ ist bereits $aq \in \ZZ^n$ für ein großes $a\in \ZZ$. Diese lineare Fortsetzung ist offensichtlich eine Halbnorm sogar eine Norm, falls $||\cdot||$ es auf $\ZZ^n$ war.
+
+    	Sei nun $||\cdot||: \QQ^n \to \QQ$ eine Halbnorm. Dann ist diese insbesondere eine konvexe Funktion, also auf jedem Kompaktum Lipschitz-stetig und somit auf jedem Kompaktum $K\cap \QQ^n, K\subset \RR^n$ in eindeutiger Weise stetig auf $K$ fortsetzbar --- es folgt die Existenz einer rellen Fortsetzung.
+    \end{proof}
+
+
+
+    \begin{bem}[Duale Vektorraumhalbnorm]
+        Eine (Halb-)Norm auf einem Vektorraum, liefert stets eine (Halb-)Norm auf seinem Dualraum. Diese ist für einen Vektorraum $(V,|\cdot|)$ auf dem Dualraum $(V^*,||\cdot||)$ definiert durch:
+        \[
+             ||\alpha||= \sup_{\{v\in V, |v|=1\}} |\alpha v|
+         \] 
+         Entsprechend lässt sich eine Halbnorm auf $H^1(M;\RR)$ auf $H_1(M;\RR)$ durch den natürlichen Isomorphismus auf den Bidualraum definieren. Weiter lässt sich eine solche Halbnorm der ersten Kohomologie bei kompakten orientierbaren 3-Mannigfaltigkeiten mittels der Dualitätssätze auf $H_2(M,\partial M;\RR)$ übertragen, die wiederum durch Vektorraumdualität eine Halbnorm für $H^2(M,\partial M;\RR)$ liefert.
+    \end{bem}

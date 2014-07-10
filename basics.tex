@@ -21,20 +21,20 @@
     
     	Auch hier ist der Clou der folgenden Methoden, die Struktur einer Überlagerung --- genauer gesagt ihre Decktransformationen --- auszunutzen, indem man den Gruppenring betrachtet. Der Gruppenring $R[G]$ ist algebraischer Herkunft und kann für allgemeine kommutative Ringe $R$ und Gruppen und Monoide $G$ definiert werden, jedoch sind die betrachteten Invarianten über dem ganzzahligen Gruppenring mit $R=\ZZ$ definiert, so soll uns dies zunächst genügen.
 
-    	\begin{defn}[Gruppenring]
-    		Sei $G$ eine endlich erzeugte Gruppe. Dann ist der \textit{Gruppenring} definiert als die Menge aller endlichen formalen Summen:
-    		\[
-    			\ZZ[G] = \sum_{g \in G} a_g g, a_g \in \ZZ, g \in G
-    		\]
-            die durch komponentenweise Addition eine abelsche Gruppe wird und durch die Gruppenverknüpfung und die multiplikative Struktur von $\ZZ$ ein Ring mit 1 wird. Die Elemente $g \in G \subset \ZZ[G]$ werden als die Gruppenelemente in dem Gruppenring bezeichnet.
-    	\end{defn}
-        \begin{bem}
-            Da der Gruppenring die multiplikative Struktur von der Gruppenverknüpfung erbt, ist $\ZZ [G]$ im Allgemeinen nicht unbedingt kommutativ. Dieses Problem, das durch nicht-abelsche Gruppen $G$ entsteht, legen wir zunächst beiseite und betrachten nur den Fall, dass $G$ frei abelsch ist und der Gruppenring die Kommutativität erbt. Der allgemeine Fall wird in Kapitel~\ref{sec:algebra} weiter behandelt, um die folgenden Konstruktionen auch für Gruppen zu definieren, die nicht aus 3-Mannigfaltigkeiten hervorgehen.
-        \end{bem}
-        \label{wirkung:gruppenring}
-\begin{bsp}
-        Falls also $F$ nun eine unendlich zyklische Gruppe mit Erzeuger $t$ ist, lässt sich der Gruppenring über $F$ als $\ZZ[F] = \ZZ[t^{\pm 1}]$, also als Ring der formalen Laurentpolynome in der Variablen $t$ auffassen. 
-\end{bsp}
+%     	\begin{defn}[Gruppenring]
+%     		Sei $G$ eine endlich erzeugte Gruppe. Dann ist der \textit{Gruppenring} definiert als die Menge aller endlichen formalen Summen:
+%     		\[
+%     			\ZZ[G] = \sum_{g \in G} a_g g, a_g \in \ZZ, g \in G
+%     		\]
+%             die durch komponentenweise Addition eine abelsche Gruppe wird und durch die Gruppenverknüpfung und die multiplikative Struktur von $\ZZ$ ein Ring mit 1 wird. Die Elemente $g \in G \subset \ZZ[G]$ werden als die Gruppenelemente in dem Gruppenring bezeichnet.
+%     	\end{defn}
+%         \begin{bem}
+%             Da der Gruppenring die multiplikative Struktur von der Gruppenverknüpfung erbt, ist $\ZZ [G]$ im Allgemeinen nicht unbedingt kommutativ. Dieses Problem, das durch nicht-abelsche Gruppen $G$ entsteht, legen wir zunächst beiseite und betrachten nur den Fall, dass $G$ frei abelsch ist und der Gruppenring die Kommutativität erbt. Der allgemeine Fall wird in Kapitel~\ref{sec:algebra} weiter behandelt, um die folgenden Konstruktionen auch für Gruppen zu definieren, die nicht aus 3-Mannigfaltigkeiten hervorgehen.
+%         \end{bem}
+%         \label{wirkung:gruppenring}
+% \begin{bsp}
+%         Falls also $F$ nun eine unendlich zyklische Gruppe mit Erzeuger $t$ ist, lässt sich der Gruppenring über $F$ als $\ZZ[F] = \ZZ[t^{\pm 1}]$, also als Ring der formalen Laurentpolynome in der Variablen $t$ auffassen. 
+% \end{bsp}
 
     	Sei $M$ eine 3-Mannigfaltigkeit mit den obigen Beschränkungen und $\phi: G=\pi_1(M) \to F$ ein Homomorphismus in eine freie abelsche Gruppe $F$. Aus der Überlagerungstheorie ist bekannt, dass nun eine zusammenhängende Mannigfaltigkeit $\hat M_\phi$ existiert, die $M$ überlagert und auf Level der Fundamentalgruppen $\ker \phi \cong \pi_1 (\hat M_\phi) \stackrel{p_*}{\hookrightarrow} \pi_1(M)$ einbettet, vergleiche \cite[Kapitel~1.3]{Hatcher.2002}. Diese ist bis auf Diffeomorphie eindeutig. Die Decktransformationsgruppe ist dann isomorph zum Quotienten $\pi_1(M)/p_*\pi_1(\hat M_\phi) \cong F$. Dieser Quotient $F$ operiert dann auf $\hat M_\phi$ durch Diffeomorphismen, induziert also auch eine Operation auf $\pi_1(\hat M_\phi)$ und auf $H_1(\hat M_\phi)$. Da $\ZZ$ auf jeder abelschen Gruppe wirkt, ist folgende Definition gerechtfertigt:
     	\begin{defn}[Alexander Modul]
@@ -50,20 +50,20 @@
     	\[
     		\ZZ[F]^k \stackrel{X}{\longrightarrow} \ZZ[F]^n \stackrel{\alpha}{\longrightarrow} A_\phi(M) \longrightarrow 0
     	\]
-    	wobei $X$ eine darstellende Präsentationsatrix bezüglich der kanonischen Basen $e_1, \cdots , e_k$ und $e'_1, \cdots ,e'_n$ ist. Mit grundlegender Linearer Algebra zeigt man, dass die Präsentations-matrix bis auf das Vertauschen von Zeilen oder Spalten, Hinzufügen von Einheitsblöcken oder Nullspalten und Addieren eines Vielfachen einer Spalte oder Zeile auf eine jeweils andere eindeutig ist. Nun unterscheiden sich verschiedene Präsentationsmatrizen nur durch solche Operationen, siehe etwa~\cite[Theorem~6.1]{LickorishW.B.Raymond.1997}. Das liefert die nächste Definition:
-    	\begin{defn}
-    		Definiere das $i$-te Elementarideal $E_i(A_\phi(M)) \subset \ZZ [F]$ von $M$ bezüglich $\phi$, als das von den $(n-i)\times (n-i)$-Minoren erzeugte Ideal. Allgemeiner definiert man für einen endlich präsentierten $R$-Modul $A$, das Elementarideal $E_i(A)$ als das Erzeugnis von den Determinanten der $(n-i)\times (n-i)$-Minoren einer Präsentationsmatrix mit $n$ Erzeugern. Der Ring sei kommutativ mit Eins.
-    	\end{defn}
+    	% wobei $X$ eine darstellende Präsentationsatrix bezüglich der kanonischen Basen $e_1, \cdots , e_k$ und $e'_1, \cdots ,e'_n$ ist. Mit grundlegender Linearer Algebra zeigt man, dass die Präsentations-matrix bis auf das Vertauschen von Zeilen oder Spalten, Hinzufügen von Einheitsblöcken oder Nullspalten und Addieren eines Vielfachen einer Spalte oder Zeile auf eine jeweils andere eindeutig ist. Nun unterscheiden sich verschiedene Präsentationsmatrizen nur durch solche Operationen, siehe etwa~\cite[Theorem~6.1]{LickorishW.B.Raymond.1997}. Das liefert die nächste Definition:
+    	% \begin{defn}
+    	% 	Definiere das $i$-te Elementarideal $E_i(A_\phi(M)) \subset \ZZ [F]$ von $M$ bezüglich $\phi$, als das von den $(n-i)\times (n-i)$-Minoren erzeugte Ideal. Allgemeiner definiert man für einen endlich präsentierten $R$-Modul $A$, das Elementarideal $E_i(A)$ als das Erzeugnis von den Determinanten der $(n-i)\times (n-i)$-Minoren einer Präsentationsmatrix mit $n$ Erzeugern. Der Ring sei kommutativ mit Eins.
+    	% \end{defn}
 
-        Da sich jede Determinante als Linearkombination von den Determinanten der Minoren schreiben lässt, liefert das eine aufsteigende Kette (die Gleichheitszeichen werte man als Definition):
-        \[
-             0=E_{-1}(A)\subset E_0(A) \subset \cdots \subset E_n(A) = R
-         \] 
+     %    Da sich jede Determinante als Linearkombination von den Determinanten der Minoren schreiben lässt, liefert das eine aufsteigende Kette (die Gleichheitszeichen werte man als Definition):
+     %    \[
+     %         0=E_{-1}(A)\subset E_0(A) \subset \cdots \subset E_n(A) = R
+     %     \] 
 
-        \begin{bsp}
-        \label{bsp:hauptidealelementarteiler}
-            Ist $R$ ein Hauptidealring, so sind die Elementarideale durch den Elementarteilersatz vollständig charakterisiert.
-        \end{bsp}
+     %    \begin{bsp}
+     %    \label{bsp:hauptidealelementarteiler}
+     %        Ist $R$ ein Hauptidealring, so sind die Elementarideale durch den Elementarteilersatz vollständig charakterisiert.
+     %    \end{bsp}
 
     	Nun ist $E_i(A_\phi(M))$ nicht zwangsweise ein Hauptideal, also betrachtet man Alexander Polynome:
     	\begin{defn}(Alexander Polynom)
@@ -81,20 +81,20 @@
                 \item das Alexander-Polynom von $M$: $\Delta(M)=\Delta_\phi(M)$ 
             \end{itemize}
         \end{defn}
-        \begin{bem}[Homomorphismen der Abelianisierung]
-            \label{bem:fundhomologie}
-            Diese Arbeit besteht zu einem großen Teil aus Rechnungen mit Elementen aus $H^1(M;\ZZ)$, insbesondere sollen obige Invarianten auf solche Elemente angewendet werden dürfen. Deswegen soll diese Bemerkung eine Voraussetzung für alle folgenden Betrachtungen klarstellen:
+        % \begin{bem}[Homomorphismen der Abelianisierung]
+        %     \label{bem:fundhomologie}
+        %     Diese Arbeit besteht zu einem großen Teil aus Rechnungen mit Elementen aus $H^1(M;\ZZ)$, insbesondere sollen obige Invarianten auf solche Elemente angewendet werden dürfen. Deswegen soll diese Bemerkung eine Voraussetzung für alle folgenden Betrachtungen klarstellen:
 
-            Es werden stillschweigend natürliche Identifikationen $H^1(M;\ZZ) \cong \Hom(H_1(M);\ZZ) \cong \Hom(\pi_1(M);\ZZ)$ verwendet. Die erste natürliche Identifikation liefert das universelle Koeffiziententheorem. Auch wenn die erhaltende Sequenz im Allgemeinen nicht natürlich zerfällt, so ist dies im Fall der ersten Kohomologie offensichtlich. Die zweite folgt, da ein Homomorphismus $\phi: H_1(M) \to \ZZ$ gleichbedeutend mit einem Homomorphismus $\hat\phi : \pi_1(M) \to \ZZ$ ist. Dies sieht man wie folgt ein: das Hurewicz Theorem besagt, dass die natürliche Abbildung $\pi_1(M) \to H_1(M)$, die durch Auffassen von Schleifen als singuläre 1-Zykel entsteht, die Abelianisierungsabbildung ist. Diese besitzt die universelle Eigenschaft, dass wegen $[\pi_1(M),\pi_1(M)] \subset \ker \hat \phi$ ($\ZZ$ ist kommutativ) $\hat \phi$ über eine eindeutige Abbildung $H_1(M) \to \ZZ$ faktorisiert, mit anderen Worten das folgende Diagramm kommutiert:
-            \[
-                \begin{xy}
-                    \xymatrix{\pi_1(M)\ar[r]^{\hat \phi} \ar[d] & \ZZ \\
-                                H_1(M)\ar[ru]_\phi}
-                \end{xy}
-            \]
-            Dies liefert die eins-zu-eins Beziehung der Homomorphismen nach $\ZZ$, da $\phi$ nach dem Diagramm offensichtlich ein (eindeutiges) Element in $\Hom(\pi_1(M);\ZZ)$ definiert. \\ \par
-            \noindent\textbf{Konvention.} \emph{In dieser Arbeit bezeichne der Kern einer Klasse $\phi \in H^1(M;\ZZ)$ durchweg den Kern der mit $\phi$ identifizierten Abbildung auf der Fundamentalgruppe.}\\ \par
-        \end{bem}
+        %     Es werden stillschweigend natürliche Identifikationen $H^1(M;\ZZ) \cong \Hom(H_1(M);\ZZ) \cong \Hom(\pi_1(M);\ZZ)$ verwendet. Die erste natürliche Identifikation liefert das universelle Koeffiziententheorem. Auch wenn die erhaltende Sequenz im Allgemeinen nicht natürlich zerfällt, so ist dies im Fall der ersten Kohomologie offensichtlich. Die zweite folgt, da ein Homomorphismus $\phi: H_1(M) \to \ZZ$ gleichbedeutend mit einem Homomorphismus $\hat\phi : \pi_1(M) \to \ZZ$ ist. Dies sieht man wie folgt ein: das Hurewicz Theorem besagt, dass die natürliche Abbildung $\pi_1(M) \to H_1(M)$, die durch Auffassen von Schleifen als singuläre 1-Zykel entsteht, die Abelianisierungsabbildung ist. Diese besitzt die universelle Eigenschaft, dass wegen $[\pi_1(M),\pi_1(M)] \subset \ker \hat \phi$ ($\ZZ$ ist kommutativ) $\hat \phi$ über eine eindeutige Abbildung $H_1(M) \to \ZZ$ faktorisiert, mit anderen Worten das folgende Diagramm kommutiert:
+        %     \[
+        %         \begin{xy}
+        %             \xymatrix{\pi_1(M)\ar[r]^{\hat \phi} \ar[d] & \ZZ \\
+        %                         H_1(M)\ar[ru]_\phi}
+        %         \end{xy}
+        %     \]
+        %     Dies liefert die eins-zu-eins Beziehung der Homomorphismen nach $\ZZ$, da $\phi$ nach dem Diagramm offensichtlich ein (eindeutiges) Element in $\Hom(\pi_1(M);\ZZ)$ definiert. \\ \par
+        %     \noindent\textbf{Konvention.} \emph{In dieser Arbeit bezeichne der Kern einer Klasse $\phi \in H^1(M;\ZZ)$ durchweg den Kern der mit $\phi$ identifizierten Abbildung auf der Fundamentalgruppe.}\\ \par
+        % \end{bem}
 
     	Bleibt nur noch die Alexander-Norm zu definieren, die eine Halbnorm auf der ersten Kohomologie der 3-Mannigfaltigkeit definiert.
     	\begin{defn}[Alexander-Norm]

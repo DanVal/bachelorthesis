@@ -1,22 +1,20 @@
 \select@language {german}
 \contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{3}
-\contentsline {section}{\numberline {2}Grundlegendes}{5}
-\contentsline {subsection}{\numberline {2.1}Die betrachteten R\IeC {\"a}ume}{5}
-\contentsline {subsection}{\numberline {2.2}Alexander Invarianten}{5}
-\contentsline {subsection}{\numberline {2.3}Thurston Invariante}{9}
-\contentsline {section}{\numberline {3}Vorbereitungen}{13}
-\contentsline {subsection}{\numberline {3.1}\IeC {\"U}ber endlich erzeugte Moduln eines noetherschen Rings}{13}
-\contentsline {subsection}{\numberline {3.2}Poincar\IeC {\'e} und Lefschetz Dualit\IeC {\"a}t}{14}
-\contentsline {section}{\numberline {4}Algebraische Alexander Invarianten}{17}
-\contentsline {subsection}{\numberline {4.1}Herleitung der algebraischen Idee}{17}
-\contentsline {subsection}{\numberline {4.2}Eine \IeC {\"a}quivalente Definition von McMullen?}{20}
-\contentsline {subsection}{\numberline {4.3}Rationale Alexander Invarianten}{22}
-\contentsline {section}{\numberline {5}Beweis des Theorems}{24}
-\contentsline {subsection}{\numberline {5.1}Konstruktionen}{24}
-\contentsline {subsection}{\numberline {5.2}$||\cdot ||_T$-minimierende Fl\IeC {\"a}chen}{26}
-\contentsline {subsection}{\numberline {5.3}Darstellungen des Alexander Ideals}{29}
-\contentsline {subsection}{\numberline {5.4}Kombinieren der Ergebnisse}{37}
-\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{39}
-\contentsline {subsection}{\numberline {6.1}Zu der Thurston-Norm bei \IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{39}
-\contentsline {subsection}{\numberline {6.2}Faserungen}{41}
-\contentsline {subsection}{\numberline {6.3}Knoten und Verschlingungen}{43}
+\contentsline {section}{\numberline {2}Vorbereitungen der ben\IeC {\"o}tigten Theorien}{5}
+\contentsline {subsection}{\numberline {2.1}\IeC {\"U}ber noethersche Moduln und Gruppenringe}{5}
+\contentsline {subsection}{\numberline {2.2}Poincar\IeC {\'e} und Lefschetz Dualit\IeC {\"a}t --- eine differentialtopologische Betrachtung}{8}
+\contentsline {subsection}{\numberline {2.3}Konstruktionen}{10}
+\contentsline {subsection}{\numberline {2.4}Normen und Halbnormen auf $\mathbb {Z}$-Moduln und ihre Fortsetzungen}{13}
+\contentsline {section}{\numberline {3}Die Alexander-Invarianten}{15}
+\contentsline {subsection}{\numberline {3.1}Topologische Definitionen}{15}
+\contentsline {subsection}{\numberline {3.2}Algebraische Definitionen}{15}
+\contentsline {subsection}{\numberline {3.3}Rationale Alexander-Invarianten}{15}
+\contentsline {subsection}{\numberline {3.4}Eigenschaften der Alexander-Polynome}{15}
+\contentsline {section}{\numberline {4}Die Thurston-Norm}{16}
+\contentsline {subsection}{\numberline {4.1}Eigenschaften der Thurston-Norm}{16}
+\contentsline {subsection}{\numberline {4.2}$||\cdot ||_T$-minimierende Fl\IeC {\"a}chen}{16}
+\contentsline {section}{\numberline {5}Beweis des Theorems}{16}
+\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{17}
+\contentsline {subsection}{\numberline {6.1}Zu der Thurston-Norm bei \IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{17}
+\contentsline {subsection}{\numberline {6.2}Faserungen}{19}
+\contentsline {subsection}{\numberline {6.3}Knoten und Verschlingungen}{21}
