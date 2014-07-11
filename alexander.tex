@@ -5,11 +5,556 @@
 
    \subsection{Topologische Definitionen}
        
-       hi
+
+     In der Knotentheorie gilt als Grundlage der Motivation für die Alexander Invarianten --- wie für so viele Knoteninvarianten --- die Fundamentalgruppe: Allgemein ist es schwierig zu entscheiden, ob zwei endlich erzeugte abelsche Gruppen mit gegebenen Präsentationen isomorph sind. Die Abelianisierung einer Knotengruppe berechnet sich mit Alexanderdualität zu $\ZZ$, also liefert die Homologie des Knotenkomplements eine besonder nutzlose Invariante in der Knotentheorie. Deswegen geht man zu der Kommutatoruntergruppe über. Die Überlagerungstheorie liefert eine geeignete Überlagerung des Knotenkomplements, dessen Fundamentalgruppe die Kommutatoruntergruppe ist. Nach Hurewicz studiert man mit der Homologie dieser Überlagerung also die Abelianisierung der Kommutatorgruppe. Da aber auch diese Gruppe im Allgemeinen nicht endlich erzeugt oder endlich präsentiert ist, betrachtet man die induzierte Wirkung der Decktransformationen auf der Homologie. Genauer betrachtet man sogar die Wirkung des Gruppenrings $\ZZ [t^{\pm 1}]$, wobei $t$ Erzeuger der Deckgruppe ist, die aus der abelschen Gruppe einen $\ZZ [t^{\pm 1}]$-Modul macht --- den Alexander Modul. Durch Vergrößerung des Grundrings, also durch Auffassen der Homologie als $\laurent \ZZ t$-Modul anstelle eines $\ZZ$-Moduls, zeichnet sich der Alexander Modul durch meist durch weniger Erzeuger und Relationen aus und bietet eine fruchtbare Grundlage für algebraische Invarianten. Genau diese Inspiration liegt auch der Verallgemeinerung der Alexander Invarianten zugrunde.
+    
+
+%     	\begin{defn}[Gruppenring]
+%     		Sei $G$ eine endlich erzeugte Gruppe. Dann ist der \textit{Gruppenring} definiert als die Menge aller endlichen formalen Summen:
+%     		\[
+%     			\ZZ[G] = \sum_{g \in G} a_g g, a_g \in \ZZ, g \in G
+%     		\]
+%             die durch komponentenweise Addition eine abelsche Gruppe wird und durch die Gruppenverknüpfung und die multiplikative Struktur von $\ZZ$ ein Ring mit 1 wird. Die Elemente $g \in G \subset \ZZ[G]$ werden als die Gruppenelemente in dem Gruppenring bezeichnet.
+%     	\end{defn}
+%         \begin{bem}
+%             Da der Gruppenring die multiplikative Struktur von der Gruppenverknüpfung erbt, ist $\ZZ [G]$ im Allgemeinen nicht unbedingt kommutativ. Dieses Problem, das durch nicht-abelsche Gruppen $G$ entsteht, legen wir zunächst beiseite und betrachten nur den Fall, dass $G$ frei abelsch ist und der Gruppenring die Kommutativität erbt. Der allgemeine Fall wird in Kapitel~\ref{sec:algebra} weiter behandelt, um die folgenden Konstruktionen auch für Gruppen zu definieren, die nicht aus 3-Mannigfaltigkeiten hervorgehen.
+%         \end{bem}
+%         \label{wirkung:gruppenring}
+% \begin{bsp}
+%         Falls also $F$ nun eine unendlich zyklische Gruppe mit Erzeuger $t$ ist, lässt sich der Gruppenring über $F$ als $\ZZ[F] = \ZZ[t^{\pm 1}]$, also als Ring der formalen Laurentpolynome in der Variablen $t$ auffassen. 
+% \end{bsp}
+
+    	Sei $M$ eine 3-Mannigfaltigkeit mit den obigen Beschränkungen und $\phi: G=\pi_1(M) \to F$ ein Epimorphismus in eine freie abelsche Gruppe $F$. Aus der Überlagerungstheorie ist bekannt, dass nun eine zusammenhängende Mannigfaltigkeit $\hat M_\phi$ existiert, die $M$ überlagert und auf Level der Fundamentalgruppen $\ker \phi \cong \pi_1 (\hat M_\phi) \stackrel{p_*}{\hookrightarrow} \pi_1(M)$ einbettet, vergleiche \cite[Kapitel~1.3]{Hatcher.2002}. Diese ist bis auf Diffeomorphie eindeutig. Die Decktransformationsgruppe ist dann isomorph zum Quotienten $\pi_1(M)/p_*\pi_1(\hat M_\phi) \cong F$. Dieser Quotient $F$ operiert dann auf $\hat M_\phi$ durch Diffeomorphismen, induziert also auch eine Operation auf $\pi_1(\hat M_\phi)$ und auf $H_1(\hat M_\phi)$. Da $\ZZ$ auf jeder abelschen Gruppe wirkt, ist folgende Definition gerechtfertigt:
+    	\begin{defn}[Alexander Modul]
+    		Der Alexander Modul eines Gruppenepimorphismus in einen freien $\ZZ$-Modul $\phi: \pi_1(M) \onto F$ ist definiert als
+    		\[
+    			A_\phi(M) = H_1(\hat M_\phi)
+    		\]
+    		aufgefasst als $\ZZ[F]$-Modul, durch die induzierte Wirkung der Decktransformationen. Mit Bemerkung~\ref{bem:gruppenwirkungmodul} lässt sich allgemeiner $A_\phi(M;R)= H_1(\hat M_\phi;R)$ als $R[F]$-Modul definieren.
+    	\end{defn}
+
+    	% Da es sich bei dem Gruppenring nicht um einen Hauptidealring handelt, ist es im Allgemeinen nicht möglich eine Zerlegung des Alexander Moduls in zyklische direkte Summanden zu finden. Als algebraische Invariante, wird dem Modul stattdessen hier ein Reihe von Idealen in dem Gruppenring zugewiesen --- die Elementarideale. Man betrachte dafür die endliche Präsentation des Alexander Moduls:
+    	% \[
+    	% 	\ZZ[F]^k \stackrel{X}{\longrightarrow} \ZZ[F]^n \stackrel{\alpha}{\longrightarrow} A_\phi(M) \longrightarrow 0
+    	% \]
+    	% wobei $X$ eine darstellende Präsentationsatrix bezüglich der kanonischen Basen $e_1, \cdots , e_k$ und $e'_1, \cdots ,e'_n$ ist. Mit grundlegender Linearer Algebra zeigt man, dass die Präsentations-matrix bis auf das Vertauschen von Zeilen oder Spalten, Hinzufügen von Einheitsblöcken oder Nullspalten und Addieren eines Vielfachen einer Spalte oder Zeile auf eine jeweils andere eindeutig ist. Nun unterscheiden sich verschiedene Präsentationsmatrizen nur durch solche Operationen, siehe etwa~\cite[Theorem~6.1]{LickorishW.B.Raymond.1997}. Das liefert die nächste Definition:
+    	% \begin{defn}
+    	% 	Definiere das $i$-te Elementarideal $E_i(A_\phi(M)) \subset \ZZ [F]$ von $M$ bezüglich $\phi$, als das von den $(n-i)\times (n-i)$-Minoren erzeugte Ideal. Allgemeiner definiert man für einen endlich präsentierten $R$-Modul $A$, das Elementarideal $E_i(A)$ als das Erzeugnis von den Determinanten der $(n-i)\times (n-i)$-Minoren einer Präsentationsmatrix mit $n$ Erzeugern. Der Ring sei kommutativ mit Eins.
+    	% \end{defn}
+
+     %    Da sich jede Determinante als Linearkombination von den Determinanten der Minoren schreiben lässt, liefert das eine aufsteigende Kette (die Gleichheitszeichen werte man als Definition):
+     %    \[
+     %         0=E_{-1}(A)\subset E_0(A) \subset \cdots \subset E_n(A) = R
+     %     \] 
+
+     %    \begin{bsp}
+     %    \label{bsp:hauptidealelementarteiler}
+     %        Ist $R$ ein Hauptidealring, so sind die Elementarideale durch den Elementarteilersatz vollständig charakterisiert.
+     %    \end{bsp}
+
+     Um die folgenden Betrachtungen zu ermöglichen und um der oben hervorgerufenen Erwartungshaltung gerecht zu werden, zeigt die folgende Proposition die endliche Erzeugbarkeit des Alexander Moduls.
+
+
+Um die Situation für spätere Berechnungen angenehmer zu gestalten und überhaupt erst die Definition der Alexander Invarianten zu berechtigen, überzeugt man sich zunächst davon, dass der Alexander Modul tatsächlich endlich erzeugt über dem Gruppenring $\ZZ[F]$ ist. 
+
+\begin{prop}
+\label{prop:alexendlerz}
+		$A_\phi(M)$ ist ein endlich erzeugter $\ZZ[F]$-Modul.
+\end{prop}
+\begin{bem}\label{rem:AlexModulendlerz}
+	Eine algebraische Variante des Beweises befindet sich im nachfolgenden Kapitel~\ref{sec:algebra}. 
+\end{bem}
+
+\begin{proof}
+	Da $M$ eine 3-Mannigfaltigkeit ist, existiert eine CW Struktur, vgl.~\cite{Moise.1952}. Kompakte Mengen in CW-Komplexen enthalten nur endlich viele Zellen. Also folgt mit der Kompaktheit von $M$ die Endlichkeit der Anzahl der Zellen in einer CW-Struktur von $M$. Da es für CW-Komplexe gleichbedeutend ist die zelluläre Homologie zu berechnen, fixiere man eine endliche CW-Struktur von $M$ die eine auf $M_\phi$ liefert. Die Decktransformationen berücksichtigen Zellen zu einer vererbten CW-Struktur der Überlagerung, das bedeutet sie bildet Zellen die das gleiche Bild in $M$ haben aufeinander ab. Da die Decktransformationen einer normalen Überlagerung frei sind, assozieren sie also zu jeder Zelle in $M$ alle unendlich zyklisch vielen Zellen in $M_\phi$ (assozieren bedeutet im algebraischen Sinne: Bis auf eine Einheit, also ein Gruppenelement im Gruppenring, verschieden sein). Also sind in dem Kettenkomplex der Überlagerung alle Kettengruppen frei und endlich erzeugt als $\ZZ[F]$-Moduln. Das bedeutet, für jeden freien $\ZZ$-Summanden der Kettengruppen der Mannigfaltigkeit erhält man einen freien $\ZZ[F]$-Summanden der Kettengruppen der Überlagerung. Mit Corollar~\ref{cor:noethchaincomplex} ist also die Homologie des $\ZZ[F]$-Kettenkomplexes endlich erzeugt. 
+
+	Es bleibt also zu zeigen, dass das Bilder der Homologie als $\ZZ[F]$-Moduln verträglich ist mit dem Bilder der Homologie als abelsche Gruppen. Aber da die Wirkung von $F$ auf der Homologie durch Diffeomorphismen induziert wird, so ist die Verträglichkeit durch die elementare Tatsache gegeben, dass Abbildungen von Räumen auch Kettenkomplexabbildungen induzieren, also Verträglichkeit mit den Randoperatoren gegeben ist.
+\end{proof}
+
+%
+
+     	Da der Gruppenring $\ZZ[F]$ kein Hauptidealring ist, wollen wir die in Kapitel~\ref{sec:noetherianprinciples} motivierten Invarianten von endlich erzeugten Moduln über einem noetherschen Ring betrachten.
+     	\begin{defn}
+     		Definiere das $i$-te Elementarideal von $M$ bezüglich $\phi\in H^1(M;\ZZ)$ als $E_i(A_\phi(M))$ und das Alexander Ideal von $M$ bezüglich $\phi$ als $I_\phi(M)$.
+     	\end{defn}
+
+
+    	Nun ist $E_i(A_\phi(M))$ nicht zwangsweise ein Hauptideal, also betrachtet man Alexander Polynome:
+    	\begin{defn}(Alexander Polynom)
+    		Definiere das Alexander Polynom $\Delta_\phi$ als einen größten gemeinsamen Teiler von $E_0(A_\phi(M))$. Allgemeiner sei $\Delta_\phi^i$ ein größter gemeinsamer Teiler von $E_i(A_\phi(M))$.
+    	\end{defn}
+    	Ein größter gemeinsamer Teiler eines Ideals $I$ erzeugt ein minimales Hauptideal das $I$ enthält. Für einen Ring $R$ und ein Ideal $I\subset R$ ist das kleinste Hauptideal welches $I$ enthält im Allgemeinen nicht eindeutig. Allerdings gilt in faktoriellen Ringen diese Eindeutigkeit, aufgrund der Eindeutigkeit der Primzerlegung bis auf Assoziertheit. Assozierte Elemente erzeugen natürlich die gleichen Hauptideale. Um die Definition zu rechtfertigen --- also um von \emph{dem} Alexander Polynom sprechen zu können --- folgert man zusammen mit Proposition~\ref{prop:gruppenringnoethersch} und Bemerkung~\ref{bem:einheitengruppenring} folgendes Lemma:
+    	\begin{lem}
+    		Das Alexander Polynom ist bis auf Multiplikation mit Elementen $\pm f$ eindeutig, wobei $f\in F$. 
+    	\end{lem}
+
+    	\begin{bem}
+    		Falls also $F \cong \ZZ$, also $\ZZ[F]\cong \laurent\ZZ t$, dann definiert die höchste Distanz der auftauchenden Exponenten den Grad des Polynoms $p \in \laurent \ZZ t$. Offensichtlich ist der Grad eines Polynoms invariant bezüglich der Multiplikation mit den Einheiten $t^N$. Also weist das Alexander-Polynom einem surjektiven $\pi_1(M)\to F$ einen eindeutigen Grad zu.
+    	\end{bem}
+
+    	 Die Alexander-Invarianten sind insbesondere für einen surjektiven Homomorphismus als Kohomologieklasse $\phi\in H^1(M;\ZZ) = \Hom(\pi_1(M);\ZZ)$ definiert. Solche $\phi$ werden \emph{primitiv} genannt. 
+   		
+        \begin{defn}
+            Sei $G=\pi_1(M)$ und $\phi:G \to F$ die kanonische Abbildung auf den maximalen freien abelschen Quotienten, der durch $ F = ab(G) = H_1(G)/T \cong \ZZ^{b_1(G)}$ charakterisiert ist. Dann definieren wir mithilfe den obigen Invarianten:
+            \begin{itemize}
+                \item den Alexander-Modul von $M$: $A(M)=A_\phi(M)$
+                \item das Alexander-Ideal von $M$: $I(M)=I_\phi(M)$
+                \item das Alexander-Polynom von $M$: $\Delta(M)=\Delta_\phi(M)$ 
+            \end{itemize}
+        \end{defn}
+        % \begin{bem}[Homomorphismen der Abelianisierung]
+        %     \label{bem:fundhomologie}
+        %     Diese Arbeit besteht zu einem großen Teil aus Rechnungen mit Elementen aus $H^1(M;\ZZ)$, insbesondere sollen obige Invarianten auf solche Elemente angewendet werden dürfen. Deswegen soll diese Bemerkung eine Voraussetzung für alle folgenden Betrachtungen klarstellen:
+
+        %     Es werden stillschweigend natürliche Identifikationen $H^1(M;\ZZ) \cong \Hom(H_1(M);\ZZ) \cong \Hom(\pi_1(M);\ZZ)$ verwendet. Die erste natürliche Identifikation liefert das universelle Koeffiziententheorem. Auch wenn die erhaltende Sequenz im Allgemeinen nicht natürlich zerfällt, so ist dies im Fall der ersten Kohomologie offensichtlich. Die zweite folgt, da ein Homomorphismus $\phi: H_1(M) \to \ZZ$ gleichbedeutend mit einem Homomorphismus $\hat\phi : \pi_1(M) \to \ZZ$ ist. Dies sieht man wie folgt ein: das Hurewicz Theorem besagt, dass die natürliche Abbildung $\pi_1(M) \to H_1(M)$, die durch Auffassen von Schleifen als singuläre 1-Zykel entsteht, die Abelianisierungsabbildung ist. Diese besitzt die universelle Eigenschaft, dass wegen $[\pi_1(M),\pi_1(M)] \subset \ker \hat \phi$ ($\ZZ$ ist kommutativ) $\hat \phi$ über eine eindeutige Abbildung $H_1(M) \to \ZZ$ faktorisiert, mit anderen Worten das folgende Diagramm kommutiert:
+        %     \[
+        %         \begin{xy}
+        %             \xymatrix{\pi_1(M)\ar[r]^{\hat \phi} \ar[d] & \ZZ \\
+        %                         H_1(M)\ar[ru]_\phi}
+        %         \end{xy}
+        %     \]
+        %     Dies liefert die eins-zu-eins Beziehung der Homomorphismen nach $\ZZ$, da $\phi$ nach dem Diagramm offensichtlich ein (eindeutiges) Element in $\Hom(\pi_1(M);\ZZ)$ definiert. \\ \par
+        %     \noindent\textbf{Konvention.} \emph{In dieser Arbeit bezeichne der Kern einer Klasse $\phi \in H^1(M;\ZZ)$ durchweg den Kern der mit $\phi$ identifizierten Abbildung auf der Fundamentalgruppe.}\\ \par
+        % \end{bem}
+
+    	Bleibt nur noch die Alexander-Norm zu definieren, die eine Halbnorm auf der ersten Kohomologie der 3-Mannigfaltigkeit definiert.
+    	\begin{defn}[Alexander-Norm]
+    		Sei  $\Delta \in \ZZ [F]$ das Alexander Polynom von $M$. So ist $\Delta$ von der Form:
+    		\begin{align*}
+    		    			\Delta = &\sum_{k=1}^n a_k f_k& a_k \neq 0, f_i = f_j \Rightarrow i=j
+    		\end{align*}
+    		Sei nun $\phi \in H^1 (M,\ZZ)$, dann definieren wir die Alexander Norm von $\phi$ als
+    		\[
+    			||\phi||_A = \begin{cases}
+    				0 , &\text{ wenn } \Delta=0\\
+    				\sup \phi (f_i - f_j) &
+    			\end{cases},
+    		\]
+    		wobei das Supremum über die Gruppenelemente $f_i$ genommen wird, die in $\Delta$ auftauchen.
+    	\end{defn}
+
+    	Der nichttriviale Teil der folgenden Aussage wurde in Lemma~\ref{lem:fortsetzungnorm} gezeigt.
+    	\begin{lem}
+    		Die Alexander-Norm definiert eine Halbnorm auf $H^1(M;\ZZ)$ und somit auf $H^1(M;\RR)$.
+    	\end{lem}
+
+
     \subsection{Algebraische Definitionen}
-        
+        \todo{durchgehen und säubern}
+
+\label{sec:algebra}
+Tatsächlich könnte man diese Bachelorarbeit fast ausschließlich algebraisch verstehen --- wenigstens den Teil über die Alexander-Invarianten. Natürlich ist dieser Arbeit aus dem Bereich der Topologie, der Geschmack oder die Illusion gegeben, man arbeite mit direkten Eigenschaften der Räume. Bei der Thurston-Norm ist dies sicherlich noch eher gegeben, durch die Definition einer Funktion auf einem Vektorraum mittels geometrischer Eigenschaften der Mannigfaltigkeit. Jedoch handelt es sich bei den Alexander-Invarianten, insbesondere dem Alexander Polynom, lediglich um Invarianten einer endlich erzeugten Gruppe. Durch Anwendung dieser Invarianten auf die Fundamentalgruppe eines topologischen Raumes, erhält man also Invarianten von Räumen. Natürlich verliert das Alexander Polynom von 3-Mannigfaltigkeiten durch diese "`Faktorisierung"' nicht allzu viel an Reiz, da die Fundamentalgruppe eine recht starke Invariante von 3-Mannigfaltigkeiten darstellt, beispielsweise liefert sie durch einfache Anwendung von Hurewicz und Dualitätssätzen (Poincaré/Lefschetz, universelles Koeffiziententheorem) alle Homologiegruppen der 3-Mannigfaltigkeit und eine Klasse von 3-Mannigfaltigkeiten, die sogenannten `Haken-Mannigfaltigkeiten' sind durch ihre Fundamentalgruppe klassifiziert, der Beweis dazu stammt von Waldhausen~\cite{Waldhausen.1968}. Im Folgenden sollen nun die Alexander Invarianten von endlich erzeugten Gruppen definiert werden und Zusammenhänge verschiedener Definitionen erkannt werden.
+
+Natürlich bergen algebraische Invarianten mit solchen Eigenschaften immer mehrere Vorzüge. Zum einen werden topologische Probleme in algebraische übersetzt, die dann mit algebraischen Methoden untersucht werden können. Scheint andererseits ein algebraisches Problem nur schwer lösbar, so ergibt sich die Möglichkeit einen topologischen Kontext zu finden, in dem sich die algebraische Ursprungssituation als Invariante ergibt, dessen Ergebnisse und Berechnungen sich aber vielleicht mit topologischen Eigenschaften des Raumes leichter handhaben lassen, siehe etwa Beispiel~\ref{ex:eilmaclane}.
+
+Es soll zunächst eine analoge Definition zu den bekannten Alexander Invarianten aus Kapitel~\ref{sec:defs} gegeben werden. Anschließend wollen wir eine weitere Definition betrachten, die beispielsweise McMullen in \cite{MCMULLEN.2002} nutzt und einen Zusammenhang herstellen --- warum diese Definitionen streng genommen nicht äquivalent sind und warum das kein Problem darstellt.
+
+\subsubsection{Herleitung der algebraischen Idee}
+    
+Nun müssen wir uns mit der Problematik beschäftigen, die eingangs bei der Definition des Gruppenrings erwähnt wurde, nämlich dass der entstehende Gruppenring von nicht-abelschen Gruppen nicht mehr kommutativ ist, man also beispielsweise zwischen Links- und Rechtsmoduln über dem Gruppenring unterscheiden muss.
+
+Sei $G$ die Fundamentalgruppe von $M$ und $F$ eine freie abelsche Gruppe zusammen mit einem Epimorphismus $\alpha:G \to F$. Also faktorisiert $\alpha$ durch die maximale freie abelsche Quotientenabbildung $G \to G/[G,G] \to ab(G) \cong \ZZ^{b_1(G)}$, die als Komposition kanonischer Abbildungen kanonisch ist. Folglich ist der Rang von $F$ durch $b_1(G)$ nach oben beschränkt. Dann erhält man einen Gruppenisomorphismus $p'_*: H_1(\hat M) \to \ker\alpha/[\ker\alpha,\ker\alpha]$ der durch die Überlagerungsprojektion $\hat M = M_\alpha \to M$ zu $\alpha$ induziert wird. Ziel wäre es zu zeigen, dass diese Abbildung auch einen Isomorphismus von $\ZZ[F]$-Moduln liefert. Daraus würden natürlich gleiche Präsentationen folgen, die zu gleichen Elementaridealen führen und so fort. Hierfür benötigt man jedoch überhaupt eine $\ZZ[F]$-Modul Struktur auf dem Quotienten $G'/G''$ für $G'=\ker\alpha, G''=[G',G']$. Diese soll zunächst definiert werden:
+
+Es seien $g_1,\cdots,g_m,m\leq b_1(G)$ Elemente die auf eine Basis von $F$ abgebildet werden. Diese definieren dann Automorphismen von $G'/G''$ durch 
+\[
+	\hat t_i(x) =  [g_i]  [x][ g_i^{-1}] = [ g_i x g_i^{-1}]
+\]
+Man prüft leicht, dass diese unabhängig der gewählten $g_i$ sind. Es sei für den Beweis bemerkt, dass die Kommutatoruntergruppe $G''\subset G'$ eine charakteristische Untergruppe ist. 
+\begin{bem}
+ 	Das ist eine Form der expliziten Konstruktion des Falles, wenn man von einer induzierten Operation einer zerfallenden kurzen exakten Sequenz redet:
+ 	\[
+ 		\seq {G'/G''} {G/G''} {G/G'}
+ 	\]
+ 	Da $F= G/G'$ frei abelsch ist, zerfällt diese Sequenz und man erhält eine Abbildung $F \to \Aut(G'/G'')$ genauer gesagt, eine Gruppenwirkung auf $G'/G''$ durch Konjugation unter der Einbettung $G'/G''\into G/G''$ mit zurückgezogenen Elementen aus $F$. Dies ist wohldefiniert, da das Bild von $G'/G''$ einem Kern entspricht, also Normalteiler ist. Offensichtlich stimmt diese Operation mit der obigen überein.
+ \end{bem} 
+ 
+ Mit $\alpha(g_i)=t_i$ als ein Element der Basis von $F$, ist die Gruppenwirkung von $F$ auf $H_1(\hat M)$, die durch die Decktransformationen $F$ induzierte $t_i\gamma = t_{i*}\gamma,t_i \in F , \gamma \in H_1(\hat M)$. Also ist nur zu zeigen, dass folgendes Diagramm kommutiert:
+\[
+	\begin{xy}
+		\xymatrix{H_1(\hat M) \ar[d]_{t_i} \ar[r]^{p'_*} & G'/G'' \ar[d]^{\hat t_i}\\
+		H_1(\hat M)  \ar[r]^{p'_*} & G'/G'' }
+	\end{xy}
+\]
+und somit die Operationen verträglich sind. Davon überzeugt man sich, indem man die Wirkung von $t_i$ näher betrachtet: nach Hurewicz lässt sich ein Zykel aus $H_1(\hat M)$ als Schleife darstellen. Die Decktransformation $t_i$ bildet diese Schleife nun auf eine Schleife ab, die homolog ist zu der Konjugation mit einer zu einem Weg gelifteten Schleife $\tau_i, [\tau_i] \in \pi_1(M,p)$, welche die Decktransformation $t_i$ erzeugt. Aber wegen $\alpha([\tau_i])=t_i$ ist $\hat t_i$ auch nur Konjugation mit $\tau_i$.
+
+Also lassen sich alle Definitionen der Alexander Invarianten analog zu Kapitel~\ref{sec:defs}, auf endlich erzeugten Gruppen definieren, wobei der Alexander Modul $G'/G''$ als Modul über $\ZZ [G/G']= \ZZ F$ aufgefasst wird. Fast! Die Definition der Elementarideale setzt noch voraus, dass dieser Modul endlich erzeugt ist. Wir hatten bisher nur gesehen, dass dies für Fundamentalgruppen von 3-Mannigfaltigkeiten stimmt, indem wir eine endliche CW-Struktur ausgenutzt haben. Dies wird am Ende des Kapitels festgestellt.
+
+\begin{bem}
+Es stellt sich sogar heraus, dass in den vielen Fällen auch die Thurston Norm, aus der Fundamentalgruppe berechnet werden kann, indem man getwistete Alexander Polynome verwendet --- die mit ähnlichen Methoden wie oben, allein aus der Fundamentalgruppe gewonnen werden können. Sie beinhalten meist noch mehr Daten als das gewöhnliche Alexander Polynom und es lässt sich mit der induzierten Norm dieser Polynome, die Abschätzung aus Theorem~\ref{thm:haupttheorem} verallgemeinern. Diese Resultate wurden in mehreren Arbeiten von Friedl unter verschiedenen Zusammenarbeiten entwickelt, etwa in \cite{Friedl.2011,Friedl.2008,Friedl.2008b,Friedl.2007,Friedl.2006,Friedl.2008c}. Weiter nützen die getwisteten Alexander Polynome um bis zu einem gewissen Grade eine Umkehrung der Gleichheit aus Theorem~\ref{thm:haupttheorem} bei Faserungen zu ermöglichen, siehe~\cite{Friedl.2006,Friedl.2008b}.
+\end{bem}
+
+Um ohne topologische Methoden einzusehen, dass der Alexander Modul endlich erzeugt ist, ist es nötig den allgemeinen Gruppenring und noethersche Moduln genauer zu betrachten. Wir werden uns im Folgenden etwas mehr Mühe geben, als eigentlich nötig wäre, um einen Zusammenhang mit dem nächsten Kapitel herzustellen, in welchem andere Definitionen der Alexander Invarianten verwendet werden.
+
+\begin{defn}[Augmentationsideal]
+\label{def:augmentation}
+	Sei $H$ ein Normalteiler in $G$. Dann ist das Augmentationsideal:
+	\[
+		m_G(H) = \langle (h-1), h\in H \rangle
+	\]
+	Falls $G=H$ so definiere: $m(G)=m_G(G)$.
+\end{defn}
+
+\begin{bem}
+Das Augmentationsideal erhält seinen Namen, da es aus dem Kern der Augmentationsabbildung, die jedes Gruppenelement auf die Eins abbildet, entsteht:
+\[
+	m_G(G) = \ker(\ZZ[G] \to \ZZ)
+\]
+
+\end{bem}
+\begin{lem}
+\label{lem:augmker}
+	Sei $\phi:G \to F$ ein Homomorphismus mit Fortsetzung $\hat \phi: \ZZ[G] \to \ZZ[F]$. Dann gilt:
+	\[
+		\ker(\hat\phi) = m_G(\ker\phi)= m(\ker\phi) \ZZ[G] = \ZZ[G] m(\ker\phi) 
+	\]
+\end{lem}
+Der Beweis ist einfach, obgleich man elementweise oder mit funktoriellen Methoden argumentiert und wird deswegen übersprungen. Die Beidseitigkeit des Ideal folgt aus der Eigenschaft, dass $\ker\hat\phi$ Normalteiler ist, und so zeigt man auch, dass die Definition~\ref{def:augmentation} des Augmentationsideals, ein beidseitiges Ideal liefert.
+
+
+\begin{bsp}
+	Falls $G=\langle t \rangle \cong \ZZ$, dann ist der Gruppenring $\ZZ [G]$, der Ring der Laurentpolynome in einer Variablen $\laurent \ZZ t$. Dann ist $m(G) \subset \ZZ[G]$ ein freier $\ZZ[G]$ Modul mit einelementiger Basis $(t-1)$. Allgemeiner ist offensichtlich für die freie Gruppe $F(S), |S| < \infty$, das Augmentationsideal $m(F(S)) \subset \ZZ[F(S)]$ ein freier $\ZZ[F(S)]$ Modul mit $|S|$-elementiger Basis $\{(s-1), s \in S\}$.
+\end{bsp}
+
+\begin{bsp}
+	\label{ex:eilmaclane}
+	Wir werden später auf das Augmentationsideal $m(F)$ für $F\cong \ZZ^n$ treffen. In Anlehnung an das vorherige Beispiel und der Betonung auf die in der Einleitung erwähnte Übersetzung algebraischer Probleme in topologische, gilt sogar weiter: $m(F)$ ist ein freier $\ZZ[F]$-Modul genau dann wenn $n=1$. Denn wenn $m(F)$ frei ist, so liefert dies eine freie Auflösung von $\ZZ$ (über die Augmentationsabbildung als $\ZZ[F]$-Modul aufgefasst) über $\ZZ[F]$ der Länge 1. Also $H^2(F) = \Ext^2_{\ZZ[F]}(\ZZ [F],\ZZ)=0$. Aber die Gruppenkohomologie berechnet sich topologisch als 
+	\[
+	H^2(F)=H^2(K(F,1))=H^2(T^n)=\ZZ^{\binom n2}		
+	\]
+\end{bsp}
+
+
+
+\subsubsection{Eine äquivalente Definition von McMullen?}
+    
+In der Arbeit von McMullen~\cite{MCMULLEN.2002} verwendet er eine unterschiedliche Definition der Alexander Invarianten. Tatsächlich stellen sich diese auch bei Berechnungen als günstig heraus, da relative Homologie betrachtet wird. Inwieweit ist das nützlich zur Berechnung der obigen Alexander-Invarianten --- sind die Definitionen äquivalent? Die Frage soll nun geklärt werden, dafür zunächst die Definitionen:
+
+\begin{defn}
+\label{def:Mcmullen}
+	Sei $\phi: G \to F$ ein Epimorphismus in eine freie abelsche Gruppe $F$ für eine endlich erzeugte Gruppe $G$. Dann ist der Alexander Modul von $G$ nach McMullen's Definition der $\ZZ[F]$-Modul:
+	\[
+		\mathfrak A_\phi(G) = m(G)/m(G)m(\ker\phi)
+	\]
+	mit dem Alexander Ideal
+	\[
+		\mathfrak I_\phi(G) = E_1 (\mathfrak A_\phi(G)) \subset \ZZ[F]
+	\]
+	und dem Alexander Polynom $\mathfrak D_\phi$, so dass $(\mathfrak D_\phi ) \supset \mathfrak I_\phi(G)$ das kleinste Hauptideal ist.
+
+\begin{bem}
+\label{bem:alexmcmendlerz}
+Die $\ZZ[F]$-Modul Struktur von $\mathfrak A_\phi(G)$ ergibt sich aus der folgenden Überlegung: Lemma~\ref{lem:augmker} liefert $\ZZ[F]=\ZZ[G]/m(\ker\phi)$, also ist $\mathfrak A_\phi(G)$ als Quotient des endlich erzeugten Ideals $m(G)/m(\ker\phi) \subset \ZZ F$ ein endlich erzeugter $\ZZ F$-Modul (genauer verwendet man hier den Isomorphiesatz $(G/N)/(H/N)\cong G/H$), insbesondere noethersch.
+\end{bem}
+
+	Falls $G=\pi_1(M,p)$ kann man den isomorphen $\ZZ[F]$-Modul mit der durch die Decktransformationen $(M_\phi,\pi^{-1}p) \to (M_\phi,\pi^{-1}p)$ induzierten $F$-Wirkung als Definition verwenden
+	\[
+		\mathfrak A(G)= H_1(M_\phi,\pi^{-1}p;\ZZ),
+	\]
+	wobei $M_\phi \stackrel \pi \to M$ die universelle abelsche Überlagerung ist. Die Isomorphie dieser Moduln ergibt sich unter anderem aus dem Fünfer-Lemma und den kurzen exakten Sequenzen~\eqref{seq:alexmodules} und der \eqref{seq:leshomology}.
+\end{defn}
+
+
+Die bisherigen Ausführungen sollten nun genügen um die endliche Erzeugbarkeit der algebraischen Variante des Alexander Moduls und die Beziehung zwischen den verschiedenen Definitionen des Alexander Moduls zu zeigen. Dies und bisherige Resultate sollen in folgender Proposition festgehalten werden:
+
+\begin{prop}
+\label{prop:alexmodules}
+	Es sei $G$ eine endlich erzeugte Gruppe, $F \cong \ZZ^b$ eine freie abelsche Gruppe mit $b\leq b_1(G)$ und $\phi: G \to F$ ein Epimorphismus. Außerdem bezeichne wie oben $G'=\ker\phi$ und $G''=[G',G']$ die Kommutatoruntergruppe. Die folgende exakte Sequenz liefert eine Gruppenwirkung von $F$ auf $G'/G''$:
+	\[
+		\seq {G'} G F
+	\]
+	Weiter liefert diese Sequenz eine exakte Sequenz von $\ZZ[F]$-Moduln
+		\begin{align}
+		\seq {m_G(\ker\phi)/m_G(\ker\phi)m(G)} {m(G)/m_G(\ker\phi)m(G)} {m(F)} \label{seq:alexmodules}
+		\end{align}
+		und einen Isomorphismus von $\ZZ[F]$-Moduln $A_\phi(G) \cong G'/G'' \cong m_G(\ker\phi)/m_G(\ker\phi)m(G)$.
+
+	Insbesondere ist der Alexander Modul endlich erzeugt.
+\end{prop}
+\begin{bem}
+	Als abelsche Gruppe ist $m(F)$ frei und die Sequenz zerfällt als Sequenz von $\ZZ$-Moduln immer. Als $\ZZ[F]$-Modul Sequenz zerfällt sie genau dann wenn $F\cong \ZZ$ siehe Beispiel~\ref{ex:eilmaclane}.
+\end{bem}
+\begin{proof}
+		Man betrachte folgendes kommutatives Diagramm:	
+		\begin{equation}
+		\label{eq:diagalg}
+			\begin{xy}
+				\xymatrixcolsep{4pc}\xymatrix{	
+									& 0 \ar[d] & 0\ar[d] & 0\ar[d]&\\
+							0 \ar[r]&	m_G(\ker\phi) \ar[r] \ar[d]&	m(G) \ar[r] \ar[d]& m(F) \ar[r] \ar[d]&	0\\
+							0 \ar[r]&	m_G(\ker\phi) \ar[r] \ar[d]&	\ZZ[G] \ar[r] \ar[d]& \ZZ[F] \ar[r] \ar[d]&	0\\
+							0 \ar[r]&		0	\ar[d]\ar[r] 	&	\ZZ \ar[d] \ar[r]	&	\ZZ \ar[r] \ar[d] &		0\\
+							&0&0&0&}
+			\end{xy}
+		\end{equation}
+
+		Die zweite Reihe ist exakt nach Lemma~\ref{lem:augmker} und die Exaktheit der ersten Reihe geht aus der Anwendung des Schlangenlemmas hervor.
+
+		Die gewünschte Form der exakten Sequenz~\eqref{seq:alexmodules} aus der Proposition folgt dann aus der ersten exakten Reihe des Diagramms~\eqref{eq:diagalg} indem man $m_G(\ker\phi)\cdot m(G)$ herausteilt. Dies ergibt mit Bemerkung~\ref{bem:alexmcmendlerz} eine exakte Sequenz von $\ZZ[F]$-Moduln.
+
+		Es ist also noch der behauptete Isomorphismus zu zeigen. Dieser lässt sich einfach angeben:
+		\begin{align*}
+			G'/G'' 	&\to 		m_G(G')/m_G(G')\cdot m(G)\\
+			[g']		&\mapsto	[(g'-1)]\\
+			[g']		&\mathrel{\reflectbox{\ensuremath{\mapsto}}}  [(g'-1)g]
+		\end{align*}
+		Diese Abbildungen sind wohldefiniert und einander invers, da $[(g'-1)g]=[(g'-1)g-(g'-1)(g-1)]=[(g'-1)]$.
+	\end{proof}	
+Wir erhalten also die Beziehung $\seq {A_\phi(M)}{\mathfrak A_\phi(M)}{m(F)}$.
+	
+\begin{cor}
+		Jeder Alexander Modul $A_\phi(M)$ einer endlich erzeugten Gruppe ist endlich erzeugt. \qed
+\end{cor}
+
+Da die Gruppenwirkung von $F$ auf der Homologie der Überlagerung durch Abbildungen von Räumen induziert wird, liefert die lange exakte Sequenz des Paares $(M_\phi,\pi^{-1} p)$ eine exakte Sequenz von $\ZZ[F]$-Moduln. Da die von der Inklusion induzierte Abbildung $\ZZ[F]\cong H_0(\pi^{-1} p) \to H_0 (M_\phi) \cong \ZZ$ Auswertung der Koeffizienten entspricht, liefert die lange exakte Homologiesequenz des Paares die folgende kurze exakte Sequenz von $\ZZ[F]$-Moduln:
+	\begin{equation}
+	0 \to H_1(M_\phi) \to H_1(M_\phi,\pi^{-1} p ) \to m(F) \to 0 \label{seq:leshomology}
+	\end{equation}
+Diese Sequenz ist natürlich ein Spezialfall der allgemeineren Sequenz~\eqref{seq:alexmodules} für den Fall, dass $G$ als Fundamentalgruppe realisierbar ist.
+
+Welche Folgerungen ziehen wir aus diesen Ergebnissen? Nun ja, zunächst unterscheiden sich die gegebenen Definitionen von McMullen qualitativ von denen aus Kapitel~\ref{sec:defs}, sowohl die Alexander Moduln als auch die Alexander Ideale sind nie isomorph. Eine Äquivalenz ergibt sich also nicht gänzlich, aber die oben gesicherte Beziehung in der exakten Sequenz liefert zusammen mit dem folgenden Lemma die Gleichheit der kleinsten Hauptideale und somit der Alexander Polynome und der Alexander Norm. Dies legitimiert die Verwendung der unterschiedlichen Definitionen im kommenden Beweis des Theorems~\ref{thm:haupttheorem} als Mittel zum Zweck.
+
+\begin{lem}
+ 	Für eine kurze exakte Sequenz von $\ZZ[F]$-Moduln
+ 	\[
+ 	 	\seq AB{m(F)},
+ 	 \] wobei $F\cong \ZZ^n$, stimmen $\Delta_i(A)=\Delta_{i+1}(B)$ überein. 
+ \end{lem} 
+ Siehe zum Beispiel die Arbeit von Traldi~\cite{Traldi.1982}.
+
+	 \subsubsection{Rationale Alexander Invarianten}
+	 \label{ssec:rationalalex}
+
+	 Genauso wie man oben den ganzzahligen Gruppenring erhalten hat, so erhält man auch den rationalen Gruppenring $\QQ[G]=\ZZ[G] \tensor_\ZZ \QQ$. Da sowohl die Theorie der Vektorräume, in unserem Falle $\QQ$-Moduln, als auch die Theorie der Moduln über Hauptidealringen --- etwa $\laurent \QQ t$ (vgl. Lemma~\ref{lem:QThauptidealring}) ---  sehr überschaubar ist, bietet es sich an auch rationale Alexander Invarianten zu definieren. Allerdings betrachtet diese Arbeit ganzzahlige Alexander Invarianten, also ist die Nützlichkeit der rationalen Alexander Invarianten in diesem Kontext fraglich, es sei denn solche Berechnungen würden zur Bestimmung der ganzzahligen Alexander Invarianten führen. Deswegen dient dieser Abschnitt lediglich dem Hinweis, dass das rationale Alexander Polynom dieselben Informationen wie das ganzzahlige Alexander Polynom enthält, die Berechnung also unabhängig von einer $\laurent \ZZ t$ oder einer $\laurent \QQ t$ Präsentation ist.
+
+	 Bekannterweise nennt man ein Polynom primitiv, falls keine Nichteinheit des zugrunde liegenden Ringes alle Koeffizienten teilt. 
+	 \begin{lem}
+	 \label{lem:primitiv}
+	 	Seien $f,g \in \laurent \ZZ t$ zwei Laurentpolynome und $f$ primitiv. Dann ist die Teilbarkeit von $g$ durch $f$ gleichbedeutend in den Ringen $\laurent \ZZ t$ und $\laurent \QQ t$.
+	 \end{lem}
+	 \begin{proof}
+	 	Falls $f|g$ in $\laurent \ZZ t $ gilt, so trivialerweise in $\laurent \QQ t$. Sei umgekehrt $g=pf$ mit $p \in \laurent \QQ t$. Dann ist für ein $q \in \QQ$ das Polynom $\tilde p \in \laurent \ZZ t$ primitiv mit $q\tilde p = p$. Aber das Produkt zweier primitiver Polynome $\tilde p f = g/q$ ist primitiv, also $q \in \ZZ$.
+	 \end{proof}
+
+	 \begin{bem}
+	 	Hat man eine Präsentationsmatrix $(x_{ij})_{ij}$ eines $\ZZ[F]$-Moduls gegeben, so liefert die Rechtsexaktheit des Tensorierens eine Präsentationsmatrix des tensorierten $\QQ[F]$-Moduls durch $(x_{ij} \tensor 1)_{ij}$.
+	 \end{bem}
+
+	 Unter Ausnutzung von Lemma~\ref{lem:primitiv}, wird in~\cite[Lemma~2.2]{Shinohara.1972} die folgende Proposition mit elementaren Mitteln gezeigt, deswegen sei der einfache Beweis hier übersprungen:
+	 \begin{prop}
+	 	\label{prop:tensoring}
+	 	Sei $A$ ein endlich erzeugter $\laurent \ZZ t$-Modul dessen Alexander Polynom nicht verschwindet. Dann existiert ein eindeutiges $q\in Q$, sodass für $q\Delta^i(A) \in \laurent \ZZ t$ primitiv ist und für $\Delta^i_\QQ(A\tensor \QQ) \in \laurent \QQ t$ gilt:
+	 	\[
+	 		 \Delta^i_\QQ(A) = q\Delta^i(A) 
+	 	\]
+	 \end{prop}
+
+
+\begin{cor}
+	Die ganzzahligen Alexander Polynome $\Delta_\phi^i$ einer Gruppe $G$ sind durch $A_\phi(G) \tensor \QQ$ vollständig charakterisiert.
+\end{cor}
+\begin{proof}
+	Der Beweis folgt direkt durch das Zusammentragen der Ergebnisse aus Beispiel~\ref{bsp:hauptidealelementarteiler}, Proposition~\ref{prop:tensoring} und Lemma~\ref{lem:QThauptidealring}.
+\end{proof}
     \subsection{Rationale Alexander-Invarianten}
         
 
     \subsection{Eigenschaften der Alexander-Polynome}
         
+\subsection{Darstellungen des Alexander Ideals}
+    
+
+Nun vergleicht das vorangegangene Kapitel also die Thurston Norm einer Kohomologieklasse mit dem Rang ihres Kerns. Wie letzerer mit der Alexander Norm in Verbindung steht, stellt folgendes Lemma (vgl.~\cite[Assertion~4]{Milnor.2009}) für $b_1(M)=1$ fest:
+\begin{lem}
+	\label{lem:charPol}
+	Es sei $\phi \in H^1(M;\ZZ)$ eine primitive Klasse und $\ker \phi \tensor \QQ$ ein endlich dimensionaler Vektorraum. Weiter sei $t$ ein Erzeuger der Decktransformationsgruppe von $M_\phi$. Betrachte den rationale Alexander-Modul $H_1(M_\phi;\QQ)$ über dem rationalen Gruppenring $\QQ[\langle t \rangle] = \laurent \QQ t$. Dann ist das Elementarideal $E_0(H_1(M_\phi;\QQ))\subset \QQ[t^{\pm1}]$ ein Hauptideal, das von dem charakteristischen Polynom des induzierten Automorphismus $t_*$ erzeugt wird.
+\end{lem}
+Da $H_1(M;\ZZ)$ als $\ZZ$-Modul eine direkte Summe $H_1(M;\ZZ)/T \oplus T$ mit Torsionsanteil $T$ ist und die direkten Summanden invariant bezüglich jeglichen Automorphismen sind, ergibt sich:
+\begin{cor}
+	Für $b_1(M)=1$ das Alexander Ideal ein Hauptideal. \qed
+\end{cor}
+
+\begin{proof}[Beweis von Lemma~\ref{lem:charPol}]
+	Da $H_1(M_\phi,\QQ)$ ein endlich dimensionaler Vektorraum ist, werden durch den Erzeuger $t$ des Quotienten $\pi_1(M)/\ker(\phi) \cong \ZZ$ der Decktransformationen Relationen auf den Basiselementen $x_1,\cdots,x_n$ eingeführt:	
+	\begin{align*}
+		t_*x_1 &= \sum a_i^1 x_i \\
+				&\vdots \\
+		t_*x_n &= \sum a_i^n x_i
+	\end{align*}
+	Diese Gleichungen definieren genau die quadratische Matrix $A$ des Automorphismus von Vektorräumen $t_* \in \Aut (H_1(M_\phi;\QQ))$ bezüglich der Basis $(x_i)_i$, die also als Spalten die $a^i$ hat. Durch Subtrahieren der obigen Gleichungen, erhält man eine formale Matrix der Form $A-tI$. Diese Matrix ist aber gleichzeitig die Präsentationsmatrix der freien Auflösung:
+	\[
+		\begin{xy}
+			\xymatrix@L+5pt{\laurent \QQ t ^n \ar[r]_{e_r\mapsto \sum a_i^rx_i-tx_r} & \laurent \QQ t ^n \ar[r] & H_1(M_\phi;\QQ) \ar[r] &0\\}
+		\end{xy}
+	\]
+	Entsprechend ist die Determinante dieser Matrix das Elementarideal bezüglich $\laurent \QQ t$, $E_0(M_\phi)=det(A-tI)=\chi(A) \subset \laurent \QQ t $. 
+\end{proof}
+
+
+
+Diese Überlegungen liefern nun einen Zusammenhang zwischen $b_1\ker\phi$ und dem Grad des Alexander Polynoms von $\phi$, welcher für $b_1(M)=1$ mit $||\phi||_A$ übereinstimmt. 
+\begin{cor}
+\label{cor:degreealex}
+	Sei $\phi \in H^1(M;\ZZ)$ eine primitive Klasse. Dann gilt:
+	\[
+		b_1(\ker\phi)=\dim(\ker\phi \tensor \QQ) = \Grad(\Delta_\phi) 
+	\]
+\end{cor}
+\begin{proof}
+	Nach dem vorhergehenden Corollar gilt $\dim \Delta_\phi = n+1 = \Grad(\chi(t_*)) = \Grad(\Delta_\phi)$, wobei $t$ Erzeuger der unendlich zyklischen Decktransformationsgruppe ist. 
+\end{proof}
+
+	Für den nächsten Beweis ist es nützlich von Homologie mit getwisteten Koeffizienten zu sprechen: Sei $G=\pi_1(M)$ und $F=ab(G)=H_1(G)/T$ der maximale freie abelsche Quotient. Dann wird $\ZZ[ab(G)]=\ZZ[F]$ durch Linksmultiplikation mit Elementen aus $G$ zu einem $\ZZ[G]$-Linksmodul. Ebenso wird die zelluläre Kettengruppe $C^{zell}_i(\hat M)$ der universellen Überlagerung $\hat M$, mit den induzierten Automorphismen der Decktransformationsgruppe (kanonisch identifiziert mit $G$) zu einem $\ZZ[G]$-Rechtsmodul. Hier ist verlangt, dass die betrachtete zelluläre Struktur auf $\hat M$ von einer auf $M$ vererbt ist, also die Zellen in der Überlagerung genau den Zusammenhangskomponenten der Urbilder von Zellen in $M$ entsprechen --- nur so erhält man eine freie $\ZZ[G]$-Basis, ähnlich wie in dem Beweis von Proposition~\ref{prop:alexendlerz}. Somit erhält man zu einem gegebenen zellulären Kettenkomplex $C_3(\hat M,\hat p) \to C_2(\hat M,\hat p) \to C_1(\hat M,\hat p) \to C_0(\hat M,\hat p)$, wobei $\hat p = \pi^{-1}(p)$ das Urbild einer Nullzelle $p\in M$ ist, der universellen Überlagerung den tensorierten Kettenkomplex 
+\begin{align}
+			C_3(\hat M,\hat p)\tensor_{\ZZ[G]}\ZZ[ab(G)] \to C_2(\hat M,\hat p)\tensor_{\ZZ[G]}\ZZ[ab(G)]& \to C_1(\hat M,\hat p)\tensor_{\ZZ[G]}\ZZ[ab(G)] \label{eq:twistedcomplex}\\
+			& \to C_0(\hat M,\hat p)\tensor_{\ZZ[G]}\ZZ[ab(G)]  \notag .
+	\end{align}	
+	Man beachte hierbei, dass es sich nun um $\ZZ$-Moduln handelt, da der zugrundeliegende Gruppenring nicht kommutativ sein muss. Aber aus offensichtlichen Gründen, handelt es sich um einen Kettenkomplex von $\ZZ[ab(G)]$-Moduln. Bezeichnet man den Kettenkomplex~\eqref{eq:twistedcomplex} mit $C_\text{\textbullet}(M;\ZZ[ab(G)])$, so können wir nun definieren:
+
+	\begin{defn}
+		Definiere die Homologie mit getwisteten Koeffizienten von $M$ als den $\ZZ[ab(G)]$-Modul 
+		\[
+		 H_i(M,p;\ZZ[ab(G)])=H_i(C_\text{\textbullet}(M;\ZZ[ab(G)])) 	.
+		 \] 
+
+	\end{defn}
+
+	Man sieht leicht ein, dass dies wohldefiniert ist und nicht von der Zellzerlegung von $M$ abhängt. Weiter ergibt sich, dass $\mathfrak A(M) \cong H_1(M,p;\ZZ[ab(G)])$ natürlich isomorph sind. Der Beweis ergibt sich direkt aus dem Resultät aus der Überlagerungstheorie, dass die universelle Überlagerung buchstäblich universell überlagert, also insbesondere die universelle abelsche Überlagerung, siehe etwa~\cite[Kapitel~1.3]{Hatcher.2002}. Genauso überlagert die universelle abelsche Überlagerung jede normale Überlagerung die abelsche Decktransformationsgruppe hat, wegen der universellen Eigenschaft der Abelianisierung.
+    
+    Für die Abschätzung der beiden betrachteten Halbnormen, ist es hier zielführend, dass das Alexander Ideal einer 3-Mannigfaltigkeit eine nicht allzu komplizierte Gestalt annehmen kann. Das nächste Theorem (vgl.\,McMullen~\cite{MCMULLEN.2002}) sichert sogar, dass $\mathfrak I(G)$ ein Produkt maximal dreier Faktoren ist, von denen eines immer der größte Teiler --- das Alexander Polynom --- ist. 
+
+\begin{thm}
+\label{thm:keralexnorm}
+	Sei $G$ die Fundamentalgruppe einer 3-Mannigfaltigkeit $M$, die den Voraussetzungen des Haupttheorems genügt und $\phi:G \to H_1(G)/T \cong ab(G) \cong \ZZ^{b_1(G)}$ die Quotientenabbildung auf den maximalen frei abelschen Quotienten. Dann gilt:
+	\[
+		\mathfrak I(G)=E_1(m(G)/m(\ker\phi)m(G)) = m(ab(G))^{1+b_3(M)}\cdot (\Delta) 
+	\]
+\end{thm}
+\begin{proof}
+	Wie die obige Bemerkung gestattet, zielt der Beweis darauf ab eine Präsentation der getwisteten Homologie $H_1(M,p;\ZZ[ab(G)]\cong \mathfrak A(G)$ zu finden. Diese soll explizit konstruiert werden, durch Betrachtung einer konkreten CW-Struktur und zellulärer Homologie. Glatte 3-Mannigfaltigkeiten sind stets triangulierbar, entweder überzeugt man sich hiervon durch die grundsätzliche Triangulierbarkeit von 3-Mannigfaltigkeiten nach dem Satz von Moise oder man erinnert sich an die Triangulierbarkeit von glatten Mannigfaltigkeiten, die etwa nach dem Satz von Whitehead (vgl.~\cite{WhiteheadJ.H.C..1940}) folgt oder durch explizite Verfahren von Triangulierungen abgeschlossener glatter Untermannigfaltigkeiten des $\RR^N$ zusammen mit dem Whitney Einbettbarkeitssatz. Jedenfalls sei $\tau$ eine Triangulierung von $M$. Um eine explizite und vor allem möglichst simple CW-Struktur zu erhalten, wählt man sich nun zwei möglichst "`große"' Bäume $B,B'$ in den Strukturen von $M$, die der Vereinfachung der CW-Struktur dienen. Und zwar sei $B$ ein maximaler Baum im Graph des 1-Skeletts von $\tau$, also ein zusammenhängender, kreisloser Graph. Dann hat der Quotient $M/B$ nur eine 0-Zelle $p$. Für $B'$ betrachtet man folgende Konstruktion eines Graphen $G'$: Man nehme die Baryzentren aller $3$-Simplices als Knotenmenge und die Kanten verbinden diese Knoten gemäß der trennenden $2$-Simplices von $\tau$. Offensichtlich gilt für jeden Baum in $G'$, dass die zugehörige Vereinigung von $3$-Simplices die aus seinen Knoten hervorgeht ein topologischer Ball ist und der Randoperator auf der Summe der zugehörigen 3-Simplices im Kettenkomplex nur 2-Simplices des Randes ergibt (die inneren 2-Simplices treten jeweils als Differenz auf). Sei also $B'$ ein maximaler Baum in $G'$. Das bedeutet insbesondere, dass $G'/B'$ diffeomorph zu einem Bouquet von Kreisen ist, denn $G'$ ist zusammenhängend, da $M$ zusammenhängend ist. Da getwistete Homologie eine Homotopieinvariante ist, betrachte man den zellulären Kettenkomplex der aus dem CW-Komplex $M/B$ hervorgeht, mit der gewählten Struktur, dass man durch die Konstruktion von $B'$ eine einzige 3-Zelle erhält, die aus Entnahme aller 2-Simplices entsteht die zu den Kanten aus $B'$ gehören. Die Projektion $X \to X/A$ ist stets eine Homotopieäquivalenz, falls $A\into X$ eine Kofaserung und $A$ zusammenziehbar ist, siehe~\cite[Chapter 1, Corollary 5.13]{Whitehead.1995} und $(M,B)$ ist als CW-Paar eine Kofaserung. Aus dieser Struktur geht folgender zellulärer "`getwistete"' Kettenkomplex von $\ZZ[ab(G)]$-Moduln $C_i=C_i^{zell}(\widehat{M/B},\hat p)\tensor_{\ZZ[G]}\ZZ[ab(G)]$ hervor:\todo{ggf Struktur verändern}
+	\[
+		\begin{xy}
+		\xymatrix{C_3 \ar[r]^{\partial_3}  &C_2 \ar[r]^{\partial_2}  &C_1 \ar[r]^{\partial_2} &C_0 },
+		\end{xy}
+	\]
+	wobei $\pi: \widehat{M/B} \to M/B$ die universelle Überlagerung ist.
+
+	Sei $M$ nun zunächst geschlossen. Dann folgt mit Eulercharakteristik und Poincaré Dualität (und Homotopieinvarianz beziehungsweise Wohldefiniertheit der genutzten Invarianten):
+	\[
+		0=b_0(M)-b_3(M)+b_2(M)-b_1(M) = \chi(M) 
+	\]
+	\[
+		= \text{Differenz der Zellen in gerader und ungerader Dimension},
+	\]
+	also folgt, dass die gewählte CW-Struktur jeweils $n$ Zellen in Dimension 1 und 2 hat. Da man nun die relative Homologie zu der ausgezeichneten $0$-Zelle $p$ betrachtet, folgt direkt für den Alexander-Modul $\mathfrak A(G)= H_1(M,p;\ZZ[ab(G)])=C_1/\im(\partial _2)$. Man beachte, dass die $\ZZ[ab(G)]$-Moduln in dem betrachteten Kettenkomplex frei sind, denn: 
+	\begin{align*}
+		C_i &=C_i^{zell}(\widehat{M/B},\hat p)\tensor_{\ZZ[G]}\ZZ[ab(G)] = \ZZ[G]^n \tensor_{\ZZ[G]} \ZZ[ab(G)] = \ZZ[ab(G)]^n\\
+		C_i^{zell}(\widehat{M/B},\hat p) &= \bigoplus_{g \in G} C_i^{zell}(\widehat{M/B},\hat p) = \ZZ[G]^n.
+	\end{align*}
+	Also erhält man eine Präsentation von diesem Modul durch:
+	\[
+		C_2 \stackrel {\partial_2} \longrightarrow C_1 \onto C_1/\im(\partial_2) = \mathfrak A(G).
+	\]
+	$\partial_2$ lässt sich für gewählte $\ZZ[ab(G)]$-Basen von $C_1$ und $C_2$ als Matrix darstellen, deren $(n-1)\times (n-1)$ Minoren die Erzeuger von $\mathfrak I(G)$ liefern. Für die Berechnung dieser Matrix, berechnen wir zuerst $\partial_1$ und $\partial_3$ und nutzen dann $\partial_1\partial_2=0$ und $\partial_2\partial_0=0$.
+
+	Man fixiere für eine $\ZZ[G]$-Basis der $C^{zell}_i(\widehat{M/B})$ einen Fundamentalbereich --- genauer einen Basispunkt $\hat e_0 \in \hat p = \pi^{-1}(p)$ aus dem Urbild der 0-Zelle. An diesem Basispunkt kann eine $\ZZ[G]$-Basis der $C_i^{zell}(\widehat{ M/B})$ innerhalb des Fundamentalbereichs gewählt werden. Die Vereinigung dieser gewählten Zellen liegt dann dicht in dem Fundamentalbereich. Ist also eine beliebige Zelle $e \in C_i^{zell}(\widehat{ M/B})$ gegeben, so entsteht diese aus einem Element $\hat e$ der fixierten Basis aus dem fixierten Fundamentalbereich, durch Multiplikation mit einem $g\in G$ (genauer bedeutet dies eine Anwendung der Decktransformation, die Zellen auf Zellen abbildet), also $g\hat e = e$. Um einzusehen, wie sich eine Basis für die freien $\ZZ[ab(G)]$-Moduln $C_i$ unter den obigen Isomorphismen verhält, stellt man fest, dass für ein beliebiges $e\in C_i^{zell}(\widehat{ M/B})$ gilt: $e\tensor 1 \mapsto g\hat e \tensor 1 = \hat e \tensor [g] \mapsto [g]\hat e $, wobei $\hat e$ die eindeutige fixierte Zelle ist. Die fixierten Zellen bilden die kanonischen Koordinaten von $C_i^{zell}(\widehat{M/B})$ als freien $\ZZ[G]$-Modul und von $C_i \cong \ZZ[ab(G)]^n$ als $\ZZ[ab(G)]$-Modul, wobei beide Moduln jeweils von Rang $n$ wenn $i\in \{1,2\}$ bzw.\,1 sind für $i\in \{0,3\}$. 
+
+	Was geschieht nun durch Anwenden von $\partial_1$? Sei $e$ eine generische 1-Zelle in $C_1^{zell}(\widehat{ M/B})$, dann ist $e=g\hat e$, wobei $\hat e$ aus der fixierten Basis stammt. Das abgeschlossene Bild der 1-Zelle $\overline{\pi(\hat e)}$ stellt per Definition das Bild einer (nicht notwendigerweise glatten, es sind auch keine differenzierbaren Eigenschaften von $M/B$ gefordert) Abbildung $(I,\partial I) \to (M/B,\hat e_0)$ dar, also ein Element $\hat g \in \pi_1(M/B,e_0) = G$. Also berechnet sich das Bild von $\hat e \tensor 1$ unter der Randabbildung durch den (natürlich nicht geschlossenen) Lift dieses Elementes, nämlich $\partial(e\tensor 1)=\partial(g \hat e \tensor 1) = \partial(\hat e \tensor [g])= (\hat e_0 - \hat g \hat e_0)\tensor [g] = (1-[\hat g]) (ge_0\tensor 1)$ oder unter dem Isomorphismus kann man auch $\partial e = \partial(g\hat e)= (1-[\hat g])([g]\hat e_0) $ schreiben, wobei $\hat e_0=\hat p$. Seien also $\hat e_1^1 ,\cdots, \hat e_1^n$ die fixierten 1-Zellen in der Überlagerung, also eine Basis des $\ZZ[F]^n$, dann erhalten wir die Matrixdarstellung des Homomorphismus $\ZZ[F]^n \stackrel {\partial_1} \longrightarrow \ZZ[F]=\langle \hat e_0\rangle$
+	\[
+		\partial_1 = (1-[\hat g_1], \cdots , 1- [\hat g_n]) ,
+	\]
+	wobei $\hat g_i \in \pi_1(M/B,e_0)=G$ die Schleife von $\hat e_1^i$ unter der Projektion in $M/B$ ist.
+
+	Ähnlich fährt man nun mit der Berechnung von $\partial_3$ fort. Sei $\hat e$ eine der fixierten 2"~Zellen aus $C_2^{zell}(\widehat{ M/B})$, also ein Element der gewählten $\ZZ[G]$-Basis von $C_2^{zell}(\widehat M/B)$ und somit auch ein Element der $\ZZ[F]$-Basis von $C_2$. Erinnert man sich an die Wahl von $\tau$, so ist $\hat e$ in $M$ und $M/B$ Seite von zwei 3-Simplices. In $B'$ existiert nun ein eindeutiger (Geodätische in Bäumen sind eindeutig) Pfad, der die Baryzentren dieser zwei 3"~Simplices verbindet. Schließt man diesen Pfad nun zu einer Schleife, durch die zu $\hat e$ gehörige Kante (im Sinne der obigen Konstruktion von $G\supset B'$), so erhält man diese Schleife als Bild $(I,\partial I) \to (M/B,\pi(\hat e))$. Diese definiert ein bis auf Konjugation eindeutiges Element in $G=\pi_1(M/B)$ (durch Wechsel des Basispunktes), also ein eindeutiges Element $\hat h \in F =ab(G)$. Um nun das Bild von der fixierten 3-Zelle $\hat e_3$ unter $\partial_3$ festzustellen, fasse man $\tau/B$ als CW-Struktur auf und erwäge folgendes Diagramm bezüglich der fixierten Basis $\hat e_2^i$ der 2-Simplices und den dazugehörigen eindeutigen $\hat h_i \in F$:
+	
+\begin{center}
+
+\begin{tikzpicture}
+	\node (P0) at (0,0) {$C_3^{\tau,zell}(\widehat {M/B}) $};
+	\node (P1) at (-3,-3) {$C_3^{zell}(\widehat {M/B})$} ;
+	\node (P2) at (3,-3) {$C_2^{zell}(\widehat {M/B})$};
+	\node [font=\scriptsize] (P0r) at (1.7,0.3) {$\sum \hat\sigma_3$};
+	\node [font=\scriptsize] (P0l) at (-1.7,0.3) {$\sum \hat\sigma_3$};
+	\node [font=\scriptsize] (P11) at (-4.7,-2.7) {$\hat e_3$} ;
+	\node [font=\scriptsize] (P22) at (4.7,-2.7) {~$\sum (1-\hat h) \hat e_2^i $};
+	\draw
+	(P0) edge[->,>=angle 90] node[left,outer sep=3.2pt] {$\Sigma$} (P1)
+	(P1) edge[->,>=angle 90]  (P2)
+	(P0) edge[->,>=angle 90] node[right,outer sep=3.2pt] {$\partial$} (P2)
+	(P0r) edge[|->] (P22)
+	(P0l) edge[|->] (P11);
+	\end{tikzpicture}
+\end{center}
+
+
+	Also stellt sich heraus, dass sich die Abbildung $\partial_3$ als darstellende Matrix bezüglich der $\ZZ[F]$-Basis die aus den fixierten 2-Zellen $\hat e_2^1,\cdots, \hat e_2^n$ hervorgeht, wiefolgt auffassen lässt:
+	\[
+		\partial_3 = (1-\hat h_1,\cdots, 1-\hat h_n)^T \in \ZZ[ab(G)]^n
+	\]
+	wobei die $\hat h_i \in F$ mit der obigen Konstruktion eindeutig aus den $\hat e_2^i$ hervorgehen. Offensichtlich gilt jeweils: $\langle [\hat g_i] \rangle = \langle \hat h_i \rangle = ab(G)$. Die konstruktive Arbeit ist nun getan --- von hier an möchten wir für den Rest des Beweises die Topologie vergessen und behandeln unseren Kettenkomplex mit algebraischen Methoden:
+
+	Durch eventuellen Basiswechsel für die Moduln $C_1$ und $C_2$ können wir annehmen, dass bei den Matrixdarstellungen von $\partial_1$ und $\partial_3$ die $g_i:=[\hat g_i]= \hat h_i$ übereinstimmen. Da $F=ab(G)=\ZZ^{b_1(M)}$, können wir für diese Basen weiter annehmen, dass $\langle g_1,\cdots,g_{b_1(M)}\rangle=F$ und für alle anderen $g_i$ mit $i> b_1(M)$, die Matrixeinträge verschwinden, also $g_i=1$. Bezeichne zu dieser Wahl von Basen $M= (m_1,\dots,m_n)$ die darstellende Matrix von $\partial_2$ mit Spalten $m_i\in \ZZ[F]^n$. In den folgenden Matrixberechnungen wird folgende Notation verwendet: $M_{ij}$ bezeichnet die Determinante der $(n-1)\times (n-1)$ Minore, die durch Streichen der $i$-ten Zeile und $j$-ten Spalte entsteht, der Unterstrich $\underline m_j$ betont das Weglassen dieser Spalte und $m_j^i\in \ZZ[F]^{n-1}$ bezeichnet die Spalte, die durch Kürzen um den $i$-ten Eintrag entsteht. Also ist nach dieser Schreibweise $M_{ij}=det(m^i_1, \dots , \underline m^i_j , \cdots m^i_n)$. Das Alexander Ideal $\mathfrak I(G)$ berechnet sich dann aus $\langle M_{ij}| i,j \in \{1,\cdots,n\} \rangle$.
+
+	Zunächst soll ein Zusammenhang zwischen $M_{ij}$ und $M_{ik}$ hergestellt werden unter Ausnutzen der Beziehung $m_k(1-g_k)+\sum_{l \neq k}m_l(1-g_l)= \sum m_l(1-g_l) \underset{(\partial_3  \partial_2=0)} =0$:
+	\begin{align*}
+	&M_{ij}(1-g_k)=\\
+	&	=(1-g_k)\det(m^i_1,\cdots,\underline {m^i_j},\cdots,m^i_n)&=& \det(m^i_1,\cdots,(1-g_k)m^i_k,\dots,\underline {m^i_j},\cdots)\\
+	&				 =\det(m^i_1,\cdots,-\sum^i_{l \neq k}m^i_l(1-g_l),\dots,\underline {m^i_j},\cdots) &=&\det((m^i_1,\cdots,-(1-g_j)m^i_j,\dots,\underline {m^i_j},\cdots)\\
+	&				 =-(1-g_j)\det((m^i_1,\cdots,m^i_j,\dots,\underline {m^i_j},\cdots) &=& \pm M_{ik}(1-g_j)
+	\end{align*}
+
+	Man beachte, dass in der letzten Zeile das $m_j^i$ immer noch an der $k$-ten Stelle steht, also die letzte Gleichheit durch paarweises Vertauschen mit dieser Spalte entsteht. Mit den gleichen Umformungen für Zeilen erhält man ebenso $M_{ij}(1-g_l)=\pm M_{lj}(1-g_i)$. Zusammen ergibt das die Beziehung~\eqref{eq:minors}, aus der alle nötigen Folgerungen gezogen werden können.
+	\begin{equation}
+		M_{ij}(1-g_k)(1-g_l)=M_{ik}(1-g_j)(1-g_l)=M_{lk}(1-g_j)(1-g_i) \label{eq:minors}
+	\end{equation}
+
+	Da $b_1(M)\neq 0$ folgt mit der Wahl der $g_i$, dass $(1-g_1)\neq 0$. Somit folgt mit~\eqref{eq:minors}, dass die Determinanten der Minoren verschwinden, wenn sie die erste $b_1(M)\times b_1(M)$ Hauptminore enthalten, aus der maximal eine Zeile \emph{oder} eine Spalte entnommen wurde. Mit anderen Worten, da $\ZZ[F]$ nullteilerfrei ist folgt mit~\eqref{eq:minors}:
+	\[
+		M_{ij}(1-g_1)^2 = M_{11}\cdot0=0 \implies \mathfrak I(G)= \langle M_{ij}|i,j \leq b_1(M) \rangle
+	\]
+	Seien im Folgenden also stets $i,j\leq b_1(M)$.
+
+	Für die Elemente $M_{ii}$ die aus symmetrischer Kürzung entstehen, liefert~\eqref{eq:minors} die Gleichheit $M_{ii}(1-g_j)^2=\pm M_{jj}(1-g_i)^2$, die nach Annahme an $b_1(M)\geq 2$ nicht-trivial ist. Da aber $\ZZ[F]$ ein faktorieller Ring ist, also die Faktorisierung in Primelemente eindeutig ist und $g_i,g_j$ so gewählt wurden, dass $1-g_i$ und $1-g_j$ koprim sind, ist folgende Wahl gerechtfertigt\footnote{Genaugenommen gilt das in jedem kommutativen Ring mit Eins, da per Definition koprimer Elemente: $M_{11}=M_{11}((1-g_i)^2x +(1-g_1)^2 y)= M_{ii}(1-g_1)^2x + M_{11}(1-g_1)^2y =(1-g_1)^2 (M_{ii}x+ M_{11} y).$}:
+	\[
+		\Delta = \frac{M_{11}}{(1-g_1)^2} = \pm \frac{M_{22}}{(1-g_2)^2} = \cdots = \pm \frac{M_{b_1(M)}}{(1-g_{b_1(M)})^2}
+	\]
+
+	Man erhält:
+	
+	\begin{equation}
+		M_{ii}= \pm \Delta (1-g_i)^2 \label{eq:diagonalelements}
+	\end{equation}
+	Allgemein führt man mit~\eqref{eq:minors} jede Determinante $M_{ij}$ auf~\eqref{eq:diagonalelements} folgendermaßen zurück:
+	\begin{align*}
+		M_{ij} &= \frac{M_{ij}(1-g_1)^2}{(1-g_1)^2} 
+				= \pm \frac{M_{11}(1-g_i)(1-g_j)}{(1-g_1)^2}
+				= \pm \Delta (1-g_i)(1-g_j)\\
+		\implies &\mathfrak I(G) = (\Delta) \cdot m(F)^2 
+	\end{align*}
+	Also folgt das Theorem für geschlossenes $M$, da wegen $F\not\cong\ZZ$ offensichtlich $(\Delta)$ das kleinste Hauptideal ist, das $\mathfrak I(G)$ enthält.
+
+	Falls $M$ nun Rand hat, liefert ein analoger Beweis das Ergebnis. 
+\end{proof} 
+Nun verallgemeinert diese Beschreibung des Alexander Ideals $\mathfrak I(M)$ das entsprechende Resultat aus der Knoten- und Verschlingungstheorie; vgl.\,\cite[Proposition~8.11]{Burde.2003} und \cite[Proposition~9.16]{Burde.2003}. Für den Fall, dass $b_1(M)=1$ (also insbesondere für Knotenkomplemente), so wissen wir bereits, dass $I(M)$ unabhängig der beiden angegebenen Definitionen ein Hauptideal ist. Weiter haben wir in diesem Fall bereits gesehen, wie die Alexander-Norm einer Kohomologieklasse $\phi$ in Zusammenhang mit $b_1(\ker \phi)$ steht (falls $b_1(M)=1$ so stimmt die Alexander-Norm mit dem Grad des Alexander Polynoms überein). Letzteres, also eine Beziehung von $b_1(\ker\phi)$ und $||\phi||_A$, soll nun im Fall für $b_1(M)\geq 1$ hergeleitet werden.
+
+\begin{lem}
+\label{lem:alexnorm}
+	Falls $\Delta_G \neq 0$ mit $G=\pi_1(M)$, so gilt für primitive $\phi \in H^1(M;\ZZ)$, die in einem offenen Kegel durch eine offene berandende Seite des Polytops der Alexander-Einheitskugel liegen:
+	\[
+		b_1(\ker\phi) = ||\phi||_A + 1 + b_3(M)
+	\]
+\end{lem}
+\begin{proof}
+	Zur Berechnung des Alexander Polynoms einer Gruppe verwendet man häufig eine Abbildung auf den maximalen frei abelschen Quotienten, die man auf den ganzzahligen Gruppenringen fortsetzt. Dies ermöglicht einem zwischen verschiedenen Ebenen hin und herzuspringen. Ähnlich soll nun hier $\phi \in H^1(M;\ZZ) \cong \Hom(G,\ZZ) $ fortgesetzt werden: $		\hat \phi:\ZZ[G] \to \laurent \ZZ t$.\\
+	Wendet man diesen fortgesetzten Homomorphismus auf $\Delta_G\in \ZZ G$ an erhält man: \[
+		\hat \phi \Delta_G = \hat \phi (\sum \lambda_i g_i)= \sum \lambda_i \phi(g_i) = \sum \lambda_i t^{\phi(g_i)} = \sum \hat \lambda_{\phi(g_i)} t^{\phi(g_i)}
+	\]
+	Die $\hat \lambda_{\phi(g_i)}$ fassen alle Koeffizienten zum gleichen Monom zusammen, sodass in der Summe kein Gruppenelement mehrfach auftritt. Per Definition gilt also:
+	\[
+		\Grad \phi(\Delta_G) = \sup_{\hat \lambda_{\phi(g_{i/j})} \neq 0} (\phi(g_i)- \phi(g_j))
+	\]
+	Da nun aber $\phi$ aus einem Kegel durch eine offene Seite des Alexander Polytops gewählt wurde, verschwinden unter $\hat \phi$ keine Koeffizienten die den Grad maximieren, also:
+	\[
+		\sup_{\hat \lambda_{\phi(g_{i/j})} \neq 0} (\phi(g_i)- \phi(g_j)) = \sup_{\lambda_i}(\phi(g_i)- \phi(g_j))
+	\]
+	nun folgt das Lemma mit $(\Delta_\phi)=\phi(I(G))=\langle(t-1)^{1+b_1(M)}\hat\phi\Delta_G \rangle	$.
+\end{proof}

@@ -1,16 +1,30 @@
 %!TEX root = main.tex
 
+
 \section{Vorbereitungen der benötigten Theorien}
 \label{sec:vorbereitungen}
 
 \subsection{Über noethersche Moduln und Gruppenringe}
-
+\label{sec:noetherianprinciples}
 Im Folgenden sei $R$ stets ein kommutativer Ring mit $1\neq 0$.
 
 Sei $M$ ein $R$-Modul. Dann ist $M$ noethersch, falls jeder Untermodul endlich erzeugt ist, insbesondere $M$ selbst. Ein Ring ist noethersch wenn er es als Modul über sich selbst ist. 
+
+Da für jeden $R$-Modulhomomorphismus $M\to N$, das Bild der Erzeuger von $M$ das Bild des Homomorphismus erzeugt, gilt folgende Proposition:
+\begin{prop}
+	Sei $M \onto N$ ein $R$-Modulepimorphismus. Dann impliziert die endliche Erzeugbarkeit von $M$ die von $N$. \qed
+\end{prop}
+\begin{cor}
+	Quotienten von endlich erzeugten Moduln sind endlich erzeugt. \qed
+\end{cor}
+\begin{cor}
+\label{cor:noethchaincomplex}
+	Sei $C_\bullet$ ein Kettenkomplex von noetherschen $R$-Moduln. Dann ist die Homologie endlich erzeugt über $R$.\qed
+\end{cor}
+
 \begin{lem}
 \label{lem:epimorphismusnoethersch}
-	Ein Epimorhpismus von einem noetherschen $R$-Modul $M$ in einen weiteren $R$-Modul $L$ impliziert, das $L$ noethersch ist.
+	Ein Epimorphismus von einem noetherschen $R$-Modul $M$ in einen weiteren $R$-Modul $L$ impliziert, das $L$ noethersch ist.
 \end{lem}
 \begin{proof}
 	Jeder Untermodul aus $L$ besitzt ein endliches Erzeugendensystem als Bild endlich vieler Erzeuger des zurückgezogenen Untermoduls.
@@ -22,6 +36,7 @@ Sei $M$ ein $R$-Modul. Dann ist $M$ noethersch, falls jeder Untermodul endlich e
 \begin{proof}
 	Sei $M$ noethersch, so ist es mit Lemma~\ref{lem:epimorphismusnoethersch} auch $N$. $L$ ist isomorph zum Untermodul $\ker(M\to N)$. Umgekehrt erhalten wir für jeden Untermodul $M'$ eine kurze exakte Sequenz von Untermoduln mit den entsprechenden Einschränkungen $\seq {L'}{M'}{N'}$ wobei $L'$ und $N'$ als $R$-Untermoduln endlich erzeugt, somit auch $M'$.
 \end{proof}
+
 
 Sei im Folgenden $M$ noethersch. Dies ist zum Beispiel bei folgender Situation gegeben:
 \begin{cor}
@@ -106,24 +121,29 @@ Da der Laurentring mit $\ZZ$-Koeffizienten kein Hauptidealring ist, ist die vorh
 	Wenn $f_i$ eine Basis von $F$ darstellt, so erhält man offensichtlich einen Isomorphismus.
 \end{proof}
 
-
-
-
-Um die Situation für spätere Berechnungen angenehmer zu gestalten und überhaupt erst die Definition der Alexander Invarianten zu berechtigen, überzeugt man sich zunächst davon, dass der Alexander Modul tatsächlich endlich erzeugt über dem Gruppenring $\ZZ[F]$ ist. 
-
-\begin{prop}
-\label{prop:alexendlerz}
-		$A_\phi(M)$ ist ein endlich erzeugter $\ZZ[F]$-Modul.
-\end{prop}
-\begin{bem}\label{rem:AlexModulendlerz}
-	Eine algebraische Variante des Beweises befindet sich im nachfolgenden Kapitel~\ref{sec:algebra}. 
+\begin{bem}
+\label{bem:einheitengruppenring}
+	Unter dieser Identifikation ergibt sich, dass die Einheiten $\ZZ[F]^\times$ genau die Produkte der Gruppenelemente mit den Einheiten von $\ZZ$ sind also $\pm F \subset \ZZ[F]$.
 \end{bem}
 
-	\begin{proof}
-	Da $M$ eine kompakte 3-Mannigfaltigkeit ist, existiert eine endliche CW Struktur, vergleiche~\cite{Moise.1952}. Da es für CW Komplexe gleichbedeutend ist die zelluläre Homologie zu berechnen, reicht es den zellulären Kettenkomplex einer endlichen CW Struktur zu betrachten. Da in diesem alle Kettengruppen frei und endlich erzeugt von den Zellen der CW Struktur sind, folgt dass in dem Kettenkomplex der Überlagerung (mit der vererbten CW-Struktur) alle Kettengruppen als $\ZZ[F]$-Moduln endlich erzeugt sind, denn die Decktransformationen $F$ assoziieren die Erzeuger der Kettengruppen als $\ZZ$-Moduln der Überlagerung, die das gleiche Bild unter der Überlagerungsabbildung haben. Das bedeutet, für jeden freien $\ZZ$-Summanden der Kettengruppen der Mannigfaltigkeit erhält man einen freien $\ZZ[F]$-Summanden der Kettengruppen der Überlagerung. Wenn jetzt nachgewiesen werden kann, dass das Bilden der Homologie verträglich ist mit dem Bilden der Homologie als Gruppenring Moduln, so wären alle Homologiegruppen der Überlagerung als Quotienten von $\ZZ[F]$-Moduln endlich erzeugt. Aber da die Wirkung von $F$ auf der Homologie durch Diffeomorphismen induziert wird, so ist die Verträglichkeit durch die elementare Tatsache gegeben, dass Abbildungen von Räumen Kettenkomplexabbildungen induzieren, also Verträglichkeit mit den Randoperatoren gegeben ist.
+Der Quotientenkörper von $\ZZ$ besitzt natürlich mehr Einheiten, deswegen ergibt sich für den Laurentring über $\QQ$ die Eigenschaft eines Hauptidealrings.
+\begin{lem}
+\label{lem:QThauptidealring}
+	$\laurent\QQ t$ ist ein Hauptidealring.
+\end{lem}
+Natürlich könnte man $\QQ$ für dieses Lemma durch jeden beliebigen Körper $\KK$ ersetzen. 
+%Allerdings entfällt durch Tensorieren mit einem endlichen Körper nicht jegliche Torsion, entsprechend birgt das mögliche Probleme bei Anwendung des universellen Koeffiziententheorems, da der $\Tor$ Anteil nicht zwangsweise verschwindet und somit gilt Proposition~\ref{prop:tensoring} nicht mehr.
+\begin{proof}
+	Da $\QQ$ ein Körper ist, ist $\QQ[t]$ ein Hauptidealring. Nun ist allgemeiner die Eigenschaft für einen Ring ein Hauptidealring zu sein abgeschlossen unter Lokalisierung. Der Beweis läuft durch Betrachtung der kanonische Lokalisierungsabbildung:
+	\[
+		\alpha : \QQ[t] \to \laurent \QQ t
+	\]
+	Die Ideale in der Lokalisierung sind genau die erweiterten Ideale aus dem ursprünglichen Ring, wegen der Erhaltung durch $\laurent \QQ t \supset I=\alpha_*(\alpha^*(I))$, wobei $\alpha^* = \alpha^{-1}$ die Kontraktion eines Ideals bezeichnet und $\alpha_*(I) = \laurent \QQ t \cdot \alpha(I)$ die Erweiterung eines Ideals. Da aber jedes Element in $\laurent \QQ t$ durch Multiplizieren mit der Einheit $t^N$ im Erzeugnis eines Polynoms liegt, wird ein Erzeuger aus dem Hauptideal $\alpha^*(I)$ auf einen Haupterzeuger in $I$ abgebildet. 
 \end{proof}
+ In der Tat ist dieser Beweis in dem Fall des Laurentrings doch mehr als einleuchtend, allerdings merkt man sich so auch gut den Beweis für allgemeine Lokalisierungen, indem man bemerkt, dass sich das Multiplizieren mit der Einheit $t^N$ einfach erreichen lässt durch Multiplikation mit Elementen aus der multiplikativen Menge an der lokalisiert wurde --- den neuen Einheiten aus dem lokalisierten Ring.
 
-%
+
+
 
 	% Nach dem Hilbertschen Basissatz ist der Polynomring über $\ZZ$ in endlich vielen Variablen noethersch. Ebenso ist die Lokalisierung eines noetherschen Ringes noethersch, da jedes Ideal in der Lokalisierung Bild eines endlich erzeugten Ideals ist. 
 	% Also genügt es eine Surjektion von einem solchen in den Gruppenring zu finden, denn ein surjektiver Ringhomomorhpismus ordnet jedem Ideal im überlagerten Ring ein endlich erzeugtes Ideal im ursprünglichen Ring zu und somit auch ein endliches Erzeugendensystem. Aber ein solcher Epimorphismus von einem --- nach den obigen Überlegungen --- noetherschen Ring ist gegeben durch Ausnutzen der universellen Eigenschaft des Polynomrings und der Lokalisierung:
@@ -263,15 +283,16 @@ Im Folgenden wollen wir häufig den Spezialfall betrachten, dass $\phi: H_1(M) \
 	Ein solches $\phi \in H^1(M;\ZZ)$ heißt primitiv.
 \end{defn}
 
-\subsection{Normen und Halbnormen auf $\ZZ$-Moduln und ihre Fortsetzungen}
+\subsection{Normen und Halbnormen auf freien $\ZZ$-Moduln und ihre Fortsetzungen}
     
-    Ziel der folgenden Kapitel wird es sein, einer Diffeomorphieklasse von Mannigfaltigkeiten eine Halbnorm und somit eine Invariante zuzuordnen. Genauer gesagt werden es sogar mehrere Halbnormen sein. Die Halbnormen werden wir zunächst auf der ersten Kohomologie $H^1(M;\ZZ)$ definieren. 
+    Ziel der folgenden Kapitel wird es sein, einer Diffeomorphieklasse von Mannigfaltigkeiten eine Halbnorm und somit eine Invariante zuzuordnen. Genauer gesagt werden es sogar mehrere Halbnormen sein. Die Halbnormen werden wir zunächst auf der ersten Kohomologie $H^1(M;\ZZ)$ definieren. Die erste Kohomologie eines kompakten topologischen Raumes ist stets torsionsfrei, denn es gilt: $H^1(M;\ZZ) = \Hom(H_1(M;\ZZ);\ZZ) = \Hom(H_1(M;\ZZ)/T;\ZZ) \cong \ZZ^n$, wobei $T$ der Torsionsanteil der abelschen Gruppe $H_1(M;\ZZ)$ ist. Es wurde $\Hom(T;\ZZ)=0$ und $H_1(M;\ZZ) \cong H_1(M;\ZZ)/T \oplus T$ verwendet.
 
     \begin{defn}
-    	Eine ganzzahlige Halbnorm ist eine Abbildung $||\cdot||: \ZZ^n \to \ZZ$  die Skalarmultiplikativität und Subadditivität erfüllt. Also für alle $\lambda \in \ZZ$ und $v,w\in \ZZ^n$ soll $||\lambda v||=\vert\lambda\vert~||v||$ und die Dreiecksgleichung $||v+w||\le ||v||+||w||$ gelten.
+    	Eine ganzzahlige Halbnorm ist eine Abbildung $||\cdot||: \ZZ^n \to \ZZ$  die Skalarmultiplikativität und Subadditivität erfüllt. Also für alle $\lambda \in \ZZ$ und $v,w\in \ZZ^n$ soll $||\lambda v||=\vert\lambda\vert~||v||$ und die Dreiecksungleichung $||v+w||\le ||v||+||w||$ gelten.
     \end{defn}
     Es folgt natürlich aus der Skalarmultiplikativität, dass die $0$ trivial von der Halbnorm ausgewertet wird, da $||0|| = 0||0||$. Gilt auch die Umkehrung, also $||v||=0, v\in \ZZ^n \Rightarrow v=0$, so nennen wir $||\cdot ||$ eine ganzzahlige Norm. Analog seien rationale (Halb-)Normen und reelle (Halb-)Normen definiert. 
     \begin{lem}
+    \label{lem:fortsetzungnorm}
     	Eine ganzzahlige Halbnorm lässt sich auf eine rationale Halbnorm fortsetzen. Eine ganzzahlige oder rationale Halbnorm lässt sich auf eine reelle Halbnorm fortsetzen. Das gleiche gilt für Normen.
     \end{lem}
     \begin{proof}
@@ -289,3 +310,13 @@ Im Folgenden wollen wir häufig den Spezialfall betrachten, dass $\phi: H_1(M) \
          \] 
          Entsprechend lässt sich eine Halbnorm auf $H^1(M;\RR)$ auf $H_1(M;\RR)$ durch den natürlichen Isomorphismus auf den Bidualraum definieren. Weiter lässt sich eine solche Halbnorm der ersten Kohomologie bei kompakten orientierbaren 3-Mannigfaltigkeiten mittels der Dualitätssätze auf $H_2(M,\partial M;\RR)$ übertragen, die wiederum durch Vektorraumdualität eine Halbnorm für $H^2(M,\partial M;\RR)$ liefert.
     \end{bem}
+
+
+    \subsection{Die betrachteten Räume}
+    	Nun noch eine letzte Generalvoraussetzung, die ab sofort verlangt wird:
+
+       \emph{Im Folgenden sei $M$ stets eine kompakte, orientierbare, zusammenhängende $3$-dimen-sionale Mannigfaltigkeit. Falls diese einen Rand hat, sei er diffeomorph zu einer disjunkten Vereinigung von Tori.}
+
+        Um die Hilfsmittel zu erweitern oder Extremfälle auszuschließen, arbeitet man häufig in der Kategorie der stückweise linearen (PL, \textit{piecewise linear}) oder der differenzierbaren Mannigfaltigkeiten. Sieht man sich beispielsweise Knoten an, also Einbettungen $S^1 \into S^3$, so stellt man fest, dass diese besonders ausgeartet aussehen können, allerdings nicht, falls es sich bei der Einbettung um eine PL oder eine differenzierbare Einbettung handelt. Ähnlich kann man in diesen Kategorien raumfüllende Kurven vermeiden. Allerdings stellte sich im Studium der $3$-Mannigfaltigkeiten heraus, dass die Situation sich erheblich von der in höheren Dimensionen unterscheidet. Beispielsweise ist nicht jede Gruppe als Fundamentalgruppe einer $3$-Mannigfaltigkeit realisierbar, eine Einschränkung liefert etwa Theorem~\ref{thm:keralexnorm}. Außerdem lässt sich die Tatsache ergiebig nutzen, dass in Dimension~$3$ keine Unterscheidung der topologischen, der PL und der differenzierbaren Kategorie nötig ist: nach Moise's Theorem~\cite{Moise.1952}, besitzt jede $3$-Mannigfaltigkeit sowohl eine eindeutige PL als auch eine eindeutige differenzierbare Struktur. Das bedeutet, um Aussagen für $3$-Mannigfaltigkeiten zu zeigen, kann man sich (fast) beliebig in diesen Kategorien hin- und herbewegen um das Resultat am Ende für alle zu erhalten. Um diese beiden Beispiele hervorzuheben, lässt sich bemerken, dass der $\RR^4$ überabzählbar viele unterschiedliche differenzierbare Strukturen besitzt und auch jede Gruppe realisierbar als Fundamentalgruppe einer $4$-Mannigfaltigkeit ist.
+
+        Diese Arbeit wird sich jedoch konsistent in der $C^\infty$-Kategorie bewegen. Der vorherige Absatz dient also lediglich der Betonung, dass dies keine Einschränkung bedeutet. 
