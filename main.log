@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  11 JUL 2014 16:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  13 JUL 2014 00:22
 entering extended mode
 **C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
 (C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
@@ -888,14 +888,9 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 librarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-3dplot\tikz-3dplot.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-librarycalc.code.tex"
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-library3d.code.tex"
-File: tikzlibrary3d.code.tex 2013/07/17 v3.0.0 (rcs-revision 1.2)
+librarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 libraryarrows.code.tex"
@@ -905,7 +900,16 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 ex"
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
 \arrowsize=\dimen194
-))) ("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-cd\tikz-cd.sty"
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-3dplot\tikz-3dplot.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+library3d.code.tex"
+File: tikzlibrary3d.code.tex 2013/07/17 v3.0.0 (rcs-revision 1.2)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-cd\tikz-cd.sty"
 Package: tikz-cd 2014/03/08 v0.9b Commutative diagrams with tikz
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tikz-cd\tikzlibrarycd.code.tex"
@@ -1027,29 +1031,29 @@ Package: BA_Titelseite 2010/04/25
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\thurston.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\alexander.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.43799pt on input line 36.
+Package xypdf Info: Line width: 0.43799pt on input line 39.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1077,6 +1081,17 @@ Package caption Info: End \AtBeginDocument code.
 [1
 
 ] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.tex
+Underfull \hbox (badness 1137) in paragraph at lines 6--7
+[]\OT1/cmr/m/n/10.95 Diese Ar-beit besch[]aftigt sich mit der Ver-all-ge-mei-ne
+-rung von
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 6--7
+\OT1/cmr/m/n/10.95 Kno-te-nin-va-ri-an-ten. Das Ziel ist die Aus-ar-bei-tung de
+s Be-wei-
+ []
+
 Package epstopdf Info: Source file: <Images/zyklbott.eps>
 (epstopdf)                    date: 2014-06-30 18:02:54
 (epstopdf)                    size: 3293 bytes
@@ -1085,15 +1100,14 @@ Package epstopdf Info: Source file: <Images/zyklbott.eps>
 (epstopdf)                    size: 2802 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/zyklbott-eps-convert
 ed-to.pdf Images/zyklbott.eps>
-(epstopdf)             \includegraphics on input line 13.
+(epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
-
 <Images/zyklbott-eps-converted-to.pdf, id=23, 169.63374pt x 52.195pt>
 File: Images/zyklbott-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/zyklbott-eps-converted-to.pdf>
 Package pdftex.def Info: Images/zyklbott-eps-converted-to.pdf used on input lin
-e 13.
+e 15.
 (pdftex.def)             Requested size: 169.63332pt x 52.19487pt.
 Package epstopdf Info: Source file: <Images/zyklright.eps>
 (epstopdf)                    date: 2014-06-30 18:03:25
@@ -1103,7 +1117,7 @@ Package epstopdf Info: Source file: <Images/zyklright.eps>
 (epstopdf)                    size: 3504 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/zyklright-eps-conver
 ted-to.pdf Images/zyklright.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
 <Images/zyklright-eps-converted-to.pdf, id=24, 117.43875pt x 587.19376pt>
@@ -1111,55 +1125,52 @@ File: Images/zyklright-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/zyklright-eps-converted-to.pdf>
 Package pdftex.def Info: Images/zyklright-eps-converted-to.pdf used on input li
-ne 27.
+ne 29.
 (pdftex.def)             Requested size: 117.43845pt x 587.19232pt.
 
-Overfull \hbox (33.78862pt too wide) in paragraph at lines 27--28
+Overfull \hbox (33.78862pt too wide) in paragraph at lines 29--30
  []
  []
 
 [2
 
 ]
-Overfull \vbox (22.33559pt too high) has occurred while \output is active []
+Overfull \vbox (22.33937pt too high) has occurred while \output is active []
 
 
 [3 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/zyklbott-eps-convert
 ed-to.pdf> <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/zyklright-ep
-s-converted-to.pdf>]
-
-LaTeX Warning: Reference `sec:defs' on page 4 undefined on input line 41.
-
-) [4] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.tex
-Overfull \hbox (12.08409pt too wide) in paragraph at lines 43--44
+s-converted-to.pdf>]) [4]
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.tex
+Overfull \hbox (12.08409pt too wide) in paragraph at lines 42--43
 []\OT1/cmr/bx/n/10.95 Corollar 2.6. []\OT1/cmr/m/it/10.95 Sei $\OML/cmm/m/it/10
 .95 R$ \OT1/cmr/m/it/10.95 noethersch und $\OML/cmm/m/it/10.95 M$ \OT1/cmr/m/it
 /10.95 end-lich er-zeug-ter $\OML/cmm/m/it/10.95 R$\OT1/cmr/m/it/10.95 -Modul. 
 Dann ist $\OML/cmm/m/it/10.95 M$ \OT1/cmr/m/it/10.95 noethersch. 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
  [5
 
 
 ] [6] [7] <xymatrix
 2x2 130> [8]
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
 
  []
 
 [9] [10]
-Overfull \hbox (17.11122pt too wide) in paragraph at lines 233--234
+Overfull \hbox (17.11122pt too wide) in paragraph at lines 232--233
 []\OT1/cmr/m/n/10.95 Uberlegungen den Nor-mal-tei-ler $[] \OML/cmm/m/it/10.95 
  \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it
 /10.95 M\OT1/cmr/m/n/10.95 )$. In die-sem Sin-ne nen-nen wir die []Uberlagerung
@@ -1167,14 +1178,14 @@ Overfull \hbox (17.11122pt too wide) in paragraph at lines 233--234
  []
 
 [11] <xymatrix 2x2 154>
-Overfull \hbox (4.73431pt too wide) in paragraph at lines 258--259
+Overfull \hbox (4.73431pt too wide) in paragraph at lines 257--258
 []\OT1/cmr/m/n/10.95 Mit ei-ner zu $\OML/cmm/m/it/10.95 $ \OT1/cmr/m/n/10.95 d
 ua-len Fl[]ache ist ei-ne ei-gent-lich ein-ge-bet-te-te ori-en-tier-te 1-kodime
 nsionale
  []
 
 [12] <xymatrix 3x1 130> <xymatrix 3x1 130> [13]
-Overfull \hbox (1.9231pt too wide) in paragraph at lines 310--312
+Overfull \hbox (1.9231pt too wide) in paragraph at lines 309--311
 \OT1/cmr/m/n/10.95 Entsprechend l[]asst sich ei-ne Halb-norm auf $\OML/cmm/m/it
 /10.95 H[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 ; \U/msb/
 m/n/10.95 R\OT1/cmr/m/n/10.95 )$ auf $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95
@@ -1183,10 +1194,10 @@ m/n/10.95 R\OT1/cmr/m/n/10.95 )$ auf $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95
  []
 
 [14]) [15] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\thurston.tex
-<xymatrix 2x2 223> [16
+[16
 
 
-]
+] <xymatrix 2x2 223>
 Package epstopdf Info: Source file: <Images/surgery.eps>
 (epstopdf)                    date: 2014-06-28 11:18:27
 (epstopdf)                    size: 63058 bytes
@@ -1205,16 +1216,8 @@ File: Images/surgery-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Images/surgery-eps-converted-to.pdf used on input line
  47.
 (pdftex.def)             Requested size: 225.85518pt x 85.79364pt.
-
-
-LaTeX Warning: Citation `WhiteheadJ.H.C..1961' on page 17 undefined on input li
-ne 53.
-
-
-LaTeX Warning: Citation `Moise.1977' on page 17 undefined on input line 53.
-
-[17 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/surgery-eps-convert
-ed-to.pdf>] [18]
+ [17 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/surgery-eps-conver
+ted-to.pdf>] [18]
 Overfull \hbox (8.2486pt too wide) in paragraph at lines 67--68
 \OT1/cmr/m/n/10.95 Nun wol-len wir uns ei-ne be-son-de-re Art von Fl[]achen an-
 schau-en, n[]amlich die Re-pr[]asentanten
@@ -1233,29 +1236,17 @@ Overfull \hbox (37.93544pt too wide) in paragraph at lines 91--93
  []
 
 [19] [20] <xymatrix 4x2 232> [21]) [22]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\alexander.tex
-Overfull \hbox (1.70905pt too wide) in paragraph at lines 58--59
-\OT1/cmr/m/n/10.95 erst die De-fi-ni-ti-on der Alex-an-der In-va-ri-an-ten zu b
-e-rech-ti-gen, []uberzeugt man sich zun[]achst
- []
-
-[23
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\alexander.tex [23
 
 
-] [24] [25]
+] [24]
+[25] [26] <xymatrix 2x2 182> [27] [28]
+LaTeX Font Info:    Try loading font information for U+euf on input line 235.
 
-LaTeX Warning: Reference `sec:defs' on page 26 undefined on input line 150.
-
-[26] <xymatrix 2x2 182>
-
-LaTeX Warning: Reference `sec:defs' on page 27 undefined on input line 180.
-
-[27] [28]
-LaTeX Font Info:    Try loading font information for U+euf on input line 236.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\ueuf.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\ueuf.fd"
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [29]
-Overfull \hbox (11.59073pt too wide) in paragraph at lines 268--270
+Overfull \hbox (11.59073pt too wide) in paragraph at lines 278--280
 \OT1/cmr/m/it/10.95 und einen Iso-mor-phis-mus von $\U/msb/m/n/10.95 Z\OT1/cmr/
 m/n/10.95 [\OML/cmm/m/it/10.95 F\OT1/cmr/m/n/10.95 ]$\OT1/cmr/m/it/10.95 -Modul
 n $\OML/cmm/m/it/10.95 A[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n
@@ -1266,34 +1257,30 @@ OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95
  []
 
 <xymatrix 5x5 918> [30]
+Overfull \hbox (5.7028pt too wide) in paragraph at lines 322--323
+[]\OT1/cmr/m/it/10.95 Bemerkung \OT1/cmr/m/n/10.95 4.2.6\OT1/cmr/m/it/10.95 . [
+]\OT1/cmr/m/n/10.95 Der Iso-mor-phis-mus aus Pro-po-si-ti-on 4.5[] lie-fert au-
+er-dem die M[]oglichkeit
+ []
 
-LaTeX Warning: Reference `sec:defs' on page 31 undefined on input line 314.
-
-[31] [32] <xymatrix 4x1 127> [33] [34] <xymatrix 4x1 141> [35]
-Overfull \hbox (1.97725pt too wide) in paragraph at lines 461--462
+[31] [32] [33] <xymatrix 4x1 127> [34] [35] <xymatrix 4x1 141>
+Overfull \hbox (1.97725pt too wide) in paragraph at lines 478--479
 []\OT1/cmr/m/n/10.95 Was ge-schieht nun durch An-wen-den von $\OML/cmm/m/it/10.
 95 @[]$\OT1/cmr/m/n/10.95 ? Sei $\OML/cmm/m/it/10.95 e$ \OT1/cmr/m/n/10.95 ei-n
 e ge-ne-ri-sche 1-Zelle in $\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ([])$,
  []
 
-[36]
-Overfull \hbox (1.31166pt too wide) in paragraph at lines 503--503
+[36] [37]
+Overfull \hbox (1.31166pt too wide) in paragraph at lines 520--520
 [] 
  []
 
-[37] [38]) [39] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.tex
-<xymatrix 4x1 127> [40
+[38] [39]) [40] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.tex
+<xymatrix 4x1 127> [41
 
 
-]
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
- [41] <xymatrix 2x2 130> [42] <xymatrix 5x4 580>
-
-LaTeX Warning: Reference `rem:extendingthurston' on page 43 undefined on input 
-line 106.
-
-[43] [44]
+] [42] [43] <xymatrix 2x2 130> [44] <xymatrix 5x4 580>
+[45] [46]
 Package epstopdf Info: Source file: <Images/hopf.eps>
 (epstopdf)                    date: 2014-06-28 12:21:44
 (epstopdf)                    size: 24754 bytes
@@ -1302,93 +1289,91 @@ Package epstopdf Info: Source file: <Images/hopf.eps>
 (epstopdf)                    size: 8252 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/hopf-eps-converted-t
 o.pdf Images/hopf.eps>
-(epstopdf)             \includegraphics on input line 141.
+(epstopdf)             \includegraphics on input line 155.
 Package epstopdf Info: Output file is already uptodate.
- <Images/hopf-eps-converted-to.pdf, id=203, 497.86pt x 497.86pt>
+ <Images/hopf-eps-converted-to.pdf, id=210, 497.86pt x 497.86pt>
 File: Images/hopf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/hopf-eps-converted-to.pdf>
-Package pdftex.def Info: Images/hopf-eps-converted-to.pdf used on input line 14
-1.
+Package pdftex.def Info: Images/hopf-eps-converted-to.pdf used on input line 15
+5.
 (pdftex.def)             Requested size: 125.47794pt x 125.47505pt.
-
-Underfull \hbox (badness 1173) in paragraph at lines 145--146
+ [47]
+Underfull \hbox (badness 1173) in paragraph at lines 159--160
 []\OT1/cmr/m/n/10.95 Das tri-vi-al-ste nicht-triviale Bei-spiel ei-ner Ver-
  []
 
-[45 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/hopf-eps-converted-
+[48 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/hopf-eps-converted-
 to.pdf>]
-Overfull \hbox (11.27505pt too wide) in paragraph at lines 182--183
+Overfull \hbox (11.27505pt too wide) in paragraph at lines 196--197
 [][] 
  []
 
 
-Overfull \hbox (13.36748pt too wide) in paragraph at lines 198--199
+Overfull \hbox (13.36748pt too wide) in paragraph at lines 212--213
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--203
+Underfull \hbox (badness 10000) in paragraph at lines 172--217
 
  []
 
-[46]
-Overfull \hbox (1.56483pt too wide) in paragraph at lines 276--277
+[49]
+Overfull \hbox (1.56483pt too wide) in paragraph at lines 290--291
 [][] 
  []
 
-[47]) [48] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl [49
+) [50] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl [51
 
-])
-[50] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.aux
+]) [52]
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.aux
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\thurston.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\alexander.aux)
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux)) ) 
 Here is how much of TeX's memory you used:
- 20234 strings out of 493921
- 382650 string characters out of 3147279
- 499452 words of memory out of 3000000
- 23055 multiletter control sequences out of 15000+200000
- 22755 words of font info for 89 fonts, out of 3000000 for 9000
+ 20390 strings out of 493921
+ 385542 string characters out of 3147279
+ 500582 words of memory out of 3000000
+ 23209 multiletter control sequences out of 15000+200000
+ 22752 words of font info for 89 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 64i,19n,96p,2791b,928s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler
-/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
-am10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on main.pdf (52 pages, 579159 bytes).
+ 64i,19n,96p,2791b,1023s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/xypic/xybtip10.pfb>
+Output written on main.pdf (54 pages, 606551 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
+ 330 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

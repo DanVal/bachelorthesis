@@ -91,6 +91,12 @@ Edwin~E. Moise.
   hauptvermutung.
 \newblock {\em Annals of Mathematics}, 56(1):96--114, 1952.
 
+\bibitem{Moise.1977}
+Edwin~E. Moise.
+\newblock {\em Geometric topology in dimensions 2 and 3}, volume~47 of {\em
+  Graduate texts in mathematics}.
+\newblock Springer-Verlag, New York, 1977.
+
 \bibitem{Seifert.1934}
 H.~Seifert.
 \newblock {\em {\"U}ber das Geschlecht von Knoten}.
@@ -128,5 +134,10 @@ George~William Whitehead.
 {Whitehead, J. H. C.}
 \newblock On $c^1$ -complexes.
 \newblock {\em The Annals of Mathematics}, 41(4):809, 1940.
+
+\bibitem{WhiteheadJ.H.C..1961}
+{Whitehead, J. H. C.}
+\newblock Manifolds with transverse fields in euclidean space.
+\newblock {\em Annals of Mathematics}, 73(1):154--212, 1961.
 
 \end{thebibliography}

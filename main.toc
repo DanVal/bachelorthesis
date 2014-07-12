@@ -14,11 +14,11 @@
 \contentsline {subsection}{\numberline {4.2}Algebraische Definitionen}{26}
 \contentsline {subsubsection}{\numberline {4.2.1}Herleitung der algebraischen Idee}{26}
 \contentsline {subsubsection}{\numberline {4.2.2}Eine \IeC {\"a}quivalente Definition von McMullen?}{29}
-\contentsline {subsubsection}{\numberline {4.2.3}Rationale Alexander Invarianten}{31}
-\contentsline {subsection}{\numberline {4.3}Rationale Alexander-Invarianten}{32}
-\contentsline {subsection}{\numberline {4.4}Eigenschaften der Alexander-Polynome}{32}
-\contentsline {subsection}{\numberline {4.5}Darstellungen des Alexander Ideals}{32}
-\contentsline {section}{\numberline {5}Folgerungen, Bemerkungen und Beispiele}{40}
-\contentsline {subsection}{\numberline {5.1}Zu der Thurston-Norm bei \IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{40}
-\contentsline {subsection}{\numberline {5.2}Faserungen}{42}
-\contentsline {subsection}{\numberline {5.3}Knoten und Verschlingungen}{44}
+\contentsline {subsubsection}{\numberline {4.2.3}Rationale Alexander Invarianten}{32}
+\contentsline {subsection}{\numberline {4.3}Rationale Alexander-Invarianten}{33}
+\contentsline {subsection}{\numberline {4.4}Eigenschaften der Alexander-Polynome}{33}
+\contentsline {subsection}{\numberline {4.5}Darstellungen des Alexander Ideals}{33}
+\contentsline {section}{\numberline {5}Folgerungen, Bemerkungen und Beispiele}{41}
+\contentsline {subsection}{\numberline {5.1}\IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{41}
+\contentsline {subsection}{\numberline {5.2}Faserungen}{44}
+\contentsline {subsection}{\numberline {5.3}Knoten und Verschlingungen}{46}

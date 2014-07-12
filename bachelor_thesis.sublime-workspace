@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"norm",
+				"lem:fortsetzungnorm"
+			],
+			[
+				"les",
+				"seq:leshomology"
+			],
+			[
+				"pro",
+				"prop:gruppenringnoethersch"
+			],
+			[
 				"prop",
 				"prop:alexmodules"
 			],
@@ -20,18 +32,10 @@
 	"buffers":
 	[
 		{
-			"file": "examples.tex",
-			"settings":
-			{
-				"buffer_size": 31364,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "proofs.tex",
 			"settings":
 			{
-				"buffer_size": 43603,
+				"buffer_size": 11654,
 				"line_ending": "Windows"
 			}
 		},
@@ -39,7 +43,7 @@
 			"file": "algebra.tex",
 			"settings":
 			{
-				"buffer_size": 18461,
+				"buffer_size": 18501,
 				"line_ending": "Windows"
 			}
 		},
@@ -47,25 +51,7 @@
 			"file": "main.tex",
 			"settings":
 			{
-				"buffer_size": 955,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 23 files for \"alexander norm and thurston\" (regex)\n\nC:\\Users\\Daniel\\Documents\\GitHub\\bachelorthesis\\README.md:\n    2  ==============\n    3  \n    4: My Bachelor thesis investigating the comparison of Alexander norm and Thurston norm presented in McMullens paper, as a generalization of the knot inequality 2g(K) >= deg(A(K))\n    5  \n\nC:\\Users\\Daniel\\Documents\\GitHub\\bachelorthesis\\titlepage.tex:\n   17  \\institut{Mathematisches Institut}\n   18  %Titel der Bachelorarbeit\n   19: \\title{Alexander Norm and Thurston Norm}\n   20  %Do not change!\n   21  \\ausarbeitungstyp{Bachelorarbeit Mathematik}\n\n2 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 630,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "titlepage.tex",
-			"settings":
-			{
-				"buffer_size": 571,
+				"buffer_size": 1114,
 				"line_ending": "Windows"
 			}
 		},
@@ -73,31 +59,7 @@
 			"file": "basics.tex",
 			"settings":
 			{
-				"buffer_size": 25910,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "notizen.tex",
-			"settings":
-			{
-				"buffer_size": 874,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "topology.sty",
-			"settings":
-			{
-				"buffer_size": 1235,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "ref.bib",
-			"settings":
-			{
-				"buffer_size": 21885,
+				"buffer_size": 26272,
 				"line_ending": "Windows"
 			}
 		},
@@ -105,15 +67,49 @@
 			"file": "chapter.tex",
 			"settings":
 			{
-				"buffer_size": 9658,
+				"buffer_size": 34382,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "alexander.tex",
+			"settings":
+			{
+				"buffer_size": 56326,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ref.bib",
+			"settings":
+			{
+				"buffer_size": 22977,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "thurston.tex",
+			"settings":
+			{
+				"buffer_size": 23608,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 25 files for \"wiefolgt\" (case sensitive)\n\nC:\\Users\\Daniel\\Documents\\GitHub\\bachelorthesis\\alexander.tex:\n  487  \n  488  \n  489: 	Also stellt sich heraus, dass sich die Abbildung $\\partial_3$ als darstellende Matrix bezüglich der $\\ZZ[F]$-Basis die aus den fixierten 2-Zellen $\\hat e_2^1,\\cdots, \\hat e_2^n$ hervorgeht, wiefolgt auffassen lässt:\n  490  	\\[\n  491  		\\partial_3 = (1-\\hat h_1,\\cdots, 1-\\hat h_n)^T \\in \\ZZ[ab(G)]^n\n\nC:\\Users\\Daniel\\Documents\\GitHub\\bachelorthesis\\thurston.tex:\n    3  \\section{Die Thurston-Norm}\n    4  	\n    5: 	Nun wollen wir zu der ersten der beteiligten Normen kommen --- der Thurston-Norm auf $H^1(M;\\ZZ)$. Diese verallgemeinert das Geschlecht eines Knotens, denn in dem Fall eines Knotenkomplements ist $H^1(M;\\ZZ)\\cong \\ZZ$ und eine Halbnorm besteht aus der Wahl einer ganzen Zahl für einen Erzeuger. Wählt man das Knotengeschlecht als diese ganze Zahl, so erhält man genau $\\thur \\cdot -1$, vgl.\\,Kapitel~\\ref{sec:links}. Um den roten Faden und die Motivation zu bewahren sei der Beweis von Theorem~\\ref{thm:haupttheorem} wiefolgt skizziert: Zunächst soll $b_1(\\ker\\phi)=b_1(M_\\phi)$ als untere Schranke für die Auswertung der Thurston-Norm an dem surjektiven $\\phi \\in H^1(M;\\ZZ) = \\Hom (\\pi_1(M);\\ZZ)$ herausgestellt werden. Dann wird die Auswertung der Alexander-Norm an einem surjektiven $\\phi$ in Zusammenhang mit $b_1(\\ker\\phi)$ gesetzt. Die Kombination dieser Ergebnisse wird das Theorem liefern. Dieses Kapitel widmet sich der Definition der Thurston-Norm und der unteren Abschätzung durch $b_1(\\ker\\phi)$.\n    6  \n    7  	\\subsection{Eigenschaften der Thurston-Norm}\n\n2 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 1651,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
 			"file": "intro.tex",
 			"settings":
 			{
-				"buffer_size": 5919,
+				"buffer_size": 6881,
 				"line_ending": "Windows"
 			}
 		}
@@ -127,6 +123,22 @@
 			[
 				"brac",
 				"BracketHighlighter: Swap Brackets"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"commen",
+				"Toggle Comment"
 			],
 			[
 				"bracksel",
@@ -155,10 +167,6 @@
 			[
 				"toggsid",
 				"View: Toggle Side Bar"
-			],
-			[
-				"comm",
-				"Toggle Comment"
 			],
 			[
 				"inst",
@@ -274,15 +282,21 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/BA_Titelseite.sty",
-		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/main.lod",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/examples.tex",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/titlepage.tex",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/main.toc",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/main.lod",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/Images/surgery.eps",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/notizen.tex",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/Images/hopf.eps",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/README.md",
-		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/proofs.tex",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/bachelor_thesis.sublime-project",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/ref.bib",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/topology.sty",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/BA_Titelseite.sty",
+		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/proofs.tex",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/README.markdown",
-		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/titlepage.tex",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/Default (Windows).sublime-keymap",
 		"/C/Users/Daniel/Dropbox/Liebe/Faktorenanalyse/fak.tex",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
@@ -290,15 +304,11 @@
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/main.bbl",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/main.log",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/examples.tex",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex",
-		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/ref.bib",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/intro.tex",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/basics.tex",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/chapter.tex",
 		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/algebra.tex",
-		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/notizen.tex",
-		"/C/Users/Daniel/Documents/GitHub/bachelorthesis/topology.sty",
 		"/C/Users/Daniel/Dropbox/Documents/Bachelorarbeit/bachelor_thesis.sublime-project",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/LaTeX.sublime-settings",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
@@ -346,9 +356,30 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"direkten",
+			"wiefolgt",
+			"cor",
+			"left",
+			"bend angle=45,",
+			"M_i",
+			"alpha",
+			"align",
+			"&=&",
+			"$G",
+			"G",
+			"ref",
+			"\\Delta_M",
+			"mathfrak",
+			"I_M",
+			"A_M",
+			"C_",
+			"subsection",
+			"eine algebraische Variante",
+			"bsp",
+			"lem",
 			"alexander norm and thurston",
 			"aus einem",
 			"quot",
@@ -455,35 +486,19 @@
 			",",
 			"1",
 			" \\",
-			"1",
-			"    -",
-			"draw",
-			"   (-",
-			"[]",
-			"axis",
-			"thick",
-			"blue",
-			"bso",
-			"equation",
-			"$",
-			"            [-",
-			"rand",
-			"sum",
-			"osum",
-			"u",
-			"Proposition",
-			"equation",
-			"ZZ",
-			"figure",
-			"wrapfigure",
-			"\\dot"
+			"1"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"wie folgt",
+			"\\mathfrak D",
+			"\\mathfrak",
+			"\\mathfrak I",
+			"\\mathfrak A",
 			"Assoziie",
 			"assoziie",
 			"Diffeo",
@@ -501,102 +516,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "examples.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 31364,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4661,
-								4664
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 523.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "proofs.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 43603,
+						"buffer_size": 11654,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								41905,
-								41905
+								9335,
+								9335
 							]
 						],
 						"settings":
@@ -604,76 +541,76 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close"
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9035.0,
+						"translation.y": 1238.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "algebra.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18461,
+						"buffer_size": 18501,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11725,
-								11725
+								18501,
+								18501
 							]
 						],
 						"settings":
@@ -681,76 +618,76 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close"
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"ref auto trigger": true,
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2189.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "main.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 955,
+						"buffer_size": 1114,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								273,
-								273
+								386,
+								386
 							]
 						],
 						"settings":
@@ -758,50 +695,50 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close"
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
@@ -809,15 +746,423 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "basics.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14889,
+								26272
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"spell_check": false,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 524.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "chapter.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 630,
+						"buffer_size": 34382,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								4142,
+								4142
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 924.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "alexander.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 56326,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										4780,
+										4780
+									]
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								32746,
+								32762
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"_anf_new": "",
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5394.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "ref.bib",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22977,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3207,
+								3207
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "thurston.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								822,
+								822
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"_anf_new": "",
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1651,
 						"regions":
 						{
 							"match":
@@ -826,12 +1171,12 @@
 								"regions":
 								[
 									[
-										209,
-										236
+										329,
+										337
 									],
 									[
-										495,
-										522
+										1071,
+										1079
 									]
 								],
 								"scope": ""
@@ -840,8 +1185,8 @@
 						"selection":
 						[
 							[
-								509,
-								509
+								0,
+								0
 							]
 						],
 						"settings":
@@ -849,50 +1194,50 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close"
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"detect_indentation": false,
 							"line_numbers": false,
@@ -907,486 +1252,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "titlepage.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 571,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								507,
-								507
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "basics.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25910,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								24973,
-								24973
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4765.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "notizen.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 874,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								436,
-								436
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "topology.sty",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1235,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1096,
-								1096
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close"
-							],
-							"syntax": "Packages/LaTeX/TeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "ref.bib",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21885,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10435,
-								10435
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2343.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "chapter.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9658,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5124,
-								5124
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 798.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 9,
 					"file": "intro.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5919,
+						"buffer_size": 6881,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3367,
-								3367
+								3716,
+								3716
 							]
 						],
 						"settings":
@@ -1394,58 +1277,58 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close"
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 572.0,
+						"translation.y": 56.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -1502,52 +1385,124 @@
 		"selected_items":
 		[
 			[
-				"ma",
-				"main.tex"
-			],
-			[
-				"titels",
-				"BA_Titelseite.sty"
-			],
-			[
-				"al",
-				"algebra.tex"
-			],
-			[
 				"ex",
 				"examples.tex"
 			],
 			[
-				"alg",
-				"algebra.tex"
+				"alex",
+				"alexander.tex"
 			],
 			[
-				"pr",
-				"proofs.tex"
+				"exa",
+				"examples.tex"
 			],
 			[
-				"bib",
-				"ref.bib"
+				"th",
+				"thurston.tex"
 			],
 			[
-				"proo",
-				"proofs.tex"
+				"int",
+				"intro.tex"
 			],
 			[
-				"alge",
-				"algebra.tex"
+				"ale",
+				"alexander.tex"
+			],
+			[
+				"thu",
+				"thurston.tex"
+			],
+			[
+				"mai",
+				"main.tex"
 			],
 			[
 				"cha",
 				"chapter.tex"
 			],
 			[
+				"ch",
+				"chapter.tex"
+			],
+			[
+				"t",
+				"thurston.tex"
+			],
+			[
+				"bib",
+				"ref.bib"
+			],
+			[
+				"main",
+				"main.tex"
+			],
+			[
+				"fin",
+				"Find Results"
+			],
+			[
+				"pr",
+				"proofs.tex"
+			],
+			[
 				"bas",
 				"basics.tex"
 			],
 			[
+				"thur",
+				"thurston.tex"
+			],
+			[
+				"ma",
+				"main.tex"
+			],
+			[
+				"proo",
+				"proofs.tex"
+			],
+			[
+				"notiz",
+				"notizen.tex"
+			],
+			[
+				"al",
+				"algebra.tex"
+			],
+			[
+				"pro",
+				"proofs.tex"
+			],
+			[
+				"alg",
+				"algebra.tex"
+			],
+			[
+				"chap",
+				"chapter.tex"
+			],
+			[
 				"ba",
 				"basics.tex"
+			],
+			[
+				"basi",
+				"basics.tex"
+			],
+			[
+				"not",
+				"notizen.tex"
+			],
+			[
+				"c",
+				"chapter.tex"
+			],
+			[
+				"titels",
+				"BA_Titelseite.sty"
+			],
+			[
+				"alge",
+				"algebra.tex"
 			],
 			[
 				"f",
@@ -1558,16 +1513,8 @@
 				"Find Results"
 			],
 			[
-				"pro",
-				"proofs.tex"
-			],
-			[
 				"no",
 				"notizen.tex"
-			],
-			[
-				"c",
-				"chapter.tex"
 			],
 			[
 				"in",
@@ -1598,22 +1545,6 @@
 				"examples.tex"
 			],
 			[
-				"main",
-				"main.tex"
-			],
-			[
-				"not",
-				"notizen.tex"
-			],
-			[
-				"ch",
-				"chapter.tex"
-			],
-			[
-				"int",
-				"intro.tex"
-			],
-			[
 				"",
 				"Find Results"
 			],
@@ -1630,28 +1561,12 @@
 				"ref.bib"
 			],
 			[
-				"chap",
-				"chapter.tex"
-			],
-			[
-				"fin",
-				"Find Results"
-			],
-			[
-				"mai",
-				"main.tex"
-			],
-			[
 				"ref",
 				"ref.bib"
 			],
 			[
 				"re",
 				"README.md"
-			],
-			[
-				"exa",
-				"examples.tex"
 			],
 			[
 				"ti",

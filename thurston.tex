@@ -2,7 +2,7 @@
 
 \section{Die Thurston-Norm}
 	
-	Nun wollen wir zu der ersten der beteiligten Normen kommen --- der Thurston-Norm. Um den roten Faden und die Motivation zu bewahren sei der Beweis von Theorem~\ref{thm:haupttheorem} wiefolgt skizziert: Zunächst soll $b_1(\ker\phi)=b_1(M_\phi)$ als untere Schranke für die Auswertung der Thurston-Norm an dem surjektiven $\phi \in H^1(M;\ZZ) = \Hom (\pi_1(M);\ZZ)$ herausgestellt werden. Dann wird die Auswertung der Alexander-Norm an einem surjektiven $\phi$ in Zusammenhang mit $b_1(\ker\phi)$ gesetzt. Die Kombination dieser Ergebnisse wird das Theorem liefern. Dieses Kapitel widmet sich der Definition der Thurston-Norm und der unteren Abschätzung durch $b_1(\ker\phi)$.
+	Nun wollen wir zu der ersten der beteiligten Normen kommen --- der Thurston-Norm auf $H^1(M;\ZZ)$. Diese verallgemeinert das Geschlecht eines Knotens, denn in dem Fall eines Knotenkomplements ist $H^1(M;\ZZ)\cong \ZZ$ und eine Halbnorm besteht aus der Wahl einer ganzen Zahl für einen Erzeuger. Wählt man das Knotengeschlecht als diese ganze Zahl, so erhält man genau $\thur \cdot -1$, vgl.\,Kapitel~\ref{sec:links}. Um den roten Faden und die Motivation zu bewahren sei der Beweis von Theorem~\ref{thm:haupttheorem} wie folgt skizziert: Zunächst soll $b_1(\ker\phi)=b_1(M_\phi)$ als untere Schranke für die Auswertung der Thurston-Norm an einem surjektiven $\phi \in H^1(M;\ZZ) = \Hom (\pi_1(M);\ZZ)$ herausgestellt werden. Dann wird die Auswertung der Alexander-Norm an einem surjektiven $\phi$ in Zusammenhang mit $b_1(\ker\phi)$ gesetzt. Die Kombination dieser Ergebnisse wird das Theorem liefern. Dieses Kapitel widmet sich der Definition der Thurston-Norm und der unteren Abschätzung durch $b_1(\ker\phi)$.
 
 	\subsection{Eigenschaften der Thurston-Norm}
 
@@ -93,15 +93,48 @@ Nun wollen wir uns eine besondere Art von Flächen anschauen, nämlich die Repr�
 	 \[
 	  \hat S \stackrel i \into M = \hat S \stackrel j \into \overline{M_i} \stackrel k \into M,	 	
 	 \]
-	 und mit der Funktorialität der Homologie faktorisiert auch $H_2(i)=H_2(k)H_2(j)$, aber die Inklusion des Ranges ist homolog trivial $H_2(j)=0$. Hier benutzt man, dass der Rand einer orientierten Mannigfaltigkeit als Homologieklasse mit Kodimension $1$ nullhomolog ist (aus der langen exakten Sequenz für das (orientierte) Paar folgt, dass die Inklusion von Rändern auf der Homologie der Kodimension 1 eine triviale Abbildung induziert, da der Randoperator einen Isomorphismus induziert, der die relative Fundamentalklasse auf die Fundamentalklasse des Randes abbildet). Falls $M$ jedoch nicht geschlossen ist, so folgt mit einem einfachen Schnittzahlenargument, dass jede Homologieklasse als transversale Schleife ausgewertet auf $[\hat S]$ (als duale Kohomologieklasse), die Summe der transversalen Schnitte mit Vorzeichen ergibt, somit $\hat S$ dual zu dem trivialen Homomorphismus $\pi_1(M) \stackrel 0\to \ZZ$ ist, also selbst nullhomolog. Folglich würde dies eine Fläche mit $|I|$ weniger Komponenten und somit einen Widerspruch liefern:
+	 und mit der Funktorialität der Homologie faktorisiert auch $H_2(i)=H_2(k)H_2(j)$, aber die Inklusion des Randes $H_2(j)([S])=0$ ist wertet die Fundamentalklasse trivial aus\footnote{Das folgt aus der exakten Sequenz für das Paar $H_n(N^n, \partial N) \to H_{n-1}(\partial N) \to H_{n-1}(N^n)$, da der Randoperator die (relative) Fundamentalklasse auf die Fundamentalklasse des Randes abbildet und diese somit im Kern der Inklusion ist.}. Im Allgemeinen Fall betrachtet man den Graph $F$ der aus Konstruktion~\ref{constr:graph} bezüglich $\hat S$ entsteht. Das Ergebnis dieser Konstruktion war es, dass der zu $[\hat S]$ duale Homomorphismus auf den Homologien (unter der Identifikation aus Bemerkung~\ref{bem:fundhomologie}) über $F$ faktorisiert. Aber dieser hat folgende Form:
+\todo{pic}
+\begin{center}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.5cm,
+  thick,main node/.style={circle,fill=black!1,draw}]
+
+  \node[main node] (1) {};
+  \node  (2) [below  of=1] {\huge{...}};
+  \node[main node] (3) [below  of=2] {};
+  \node (l2) [left of=2]{};
+  \node (l) [left of=l2]{};
+  \node (ll) [left of=l]{};
+	\node (lll) [left of=ll] {$M$};
+	\node (r2) [right of=2]{};
+  \node (r) [right of=r2]{};
+  \node (rr) [right of=r]{};
+	\node [main node] (rrr) [right of=rr] {};
+	\node (F) [right of=3] {$F$};
+\node (S) [below of=rrr] {$S^1$};
+  \path[every node/.style={font=\sffamily\small}]
+    (1) 
+        edge [bend angle=45,bend right] node[left] {$S_i$} (3)
+        edge [bend angle=45,bend left]  node[right] {$S_j$} (3)
+         edge [bend right] node[left] { } (3)
+        edge [bend left]  node[right] { } (3)
+     (ll) edge (l)
+     (r) edge (rr)
+    (rrr) 
+    	edge[loop right, looseness=15, min distance=15mm] node { } (rrr);
+\end{tikzpicture}
+\end{center}
+
+	  Jede Komposition $S^1 \to M \to F \to S^1$ hat somit Grad 0, aber da Homotopieklassen $[S^1,S^1]$ durch den Grad klassifiziert sind, ist somit $[\hat S]$ dual zu dem trivialen Homomorphismus $\pi_1(M) \to H_1(M) \to \ZZ$ ist, also ist $[\hat S] = 0$ . Folglich stellt die Trivialität von $\hat S$ einen Widerspruch zur Minimalität von $S$ dar, da man eine Fläche mit $|I|$ weniger Komponenten erhält:
 	 \[
-	 	[S]=[\sqcup_{i\not \in I} S_i\bigsqcup \sqcup_{i\in I} S_i] = [\sqcup_{i\not \in I} S_i ]+[ \sqcup_{i\in I} S_i] = [\sqcup_{i\not \in I}S_i]
+	 	[S]=[\sqcup_{i\not \in I} S_i\bigsqcup \sqcup_{i\in I} S_i] = [\sqcup_{i\not \in I} S_i ]+[ \sqcup_{i\in I} S_i] = [\sqcup_{i\not \in I}S_i].
 	 \]
-	 Betrachtet man nun, wissend dass $G$ ein topologischer Kreis ist, die induzierte Abbildung auf der Homologie $(G\to S^1)_*$, so ist diese ein Isomorphismus, da $\phi$ primitiv ist. Also besitzt $G$ nur eine Kante und die Fläche $S$ ist zusammenhängend.
 
-	 Die nächste Gleichheit --- \emph{die Übereinstimmung des Ranges auf den Top-Homologien von $S$ und $M$} --- hängt von der Existenz eines Randes ab. Da $(S,\partial S) \subset (M,\partial M)$ folgt aus $\partial S \neq \emptyset$ direkt $b_2(S)=b_3(M)=0$. Falls $S$ aber leeren Rand hat, gilt $b_2(S)=1$ und es muss $b_3(M)=1$ gezeigt werden. Dazu wird die Existenz eines Randes von $M$ widerlegt:
+	 Betrachtet man nun --- wissend dass $G$ ein topologischer Kreis ist --- die induzierte Abbildung auf der Homologie $(G\to S^1)_*$, so ist diese ein Isomorphismus, da $\phi$ primitiv ist. Also besitzt $G$ nur eine Kante und die Fläche $S$ ist zusammenhängend.
 
-	 Nach Annahme existeren nur Tori als Randkomponenten. Sei $T \subset \partial M$ eine solche Randkomponente. Da $S$ keinen Rand hat, also $T$ nicht berührt, enthält die durch Aufschneiden an $S$ erhaltene unendlich zyklische Überlagerung $M_\phi$ auch unendlich zyklisch viele Kopien von $T$ als Randkomponenten. Genauer: Unter Verwendung dieser Aufschneide-Konstruktion~\ref{constr:cut}, liftet $T$ in jedes $M_i \cong M - S \supset T$, auf der sich die Projektion zu einem Diffeomorphismus einschränkt. Im Folgenden soll die Notation $\overline M_i$ für die (wieder) kompakte (Unter-)Mannigfaltigkeit von $M_\phi$ verwendet werden, die den Fundamentalbereich darstellt, der $M_i$ enthält. Zusammen mit der langen exakten Sequenz für eine kompakte orienierbare Mannigfaltigkeit $(N,\partial N)$
+	 \emph{Die Übereinstimmung des Ranges auf den Top-Homologien von $S$ und $M$} bedeutet die gemeinsame Existenz oder Nicht-Existenz eines Randes von $S$ und $M$. Da $(S,\partial S) \subset (M,\partial M)$ folgt aus $\partial S \neq \emptyset$ direkt $b_2(S)=b_3(M)=0$. Falls $S$ aber leeren Rand hat, gilt $b_2(S)=1$ und es muss $b_3(M)=1$ gezeigt werden. Dazu wird die Existenz eines Randes von $M$ widerlegt:
+
+	 Nach Annahme existeren nur Tori als Randkomponenten von $M$. Sei $T \subset \partial M$ eine solche Randkomponente. Da $S$ keinen Rand hat, also $T$ nicht berührt, erhält man mit der durch Aufschneiden an $S$ entstehenden unendlich zyklischen Überlagerung $M_\phi$ auch unendlich zyklisch viele Kopien von $T$ als Randkomponenten. Genauer: Unter Verwendung der Konstruktion~\ref{constr:cut}, liftet $T$ in jede aufgeschnittene Kopie $M_i \cong M - S \supset T$, auf der sich die Projektion zu einem Diffeomorphismus einschränkt. Im Folgenden soll die Notation $\overline M_i$ für die (wieder) kompakte (Unter-)Mannigfaltigkeit von $M_\phi$ verwendet werden, die den Fundamentalbereich darstellt, der $M_i$ enthält. Zusammen mit der langen exakten Sequenz für eine kompakte orientierbare Mannigfaltigkeit $(N,\partial N)$
 	\[
 	 \begin{xy}
 	 	\xymatrix{
@@ -111,34 +144,36 @@ Nun wollen wir uns eine besondere Art von Flächen anschauen, nämlich die Repr�
 	 \] 
 	 und der daraus folgenden Abschätzung
 	 \[
-	 	b_1(\partial N) = \dim(\im \delta) + \dim(\im i_*) \leq  2b_1(N)
+	 	b_1(\partial N) = \dim(\im \delta) + \dim(\im i_*) \leq  2b_1(N),
 	 \]
 	 erhält man für jede kompakte zusammenhängende (man bemerke die implizite Anforderung an $I\subset \ZZ$) Untermannigfaltigkeit der Form 
 	 \[
-	  	\bigcup_{i\in I} \overline M_i \subset M_\phi 
+	  	\bigcup_{i\in I} \overline M_i \subset M_\phi ,
 	  \]
 	  die Abschätzung:
 	  \[
-	   	b_1(\bigcup_{i\in I} \overline M_i)\geq \frac{1}{2}b_1(\partial \bigcup_{i\in I} \overline M_i) \geq \frac{1}{2}b_1(\sqcup_{i \in I}T) = |I|
+	   	b_1(\bigcup_{i\in I} \overline M_i)\geq \frac{1}{2}b_1(\partial \bigcup_{i\in I} \overline M_i) \geq \frac{1}{2}b_1(\sqcup_{i \in I}T) = |I|.
 	  \]
 
 
-	 \noindent Nun folgt aber aus der Mayer Vietoris Sequenz (für entsprechende offene Umgebungen\footnote{Stichworte hier: das allgemeine Theorem über Tubenumgebungen, Umgebungsdeformationsretrakt}) die exakte Sequenz:
+	 \noindent Nun folgt aber aus der Mayer Vietoris Sequenz (für entsprechende offene Umgebungen\footnote{Für Untermannigfaltigkeiten gilt das allgemeine Theorem über Tubenumgebungen, sie sind also Umgebungsdeformationsretrakte.}) die exakte Sequenz
 	  \[
-	  	\cdots\to H_1(S\sqcup S;\QQ) \to H_1(\bigcup_{i \in I} \overline M_i;\QQ) \oplus H_1(M_\phi -\bigcup_{i \in I} \overline M_i;\QQ) \to H_1(M_\phi;\QQ) \to 0
+	  	\cdots\to H_1(S\sqcup S;\QQ) \to H_1(\bigcup_{i \in I} \overline M_i;\QQ) \oplus H_1(M_\phi -\bigcup_{i \in I} \overline M_i;\QQ) \to H_1(M_\phi;\QQ) \onto \QQ
 	  \]
 	  und somit
 	  \[
-	  	b_1(M_\phi)= b_1(\bigcup_{i \in I} \overline M_i)+b_1(M_\phi -\bigcup_{i \in I} \overline M_i)-b_1(S\sqcup S) \geq |I| -2b_1(S)
+	  	b_1(M_\phi) -1= b_1(\bigcup_{i \in I} \overline M_i)+b_1(M_\phi -\bigcup_{i \in I} \overline M_i)-b_1(S\sqcup S) \geq |I| -2b_1(S).
 	  \]
 	  Da aber $b_1(M_\phi)$ nach Voraussetzung endlich ist und $|I|$ beliebig groß, folgt also, dass der Rand von $M_\phi$ keine Tori enthält und somit leer ist.
 
 	  Um nun noch\emph{ die Abschätzung $b_1(M_\phi) \leq b_1(S)$ }zu zeigen, wird erneut die Konstruktion der Überlagerung durch Aufschneiden und Verkleben zur Hilfe genommen. Da $\ker\phi \tensor \QQ \cong H_1(M_\phi;\QQ)$ nach Voraussetzung ein endlich erzeugter $\QQ$-Vektorraum ist, wird $H_1(M_\phi;\QQ)$ von einem kompakten Teilraum, etwa der Untermannigfaltigkeit $\overline M_1 \cup \cdots \cup \overline M_k \into M_\phi$ und somit auch $t^k(\overline M_1 \cup \cdots \cup \overline M_k )  = \overline M_{k+1} \cup \cdots \cup \overline M_{2k}\into M_\phi$, erzeugt (heißt: die Inklusionen erzeugen Epimorphismen auf der ersten Homologie). Mit diesem Wissen liefert die folgende exakte Sequenz (induziert nach Mayer-Vietoris) die gesuchte Abschätzung:
 	  \[
-	  	\cdots \to H_1(S;\QQ) \to H_1(\bigcup_{i\leq k}\overline M_i;\QQ) \oplus H_1(\bigcup_{i>k} \overline M_i;\QQ) \onto H_1(M_\phi;\QQ)
+	  	\cdots \to H_1(S;\QQ) \to H_1(\bigcup_{i\leq k}\overline M_i;\QQ) \oplus H_1(\bigcup_{i>k} \overline M_i;\QQ) \onto H_1(M_\phi;\QQ).
 	  \]
 \end{proof}
-
+\begin{bem}
+	Falls man in der letzten exakten Sequenz nicht über die Dimensionen von Vektorräumen argumentieren möchte, so kann man explizit verwenden, dass der Zykel $\sigma \in H_1(M_\phi;\QQ)$ im Bild der Inklusionen ist. Also kann man $\sigma \in H_1(\cup_{i\leq k} \overline{M_i};\QQ)$ und $\sigma \in H_1(\cup_{i > k} \overline{M_i};\QQ)$ auffassen. Es gilt also wegen $(\sigma,\sigma) \mapsto \sigma-\sigma=0$  und der Exaktheit der Sequenz, dass $(\sigma,\sigma)$ im Bild der Abbildung $x \mapsto (x,x)$ ist, also erzeugt $S$ die rationale Homologie von $M_\phi$.
+\end{bem}
 \begin{bem}
 Da die erste Homologie der Überlagerung natürlich bessere Chancen hat, als Modul, durch Vergrößerung des Grundrings, über dem Gruppenring $\ZZ\subset \laurent \ZZ t$ endlich erzeugt zu sein, stellt sich die Frage, ob, wie und warum es sinnvoll oder möglich wäre das eben bewiesene für diesen Fall zu verallgemeinern. Dies wird später mit Hilfe der weiteren Lemmas in Kapitel~\ref{verallggruppenring} diskutiert. 
 \end{bem}
