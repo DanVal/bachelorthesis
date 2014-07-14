@@ -6,17 +6,17 @@
 \contentsline {subsection}{\numberline {2.3}Konstruktionen}{11}
 \contentsline {subsection}{\numberline {2.4}Normen und Halbnormen auf freien $\mathbb {Z}$-Moduln und ihre Fortsetzungen}{15}
 \contentsline {subsection}{\numberline {2.5}Die betrachteten R\IeC {\"a}ume}{16}
-\contentsline {section}{\numberline {3}Die Thurston-Norm}{17}
-\contentsline {subsection}{\numberline {3.1}Eigenschaften der Thurston-Norm}{17}
-\contentsline {subsection}{\numberline {3.2}$||\cdot ||_T$-minimierende Fl\IeC {\"a}chen}{20}
-\contentsline {section}{\numberline {4}Die Alexander-Invarianten}{24}
-\contentsline {subsection}{\numberline {4.1}Topologische Definitionen}{24}
-\contentsline {subsection}{\numberline {4.2}Algebraische Definitionen}{27}
-\contentsline {subsection}{\numberline {4.3}Rationale Alexander-Invarianten}{33}
-\contentsline {subsection}{\numberline {4.4}Eigenschaften der Alexander-Polynome von Kohomologieklassen}{33}
-\contentsline {subsection}{\numberline {4.5}Darstellungen des Alexander-Ideals}{35}
-\contentsline {section}{\numberline {5}Beweis des Theorems}{41}
-\contentsline {section}{\numberline {6}Folgerungen, Bemerkungen und Beispiele}{42}
-\contentsline {subsection}{\numberline {6.1}\IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{42}
-\contentsline {subsection}{\numberline {6.2}Faserungen}{45}
-\contentsline {subsection}{\numberline {6.3}Knoten und Verschlingungen}{47}
+\contentsline {section}{\numberline {3}Die Thurston-Norm}{18}
+\contentsline {subsection}{\numberline {3.1}Eigenschaften der Thurston-Norm}{18}
+\contentsline {subsection}{\numberline {3.2}$||\cdot ||_T$-minimierende Fl\IeC {\"a}chen}{21}
+\contentsline {section}{\numberline {4}Die Alexander-Invarianten}{25}
+\contentsline {subsection}{\numberline {4.1}Topologische Definitionen}{25}
+\contentsline {subsection}{\numberline {4.2}Algebraische Definitionen}{28}
+\contentsline {subsection}{\numberline {4.3}Rationale Alexander-Invarianten}{34}
+\contentsline {subsection}{\numberline {4.4}Eigenschaften der Alexander-Polynome von Kohomologieklassen}{34}
+\contentsline {subsection}{\numberline {4.5}Darstellungen des Alexander-Ideals}{36}
+\contentsline {section}{\numberline {5}Folgerungen, Bemerkungen und Beispiele}{42}
+\contentsline {subsection}{\numberline {5.1}Beweis des Theorems}{42}
+\contentsline {subsection}{\numberline {5.2}\IeC {\"U}berlagerungen mit unendlich gro\IeC {\ss }er Bettizahl}{43}
+\contentsline {subsection}{\numberline {5.3}Faserungen}{46}
+\contentsline {subsection}{\numberline {5.4}Knoten und Verschlingungen}{48}

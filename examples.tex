@@ -1,12 +1,46 @@
 %!TEX root = main.tex
 
 \section{Folgerungen, Bemerkungen und Beispiele}
-    Dieses Kapitel dient der Reflektion der bisherigen Ergebnisse. Zuerst präsentiert \ref{verallggruppenring} einige weiterführende Überlegungen zum Beweis des Theorems, anschließend wird in~\ref{sec:fibrations} der Fall von Faserbündeln über dem Kreis behandelt und abschließend beinhaltet~\ref{sec:links} Beispiele und Berechnungen im Falle von Knoten und Verschlingungen.
+    Dieses Kapitel dient der Reflektion der bisherigen Ergebnisse. Zuerst präsentiert das erste Unterkapitel den Abschluss des Beweises von Theorem~\ref{thm:haupttheorem}. Dann zeigt \ref{verallggruppenring} einige weiterführende Überlegungen zum Beweis des Theorems, anschließend wird in~\ref{sec:fibrations} der Fall von Faserbündeln über dem Kreis behandelt und abschließend beinhaltet~\ref{sec:links} Beispiele und Berechnungen im Falle von Knoten und Verschlingungen.
+
+\subsection{Beweis des Theorems}
+
+Mit dem folgenden Kombinieren der Ergebnisse endet schließlich der Beweis des Haupttheorems.
+
+\begin{proof}[Beweis von Theorem~\ref{thm:haupttheorem}(McMullen)]
+    Sei wieder $G=\pi_1(M)$ und ohne Einschränkung $\Delta_G\neq 0$ und $b_1(\ker\phi)<\infty$, vgl.\ Kapitel~\ref{verallggruppenring}. Definiere weiter \[
+    P=\begin{cases}
+        b_3(M)+1 &, \text{ falls } b_1(M) \geq 2    \\
+        0
+    \end{cases}
+    \]  
+    Nach Corollar~\ref{cor:degreealex} zusammen mit Corollar~\ref{cor:alexnorm} folgt, dass für alle primitiven $\phi \in H^1(M;\ZZ)$ die in einem offenen Kegel zu einer Seite der Alexander-Einheitskugel liegen, die folgende Gleichheit gilt:
+    
+        \begin{equation}
+        b_1(\ker\phi)= \alex \phi + P \label{eq:alexnorm}.
+        \end{equation}
+    
+    Nach Lemma~\ref{lem:norm} und Lemma~\ref{lem:alexdefinesseminorm} definieren sowohl Thurston- auch als Alexander-Norm jeweils Halbnormen. Folglich ist es keine Einschränkung die Aussage für diese $\phi$ zu zeigen. Zu diesem fixierten $\phi$ wähle man gemäß Lemma~\ref{lem:minS} eine zu $\phi$ duale eingebettete orientierte Fläche $S$ mit den geforderten Minimalitätseigenschaften. Aus dem Lemma folgt dann, dass wir eine obere Schranke erhalten:
+    \begin{equation}
+        b_1(\ker\phi) \leq b_1(S) \label{eq:obereSchrankeS}
+    \end{equation}
+    Ohne Einschränkung habe $S$ nicht-positive Eulercharakteristik, da sonst wegen $b_1(S)= b_0(S) + b_2(S) - \chi(S) \leq 1$, die obere Schranke für $b_1(\ker\phi)\leq 1$  mit \eqref{eq:alexnorm} impliziert, dass die Alexander-Norm verschwindet (man beachte hierbei und im Folgenden die Fälle $b_2(S)=b_3(M) \in \{0,1\}$). Das Theorem folgt nun aus Zusammensetzung der erarbeiteten Gleichungen:
+    
+        \begin{align*}
+        \thur \phi = -\chi(S) &= b_1(S)-b_0(S)-b_1(S)\\
+                    &\geq b_1(\ker\phi) -1-b_3(M) &&= \alex \phi +P -b_3(M)-1\\
+                    &&& = \begin{cases}
+                        \thur \phi &, \text{falls } b_1(M)\geq 2\\
+                        \thur \phi -b_3(M)-1
+                    \end{cases}
+        \end{align*}
+\end{proof} 
+    Die einzige Abschätzung entsteht aus der Wahl der Fläche bei Lemma~\ref{lem:minS} durch $b_1(\ker\phi)\leq b_1(S)$. Dass diese bei einer Faserung zu einer Gleichheit wird, diskutiert das Kapitel~\ref{sec:fibrations}. 
 
     \subsection{Überlagerungen mit unendlich großer Bettizahl}
         
     \label{verallggruppenring}
-    Wie oben bereits vorgeschlagen, kann man nun die Frage stellen, welche Anforderungen man an eine Thurston-minimierenden Fläche stellen darf, falls $b_1(\ker\phi)=\infty$; also inwieweit lässt sich Lemma~\ref{lem:minS} verallgemeinern? Intuitiv würde man einer unendlich zyklischen Überlagerung schnell die Fähigkeit absprechen, endlich erzeugte Homologiegruppen (über $\ZZ$) zu haben --- sind diese Voraussetzungen vielleicht zu restriktiv? Die gute Nachricht ist, dass die obige Beweisidee auch Möglichkeiten zur Abschätzung von $\thur \phi$ liefert, wenn man nur die endliche Erzeugbarkeit von $\ker\phi$ als $\laurent \QQ t$-Modul fordert. Diese endliche Erzeugbarkeit ist nach den Überlegungen in Proposition~\ref{prop:alexendlerz} oder Corollar~\ref{cor:alexendlerz} stets gegeben.. Ob oder wann dies sinnvoll ist, soll nun diskutiert werden.
+    Wie oben bereits vorgeschlagen, kann man nun die Frage stellen, welche Anforderungen man an eine Thurston-minimierenden Fläche stellen darf, falls $b_1(\ker\phi)=\infty$; also inwieweit lässt sich Lemma~\ref{lem:minS} verallgemeinern? Intuitiv würde man einer unendlich zyklischen Überlagerung schnell die Fähigkeit absprechen, endlich erzeugte Homologiegruppen (über $\ZZ$) zu haben --- sind diese Voraussetzungen vielleicht zu restriktiv? Die gute Nachricht ist, dass die obige Beweisidee auch Möglichkeiten zur Abschätzung von $\thur \phi$ liefert, wenn man nur die endliche Erzeugbarkeit von $\ker\phi$ als $\laurent \QQ t$-Modul fordert. Diese endliche Erzeugbarkeit ist nach den Überlegungen in Proposition~\ref{prop:alexendlerz} oder Corollar~\ref{cor:alexendlerz} stets gegeben. Ob oder wann dies sinnvoll ist, soll nun diskutiert werden.
 
     Die folgende Proposition kann als Verallgemeinerung der Formel $b_1(\ker\phi)=\Grad\Delta_\phi$ aus Corollar~\ref{cor:degreealex} gesehen werden:
     \begin{prop}
@@ -21,19 +55,19 @@
     	\]
     	Somit berechnet sich das Elementarideal zu $E_0(M_\phi)=(\det 0\det X)=(0)$.%\\ \todo{Konvention (zur Verallgemeinerung des Grades) ist $||\phi||_A=0 wenn \Delta_\phi=0$}.
 
-    	Andererseits sei nun ein verschwindendes Alexander-Polynom $\Delta_{\pi_1(M)}=0$ gegeben. Ein Epimorphismus $\phi: \pi_1(M) \to \ZZ^k$ faktorisiert immer eindeutig über die Quotientenabbildung auf den maximal freien abelschen Quotienten $ab:\pi_1(M) \to F$. Also existiert eine eindeutige Abbildung $\hat \phi: F \to \ZZ^k$. Ist  $(x_{ij})_{ij}$ nun eine Präsentationsmatrix für den Alexander-Modul, so erhält man mit $(\hat \phi(x_{ij}))_{ij}$ eine Präsentationsmatrix des Alexander-Moduls\footnote{Dies kann man zum Beispiel zeigen, indem man die Präsentationen der Alexander-Moduln durch einen Kettenkomplex der jeweiligen Überlagerungen gewinnt und die induzierten Kettenkomplex-Abbildungen der Überlagerungsabbildung $M_{ab} \to M_\phi $ betrachtet.} von $\phi$. Also impliziert $\Delta_M=0$ auch $\Delta_\phi=0$. Falls aber $\Delta_\phi=0$ bedeutet das, dass der Rang einer Präsentationsmatrix $\ZZ[\ZZ^k]^r \to \ZZ[\ZZ^k]^n \onto A_\phi(M)$ echt kleiner als $n$ ist und somit der Alexander-Modul $A_\phi(M)$ einen freien $\ZZ[\ZZ^k]$-Summanden enthält und somit $b_1(\ker\phi)=\infty$. 
+    	Andererseits sei nun ein verschwindendes Alexander-Polynom $\Delta_{M}=0$ gegeben. Ein Epimorphismus $\phi: \pi_1(M) \to \ZZ^k$ faktorisiert immer eindeutig über die Quotientenabbildung auf den maximal freien abelschen Quotienten $ab:\pi_1(M) \to F$. Also existiert eine eindeutige Abbildung $\hat \phi: F \to \ZZ^k$. Ist  $(x_{ij})_{ij}$ nun eine Präsentationsmatrix für den Alexander-Modul, so erhält man mit $(\hat \phi(x_{ij}))_{ij}$ eine Präsentationsmatrix des Alexander-Moduls\footnote{Dies kann man zum Beispiel zeigen, indem man die Präsentationen der Alexander-Moduln durch einen Kettenkomplex der jeweiligen Überlagerungen gewinnt und die induzierten Kettenkomplex-Abbildungen der Überlagerungsabbildung $M_{ab} \to M_\phi $ betrachtet.} von $\phi$. Also impliziert $\Delta_M=0$ auch $\Delta_\phi=0$. Falls aber $\Delta_\phi=0$ bedeutet das, dass der Rang einer Präsentationsmatrix $\ZZ[\ZZ^k]^r \to \ZZ[\ZZ^k]^n \onto A_\phi(M)$ echt kleiner als $n$ ist und somit der Alexander-Modul $A_\phi(M)$ einen freien $\ZZ[\ZZ^k]$-Summanden enthält und somit $b_1(\ker\phi)=\infty$. 
     \end{proof}
 
     Man sieht also, dass der Fall $b_1(\ker\phi)=\infty$ ein eher triviales Beispiel zur Verifizierung der Abschätzung aus Theorem~\ref{thm:haupttheorem} darstellt, da die Alexander-Norm überall verschwindet. Jedoch erschwert das die Situation zur Berechnung der Thurston-Norm, da die untere Schranke aus Theorem~\ref{thm:haupttheorem} verschwindet. Mit der folgenden Proposition soll eine möglichst hohe untere Schranke für die Komplexität einer Thurston-minimalen Fläche für allgemeine $\phi\in H^1(M;\ZZ)$ angegeben werden:
 
     \begin{prop}
-        Sei $M$ eine kompakte orientierte glatte 3-Mannigfaltigkeit und $\phi \in H^1(M;\ZZ)$ primitiv. Dann ist $H_1(M_\phi)$ ein endlich erzeugter $\laurent \ZZ t$-Modul, wobei $t$ ein Erzeuger der Decktransformationen ist.
-        Zerlege $H_1(M_\phi;\QQ)\cong \mathcal{F} \oplus \mathcal{T}$ als $\laurent \QQ t$-Modul nach dem Klassifikationssatz von endlich erzeugten Moduln über Hauptidealringen in einen freien und Torsionsanteil. Dann ist dies auch eine direkte Summe von $\QQ$-Vektorräumen. Jede $\thur \phi$-minimierende eingebettete orientierte Fläche $(S,\partial S) \subset (M,\partial M)$ die eine zu $\phi$ duale Homologieklasse $[S]$ definiert, genügt dann folgender Abschätzung:
+        Sei $M$ eine 3-Mannigfaltigkeit wie oben und $\phi \in H^1(M;\ZZ)$ nicht trivial. Dann ist $H_1(M_\phi)$ ein endlich erzeugter $\laurent \ZZ t$-Modul, wobei ein $t$ Erzeuger der Decktransformationen ist.
+        Zerlege $H_1(M_\phi;\QQ)\cong \mathcal{F} \oplus \mathcal{T}$ als $\laurent \QQ t$-Modul nach dem Klassifikationssatz von endlich erzeugten Moduln über Hauptidealringen in einen freien und Torsionsanteil. Dann ist dies auch eine direkte Summe von $\QQ$-Vektorräumen. Jede $\thur \phi$-minimierende, eingebettete, orientierte, zusammenhängende\footnote{Die Proposition gilt auch für nicht zusammenhängende Flächen, setzt aber eine detailliertere Betrachtung der Überlagerung $M_\phi$ voraus.}Fläche $(S,\partial S) \subset (M,\partial M)$ die eine zu $\phi$ duale Homologieklasse $[S]$ definiert, genügt dann folgender Abschätzung:
             \[
                 b_1(S) \geq  \Rang_{\laurent \QQ t}(H_1(M_\phi;\QQ)) + \dim(H_1(M_\phi;\QQ)/\mathcal F) = \Rang_{\laurent \QQ t} (\mathcal F) + \dim \mathcal T
             \]
     \end{prop}
-        Man fixiere für den Beweis einen Lift der Inklusion $S\into M$ und bezeichne diesen als \emph{die} Inklusion $S\into M_\phi$.
+        Da $S$ zusammenhängend und nicht nullhomolog ist, entsteht $M_\phi$ durch Aufschneiden und Verkleben an $S$, vgl\ Corollar~\ref{cor:zshtrennendnullhomolog} und Konstruktion~\ref{constr:cut}. Man fixiere für den Beweis einen Lift der Inklusion $S\into M$ und bezeichne diesen als \emph{die} Inklusion $S\into M_\phi$.
         \begin{proof} 
         Da $\mathcal F \subset H_1(M_\phi;\QQ)$ als Modul über dem Ring der rationalen Laurentpolynome endlich erzeugt ist, erzeugt ein kompakter Teilraum der Überlagerung $\mathcal F$ als $\laurent \QQ t$-Modul. Es folgt wie im Beweis des Lemmas~\ref{lem:minS}, dass $b_1(S)\geq \Rang_{\laurent \QQ t}(\mathcal F)$. 
 
@@ -46,7 +80,7 @@
     \end{proof}
 
 \begin{bem}
-    Man erkennt, dass Lemma~\ref{lem:minS} nicht direktes Corollar dieser Proposition ist. Es kann im Fall $b_1(\ker\phi)=\infty$ nicht im Allgemeinen gezeigt werden, dass $b_2(S)=b_3(M)$ oder automatisch $S$ zusammenhängend ist. Ist $b_2(S)=0$, so folgt $\partial S \neq \emptyset$ und somit $\partial M \neq \emptyset$, also Gleichheit $b_2(S)=b_3(M)$. Ist allerdings $b_2(S)\geq 1$, so folgt selbst für zusammenhängende $S$ \emph{nicht} zwangsweise, dass $M$ geschlossen ist, vgl.\,Beispiel~\ref{bsp:SohnerandMmit}. Weiter ist unklar ob $S$ immer zusammenhängend gewählt werden kann. Im Fall von $b_1(\ker\phi)<\infty$ haben wir gesehen, dass für eine $b_0$-minimierende Wahl einer $\thur \cdot$-minimalen Fläche, diese automatisch zusammenhängend ist. Trivialerweise gilt das auch für $b_1(\ker\phi)=\infty$ falls $b_1(M)=1$, aber im Allgemeinen können wir das Argument von McMullen aus dem Beweis im Fall $b_1(\ker\phi)<\infty$ nicht mehr verwenden.
+    Man erkennt, dass Lemma~\ref{lem:minS} nicht direktes Corollar dieser Proposition ist. Es kann im Fall $b_1(\ker\phi)=\infty$ weder im Allgemeinen gezeigt werden, dass $b_2(S)=b_3(M)$ noch dass automatisch $S$ zusammenhängend ist. Ist $b_2(S)=0$, so folgt $\partial S \neq \emptyset$ und somit $\partial M \neq \emptyset$, also Gleichheit $b_2(S)=b_3(M)$. Ist allerdings $b_2(S)\geq 1$, so folgt selbst für zusammenhängende $S$ \emph{nicht} zwangsweise, dass $M$ geschlossen ist, vgl.\,Beispiel~\ref{bsp:SohnerandMmit}. Weiter ist unklar ob $S$ immer zusammenhängend gewählt werden kann. Im Fall von $b_1(\ker\phi)<\infty$ haben wir gesehen, dass für eine $b_0$-minimierende Wahl einer $\thur \cdot$-minimalen Fläche, diese automatisch zusammenhängend ist. Trivialerweise gilt das auch für $b_1(\ker\phi)=\infty$ falls $b_1(M)=1$, aber im Allgemeinen können wir das Argument von McMullen aus dem Beweis im Fall $b_1(\ker\phi)<\infty$ nicht mehr verwenden.
 \end{bem}
 \begin{lem}
     Sei $b_1(M)=1$ und die Thurston-Norm auf $H^1(M;\ZZ)$ nicht ausgeartet. Falls $\phi \in H^1(M;\ZZ)$ primitiv ist, dann folgt für jede duale eingebettete orientierte Fläche die Thurston-Norm-minimierend ist, dass diese homolog zu einer ihrer Zusammenhangskomponenten ist.
@@ -55,7 +89,7 @@
     Sei $S$ eine Thurston-Norm-minimierende orientierte eingebettete Fläche deren Fundamentalklasse $[S]$ dual zu $\phi$ ist. Sei $T \subset S$ eine nicht nullhomologe Zusammenhangskomponente von $S$. Dann definiert diese eine Homologieklasse $0 \neq [T] \in H_2(M,\partial M;\ZZ)$. Somit ist sie dual zu einem Element $\lambda \phi$, da wie bereits mehrfach gezeigt $H^1(M;\ZZ)\cong \Hom(H_1(M;\ZZ),\ZZ) \cong H_1(M;\ZZ)/T \cong \ZZ$ zyklisch mit Erzeuger $\phi$ ist. Da $[T]\neq 0$ ist auch $\lambda \neq 0$. Weiter gilt: $\chi_-(T) \leq \chi_-(S)$ und $\chi_-(T)\geq \thur {\lambda\phi} = |\lambda| \chi_-(S)$. Somit ist $|\lambda|=1$ und $\chi_-(S)=\chi_-(T)$. Da $\thur \phi \neq 0$ folgt direkt, dass $[S]=[T]$ gilt. 
 \end{proof}
 \begin{bem}
-    Falls $\chi_-(S)=0$, so kann $S$ aus lauter Komponenten nicht-negativer Eulercharakterstik bestehen, deren Fundamentalklassen dual zu nicht-primitiven Kohomologieklassen sind. Es ist also für die Aussage des Lemmas notwendig, dass die Thurston-Norm nicht ausgeartet ist. Allerdings kann auch bei ausgearteter Thurston-Norm eine minimierende Fläche zusammenhängend gewählt werden: Sei $S$ unter den Thurston-Norm minimierenden orientiert eingebetteten Flächen dual zu $\phi$, eine solche die auch $b_0$ minimiert. Unter Verwendung von Konstruktion~\ref{constr:graph} erhält man einen Graph $G$ und nach Abbildung\todo{abbd} einen Homotopieschnitt $G\to M$. Dieser induziert einen Monomorphismus auf der Homologie und liefert somit eine obere Schranke $b_1(S)\leq b_1(M)=1$. Da die Existenz von Knoten mit nur ein- oder ausgehenden Kanten analog zu \todo{abb} nullhomologe Komponenten liefert, ist $S^1\cong G\to S^1$ eine Abbildung die aufgrund der Primitivität von $\phi$ Grad 1 hat, also ist $S$ zusammenhändend (es sei auf den Beweis von Lemma~\ref{lem:minS} verwiesen der die Argumente detaillierter ausführt).
+    Falls $\chi_-(S)=0$, so kann $S$ aus lauter Komponenten nicht-negativer Eulercharakterstik bestehen, deren Fundamentalklassen dual zu nicht-primitiven Kohomologieklassen sind. Es ist also für die Aussage des Lemmas notwendig, dass die Thurston-Norm nicht ausgeartet ist. Allerdings kann auch bei ausgearteter Thurston-Norm eine minimierende Fläche zusammenhängend gewählt werden: Sei $S$ unter den Thurston-Norm minimierenden orientiert eingebetteten Flächen dual zu $\phi$, eine solche die auch $b_0$ minimiert. Unter Verwendung von Konstruktion~\ref{constr:graph} erhält man einen Graph $G$ und wie in Abbildung~\ref{fig:homotopysection} angedeutet, einen Homotopieschnitt $G\to M$. Dieser induziert einen Monomorphismus auf der Homologie und liefert somit eine obere Schranke $b_1(S)\leq b_1(M)=1$. Da die Existenz von Knoten mit nur ein- oder ausgehenden Kanten nach Corollar~\ref{cor:trennendeFlachen} nullhomologe Komponenten liefert, ist $S^1\cong G\to S^1$ eine Abbildung die aufgrund der Primitivität von $\phi$ Grad 1 hat, also ist $S$ zusammenhändend (es sei auf den Beweis von Lemma~\ref{lem:minS} verwiesen der die Argumente detaillierter ausführt).
 \end{bem}
 
     \begin{bsp}
@@ -67,7 +101,7 @@
     \subsection{Faserungen}
     \label{sec:fibrations}
 
-    In diesem Abschnitt, wollen wir uns mit Faserungen über dem Kreis beschäftigen.
+    In diesem Abschnitt, wollen wir uns mit Faserungen\footnote{Mit Faserungen seien hier stets Faserbündel gemeint.} über dem Kreis beschäftigen.
         
     \begin{bsp}
     	Sei $M$ eine Faserbündel $M\to S^1$ über dem Kreis. Da die Entnahme eines Punktes aus dem Kreis $S^1$ einen zusammenziehbaren Raum, also ein Produkt mit der Faser liefert, entsteht eine solche Faserung also immer folgendermaßen: Es gibt einen Diffeomorphismus einer zusammenhängenden Fläche $\varphi: S \times 0 \to S\times 1$, so dass $M$ dem Quotienten $S\times I/\phi$ entspricht. Der Kontext ist also folgendes kommutatives Diagramm:
@@ -81,7 +115,7 @@
 
         Falls $M$ nun zusätzlich noch ein Knotenkomplement eines Knotens $K$ ist, gilt $\ker\phi = [\pi_1(M),\pi_1(M)]$. Also folgt aus diesen Überlegungen, dass die Kommutatoruntergruppe einer Knotengruppe isomorph zu der Fundamentalgruppe einer Seifertfläche des Knotengeschlechts ist, vergleiche zum Beispiel~\cite[Theorem 4.6]{Burde.2003}.
 
-        Es stellt sich die Frage, inwieweit eine Faserung eindeutig ist. Beispielsweise ist im Falle eines Vektorbündels über einem zusammenhängendem Raum, die Dimension eindeutig. Falls aber $b_1(M)>1$ ist und $\phi,\psi \in H^1(M;\ZZ)$ Repräsentanten in $[M,S^1]$ haben, die Faserungen sind, folgt dann etwa: $||\phi||_T=||\psi||_T$? Existieren Diffeomorphismen zwischen Abbildungstori zu Flächen verschiedenen Geschlechts? Tatsächlich sind die Faserungen nicht eindeutig siehe Beispiel~\ref{ex:fiberedfaces}.
+        Es stellt sich die Frage, inwieweit eine Faserung eindeutig ist. Beispielsweise ist im Falle eines Vektorbündels über einem zusammenhängendem Raum, die Dimension eindeutig. Falls aber $b_1(M)>1$ ist und $\phi,\psi \in H^1(M;\ZZ)$ Repräsentanten in $[M,S^1]$ haben, die Faserungen sind, folgt dann etwa: $||\phi||_T=||\psi||_T$? Existieren Diffeomorphismen zwischen Faserbündeln mit Flächen verschiedenen Geschlechts als Fasern? Tatsächlich sind die Faserungen nicht eindeutig siehe Beispiel~\ref{ex:fiberedfaces}.
 
         Nun verstehen wir also die Thurston-Norm einer solchen Klasse und somit in diesem Beispiel auch die Alexander-Norm.	Möchte man dennoch das Alexander-Polynom $\Delta_f=\Delta_\phi$ einer Faserung $f$ berechnen (falls $b_1(M)=1$ ist $\Delta_f=\Delta_M$), genügt es nach Lemma~\ref{lem:charPol}, die lineare Abbildung von Vektorräumen $t_* \in \Aut(H_1(M_\phi;\QQ))$ zu berechnen. Aber da der Erzeuger $t$ der Decktransformationen folgendem kommutativen Diagramm genügen muss:
     	\begin{equation*}
@@ -108,16 +142,12 @@
         Handelt es sich bei $M$ um eine Faserung $M\to S^1$ mit $b_1(M)=1$ oder ist $b_1(M)>1$ und jede Kohomologieklasse ist repräsentiert durch eine Faserung, so berechnet ist die Thurston-Norm nach Theorem~\ref{thm:haupttheorem} bereits vollständig durch die Fundamentalgruppe determiniert, siehe Kapitel~\ref{sec:algebra}.
     \end{bsp}
 
-    \begin{bsp}
-    \label{bsp:unzusammenhgds}
-    \todo{reeally}
-    Dieses Beispiel zeigt, dass das Argument von McMullen, mit dem in dem Beweis von Lemma~\ref{lem:minS} der Zusammenhang einer Thurston-Norm-minimierenden Fläche gezeigt wird, für $b_1(\ker\phi)=\infty$ nicht mehr anwendbar ist. Für zwei glatte Faserbündel $\phi:M \to S^1$ und $\psi: N\to S^1$ haben wir gesehen, dass die Fasern $\phi^{-1}(*)=S$ und $\psi^{-1}(*)=T$ Thurston-Norm-minimierende Repräsentanten von $[S]$ und $[T]$ sind. Fixiert man die gewählten Fasern als Urbild von $*\in S^1$, so betrachte man die direkte Summe $M\#N$
-\end{bsp}
+
 
 
     \begin{bsp}
     \label{ex:fiberedfaces}
-        Eine wichtige Anwendung der Thurston-Norm und dieser Abschätzung besteht in den sogenannten \textit{fibered faces}, die im Folgenden als gefaserte Seiten bezeichnet werden. Bisher wurden bereits Kohomologieklassen $\phi \in H^1(M;\ZZ)$ betrachtet, mit einer korrespondierenden Abbildung $M \to S^1$, die eine Faserung darstellt. Bei solchen herrscht nach dem letzten Beispiel Gleichheit im Theorem~\ref{thm:haupttheorem}. Diese Klassen werden auch als \textit{gefasert} bezeichnet. Tatsächlich stellt Thurston in \cite{Thurston.1986} fest, dass die Thurston-Norm einem Informationen über diese Eigenschaft liefert. Wie in Bemerkung~\ref{lem:fortsetzungnorm} gezeigt, lässt sich die Thurston-Norm auf die reelle Erweiterung der Skalare, also Tensorieren mit $\RR$, fortsetzen. Thurston hat in \cite{Thurston.1986} außerdem gezeigt, dass der Einheitsball dieser Norm auf $H^1(M;\RR)/V$ (wobei $V$ ein maximaler degenerierter Unterraum ist) ein beschränktes konvexes Polytop ist, also die konvexe Hülle einer endlichen Anzahl an Elementen. Eine berandende Seite dieses Polytops nennt man gefaserte Seite, falls alle Elemente $\phi \in H^1(M;\ZZ)$ die auf einem vom Ursprung ausgehendem Strahl liegen, der das Innere der Seite trifft, gefasert sind. Mit anderen Worten ist eine Seite genau dann gefasert, wenn jedes $\phi \in H^1(M;\ZZ)$ gefasert ist, das in einem Kegel mit dem Inneren der Seite als Grundfläche und dem Ursprung als Spitze liegt. Natürlich ist das Polytop symmetrisch ($||-\phi||_T=||\phi||_T$) und die gefaserten Seiten treten auch in Paaren auf --- eine Faserung $M \to S^1$ liefert mit einer orientierungsumkehrenden Reflektion $\tau$ das Inverse $M \to S^1 \stackrel \tau \to S^1$. Man sagt, gefaserte Klassen $\phi,\psi$ liegen in \textit{wirklich verschiedenen} gefaserten Kegeln, falls diese bis auf Symmetrie verschieden sind. 
+        Eine wichtige Anwendung der Thurston-Norm und dieser Abschätzung besteht in den sogenannten \textit{fibered faces}, die im Folgenden als gefaserte Seiten bezeichnet werden. Bisher wurden bereits Kohomologieklassen $\phi \in H^1(M;\ZZ)$ betrachtet, mit einer korrespondierenden Abbildung $M \to S^1$, die eine Faserung darstellt. Bei solchen herrscht nach dem letzten Beispiel Gleichheit im Theorem~\ref{thm:haupttheorem}. Diese Klassen werden auch als \textit{gefasert} bezeichnet. Tatsächlich stellt Thurston in \cite{Thurston.1986} fest, dass die Thurston-Norm einem Informationen über diese Eigenschaft liefert. Wie in Bemerkung~\ref{lem:fortsetzungnorm} gezeigt, lässt sich die Thurston-Norm auf die reelle Erweiterung der Skalare fortsetzen. Thurston hat in \cite{Thurston.1986} außerdem gezeigt, dass der Einheitsball dieser Norm auf $H^1(M;\RR)/V$ (wobei $V$ ein maximaler degenerierter Unterraum ist) ein beschränktes konvexes Polytop ist, also die konvexe Hülle einer endlichen Anzahl an Elementen. Eine berandende Seite dieses Polytops nennt man gefaserte Seite, falls alle Elemente $\phi \in H^1(M;\ZZ)$ die auf einem vom Ursprung ausgehendem Strahl liegen, der das Innere der Seite trifft, gefasert sind. Mit anderen Worten ist eine Seite genau dann gefasert, wenn jedes $\phi \in H^1(M;\ZZ)$ gefasert ist, das in einem Kegel mit dem Inneren der Seite als Grundfläche und dem Ursprung als Spitze liegt. Natürlich ist das Polytop symmetrisch ($||-\phi||_T=||\phi||_T$) und die gefaserten Seiten treten auch in Paaren auf --- eine Faserung $M \to S^1$ liefert mit einer orientierungsumkehrenden Reflektion $\tau$ das Inverse $M \to S^1 \stackrel \tau \to S^1$. Man sagt, gefaserte Klassen $\phi,\psi$ liegen in \textit{wirklich verschiedenen} gefaserten Kegeln, falls diese bis auf Symmetrie verschieden sind. Mit diesen gefaserten Seiten ist es möglich zu zeigen, dass eine 3-Mannigfaltigkeit auf unendlich verschiedene Arten über dem Kreis fasert, mit unbeschränkter Thurston-Norm der Faserungen.
     \end{bsp}
 
 
@@ -152,7 +182,7 @@
 
         \begin{wrapfigure}{r}{0.4\textwidth}
             \centering
-            \includegraphics[width= 0.3\textwidth]{hopf}
+            \includegraphics[width= 0.3\textwidth]{hopffancy}
             \caption{Die Hopf Verschlingung}
             \label{fig:hopf}
         \end{wrapfigure}
@@ -165,6 +195,12 @@
 
         \subsubsection*{Whitehead Verschlingung}
 
+        \begin{wrapfigure}{r}{0.4\textwidth}
+            \centering
+            \includegraphics[width= 0.3\textwidth]{whitehead}
+            \caption{Die Whitehead Verschlingung}
+            \label{fig:whitehead}
+        \end{wrapfigure}
         Die Whitehead Verschlingung ist ein Link der aus zwei Komponenten $L_1,L_2$ besteht. Offensichtlich berandet jede Komponente $L_i$ in $M_{L_i}$ eine Scheibe, die sich in $M_L$ auf eine Kreisscheibe mit zwei entnommenen offenen Scheiben einschränkt (an den Stellen, an denen die offene Tubenumgebung des anderen Knotens die Scheibe durchdringt). Bei diesen Repräsentanten für $l_1$ beziehungsweise $l_2$ berechnet sich die Eulercharakteristik zu $-1$, also gilt $||\pm l_i||_T\leq 1$, offensichtlich gilt aber Gleichheit undin diesem Fall die Thurston-Norm eine tatsächliche Norm. Genauso offensichtlch gilt $||l_1+l_2||_T>0$: die Verschlingungszahl des Whitehead Links ist offensichtlich $0$ (dies sieht man indem man eine Projektion betrachtet in dem die eine Komponente der Unknoten ist), jedoch haben die Randkomponenten jeder Einbettung eines Kreisring $S^1\times I \into S^3$ Verschlingungszahl $\neq 0$ oder sind trivial (durch einen Äquator zu trennen). Also folgt, dass diese Fläche Geschlecht $\ge 1$ hat und somit $2 \leq ||l_1+l_2||_T \leq ||l_1||_T+||l_2||_T =2$ für eine Seifertfläche. Mit Theorem~\ref{thm:haupttheorem} ließe sich diese untere Abschätzung auch mit $\Delta_L = (L_1-1)(L_2-1) = L_1L_2 -L_1-L_2+1$ berechnen, da $\thur {l_1+l_2} \geq \alex {l_1+l_2} \geq (l_1+l_2) (L_1+L_2-0)=2$ Diese ist Seifert-Fläche ergibt sich sogar durch die Seifert-Konstruktion. Folglich:
         \begin{align*}
             ||l_1+l_2||_T =||-(l_1+l_2)||_T &\stackrel * = ||-l_1+l_2||_T = ||l_1-l_2||_T \\
@@ -219,6 +255,12 @@
 
     \subsubsection*{Borromäische Ringe}
 
+        \begin{wrapfigure}{r}{0.4\textwidth}
+            \centering
+            \includegraphics[width= 0.3\textwidth]{Borromean}
+            \caption{Die Borromäischen Ringe}
+            \label{fig:borromean}
+        \end{wrapfigure}
     Seien $L=L_1 + L_2 + L_3$ die Borromäischen Ringe. Offensichtlich hat jede duale Fläche zu $l_i$, die Komponente $L_i$ als Rand, (sonst wäre der Meridian aufgrund eines Schnittzahlenarguments im Kern von $l_i$). Folglich hat also jede Fläche dual zu $l_i$ mindestens 3 Randkomponenten. Da eine Sphäre mit 3 entnommenen offenen Scheiben (also eine abgeschlossene Scheibe mit 2 Durchlöcherungen), wobei die eine Randkomponente aufgespannt wird von der entnommenen Komponente $\nu(L_i)$, bereits dual zu $l_i$ ist gilt wieder $\thur {\pm l_i}=1$ für jedes $i$. Ähnlich wie beim letzten Beispiel der Whitehead Verschlingungen, möchten wir nun --- in Dimension 3 --- die berandenden Seiten der Einheitskugel durch Berechnung einiger Punkte feststellen und sie dadurch bestimmen. Es berechnet sich $\Delta_L = L_1L_2L_3 -\sum L_iL_j + \sum L_i -1$ und somit folgt leicht die Alexander-Norm einer beliebigen Kohomologieklasse, insbesondere:
     \[
         3= \alex {\pm l_1 \pm l_2 \pm l_3} \leq \thur {\pm l_1 \pm l_2 \pm l_3} \leq  \thur {l_1} + \thur {l_2} + \thur{l_3}=3
@@ -252,7 +294,7 @@
                 \draw (0,\x,0) -- (0,0,\x);
                 \draw (0,\x,0) -- (0,0,-\x);
                 }
-            \draw [fill,opacity=0.3] (2,0,0) -- (0,2,0) -- (0,0,2) -- cycle;
+            \draw [fill,opacity=0.2] (2,0,0) -- (0,2,0) -- (0,0,2) -- cycle;
          %   \draw[thick] (2/3-0.3,2/3,2/3) -- (2/3+0.3,2/3,2/3);
        %     \draw[thick] (2/3,2/3-0.2,2/3) -- (2/3,2/3+0.2,2/3);
          %   \draw[thick] (2/3,2/3,2/3-0.2) -- (2/3,2/3,2/3+0.2);

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  13 JUL 2014 19:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.14)  14 JUL 2014 07:00
 entering extended mode
 **C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
 (C:/Users/Daniel/Documents/GitHub/bachelorthesis/main.tex
@@ -1030,7 +1030,6 @@ Package: BA_Titelseite 2010/04/25
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\thurston.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\alexander.aux)
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\proof.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
@@ -1082,38 +1081,9 @@ Package caption Info: End \AtBeginDocument code.
 [1
 
 ] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 1137) in paragraph at lines 6--7
 []\OT1/cmr/m/n/10.95 Diese Ar-beit besch[]aftigt sich mit der Ver-all-ge-mei-ne
--rung
- []
-
-
-Underfull \hbox (badness 7888) in paragraph at lines 6--7
-\OT1/cmr/m/n/10.95 von Knoten- und Ver-schlin-gungs-in-va-ri-an-ten. Das Ziel i
-st
- []
-
-
-Underfull \hbox (badness 2582) in paragraph at lines 6--7
-\OT1/cmr/m/n/10.95 die Aus-ar-bei-tung des Be-wei-ses von McMul-lens Un-glei-ch
-ung
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-\OT1/cmr/m/n/10.95 (2002) der Alexander-Norm und der Thurston-Norm die
- []
-
-
-Underfull \hbox (badness 4805) in paragraph at lines 6--7
-\OT1/cmr/m/n/10.95 aus 3-Mannigfaltigkeiten her-vor-ge-hen. Der Kon-text der 3-
-
- []
-
-
-Underfull \hbox (badness 3965) in paragraph at lines 6--7
-\OT1/cmr/m/n/10.95 Mannigfaltigkeiten bein-hal-tet groe Tei-le der Knoten- und
-
+-rung von
  []
 
 Package epstopdf Info: Source file: <Images/zyklbott.eps>
@@ -1124,14 +1094,14 @@ Package epstopdf Info: Source file: <Images/zyklbott.eps>
 (epstopdf)                    size: 2802 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/zyklbott-eps-convert
 ed-to.pdf Images/zyklbott.eps>
-(epstopdf)             \includegraphics on input line 13.
+(epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 <Images/zyklbott-eps-converted-to.pdf, id=23, 169.63374pt x 52.195pt>
 File: Images/zyklbott-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/zyklbott-eps-converted-to.pdf>
 Package pdftex.def Info: Images/zyklbott-eps-converted-to.pdf used on input lin
-e 13.
+e 15.
 (pdftex.def)             Requested size: 169.63332pt x 52.19487pt.
 Package epstopdf Info: Source file: <Images/zyklright.eps>
 (epstopdf)                    date: 2014-06-30 18:03:25
@@ -1141,7 +1111,7 @@ Package epstopdf Info: Source file: <Images/zyklright.eps>
 (epstopdf)                    size: 3504 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/zyklright-eps-conver
 ted-to.pdf Images/zyklright.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
 <Images/zyklright-eps-converted-to.pdf, id=24, 117.43875pt x 587.19376pt>
@@ -1149,10 +1119,10 @@ File: Images/zyklright-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/zyklright-eps-converted-to.pdf>
 Package pdftex.def Info: Images/zyklright-eps-converted-to.pdf used on input li
-ne 27.
+ne 29.
 (pdftex.def)             Requested size: 117.43845pt x 587.19232pt.
 
-Overfull \hbox (33.78862pt too wide) in paragraph at lines 27--28
+Overfull \hbox (33.78862pt too wide) in paragraph at lines 29--30
  []
  []
 
@@ -1165,7 +1135,7 @@ Overfull \vbox (22.33937pt too high) has occurred while \output is active []
 [3 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/zyklbott-eps-convert
 ed-to.pdf> <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/zyklright-ep
 s-converted-to.pdf>] [4]
-Overfull \hbox (0.43155pt too wide) in paragraph at lines 43--45
+Overfull \hbox (0.43155pt too wide) in paragraph at lines 45--47
 []\OT1/cmr/m/n/10.95 Bevor nun das Haupt-theo-rem der Ar-beit an-ge-ge-ben wird
 , m[]ochte ich mich aus-dr[]ucklich
  []
@@ -1197,15 +1167,22 @@ Overfull \hbox (1.40497pt too wide) in paragraph at lines 232--233
 e bis auf []Uberlagerungsisomorphie
  []
 
-[12] <xymatrix 2x2 154>
-Overfull \hbox (4.73431pt too wide) in paragraph at lines 257--258
+[12] <xymatrix 2x2 154> [13]
+Overfull \hbox (4.73431pt too wide) in paragraph at lines 259--260
 []\OT1/cmr/m/n/10.95 Mit ei-ner zu $\OML/cmm/m/it/10.95 $ \OT1/cmr/m/n/10.95 d
 ua-len Fl[]ache ist ei-ne ei-gent-lich ein-ge-bet-te-te ori-en-tier-te 1-kodime
 nsionale
  []
 
-[13] <xymatrix 3x1 130> <xymatrix 3x1 130> [14]
-Overfull \hbox (1.9231pt too wide) in paragraph at lines 309--311
+<xymatrix 3x1 130> <xymatrix 3x1 130> [14]
+Overfull \hbox (2.61969pt too wide) in paragraph at lines 324--325
+[]\OT1/cmr/bx/n/10.95 Corollar 2.18. []\OT1/cmr/m/it/10.95 Sei $\OML/cmm/m/it/1
+0.95 S$ \OT1/cmr/m/it/10.95 ei-ne zu-sam-menh[]angende ori-en-tier-te, ei-gent-
+lich ein-ge-bet-te-te Fl[]ache,
+ []
+
+[15]
+Overfull \hbox (1.9231pt too wide) in paragraph at lines 359--361
 \OT1/cmr/m/n/10.95 Entsprechend l[]asst sich ei-ne Halb-norm auf $\OML/cmm/m/it
 /10.95 H[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 ; \U/msb/
 m/n/10.95 R\OT1/cmr/m/n/10.95 )$ auf $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95
@@ -1213,8 +1190,8 @@ m/n/10.95 R\OT1/cmr/m/n/10.95 )$ auf $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95
 5 )$ durch den nat[]urlichen
  []
 
-[15]) [16] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\thurston.tex
-[17
+[16]) [17] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\thurston.tex
+[18
 
 
 ] <xymatrix 2x2 223>
@@ -1229,18 +1206,18 @@ d-to.pdf Images/surgery.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/surgery-eps-converted-to.pdf, id=90, 258.9675pt x 98.3675pt>
+<Images/surgery-eps-converted-to.pdf, id=99, 258.9675pt x 98.3675pt>
 File: Images/surgery-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/surgery-eps-converted-to.pdf>
 Package pdftex.def Info: Images/surgery-eps-converted-to.pdf used on input line
  47.
 (pdftex.def)             Requested size: 225.85518pt x 85.79364pt.
- [18 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/surgery-eps-conver
-ted-to.pdf>] [19]
-Overfull \hbox (8.2486pt too wide) in paragraph at lines 67--68
-\OT1/cmr/m/n/10.95 Nun wol-len wir uns ei-ne be-son-de-re Art von Fl[]achen an-
-schau-en, n[]amlich die Re-pr[]asentanten
+ [19 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/surgery-eps-conver
+ted-to.pdf>] [20]
+Overfull \hbox (10.04318pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10.95 Nun wol-len wir uns ei-ne be-son-de-re Art von Fl[]achen be-
+trach-ten, n[]amlich die Re-pr[]asentanten
  []
 
 
@@ -1250,13 +1227,29 @@ n ei-ne ori-en-tier-te Fl[]ache
  []
 
 <xymatrix 3x2 360>
-Overfull \hbox (37.93544pt too wide) in paragraph at lines 91--93
-\OT1/cmr/m/n/10.95 ma-ti-ons-grup-pen. Un-ter der oben ge-zeig-ten Kom-pa-ti-bi
--lit[]atsvorraussetzung die-ser []Uberlagerungen
- []
+(C:\Users\Daniel\Documents\GitHub\bachelorthesis\Images/drawing-1.eps_tex
+Package epstopdf Info: Source file: <Images/drawing-1.eps>
+(epstopdf)                    date: 2014-07-14 05:37:51
+(epstopdf)                    size: 15143 bytes
+(epstopdf)             Output file: <Images/drawing-1-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-07-14 05:40:32
+(epstopdf)                    size: 12120 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/drawing-1-eps-conver
+ted-to.pdf Images/drawing-1.eps>
+(epstopdf)             \includegraphics on input line 52.
+Package epstopdf Info: Output file is already uptodate.
 
-[20] [21] <xymatrix 4x2 232> [22]) [23]
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\alexander.tex [24
+<Images/drawing-1-eps-converted-to.pdf, id=125, 363.3575pt x 149.55875pt>
+File: Images/drawing-1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Images/drawing-1-eps-converted-to.pdf>
+Package pdftex.def Info: Images/drawing-1-eps-converted-to.pdf used on input li
+ne 52.
+(pdftex.def)             Requested size: 367.25421pt x 151.16724pt.
+) [21] [22 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/drawing-1-ep
+s-converted-to.pdf>] <xymatrix 4x2
+232> [23]) [24] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\alexander.tex
+[25
 
 
 ]
@@ -1267,20 +1260,20 @@ Overfull \hbox (1.55699pt too wide) in paragraph at lines 82--84
 1/cmr/m/n/10.95 -te Alexander-Polynom
  []
 
-[25]
+[26]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 99.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 99.
- [26] [27]
-<xymatrix 2x2 182> <xymatrix 2x2 182> [28] [29]
+ [27] [28]
+<xymatrix 2x2 182> <xymatrix 2x2 182> [29] [30]
 LaTeX Font Info:    Try loading font information for U+euf on input line 248.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\ueuf.fd"
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [30]
+) [31]
 Overfull \hbox (11.59073pt too wide) in paragraph at lines 280--282
 \OT1/cmr/m/it/10.95 und einen Iso-mor-phis-mus von $\U/msb/m/n/10.95 Z\OT1/cmr/
 m/n/10.95 [\OML/cmm/m/it/10.95 F\OT1/cmr/m/n/10.95 ]$\OT1/cmr/m/it/10.95 -Modul
@@ -1291,96 +1284,135 @@ ML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95
 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/10.95 )$\OT1/cmr/m/it/10.95 . 
  []
 
-<xymatrix 5x5 918> [31]
+<xymatrix 5x5 918> [32]
 Overfull \hbox (5.7028pt too wide) in paragraph at lines 321--322
 []\OT1/cmr/m/it/10.95 Bemerkung \OT1/cmr/m/n/10.95 4.2.6\OT1/cmr/m/it/10.95 . [
 ]\OT1/cmr/m/n/10.95 Der Iso-mor-phis-mus aus Pro-po-si-ti-on 4.5[] lie-fert au-
 er-dem die M[]oglichkeit
  []
 
-[32] [33] <xymatrix 4x1 127> [34] [35] <xymatrix 4x1 141> [36]
+[33] [34] <xymatrix 4x1 127> [35] [36] <xymatrix 4x1 141> [37]
 Overfull \hbox (1.97725pt too wide) in paragraph at lines 476--477
 []\OT1/cmr/m/n/10.95 Was ge-schieht nun durch An-wen-den von $\OML/cmm/m/it/10.
 95 @[]$\OT1/cmr/m/n/10.95 ? Sei $\OML/cmm/m/it/10.95 e$ \OT1/cmr/m/n/10.95 ei-n
 e ge-ne-ri-sche 1-Zelle in $\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ([])$,
  []
 
-[37]
+[38]
 Overfull \hbox (1.31166pt too wide) in paragraph at lines 518--518
 [] 
  []
 
-[38] [39]) [40] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\proof.tex)
-[41
+[39] [40]) [41] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.tex
+[42
 
 
-] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.tex <xymatrix
-4x1 127> [42
-
-
-] [43] [44] <xymatrix 2x2 130> [45] <xymatrix 5x4 580> [46]
-[47]
-Package epstopdf Info: Source file: <Images/hopf.eps>
-(epstopdf)                    date: 2014-06-28 12:21:44
-(epstopdf)                    size: 24754 bytes
-(epstopdf)             Output file: <Images/hopf-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-06-28 12:25:55
-(epstopdf)                    size: 8252 bytes
-(epstopdf)             Command: <epstopdf --outfile=Images/hopf-eps-converted-t
-o.pdf Images/hopf.eps>
-(epstopdf)             \includegraphics on input line 155.
+] <xymatrix 4x1 127> [43] [44] [45] <xymatrix 2x2 130> [46] <xymatrix 5x4
+580> [47] [48]
+Package epstopdf Info: Source file: <Images/hopffancy.eps>
+(epstopdf)                    date: 2014-07-14 06:53:51
+(epstopdf)                    size: 4246 bytes
+(epstopdf)             Output file: <Images/hopffancy-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-07-14 06:56:47
+(epstopdf)                    size: 3228 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/hopffancy-eps-conver
+ted-to.pdf Images/hopffancy.eps>
+(epstopdf)             \includegraphics on input line 185.
 Package epstopdf Info: Output file is already uptodate.
- <Images/hopf-eps-converted-to.pdf, id=214, 497.86pt x 497.86pt>
-File: Images/hopf-eps-converted-to.pdf Graphic file (type pdf)
 
-<use Images/hopf-eps-converted-to.pdf>
-Package pdftex.def Info: Images/hopf-eps-converted-to.pdf used on input line 15
-5.
-(pdftex.def)             Requested size: 125.47794pt x 125.47505pt.
- [48]
-Underfull \hbox (badness 1173) in paragraph at lines 159--160
+<Images/hopffancy-eps-converted-to.pdf, id=223, 186.6975pt x 133.49875pt>
+File: Images/hopffancy-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Images/hopffancy-eps-converted-to.pdf>
+Package pdftex.def Info: Images/hopffancy-eps-converted-to.pdf used on input li
+ne 185.
+(pdftex.def)             Requested size: 125.47794pt x 89.72275pt.
+
+Underfull \hbox (badness 1173) in paragraph at lines 189--190
 []\OT1/cmr/m/n/10.95 Das tri-vi-al-ste nicht-triviale Bei-spiel ei-ner Ver-
  []
 
-[49 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/hopf-eps-converted-
-to.pdf>]
-Overfull \hbox (11.27505pt too wide) in paragraph at lines 196--197
+[49 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/hopffancy-eps-conve
+rted-to.pdf>]
+Package epstopdf Info: Source file: <Images/whitehead.eps>
+(epstopdf)                    date: 2014-07-14 06:37:05
+(epstopdf)                    size: 6922 bytes
+(epstopdf)             Output file: <Images/whitehead-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-07-14 06:50:57
+(epstopdf)                    size: 3459 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/whitehead-eps-conver
+ted-to.pdf Images/whitehead.eps>
+(epstopdf)             \includegraphics on input line 200.
+Package epstopdf Info: Output file is already uptodate.
+
+<Images/whitehead-eps-converted-to.pdf, id=229, 114.4275pt x 193.72375pt>
+File: Images/whitehead-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Images/whitehead-eps-converted-to.pdf>
+Package pdftex.def Info: Images/whitehead-eps-converted-to.pdf used on input li
+ne 200.
+(pdftex.def)             Requested size: 125.47794pt x 212.44054pt.
+ [50 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/whitehead-eps-conv
+erted-to.pdf>]
+Overfull \hbox (11.27505pt too wide) in paragraph at lines 232--233
 [][] 
  []
 
 
-Overfull \hbox (13.36748pt too wide) in paragraph at lines 212--213
+Overfull \hbox (13.36748pt too wide) in paragraph at lines 248--249
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--217
+Underfull \hbox (badness 10000) in paragraph at lines 208--253
 
  []
 
-[50]
-Overfull \hbox (1.56483pt too wide) in paragraph at lines 290--291
+Package epstopdf Info: Source file: <Images/Borromean.eps>
+(epstopdf)                    date: 2014-07-14 06:47:42
+(epstopdf)                    size: 6682 bytes
+(epstopdf)             Output file: <Images/Borromean-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-07-14 06:50:58
+(epstopdf)                    size: 3775 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/Borromean-eps-conver
+ted-to.pdf Images/Borromean.eps>
+(epstopdf)             \includegraphics on input line 260.
+Package epstopdf Info: Output file is already uptodate.
+<Images/Borromean-eps-converted-to.pdf, id=235, 145.54375pt x 125.46875pt>
+File: Images/Borromean-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Images/Borromean-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Borromean-eps-converted-to.pdf used on input li
+ne 260.
+(pdftex.def)             Requested size: 125.47794pt x 108.17287pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+[][][]|\OT1/cmr/m/n/10.95 Die Bor-rom[]aischen
+ []
+
+[51 <C:/Users/Daniel/Documents/GitHub/bachelorthesis/Images/Borromean-eps-conve
+rted-to.pdf>]
+Overfull \hbox (1.56483pt too wide) in paragraph at lines 332--333
 [][] 
  []
 
-) [51] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl [52
+) [52] (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.bbl [53
 
-]) [53]
+]) [54]
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\main.aux
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\intro.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\chapter.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\thurston.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\alexander.aux)
-(C:\Users\Daniel\Documents\GitHub\bachelorthesis\proof.aux)
 (C:\Users\Daniel\Documents\GitHub\bachelorthesis\examples.aux)) ) 
 Here is how much of TeX's memory you used:
- 20403 strings out of 493921
- 385999 string characters out of 3147279
- 501100 words of memory out of 3000000
- 23216 multiletter control sequences out of 15000+200000
+ 20424 strings out of 493921
+ 386616 string characters out of 3147279
+ 500688 words of memory out of 3000000
+ 23236 multiletter control sequences out of 15000+200000
  22752 words of font info for 89 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 64i,19n,96p,2791b,1023s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,19n,96p,2791b,998s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/f
@@ -1406,14 +1438,15 @@ blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/xypic/xybtip10.pfb>
-Output written on main.pdf (55 pages, 611893 bytes).
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/xypic/xyatip10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/xypic/xybtip10.pfb>
+Output written on main.pdf (56 pages, 625527 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
+ 352 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -134,13 +134,13 @@
 
     	Der nichttriviale Teil der folgenden Aussage wurde in Lemma~\ref{lem:fortsetzungnorm} gezeigt.
     	\begin{lem}
+    	\label{lem:alexdefinesseminorm}
     		Die Alexander-Norm definiert eine Halbnorm auf $H^1(M;\ZZ)$ und somit auf $H^1(M;\RR)$.
     	\end{lem}
 
 
     \subsection{Algebraische Definitionen}
 \label{sec:algebra}
-        \todo{durchgehen und säubern}
 
 Tatsächlich könnte man diese Bachelorarbeit fast ausschließlich algebraisch verstehen --- wenigstens den Teil über die Alexander-Invarianten. Natürlich ist dieser Arbeit aus dem Bereich der Topologie, der Geschmack oder die Illusion gegeben, man arbeite mit direkten Eigenschaften der Räume. Bei der Thurston-Norm ist dies sicherlich noch eher gegeben, durch die Definition einer Funktion auf einem Vektorraum mittels geometrischer Eigenschaften der Mannigfaltigkeit. Jedoch handelt es sich bei den Alexander-Invarianten, insbesondere dem Alexander-Polynom, lediglich um Invarianten einer endlich erzeugten Gruppe. Durch Anwendung dieser Invarianten auf die Fundamentalgruppe eines topologischen Raumes, erhält man also Invarianten von Räumen. Natürlich verliert das Alexander-Polynom von 3-Mannigfaltigkeiten als Komposition von Invarianten nicht allzu viel an Reiz, da die Fundamentalgruppe eine recht starke Invariante von 3-Mannigfaltigkeiten darstellt. Beispielsweise liefert sie durch einfache Anwendung von Hurewicz und Dualitätssätzen\footnote{Poincaré/Lefschetz, universelles Koeffiziententheorem} alle Homologiegruppen einer geschlossenen 3-Mannigfaltigkeit. Eine Klasse von 3-Mannigfaltigkeiten, die sogenannten `Haken-Mannigfaltigkeiten' sind durch ihre Fundamentalgruppe klassifiziert, der Beweis dazu stammt von Waldhausen~\cite{Waldhausen.1968}. 
 
@@ -549,27 +549,13 @@ Diese Überlegungen liefern nun einen Zusammenhang zwischen $b_1(\ker\phi)$ und 
 
 	Falls $M$ nun Rand hat, liefert ein analoger Beweis das Ergebnis. 
 \end{proof} 
-Nun verallgemeinert diese Beschreibung des Alexander-Ideals $\mathfrak I(M)$ das entsprechende Resultat aus der Knoten- und Verschlingungstheorie; vgl.\,\cite[Proposition~8.11]{Burde.2003} und \cite[Proposition~9.16]{Burde.2003}. Für den Fall, dass $b_1(M)=1$ (also insbesondere für Knotenkomplemente), so wissen wir bereits, dass $I(M)$ unabhängig der beiden angegebenen Definitionen ein Hauptideal ist. Weiter haben wir in diesem Fall bereits gesehen, wie die Alexander-Norm einer Kohomologieklasse $\phi$ in Zusammenhang mit $b_1(\ker \phi)$ steht (falls $b_1(M)=1$ so stimmt die Alexander-Norm mit dem Grad des Alexander-Polynoms überein). Letzteres, also eine Beziehung von $b_1(\ker\phi)$ und $||\phi||_A$, soll nun im Fall für $b_1(M)\geq 1$ hergeleitet werden.
+Nun verallgemeinert diese Beschreibung des Alexander-Ideals $\mathfrak I(M)$ das entsprechende Resultat aus der Knoten- und Verschlingungstheorie; vgl.\,\cite[Proposition~8.11]{Burde.2003} und \cite[Proposition~9.16]{Burde.2003}. Für den Fall, dass $b_1(M)=1$ (also insbesondere für Knotenkomplemente), so wissen wir bereits, dass $I(M)$ beziehungsweise $\mathfrak I(M)$, unabhängig der beiden angegebenen Definitionen ein Hauptideal ist. Weiter haben wir in diesem Fall bereits in Corollar~\ref{cor:degreealex} gesehen, wie die Alexander-Norm einer Kohomologieklasse $\phi$ in Zusammenhang mit $b_1(\ker \phi)$ steht (falls $b_1(M)=1$ so stimmt die Alexander-Norm mit dem Grad des Alexander-Polynoms überein). Letzteres, also eine Beziehung von $b_1(\ker\phi)$ und $||\phi||_A$, soll nun im Fall für $b_1(M)\geq 1$ hergeleitet werden.
 
-\begin{lem}
-\label{lem:alexnorm}
+\begin{cor}
+\label{cor:alexnorm}
 	Falls $\Delta_G \neq 0$ mit $G=\pi_1(M)$, so gilt für primitive $\phi \in H^1(M;\ZZ)$, die in einem offenen Kegel durch eine offene berandende Seite des Polytops der Alexander-Einheitskugel liegen:
 	\[
 		b_1(\ker\phi) = ||\phi||_A + 1 + b_3(M)
 	\]
-\end{lem}
-\begin{proof}
-	Zur Berechnung des Alexander-Polynoms einer Gruppe verwendet man häufig eine Abbildung auf den maximalen frei abelschen Quotienten, die man auf den ganzzahligen Gruppenringen fortsetzt. Dies ermöglicht einem zwischen verschiedenen Ebenen hin und herzuspringen. Ähnlich soll nun hier $\phi \in H^1(M;\ZZ) \cong \Hom(G,\ZZ) $ fortgesetzt werden: $		\hat \phi:\ZZ[G] \to \laurent \ZZ t$.\\
-	Wendet man diesen fortgesetzten Homomorphismus auf $\Delta_G\in \ZZ G$ an erhält man: \[
-		\hat \phi \Delta_G = \hat \phi (\sum \lambda_i g_i)= \sum \lambda_i \phi(g_i) = \sum \lambda_i t^{\phi(g_i)} = \sum \hat \lambda_{\phi(g_i)} t^{\phi(g_i)}
-	\]
-	Die $\hat \lambda_{\phi(g_i)}$ fassen alle Koeffizienten zum gleichen Monom zusammen, sodass in der Summe kein Gruppenelement mehrfach auftritt. Per Definition gilt also:
-	\[
-		\Grad \phi(\Delta_G) = \sup_{\hat \lambda_{\phi(g_{i/j})} \neq 0} (\phi(g_i)- \phi(g_j))
-	\]
-	Da nun aber $\phi$ aus einem Kegel durch eine offene Seite des Alexander-Polytops gewählt wurde, verschwinden unter $\hat \phi$ keine Koeffizienten die den Grad maximieren, also:
-	\[
-		\sup_{\hat \lambda_{\phi(g_{i/j})} \neq 0} (\phi(g_i)- \phi(g_j)) = \sup_{\lambda_i}(\phi(g_i)- \phi(g_j))
-	\]
-	nun folgt das Lemma mit $(\Delta_\phi)=\phi(I(G))=\langle(t-1)^{1+b_1(M)}\hat\phi\Delta_G \rangle	$.
-\end{proof}
+\end{cor}
+Der Beweis ist in \cite[Theorem 4.1]{MCMULLEN.2002} und verwendet Theorem~\ref{thm:keralexnorm}. Tatsächlich gilt dieses Corollar nicht für allgemeine endlich erzeugte Gruppen, vgl.\ \cite[Seite 159]{MCMULLEN.2002}.
