@@ -7,76 +7,76 @@ J.~W. Alexander.
   30(2):275--306, 1928.
 
 \bibitem{Burde.2003}
-Gerhard Burde and Heiner Zieschang.
+G.~Burde and H.~Zieschang.
 \newblock {\em Knots}, volume~5 of {\em De Gruyter studies in mathematics}.
 \newblock Walter de Gruyter, Berlin and New York, 2nd rev. and extended ed
   edition, 2003.
 
 \bibitem{Friedl.2007}
-Stefan Friedl.
+S.~Friedl.
 \newblock Reidemeister torsion, the thurston norm and harvey's invariants.
 \newblock {\em Pacific Journal of Mathematics}, 230(2):271--296, 2007.
 
 \bibitem{Friedl.2006}
-Stefan Friedl and Taehee Kim.
+S.~Friedl and T.~Kim.
 \newblock The thurston norm, fibered manifolds and twisted alexander
   polynomials.
 \newblock {\em Topology}, 45(6):929--953, 2006.
 
 \bibitem{Friedl.2008c}
-Stefan Friedl and Taehee Kim.
+S.~Friedl and T.~Kim.
 \newblock Twisted alexander norms give lower bounds on the thurston norm.
 \newblock {\em Transactions of the American Mathematical Society},
   360(9):4597--4618, 2008.
 
 \bibitem{Friedl.2008}
-Stefan Friedl and Stefano Vidussi.
+S.~Friedl and S.~Vidussi.
 \newblock Twisted alexander polynomials and symplectic structures.
 \newblock {\em American Journal of Mathematics}, 130(2):455--484, 2008.
 
 \bibitem{Friedl.2008b}
-Stefan Friedl and Stefano Vidussi.
+S.~Friedl and S.~Vidussi.
 \newblock Twisted alexander polynomials detect fibered 3-manifolds.
 \newblock {\em arXiv preprint arXiv:0805.1234}, 2008.
 
 \bibitem{Friedl.2011}
-Stefan Friedl and Stefano Vidussi.
+S.~Friedl and S.~Vidussi.
 \newblock A survey of twisted alexander polynomials.
 \newblock In {\em The Mathematics of Knots}, pages 45--94. Springer, 2011.
 
 \bibitem{Gordon.1989}
-C.~McA. Gordon and J.~Luecke.
+C.~Gordon and J.~Luecke.
 \newblock Knots are determined by their complements.
 \newblock {\em Journal of the American Mathematical Society}, 2(2):371--415,
   1989.
 
 \bibitem{Hatcher.2002}
-Allen Hatcher.
+A.~Hatcher.
 \newblock {\em Algebraic topology}.
 \newblock Cambridge University Press, Cambridge and New York, 2002.
 
 \bibitem{Hirsch.1991}
-Morris~W. Hirsch.
+M.~W. Hirsch.
 \newblock {\em Differential topology}, volume~33 of {\em Graduate texts in
   mathematics}.
 \newblock Springer, New York [u.a.], corr. 4. print edition, 1991.
 
 \bibitem{Kreck.2010}
-Matthias Kreck.
+M.~Kreck.
 \newblock {\em Differential algebraic topology: From stratifolds to exotic
   spheres}, volume v. 110 of {\em Graduate studies in mathematics}.
 \newblock American Mathematical Society, Providence and R.I, 2010.
 
 \bibitem{LickorishW.B.Raymond.1997}
-{Lickorish, W. B. Raymond}.
+W.~B.~R. Lickorish.
 \newblock {\em An introduction to knot theory}, volume 175 of {\em Graduate
   texts in mathematics}.
 \newblock Springer, New York, 1997.
 
 \bibitem{MCMULLEN.2002}
-{McMullen, C.}
-\newblock {The Alexander polynomial of a 3-manifold and the Thurston norm on
-  cohomology}.
+C.~McMullen.
+\newblock The alexander polynomial of a 3-manifold and the thurston norm on
+  cohomology.
 \newblock {\em Annales Scientifiques de l'{\'E}cole Normale Sup{\'e}rieure},
   35(2):153--171, 2002.
 
@@ -86,16 +86,21 @@ J.~Milnor.
 \newblock {\em Collected Papers}, 2:71--89, 2009.
 
 \bibitem{Moise.1952}
-Edwin~E. Moise.
+E.~E. Moise.
 \newblock Affine structures in 3-manifolds: V. the triangulation theorem and
   hauptvermutung.
 \newblock {\em Annals of Mathematics}, 56(1):96--114, 1952.
 
 \bibitem{Moise.1977}
-Edwin~E. Moise.
+E.~E. Moise.
 \newblock {\em Geometric topology in dimensions 2 and 3}, volume~47 of {\em
   Graduate texts in mathematics}.
 \newblock Springer-Verlag, New York, 1977.
+
+\bibitem{Rolfsen.1976}
+D.~Rolfsen.
+\newblock {\em Knots and links}, volume~7 of {\em Mathematics lecture series}.
+\newblock Publish or Perish, Berkeley and CA, 1976.
 
 \bibitem{Seifert.1934}
 H.~Seifert.
@@ -109,34 +114,34 @@ Y.~Shinohara and D.~W. Sumners.
   163:101--121, 1972.
 
 \bibitem{Thurston.1986}
-William~P. Thurston.
+W.~P. Thurston.
 \newblock {\em A norm for the homology of 3-manifolds}, volume 339 of {\em
   American Mathematical Society: Memoirs}.
 \newblock American Mathematical Society, Providence, 1986.
 
 \bibitem{Traldi.1982}
-Lorenzo Traldi.
+L.~Traldi.
 \newblock The determinantal ideals of link modules. i.
 \newblock {\em Pacific J. Math.}, pages 215--222, 1982.
 
 \bibitem{Waldhausen.1968}
-Friedhelm Waldhausen.
+F.~Waldhausen.
 \newblock On irreducible 3-manifolds which are sufficiently large.
 \newblock {\em The Annals of Mathematics}, 87(1):56, 1968.
 
 \bibitem{Whitehead.1995}
-George~William Whitehead.
+G.~W. Whitehead.
 \newblock {\em Elements of homotopy theory}, volume~61 of {\em Graduate texts
   in mathematics}.
 \newblock Springer, New York and Berlin, corrected 3rd print edition, 1995.
 
 \bibitem{WhiteheadJ.H.C..1940}
-{Whitehead, J. H. C.}
+J.~H.~C. Whitehead.
 \newblock On $c^1$ -complexes.
 \newblock {\em The Annals of Mathematics}, 41(4):809, 1940.
 
 \bibitem{WhiteheadJ.H.C..1961}
-{Whitehead, J. H. C.}
+J.~H.~C. Whitehead.
 \newblock Manifolds with transverse fields in euclidean space.
 \newblock {\em Annals of Mathematics}, 73(1):154--212, 1961.
 

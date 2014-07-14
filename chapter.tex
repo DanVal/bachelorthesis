@@ -10,7 +10,7 @@ Im Folgenden sei $R$ stets ein kommutativer Ring mit $1\neq 0$.
 
 Sei $M$ ein $R$-Modul. Dann ist $M$ noethersch, falls jeder Untermodul endlich erzeugt ist, insbesondere $M$ selbst. Ein Ring ist noethersch wenn er es als Modul über sich selbst ist. 
 
-Da für jeden $R$-Modulhomomorphismus $M\to N$, das Bild der Erzeuger von $M$ das Bild des Homomorphismus erzeugt, gilt folgende Proposition:
+Da für jeden $R$-Modulhomomorphismus $M\to N$ das Bild der Erzeuger von $M$ das Bild des Homomorphismus erzeugt, gilt folgende Proposition:
 \begin{prop}
 	Sei $M \onto N$ ein $R$-Modulepimorphismus. Dann impliziert die endliche Erzeugbarkeit von $M$ die von $N$. \qed
 \end{prop}
@@ -39,7 +39,7 @@ Da für jeden $R$-Modulhomomorphismus $M\to N$, das Bild der Erzeuger von $M$ da
 
 Sei im Folgenden $M$ noethersch. Dies ist zum Beispiel bei folgender Situation gegeben:
 \begin{cor}
-	Sei $R$ noethersch und $M$ endlich erzeugter $R$-Modul. Dann ist $M$ noethersch.
+	Sei $R$ noethersch und $M$ ein endlich erzeugter $R$-Modul. Dann ist $M$ noethersch.
 \end{cor}
 \begin{proof}
 	Mit Lemma~\ref{lem:exaktnoethersch} ist die direkte Summe $R^n$ noethersch und mit Lemma~\ref{lem:epimorphismusnoethersch} ist es $M$.
@@ -77,7 +77,7 @@ Sei im Folgenden $M$ noethersch. Dies ist zum Beispiel bei folgender Situation g
         	Das letzte Beispiel verwendet die Ergiebigkeit der Theorie der endlich erzeugten Moduln über Hauptidealringen. Die Elementarideale definieren nach den obigen Überlegungen Invarianten für endlich erzeugte Moduln über noetherschen Ringen. Dies ist durch eine Art Nachahmung der ersten Schritte des Elementarteilersatzes motiviert, die nur die endliche Präsentation der Moduln verwendet.
         \end{bem}
 
-    Nun ist es später häufig nötig, Berechnungen über dem Gruppenring durchzuführen. Dafür wollen wir uns nun der Definition des Gruppenrings zuwenden und einige --- für Berechnungen essenzielle -- grundlegenden Eigenschaften des ganzzahligen Gruppenrings über einer frei abelschen Gruppe feststellen.
+    Nun wird es später häufig nötig, Berechnungen über dem Gruppenring durchzuführen. Dafür wollen wir uns nun der Definition des Gruppenrings zuwenden und einige --- für Berechnungen essenzielle -- grundlegenden Eigenschaften des ganzzahligen Gruppenrings über einer frei abelschen Gruppe feststellen.
 
      \begin{defn}[Gruppenring]
     		Sei $G$ eine endlich erzeugte Gruppe. Dann ist der \textit{Gruppenring} definiert als die Menge aller endlichen formalen Summen:
@@ -139,7 +139,7 @@ Natürlich könnte man $\QQ$ für dieses Lemma durch jeden beliebigen Körper $\
 	\]
 	Die Ideale in der Lokalisierung sind genau die erweiterten Ideale aus dem ursprünglichen Ring, wegen der Erhaltung durch $\laurent \QQ t \supset I=\alpha_*(\alpha^*(I))$, wobei $\alpha^* = \alpha^{-1}$ die Kontraktion eines Ideals bezeichnet und $\alpha_*(I) = \laurent \QQ t \cdot \alpha(I)$ die Erweiterung eines Ideals. Da aber jedes Element in $\laurent \QQ t$ durch Multiplizieren mit der Einheit $t^N$ im Erzeugnis eines Polynoms liegt, wird ein Erzeuger aus dem Hauptideal $\alpha^*(I)$ auf einen Haupterzeuger in $I$ abgebildet. 
 \end{proof}
- Nun ist allgemeiner die Eigenschaft für einen Ring ein Hauptidealring zu sein abgeschlossen unter Lokalisierung. In der Tat ist dieser Beweis in dem Fall des Laurentrings sehr einleuchtend und gut zu merken. Allerdings merkt man sich so auch den Beweis für allgemeine Lokalisierungen: Das Multiplizieren mit der Einheit $t^N$ führt einfach zu Multiplikation mit Elementen aus der multiplikativen Menge an der lokalisiert wurde --- den neuen Einheiten aus dem lokalisierten Ring.
+ Nun ist allgemeiner die Eigenschaft für einen Ring ein Hauptidealring zu sein, abgeschlossen unter Lokalisierungen. Der Beweis geht analog: Das Multiplizieren mit der Einheit $t^N$ führt einfach zu Multiplikation mit Elementen aus der multiplikativen Menge an der lokalisiert wurde --- den neuen Einheiten aus dem lokalisierten Ring.
 
 
 
@@ -235,7 +235,7 @@ Zu einer gegebenen Homologieklasse $  \phi \in H^1(M;\ZZ)$ finden wir nach Kapit
 	\]
 	sodass der Quotient eine unendlich zyklische Überlagerung mit der offensichtlichen Projektion bildet. Da entlang offener Mengen verklebt wird, also durch die "`Überlappungen"', ist es möglich den gewonnenen Quotienten mit einer differenzierbaren Struktur zu versehen, so dass die Inklusionen der $M_i$ glatte Einbettungen und somit Untermannigfaltigkeiten sind.
 
-	Nun muss die resultierende Überlagerung keineswegs zusammenhängend sein. Wir werden später sehen, dass es aber hinreichend ist, wenn die Fläche $S$ zusammenhängend ist und nicht nullhomolog. Denn dann ist das Komplement $M-S$ zusammenhängend, vgl.\ Corollar~\ref{cor:zshtrennendnullhomolog}. In den nächsten Betrachtungen sei die entstehende Überlagerung zusammenhängend.
+	Nun muss die resultierende Überlagerung keineswegs zusammenhängend sein. Wir werden später sehen, dass es aber hinreichend ist, wenn die Fläche $S$ zusammenhängend ist und nicht nullhomolog. Denn dann ist mit Corollar~\ref{cor:zshtrennendnullhomolog} das Komplement $M-S$ zusammenhängend. In den nächsten Betrachtungen sei die entstehende unendlich zyklische Überlagerung zusammenhängend.
 
 	Als weiteren Vorteil dieser expliziten Konstruktion, sieht man explizit die Diffeomorphismen der unendlich zyklischen Decktransformationsgruppe mit Erzeuger $t$. Es entspricht $nt$ einer Translation aller $M_i$ um $n$. Es bleibt nur noch zu zeigen, dass diese Überlagerung auch \textit{die} zu $[S]$ gehörige Überlagerung ist, die in dem obigen Sinne dem dualen $\phi$ entspricht (da $S$ immer noch die gewählte Orientierung bzw.\ den gewählten zweiseitigen Kragen trägt). Dies sieht man zum Beispiel ein, indem man sich unter dem Isomorphismus $H^1(M;\ZZ)\cong [M,S^1]$ einen glatten Repräsentanten aussucht der $\phi$ induziert. Natürlich existiert so einer nach den Bemerkungen in~\ref{sec:poinc} immer, jedoch soll dieser für den gewünschten Nachweis explizit $S$ als orientiertes Urbild eines regulären Wertes ergeben. Dafür konstruiert man sich aus dem fixierten zweiseitigen Kragen eine Abbildung $f:M\to S^1$, die $S\times 0$ auf $p\in S^1$ abbildet, $M-(S \times (-\epsilon,\epsilon))$ konstant auf den antipodalen Punkt von $p$ abbildet und auf $S\times (-\epsilon,\epsilon)$ gemäß der Projektion auf den zweiten Faktor fortgesetzt wird. Bezüglich dieser glatt konstruierten Abbildung $f$ ist der Wert $p$ regulär und $f^{-1}p=S$ mit der richtigen Orientierung ausgestattet. Durch paralleles Aufschneiden von $M$ an $S$, und $S^1$ an $p$ (analog wie oben nur 2 Dimensionen tiefer) erhält man folgendes kommutatives Diagramm von zusammenhängenden Überlagerungen:
 	\[
@@ -281,10 +281,10 @@ Mit einer zu $\phi$ dualen Fläche ist eine eigentlich eingebettete orientierte 
 
 \begin{cor}
 	\label{cor:trennendeFlachen}
-	Sei $S$ eine orientierte, eigentlich eingebettete Fläche und der dazugehörige Graph $G$ nach Konstruktion~\ref{constr:graph} habe einen Knoten $M_i$ mit nur ein- oder ausgehenden Kanten. Dann ist die Vereinigung $\hat S$ aller Komponenten von $S$ die $M_i$ berühren nullhomolog.
+	Sei $S$ eine orientierte, eigentlich eingebettete Fläche und der dazugehörige Graph $G$ nach Konstruktion~\ref{constr:graph} habe einen Knoten $M_i$, mit nur ein- oder ausgehenden Kanten. Dann ist die Vereinigung $\hat S$ aller Komponenten von $S$ die $M_i$ berühren nullhomolog.
 \end{cor}
 \begin{proof}
-	Im allgemeinen Fall betrachtet man den Graphen $F$ der aus Konstruktion~\ref{constr:graph} bezüglich $\hat S$ entsteht. Das Ergebnis dieser Konstruktion war es, dass die Komposition $M\to F \to S^1$ eine Kohomologieklasse dual zu $[\hat S]$ induziert (unter der Identifikationen aus Bemerkung~\ref{bem:fundhomologie}). Aber dieser hat folgende Form:
+	Im allgemeinen Fall betrachtet man den Graphen $F$ der aus Konstruktion~\ref{constr:graph} bezüglich $\hat S$ entsteht. Das Ergebnis dieser Konstruktion war es, dass die Komposition $M\to F \to S^1$ eine zu $[\hat S]$ duale Kohomologieklasse induziert (unter der Identifikationen aus Bemerkung~\ref{bem:fundhomologie}). Aber $F$ hat folgende Form:
 \begin{center}
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.5cm,
   thick,main node/.style={circle,fill=black!1,draw}]
@@ -317,7 +317,7 @@ Mit einer zu $\phi$ dualen Fläche ist eine eigentlich eingebettete orientierte 
 
 	  Jede Komposition $S^1 \to M \to F \to S^1$ hat somit Grad 0, aber da Homotopieklassen $[S^1,S^1]$ durch den Grad charakterisiert sind, ist somit $[\hat S]$ dual zu dem trivialen Homomorphismus $\pi_1(M) \to H_1(M) \to \ZZ$. Es gilt $[\hat S] = 0$.
 
-	Ein elegantes Argument ergibt sich, wenn $M$ geschlossen ist. Dann faktorisiert die Inklusion der beteiligten Flächenkomponenten über einen orientierten Nullbordismus, nämlich $\overline{M_i}$ oder $M-M_i$. Mit der Funktorialität der Homologie, faktorisiert die Inklusion auf der zweiten Homologie dann über eine Abbildung welche die Fundamentalklasse trivial auswertet\footnote{Das folgt aus der exakten Sequenz für das Paar $H_n(N^n, \partial N) \to H_{n-1}(\partial N) \to H_{n-1}(N^n)$, da der Randoperator die (relative) Fundamentalklasse auf die Fundamentalklasse des Randes abbildet und diese somit im Kern der Inklusion ist.}.
+	Ein elegantes Argument ergibt sich, wenn $M$ geschlossen ist. Dann faktorisiert die Inklusion der beteiligten Flächenkomponenten über einen orientierten Nullbordismus, nämlich $\overline{M_i}$ oder $M-M_i$. Mit der Funktorialität der Homologie, faktorisiert die Inklusion auf der zweiten Homologie dann über die induzierte Abbildung der Inklusion in den orientierten Nullbordismus, welche die Fundamentalklasse trivial auswertet\footnote{Das folgt aus der exakten Sequenz für das Paar $H_n(N^n, \partial N) \to H_{n-1}(\partial N) \stackrel i \to H_{n-1}(N^n)$, da der Randoperator die (relative) Fundamentalklasse auf die Fundamentalklasse des Randes abbildet und diese somit im Kern der Inklusion ist.}.
 \end{proof}
 \begin{cor}
 \label{cor:zshtrennendnullhomolog}
@@ -334,7 +334,7 @@ Im Folgenden wollen wir häufig den Spezialfall betrachten, dass $\phi: H_1(M) \
 
 \subsection{Normen und Halbnormen auf freien $\ZZ$-Moduln und ihre Fortsetzungen}
     
-    Ziel der folgenden Kapitel wird es sein, einer Diffeomorphieklasse von Mannigfaltigkeiten eine Halbnorm und somit eine Invariante zuzuordnen. Genauer gesagt werden es sogar mehrere Halbnormen sein. Die Halbnormen werden wir zunächst auf der ersten Kohomologie $H^1(M;\ZZ)$ definieren. Die erste Kohomologie eines kompakten topologischen Raumes ist stets torsionsfrei, denn es gilt: $H^1(M;\ZZ) = \Hom(H_1(M;\ZZ);\ZZ) = \Hom(H_1(M;\ZZ)/T;\ZZ) \cong \ZZ^n$, wobei $T$ der Torsionsanteil der abelschen Gruppe $H_1(M;\ZZ)$ ist. Es wurde $\Hom(T;\ZZ)=0$ und $H_1(M;\ZZ) \cong H_1(M;\ZZ)/T \oplus T$ verwendet.
+    Ziel der folgenden Kapitel wird es sein, einer Diffeomorphieklasse von Mannigfaltigkeiten eine Halbnorm und somit eine Invariante zuzuordnen. Genauer gesagt werden es sogar mehrere Halbnormen sein. Die Halbnormen werden wir zunächst auf der ersten Kohomologie $H^1(M;\ZZ)$ definieren. Die erste Kohomologie eines kompakten topologischen Raumes ist stets torsionsfrei, denn es gilt: $H^1(M;\ZZ) \cong \Hom(H_1(M;\ZZ);\ZZ) \cong \Hom(H_1(M;\ZZ)/T;\ZZ) \cong \ZZ^n$, wobei $T$ der Torsionsanteil der abelschen Gruppe $H_1(M;\ZZ)$ ist. Es wurde $\Hom(T;\ZZ)=0$ und $H_1(M;\ZZ) \cong H_1(M;\ZZ)/T \oplus T$ verwendet.
 
     \begin{defn}
     	Eine ganzzahlige Halbnorm ist eine Abbildung $||\cdot||: \ZZ^n \to \ZZ$  die Skalarmultiplikativität und Subadditivität erfüllt. Also für alle $\lambda \in \ZZ$ und $v,w\in \ZZ^n$ soll $||\lambda v||=\vert\lambda\vert~||v||$ und die Dreiecksungleichung $||v+w||\le ||v||+||w||$ gelten.
